@@ -1,6 +1,8 @@
 package sokoban;
 
 
+@SuppressWarnings("unused")
+
 public class Palya{
 	private Jatek jatek;
 	private UresMezo mezok[];
