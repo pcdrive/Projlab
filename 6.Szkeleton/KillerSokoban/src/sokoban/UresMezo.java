@@ -18,7 +18,7 @@ public class UresMezo {
 		if(leptetheto==null) {
 			return true;
 		}
-		boolean success=leptetheto.Tol(Irany.Balra, j);
+		boolean success=leptetheto.Tol(Irany.BALRA, j);
 		System.out.println(success);
 		return success;
 	}
@@ -29,7 +29,7 @@ public class UresMezo {
 			System.out.println(true);
 			return true;
 		}
-		boolean success=leptetheto.Utkozik(Irany.Balra, j);
+		boolean success=leptetheto.Utkozik(Irany.BALRA, j);
 		System.out.println(success);
 		return success;
 	}
