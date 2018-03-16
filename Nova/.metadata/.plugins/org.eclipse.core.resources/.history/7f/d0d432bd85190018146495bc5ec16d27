@@ -1,0 +1,7 @@
+package overload;
+
+public class tunnel {
+	
+	public parent getcucc(parent p) {return p;}
+
+}

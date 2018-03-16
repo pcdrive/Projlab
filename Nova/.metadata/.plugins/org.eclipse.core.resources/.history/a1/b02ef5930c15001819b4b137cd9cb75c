@@ -1,0 +1,66 @@
+import java.io.*;
+import java.net.Socket;
+
+public class Connection extends Thread{
+	
+	Server server;
+	Socket socket;
+	
+	ObjectOutputStream out;
+	ObjectInputStream in;
+	boolean alive=true;
+	int id;
+	
+	public void setId(int id) {this.id=id;}
+	
+	public Connection(Server serv, Socket sock) 
+	{
+		server=serv;
+		socket=sock;
+		
+		try {
+			System.out.println("[SERVER]: Client connecting...");
+			out = new ObjectOutputStream(socket.getOutputStream());
+			in = new ObjectInputStream(socket.getInputStream());
+			System.out.println("[SERVER]: Client connected!");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public void run() 
+	{	
+		while (alive) {
+			try {
+				out.writeObject(server.getnumber());
+				System.out.println(server.getnumber());
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				System.out.println("[SERVER]: Client disconnected!");
+				server.removeConn(id);
+				alive=false;
+				return;
+			}
+			
+			try {
+			//	if (in.available()>0) {
+					Object i = in.readObject();		
+					if (i!=null) 
+					{
+						server.setnumber((int)i);
+						System.out.println("[SERVER]: Got message: " + (int) i);
+					} 
+			//	}
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				System.out.println("[SERVER]: Client disconnected!");
+				server.removeConn(id);
+				alive=false;
+				return;
+			}
+		}
+	}
+		
+}

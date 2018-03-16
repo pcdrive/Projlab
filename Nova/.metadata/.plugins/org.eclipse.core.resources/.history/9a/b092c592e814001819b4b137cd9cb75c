@@ -1,0 +1,13 @@
+import java.net.ServerSocket;
+
+public class ServerMain {
+	ServerSocket socket;
+	String ip;
+	int port;
+	
+	boolean alive;
+	
+	public ServerMain() {
+		
+	}
+}

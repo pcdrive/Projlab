@@ -1,0 +1,7 @@
+package overload;
+
+public abstract class parent {
+	
+	public abstract String getNev();
+
+}

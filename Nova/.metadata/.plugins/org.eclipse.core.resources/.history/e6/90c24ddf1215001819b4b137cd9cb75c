@@ -1,0 +1,32 @@
+import java.io.ObjectInputStream;
+
+public class Reader {
+	ObjectInputStream in;
+	boolean alive;
+	boolean read;
+	Client c;
+	
+	public Reader(ObjectInputStream ois, Client c) 
+	{
+		alive=true;
+		in = ois;
+		this.c=c;
+	}
+	
+	@SuppressWarnings("static-access")
+	public void run() 
+	{
+		try {
+			Object i = in.readObject();		
+			if (i!=null) 
+			{
+				System.out.println("[SERVER]: Current server value: " + (int) i);
+			} 
+		
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

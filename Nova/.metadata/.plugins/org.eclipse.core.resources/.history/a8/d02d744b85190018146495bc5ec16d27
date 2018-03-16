@@ -1,0 +1,7 @@
+package overload;
+
+public class tunnel {
+	
+	public String getcucc(parent p) {return p.getNev();}
+
+}

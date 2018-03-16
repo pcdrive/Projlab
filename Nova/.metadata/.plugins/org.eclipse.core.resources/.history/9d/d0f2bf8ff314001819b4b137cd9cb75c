@@ -1,0 +1,17 @@
+
+public class Main {
+	public static void Mainf(String args[]) 
+	{
+		Client c= new Client("localhost",System.in.read(),5000);
+		Input i=new Input(c);
+		try {;
+		
+		c.start();
+		i.start();
+		
+		} catch (Exception e) {}
+	
+
+		while ()
+	}
+}

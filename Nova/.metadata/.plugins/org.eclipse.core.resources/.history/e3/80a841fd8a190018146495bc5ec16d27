@@ -1,0 +1,9 @@
+package overload;
+
+public abstract class parent {
+	
+	public abstract String getNev();
+	
+	public void fogad (int i) {	}
+
+}

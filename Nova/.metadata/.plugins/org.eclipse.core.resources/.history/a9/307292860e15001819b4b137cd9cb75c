@@ -1,0 +1,32 @@
+import java.io.ObjectInputStream;
+
+public class Reader {
+	ObjectInputStream in;
+	Connection c;
+	public Reader(ObjectInputStream ois, Connection c) 
+	{
+		in = ois;
+		this.c=c;
+	}
+
+}
+
+
+/*
+
+try {
+	Object i = in.readObject();		
+	if (i!=null) 
+	{
+		System.out.println("[SERVER]: Got message: " + (int) i);
+		server.setnumber((int)i);
+	} 
+
+} catch (Exception e) {
+	// TODO Auto-generated catch block
+	System.out.println("[SERVER]: Client disconnected!");
+	server.removeConn(id);
+	alive=false;
+	return;
+}
+*/

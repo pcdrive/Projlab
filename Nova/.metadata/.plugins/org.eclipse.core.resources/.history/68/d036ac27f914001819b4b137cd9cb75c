@@ -1,0 +1,30 @@
+import java.io.IOException;
+
+public class Main {
+	public static void main(String args[]) throws IOException 
+	{	
+		System.out.print("String up Client!");
+		
+		Client c;
+		
+		
+		try {
+			c= new Client("localhost",25565,5000);
+		
+			c.start();
+
+			while (c.isAlive()) 
+			{
+				int i=-1;
+				i = System.in.read();
+				if (i > 0) 
+				{
+					c.send(i);					
+				}
+				if (i ==0) {c.quit();}
+			}
+		} catch (Exception e) {}
+	
+
+	}
+}

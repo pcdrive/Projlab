@@ -1,0 +1,27 @@
+package overload;
+
+public class Main {
+	
+	public static void main(String args[])
+	{
+		
+		tunnel t = new tunnel();
+		
+		childone one = new childone();
+		childtwo two = new childtwo();
+		
+		print(one);
+		
+	}
+
+	
+	public static void print (parent p) 
+	{
+		System.out.println(p.getNev());
+	}
+	
+	public static void print (childone two) 
+	{
+		System.out.println(two.getNev());
+	}
+}

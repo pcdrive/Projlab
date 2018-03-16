@@ -1,0 +1,24 @@
+
+
+public class Input extends Thread {
+	Client c;
+	
+	public Input(Client c) {this.c=c;}
+	
+	public void run() {try {
+		if (c==null) {System.out.println("x"); return;}
+		int i = System.in.read();
+		if (i!=1) 
+		{
+			c.send(i);
+		} if (i==0) 
+		{
+			c.quit();
+		}
+		
+		sleep(200);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}}
+}

@@ -1,0 +1,11 @@
+package overload;
+
+public class tunnel {
+	
+	Main m;
+	
+	public tunnel(Main m) {this.m=m;}
+	
+	public parent getcucc(parent p) {m.print(p);}
+
+}

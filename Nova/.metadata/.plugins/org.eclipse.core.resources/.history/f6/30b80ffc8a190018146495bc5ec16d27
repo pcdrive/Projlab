@@ -1,0 +1,6 @@
+package overload;
+
+public class childone extends parent{
+	
+	public String getNev() {return"one";}
+}

@@ -1,0 +1,8 @@
+import java.io.ObjectOutputStream;
+
+public class writer extend Thread {
+	
+
+	ObjectOutputStream out;
+
+}

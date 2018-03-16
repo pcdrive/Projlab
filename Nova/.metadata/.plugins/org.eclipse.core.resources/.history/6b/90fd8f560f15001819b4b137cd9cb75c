@@ -1,0 +1,38 @@
+import java.io.ObjectInputStream;
+
+public class Reader extends Thread {
+	ObjectInputStream in;
+	Connection c;
+	boolean alive;
+	int id;
+	Server server;
+	
+	public Reader(ObjectInputStream ois, Connection c, int id, Server server) 
+	{
+		alive=true;
+		in = ois;
+		this.c=c;
+		this.id=id;
+		this.server=server;
+	}
+	
+	public void run() 
+	{
+		try {
+			Object i = in.readObject();		
+			if (i!=null) 
+			{
+				System.out.println("[SERVER]: Got message: " + (int) i);
+				server.setnumber((int)i);
+			} 
+
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			System.out.println("[SERVER]: Client disconnected!");
+			server.removeConn(id);
+			alive=false;
+			return;
+		}		
+	}
+
+}

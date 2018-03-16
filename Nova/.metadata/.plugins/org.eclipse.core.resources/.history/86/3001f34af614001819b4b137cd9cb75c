@@ -1,0 +1,15 @@
+import java.io.IOException;
+
+public class Main {
+	public static void main(String args[]) throws IOException 
+	{
+		System.out.print("String up Server!");
+		
+		Server s= new Server("localhost", System.in.read());
+		System.out.print("String up Server!");
+		
+		s.start();
+		System.out.print("String up Server!");
+		while (s.isAlive()) {}
+	}
+}

@@ -1,0 +1,18 @@
+package overload;
+
+public class Main {
+	
+	public static void main(String args[])
+	{
+		
+		tunnel t = new tunnel();
+		
+		childone one = new childone();
+		childtwo two = new childtwo();
+		
+		System.out.print(t.getcucc(one));
+		System.out.print(t.getcucc(two));
+		
+	}
+
+}

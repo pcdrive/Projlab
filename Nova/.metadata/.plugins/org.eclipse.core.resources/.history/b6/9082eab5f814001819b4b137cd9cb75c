@@ -1,0 +1,25 @@
+
+
+public class Input extends Thread {
+	Client c;
+	
+	public Input(Client c) {this.c=c;}
+	
+	public void run() {
+
+		System.out.println("most");
+		try {
+		int i=-1;
+		i = System.in.read();
+		System.out.println(i);
+		if (i!=-1) 
+		{
+			c.send(i);
+		} if (i==0) {c.quit();}
+		
+		sleep(200);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}}
+}

@@ -1,0 +1,20 @@
+
+public class Main {
+	public static void main(String args[]) 
+	{	
+		Client c;
+		Input i;
+		
+		try {
+		c= new Client("localhost",System.in.read(),5000);
+		i=new Input(c);
+		
+		c.start();
+		i.start();
+
+		//while (c.isAlive()) {}
+		} catch (Exception e) {}
+	
+
+	}
+}

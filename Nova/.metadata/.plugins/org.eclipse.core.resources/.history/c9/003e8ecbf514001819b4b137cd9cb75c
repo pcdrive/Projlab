@@ -1,0 +1,10 @@
+import java.io.IOException;
+
+public class Main {
+	public static void main(String args[]) throws IOException 
+	{
+		Server s= new Server("localhost", System.in.read());
+		s.start();
+		while (s.isAlive()) {}
+	}
+}

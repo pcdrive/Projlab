@@ -1,0 +1,21 @@
+import java.io.IOException;
+
+public class Main {
+	public static void main(String args[]) throws IOException 
+	{	
+		System.out.print("String up Client!");
+		
+		Client c;
+		
+		
+		try {
+			c= new Client("localhost",25565,5000);
+		
+			c.start();
+
+			while (c.isAlive()) {}
+		} catch (Exception e) {}
+	
+
+	}
+}

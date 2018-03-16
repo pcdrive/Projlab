@@ -1,0 +1,27 @@
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Listener extends Thread {
+	
+	boolean alive=true;
+	Server server;
+	ServerSocket socket;
+	
+	public Listener(ServerSocket s) {socket=s;}
+
+	public void quit() {alive=false;}
+	public void run() 
+	{
+		while (alive) 
+		{
+			try {
+				Socket connection = socket.accept();
+				server.addConn(new Connection(server, socket));
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}
