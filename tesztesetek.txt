@@ -1,0 +1,2728 @@
+1. Játékos1 átlép Kiindulómező-ről Célmező-re; Célmező-n nincs Léptethető
+1.1. Kiindulómező: Üresmező
+1.1.1. Célmező: Üresmező
+1.1.2. Célmező: Célhely
+1.1.3. Célmező: Csapdaajtó(nyitott)
+1.1.4. Célmező: Csapdaajtó(csukott)
+1.1.5. Célmező: Fal
+1.1.6. Célmező: Lyuk
+1.1.7. Célmező: Kapcsoló
+
+1.2. Kiindulómező: Célhely
+1.2.1. Célmező: Üresmező
+1.2.2. Célmező: Célhely
+1.2.3. Célmező: Csapdaajtó(nyitott)
+1.2.4. Célmező: Csapdaajtó(csukott)
+1.2.5. Célmező: Fal
+1.2.6. Célmező: Lyuk
+1.2.7. Célmező: Kapcsoló
+
+1.3. Kiindulómező: Csapdaajtó(csukott)
+1.3.1. Célmező: Üresmező
+1.3.2. Célmező: Célhely
+1.3.3. Célmező: Csapdaajtó(nyitott)
+1.3.4. Célmező: Csapdaajtó(csukott)
+1.3.5. Célmező: Fal
+1.3.6. Célmező: Lyuk
+1.3.7. Célmező: Kapcsoló
+
+1.4. Kiindulómező: Kapcsoló
+1.4.1. Célmező: Üresmező
+1.4.2. Célmező: Célhely
+1.4.3. Célmező: Csapdaajtó(nyitott)
+1.4.4. Célmező: Csapdaajtó(csukott)
+1.4.5. Célmező: Fal
+1.4.6. Célmező: Lyuk
+1.4.7. Célmező: Kapcsoló
+
+
+2. Játékos1 átlép Kiindulómező-ről Célmező1-re; Célmező1-n van Léptethető; Léptethető Célmező2-re tolódik
+2.1. Célmező1-n lévő Léptethető: Játékos2
+2.1.1. Kiindulómező: Üresmező
+2.1.1.1. Célmező1: Üresmező
+2.1.1.1.1. Célmező2: Üresmező
+2.1.1.1.2. Célmező2: Célhely
+2.1.1.1.3. Célmező2: Csapdaajtó(nyitott)
+2.1.1.1.4. Célmező2: Csapdaajtó(csukott)
+2.1.1.1.5. Célmező2: Fal
+2.1.1.1.6. Célmező2: Lyuk
+2.1.1.1.7. Célmező2: Kapcsoló
+
+2.1.1.2. Célmező1: Célhely
+2.1.1.2.1. Célmező2: Üresmező
+2.1.1.2.2. Célmező2: Célhely
+2.1.1.2.3. Célmező2: Csapdaajtó(nyitott)
+2.1.1.2.4. Célmező2: Csapdaajtó(csukott)
+2.1.1.2.5. Célmező2: Fal
+2.1.1.2.6. Célmező2: Lyuk
+2.1.1.2.7. Célmező2: Kapcsoló
+
+2.1.1.3. Célmező1: Csapdaajtó(csukott)
+2.1.1.3.1. Célmező2: Üresmező
+2.1.1.3.2. Célmező2: Célhely
+2.1.1.3.3. Célmező2: Csapdaajtó(nyitott)
+2.1.1.3.4. Célmező2: Csapdaajtó(csukott)
+2.1.1.3.5. Célmező2: Fal
+2.1.1.3.6. Célmező2: Lyuk
+2.1.1.3.7. Célmező2: Kapcsoló
+
+2.1.1.4. Célmező1: Kapcsoló
+2.1.1.4.1. Célmező2: Üresmező
+2.1.1.4.2. Célmező2: Célhely
+2.1.1.4.3. Célmező2: Csapdaajtó(nyitott)
+2.1.1.4.4. Célmező2: Csapdaajtó(csukott)
+2.1.1.4.5. Célmező2: Fal
+2.1.1.4.6. Célmező2: Lyuk
+2.1.1.4.7. Célmező2: Kapcsoló
+
+2.1.2. Kiindulómező: Célhely
+2.1.2.1. Célmező1: Üresmező
+2.1.2.1.1. Célmező2: Üresmező
+2.1.2.1.2. Célmező2: Célhely
+2.1.2.1.3. Célmező2: Csapdaajtó(nyitott)
+2.1.2.1.4. Célmező2: Csapdaajtó(csukott)
+2.1.2.1.5. Célmező2: Fal
+2.1.2.1.6. Célmező2: Lyuk
+2.1.2.1.7. Célmező2: Kapcsoló
+
+2.1.2.2. Célmező1: Célhely
+2.1.2.2.1. Célmező2: Üresmező
+2.1.2.2.2. Célmező2: Célhely
+2.1.2.2.3. Célmező2: Csapdaajtó(nyitott)
+2.1.2.2.4. Célmező2: Csapdaajtó(csukott)
+2.1.2.2.5. Célmező2: Fal
+2.1.2.2.6. Célmező2: Lyuk
+2.1.2.2.7. Célmező2: Kapcsoló
+
+2.1.2.3. Célmező1: Csapdaajtó(csukott)
+2.1.2.3.1. Célmező2: Üresmező
+2.1.2.3.2. Célmező2: Célhely
+2.1.2.3.3. Célmező2: Csapdaajtó(nyitott)
+2.1.2.3.4. Célmező2: Csapdaajtó(csukott)
+2.1.2.3.5. Célmező2: Fal
+2.1.2.3.6. Célmező2: Lyuk
+2.1.2.3.7. Célmező2: Kapcsoló
+
+2.1.2.4. Célmező1: Kapcsoló
+2.1.2.4.1. Célmező2: Üresmező
+2.1.2.4.2. Célmező2: Célhely
+2.1.2.4.3. Célmező2: Csapdaajtó(nyitott)
+2.1.2.4.4. Célmező2: Csapdaajtó(csukott)
+2.1.2.4.5. Célmező2: Fal
+2.1.2.4.6. Célmező2: Lyuk
+2.1.2.4.7. Célmező2: Kapcsoló
+
+2.1.3. Kiindulómező: Csapdaajtó(csukott)
+2.1.3.1. Célmező1: Üresmező
+2.1.3.1.1. Célmező2: Üresmező
+2.1.3.1.2. Célmező2: Célhely
+2.1.3.1.3. Célmező2: Csapdaajtó(nyitott)
+2.1.3.1.4. Célmező2: Csapdaajtó(csukott)
+2.1.3.1.5. Célmező2: Fal
+2.1.3.1.6. Célmező2: Lyuk
+2.1.3.1.7. Célmező2: Kapcsoló
+
+2.1.3.2. Célmező1: Célhely
+2.1.3.2.1. Célmező2: Üresmező
+2.1.3.2.2. Célmező2: Célhely
+2.1.3.2.3. Célmező2: Csapdaajtó(nyitott)
+2.1.3.2.4. Célmező2: Csapdaajtó(csukott)
+2.1.3.2.5. Célmező2: Fal
+2.1.3.2.6. Célmező2: Lyuk
+2.1.3.2.7. Célmező2: Kapcsoló
+
+2.1.3.3. Célmező1: Csapdaajtó(csukott)
+2.1.3.3.1. Célmező2: Üresmező
+2.1.3.3.2. Célmező2: Célhely
+2.1.3.3.3. Célmező2: Csapdaajtó(nyitott)
+2.1.3.3.4. Célmező2: Csapdaajtó(csukott)
+2.1.3.3.5. Célmező2: Fal
+2.1.3.3.6. Célmező2: Lyuk
+2.1.3.3.7. Célmező2: Kapcsoló
+
+2.1.3.4. Célmező1: Kapcsoló
+2.1.3.4.1. Célmező2: Üresmező
+2.1.3.4.2. Célmező2: Célhely
+2.1.3.4.3. Célmező2: Csapdaajtó(nyitott)
+2.1.3.4.4. Célmező2: Csapdaajtó(csukott)
+2.1.3.4.5. Célmező2: Fal
+2.1.3.4.6. Célmező2: Lyuk
+2.1.3.4.7. Célmező2: Kapcsoló
+
+2.1.4. Kiindulómező: Kapcsoló
+2.1.4.1. Célmező1: Üresmező
+2.1.4.1.1. Célmező2: Üresmező
+2.1.4.1.2. Célmező2: Célhely
+2.1.4.1.3. Célmező2: Csapdaajtó(nyitott)
+2.1.4.1.4. Célmező2: Csapdaajtó(csukott)
+2.1.4.1.5. Célmező2: Fal
+2.1.4.1.6. Célmező2: Lyuk
+2.1.4.1.7. Célmező2: Kapcsoló
+
+2.1.4.2. Célmező1: Célhely
+2.1.4.2.1. Célmező2: Üresmező
+2.1.4.2.2. Célmező2: Célhely
+2.1.4.2.3. Célmező2: Csapdaajtó(nyitott)
+2.1.4.2.4. Célmező2: Csapdaajtó(csukott)
+2.1.4.2.5. Célmező2: Fal
+2.1.4.2.6. Célmező2: Lyuk
+2.1.4.2.7. Célmező2: Kapcsoló
+
+2.1.4.3. Célmező1: Csapdaajtó(csukott)
+2.1.4.3.1. Célmező2: Üresmező
+2.1.4.3.2. Célmező2: Célhely
+2.1.4.3.3. Célmező2: Csapdaajtó(nyitott)
+2.1.4.3.4. Célmező2: Csapdaajtó(csukott)
+2.1.4.3.5. Célmező2: Fal
+2.1.4.3.6. Célmező2: Lyuk
+2.1.4.3.7. Célmező2: Kapcsoló
+
+2.1.4.4. Célmező1: Kapcsoló
+2.1.4.4.1. Célmező2: Üresmező
+2.1.4.4.2. Célmező2: Célhely
+2.1.4.4.3. Célmező2: Csapdaajtó(nyitott)
+2.1.4.4.4. Célmező2: Csapdaajtó(csukott)
+2.1.4.4.5. Célmező2: Fal
+2.1.4.4.6. Célmező2: Lyuk
+2.1.4.4.7. Célmező2: Kapcsoló
+
+2.2. Célmező1-n lévő Léptethető: Doboz
+2.2.1. Kiindulómező: Üresmező
+2.2.1. Kiindulómező: Üresmező
+2.2.1.1. Célmező1: Üresmező
+2.2.1.1.1. Célmező2: Üresmező
+2.2.1.1.2. Célmező2: Célhely
+2.2.1.1.3. Célmező2: Csapdaajtó(nyitott)
+2.2.1.1.4. Célmező2: Csapdaajtó(csukott)
+2.2.1.1.5. Célmező2: Fal
+2.2.1.1.6. Célmező2: Lyuk
+2.2.1.1.7. Célmező2: Kapcsoló
+
+2.2.1.2. Célmező1: Célhely
+2.2.1.2.1. Célmező2: Üresmező
+2.2.1.2.2. Célmező2: Célhely
+2.2.1.2.3. Célmező2: Csapdaajtó(nyitott)
+2.2.1.2.4. Célmező2: Csapdaajtó(csukott)
+2.2.1.2.5. Célmező2: Fal
+2.2.1.2.6. Célmező2: Lyuk
+2.2.1.2.7. Célmező2: Kapcsoló
+
+2.2.1.3. Célmező1: Csapdaajtó(csukott)
+2.2.1.3.1. Célmező2: Üresmező
+2.2.1.3.2. Célmező2: Célhely
+2.2.1.3.3. Célmező2: Csapdaajtó(nyitott)
+2.2.1.3.4. Célmező2: Csapdaajtó(csukott)
+2.2.1.3.5. Célmező2: Fal
+2.2.1.3.6. Célmező2: Lyuk
+2.2.1.3.7. Célmező2: Kapcsoló
+
+2.2.1.4. Célmező1: Kapcsoló
+2.2.1.4.1. Célmező2: Üresmező
+2.2.1.4.2. Célmező2: Célhely
+2.2.1.4.3. Célmező2: Csapdaajtó(nyitott)
+2.2.1.4.4. Célmező2: Csapdaajtó(csukott)
+2.2.1.4.5. Célmező2: Fal
+2.2.1.4.6. Célmező2: Lyuk
+2.2.1.4.7. Célmező2: Kapcsoló
+
+2.2.2. Kiindulómező: Célhely
+2.2.2.1. Célmező1: Üresmező
+2.2.2.1.1. Célmező2: Üresmező
+2.2.2.1.2. Célmező2: Célhely
+2.2.2.1.3. Célmező2: Csapdaajtó(nyitott)
+2.2.2.1.4. Célmező2: Csapdaajtó(csukott)
+2.2.2.1.5. Célmező2: Fal
+2.2.2.1.6. Célmező2: Lyuk
+2.2.2.1.7. Célmező2: Kapcsoló
+
+2.2.2.2. Célmező1: Célhely
+2.2.2.2.1. Célmező2: Üresmező
+2.2.2.2.2. Célmező2: Célhely
+2.2.2.2.3. Célmező2: Csapdaajtó(nyitott)
+2.2.2.2.4. Célmező2: Csapdaajtó(csukott)
+2.2.2.2.5. Célmező2: Fal
+2.2.2.2.6. Célmező2: Lyuk
+2.2.2.2.7. Célmező2: Kapcsoló
+
+2.2.2.3. Célmező1: Csapdaajtó(csukott)
+2.2.2.3.1. Célmező2: Üresmező
+2.2.2.3.2. Célmező2: Célhely
+2.2.2.3.3. Célmező2: Csapdaajtó(nyitott)
+2.2.2.3.4. Célmező2: Csapdaajtó(csukott)
+2.2.2.3.5. Célmező2: Fal
+2.2.2.3.6. Célmező2: Lyuk
+2.2.2.3.7. Célmező2: Kapcsoló
+
+2.2.2.4. Célmező1: Kapcsoló
+2.2.2.4.1. Célmező2: Üresmező
+2.2.2.4.2. Célmező2: Célhely
+2.2.2.4.3. Célmező2: Csapdaajtó(nyitott)
+2.2.2.4.4. Célmező2: Csapdaajtó(csukott)
+2.2.2.4.5. Célmező2: Fal
+2.2.2.4.6. Célmező2: Lyuk
+2.2.2.4.7. Célmező2: Kapcsoló
+
+2.2.3. Kiindulómező: Csapdaajtó(csukott)
+2.2.3.1. Célmező1: Üresmező
+2.2.3.1.1. Célmező2: Üresmező
+2.2.3.1.2. Célmező2: Célhely
+2.2.3.1.3. Célmező2: Csapdaajtó(nyitott)
+2.2.3.1.4. Célmező2: Csapdaajtó(csukott)
+2.2.3.1.5. Célmező2: Fal
+2.2.3.1.6. Célmező2: Lyuk
+2.2.3.1.7. Célmező2: Kapcsoló
+
+2.2.3.2. Célmező1: Célhely
+2.2.3.2.1. Célmező2: Üresmező
+2.2.3.2.2. Célmező2: Célhely
+2.2.3.2.3. Célmező2: Csapdaajtó(nyitott)
+2.2.3.2.4. Célmező2: Csapdaajtó(csukott)
+2.2.3.2.5. Célmező2: Fal
+2.2.3.2.6. Célmező2: Lyuk
+2.2.3.2.7. Célmező2: Kapcsoló
+
+2.2.3.3. Célmező1: Csapdaajtó(csukott)
+2.2.3.3.1. Célmező2: Üresmező
+2.2.3.3.2. Célmező2: Célhely
+2.2.3.3.3. Célmező2: Csapdaajtó(nyitott)
+2.2.3.3.4. Célmező2: Csapdaajtó(csukott)
+2.2.3.3.5. Célmező2: Fal
+2.2.3.3.6. Célmező2: Lyuk
+2.2.3.3.7. Célmező2: Kapcsoló
+
+2.2.3.4. Célmező1: Kapcsoló
+2.2.3.4.1. Célmező2: Üresmező
+2.2.3.4.2. Célmező2: Célhely
+2.2.3.4.3. Célmező2: Csapdaajtó(nyitott)
+2.2.3.4.4. Célmező2: Csapdaajtó(csukott)
+2.2.3.4.5. Célmező2: Fal
+2.2.3.4.6. Célmező2: Lyuk
+2.2.3.4.7. Célmező2: Kapcsoló
+
+2.2.4. Kiindulómező: Kapcsoló
+2.2.4.1. Célmező1: Üresmező
+2.2.4.1.1. Célmező2: Üresmező
+2.2.4.1.2. Célmező2: Célhely
+2.2.4.1.3. Célmező2: Csapdaajtó(nyitott)
+2.2.4.1.4. Célmező2: Csapdaajtó(csukott)
+2.2.4.1.5. Célmező2: Fal
+2.2.4.1.6. Célmező2: Lyuk
+2.2.4.1.7. Célmező2: Kapcsoló
+
+2.2.4.2. Célmező1: Célhely
+2.2.4.2.1. Célmező2: Üresmező
+2.2.4.2.2. Célmező2: Célhely
+2.2.4.2.3. Célmező2: Csapdaajtó(nyitott)
+2.2.4.2.4. Célmező2: Csapdaajtó(csukott)
+2.2.4.2.5. Célmező2: Fal
+2.2.4.2.6. Célmező2: Lyuk
+2.2.4.2.7. Célmező2: Kapcsoló
+
+2.2.4.3. Célmező1: Csapdaajtó(csukott)
+2.2.4.3.1. Célmező2: Üresmező
+2.2.4.3.2. Célmező2: Célhely
+2.2.4.3.3. Célmező2: Csapdaajtó(nyitott)
+2.2.4.3.4. Célmező2: Csapdaajtó(csukott)
+2.2.4.3.5. Célmező2: Fal
+2.2.4.3.6. Célmező2: Lyuk
+2.2.4.3.7. Célmező2: Kapcsoló
+
+2.2.4.4. Célmező1: Kapcsoló
+2.2.4.4.1. Célmező2: Üresmező
+2.2.4.4.2. Célmező2: Célhely
+2.2.4.4.3. Célmező2: Csapdaajtó(nyitott)
+2.2.4.4.4. Célmező2: Csapdaajtó(csukott)
+2.2.4.4.5. Célmező2: Fal
+2.2.4.4.6. Célmező2: Lyuk
+2.2.4.4.7. Célmező2: Kapcsoló
+
+3. Játékos1 átlép Kiindulómező-ről Célmező1-re; Célmező1-n van Léptethető1; Léptethető1 Célmező2-re tolódik; Célmező2-n van Léptethető2; Léptethető2 Célmező3-ra tolódik
+3.1. Léptethető1: Doboz
+3.1.1. Léptethető2: Doboz
+3.1.1.1. Kiindulómező: Üresmező
+3.1.1.1.1. Célmező1: Üresmező
+3.1.1.1.1.1. Célmező2: Üresmező
+3.1.1.1.1.1.1. Célmező3: Üresmező
+3.1.1.1.1.1.2. Célmező3: Célhely
+3.1.1.1.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.1.1.5. Célmező3: Fal
+3.1.1.1.1.1.6. Célmező3: Lyuk
+3.1.1.1.1.1.7. Célmező3: Kapcsoló
+
+3.1.1.1.1.2. Célmező2: Célhely
+3.1.1.1.1.2.1. Célmező3: Üresmező
+3.1.1.1.1.2.2. Célmező3: Célhely
+3.1.1.1.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.1.2.5. Célmező3: Fal
+3.1.1.1.1.2.6. Célmező3: Lyuk
+3.1.1.1.1.2.7. Célmező3: Kapcsoló
+
+3.1.1.1.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.1.1.3.1. Célmező3: Üresmező
+3.1.1.1.1.3.2. Célmező3: Célhely
+3.1.1.1.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.1.3.5. Célmező3: Fal
+3.1.1.1.1.3.6. Célmező3: Lyuk
+3.1.1.1.1.3.7. Célmező3: Kapcsoló
+
+3.1.1.1.1.4. Célmező2: Kapcsoló
+3.1.1.1.1.4.1. Célmező3: Üresmező
+3.1.1.1.1.4.2. Célmező3: Célhely
+3.1.1.1.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.1.4.5. Célmező3: Fal
+3.1.1.1.1.4.6. Célmező3: Lyuk
+3.1.1.1.1.4.7. Célmező3: Kapcsoló
+
+3.1.1.1.2. Célmező1: Célhely
+3.1.1.1.2.1. Célmező2: Üresmező
+3.1.1.1.2.1.1. Célmező3: Üresmező
+3.1.1.1.2.1.2. Célmező3: Célhely
+3.1.1.1.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.2.1.5. Célmező3: Fal
+3.1.1.1.2.1.6. Célmező3: Lyuk
+3.1.1.1.2.1.7. Célmező3: Kapcsoló
+
+3.1.1.1.2.2. Célmező2: Célhely
+3.1.1.1.2.2.1. Célmező3: Üresmező
+3.1.1.1.2.2.2. Célmező3: Célhely
+3.1.1.1.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.2.2.5. Célmező3: Fal
+3.1.1.1.2.2.6. Célmező3: Lyuk
+3.1.1.1.2.2.7. Célmező3: Kapcsoló
+
+3.1.1.1.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.1.2.3.1. Célmező3: Üresmező
+3.1.1.1.2.3.2. Célmező3: Célhely
+3.1.1.1.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.2.3.5. Célmező3: Fal
+3.1.1.1.2.3.6. Célmező3: Lyuk
+3.1.1.1.2.3.7. Célmező3: Kapcsoló
+
+3.1.1.1.2.4. Célmező2: Kapcsoló
+3.1.1.1.2.4.1. Célmező3: Üresmező
+3.1.1.1.2.4.2. Célmező3: Célhely
+3.1.1.1.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.2.4.5. Célmező3: Fal
+3.1.1.1.2.4.6. Célmező3: Lyuk
+3.1.1.1.2.4.7. Célmező3: Kapcsoló
+
+3.1.1.1.3. Célmező1: Csapdaajtó(csukott)
+3.1.1.1.3.1. Célmező2: Üresmező
+3.1.1.1.3.1.1. Célmező3: Üresmező
+3.1.1.1.3.1.2. Célmező3: Célhely
+3.1.1.1.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.3.1.5. Célmező3: Fal
+3.1.1.1.3.1.6. Célmező3: Lyuk
+3.1.1.1.3.1.7. Célmező3: Kapcsoló
+
+3.1.1.1.3.2. Célmező2: Célhely
+3.1.1.1.3.2.1. Célmező3: Üresmező
+3.1.1.1.3.2.2. Célmező3: Célhely
+3.1.1.1.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.3.2.5. Célmező3: Fal
+3.1.1.1.3.2.6. Célmező3: Lyuk
+3.1.1.1.3.2.7. Célmező3: Kapcsoló
+
+3.1.1.1.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.1.3.3.1. Célmező3: Üresmező
+3.1.1.1.3.3.2. Célmező3: Célhely
+3.1.1.1.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.3.3.5. Célmező3: Fal
+3.1.1.1.3.3.6. Célmező3: Lyuk
+3.1.1.1.3.3.7. Célmező3: Kapcsoló
+
+3.1.1.1.3.4. Célmező2: Kapcsoló
+3.1.1.1.3.4.1. Célmező3: Üresmező
+3.1.1.1.3.4.2. Célmező3: Célhely
+3.1.1.1.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.3.4.5. Célmező3: Fal
+3.1.1.1.3.4.6. Célmező3: Lyuk
+3.1.1.1.3.4.7. Célmező3: Kapcsoló
+
+3.1.1.1.4. Célmező1: Kapcsoló
+3.1.1.1.4.1. Célmező2: Üresmező
+3.1.1.1.4.1.1. Célmező3: Üresmező
+3.1.1.1.4.1.2. Célmező3: Célhely
+3.1.1.1.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.4.1.5. Célmező3: Fal
+3.1.1.1.4.1.6. Célmező3: Lyuk
+3.1.1.1.4.1.7. Célmező3: Kapcsoló
+
+3.1.1.1.4.2. Célmező2: Célhely
+3.1.1.1.4.2.1. Célmező3: Üresmező
+3.1.1.1.4.2.2. Célmező3: Célhely
+3.1.1.1.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.4.2.5. Célmező3: Fal
+3.1.1.1.4.2.6. Célmező3: Lyuk
+3.1.1.1.4.2.7. Célmező3: Kapcsoló
+
+3.1.1.1.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.1.4.3.1. Célmező3: Üresmező
+3.1.1.1.4.3.2. Célmező3: Célhely
+3.1.1.1.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.4.3.5. Célmező3: Fal
+3.1.1.1.4.3.6. Célmező3: Lyuk
+3.1.1.1.4.3.7. Célmező3: Kapcsoló
+
+3.1.1.1.4.4. Célmező2: Kapcsoló
+3.1.1.1.4.4.1. Célmező3: Üresmező
+3.1.1.1.4.4.2. Célmező3: Célhely
+3.1.1.1.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.1.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.1.4.4.5. Célmező3: Fal
+3.1.1.1.4.4.6. Célmező3: Lyuk
+3.1.1.1.4.4.7. Célmező3: Kapcsoló
+
+3.1.1.2. Kiindulómező: Célhely
+3.1.1.2.1. Célmező1: Üresmező
+3.1.1.2.1.1. Célmező2: Üresmező
+3.1.1.2.1.1.1. Célmező3: Üresmező
+3.1.1.2.1.1.2. Célmező3: Célhely
+3.1.1.2.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.1.1.5. Célmező3: Fal
+3.1.1.2.1.1.6. Célmező3: Lyuk
+3.1.1.2.1.1.7. Célmező3: Kapcsoló
+
+3.1.1.2.1.2. Célmező2: Célhely
+3.1.1.2.1.2.1. Célmező3: Üresmező
+3.1.1.2.1.2.2. Célmező3: Célhely
+3.1.1.2.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.1.2.5. Célmező3: Fal
+3.1.1.2.1.2.6. Célmező3: Lyuk
+3.1.1.2.1.2.7. Célmező3: Kapcsoló
+
+3.1.1.2.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.2.1.3.1. Célmező3: Üresmező
+3.1.1.2.1.3.2. Célmező3: Célhely
+3.1.1.2.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.1.3.5. Célmező3: Fal
+3.1.1.2.1.3.6. Célmező3: Lyuk
+3.1.1.2.1.3.7. Célmező3: Kapcsoló
+
+3.1.1.2.1.4. Célmező2: Kapcsoló
+3.1.1.2.1.4.1. Célmező3: Üresmező
+3.1.1.2.1.4.2. Célmező3: Célhely
+3.1.1.2.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.1.4.5. Célmező3: Fal
+3.1.1.2.1.4.6. Célmező3: Lyuk
+3.1.1.2.1.4.7. Célmező3: Kapcsoló
+
+3.1.1.2.2. Célmező1: Célhely
+3.1.1.2.2.1. Célmező2: Üresmező
+3.1.1.2.2.1.1. Célmező3: Üresmező
+3.1.1.2.2.1.2. Célmező3: Célhely
+3.1.1.2.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.2.1.5. Célmező3: Fal
+3.1.1.2.2.1.6. Célmező3: Lyuk
+3.1.1.2.2.1.7. Célmező3: Kapcsoló
+
+3.1.1.2.2.2. Célmező2: Célhely
+3.1.1.2.1.2.1. Célmező3: Üresmező
+3.1.1.2.1.2.2. Célmező3: Célhely
+3.1.1.2.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.1.2.5. Célmező3: Fal
+3.1.1.2.1.2.6. Célmező3: Lyuk
+3.1.1.2.1.2.7. Célmező3: Kapcsoló
+
+3.1.1.2.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.2.1.3.1. Célmező3: Üresmező
+3.1.1.2.1.3.2. Célmező3: Célhely
+3.1.1.2.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.1.3.5. Célmező3: Fal
+3.1.1.2.1.3.6. Célmező3: Lyuk
+3.1.1.2.1.3.7. Célmező3: Kapcsoló
+
+3.1.1.2.2.4. Célmező2: Kapcsoló
+3.1.1.2.1.4.1. Célmező3: Üresmező
+3.1.1.2.1.4.2. Célmező3: Célhely
+3.1.1.2.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.1.4.5. Célmező3: Fal
+3.1.1.2.1.4.6. Célmező3: Lyuk
+3.1.1.2.1.4.7. Célmező3: Kapcsoló
+
+3.1.1.2.3. Célmező1: Csapdaajtó(csukott)
+3.1.1.2.3.1. Célmező2: Üresmező
+3.1.1.2.3.1.1. Célmező3: Üresmező
+3.1.1.2.3.1.2. Célmező3: Célhely
+3.1.1.2.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.3.1.5. Célmező3: Fal
+3.1.1.2.3.1.6. Célmező3: Lyuk
+3.1.1.2.3.1.7. Célmező3: Kapcsoló
+
+3.1.1.2.3.2. Célmező2: Célhely
+3.1.1.2.3.2.1. Célmező3: Üresmező
+3.1.1.2.3.2.2. Célmező3: Célhely
+3.1.1.2.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.3.2.5. Célmező3: Fal
+3.1.1.2.3.2.6. Célmező3: Lyuk
+3.1.1.2.3.2.7. Célmező3: Kapcsoló
+
+3.1.1.2.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.2.3.3.1. Célmező3: Üresmező
+3.1.1.2.3.3.2. Célmező3: Célhely
+3.1.1.2.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.3.3.5. Célmező3: Fal
+3.1.1.2.3.3.6. Célmező3: Lyuk
+3.1.1.2.3.3.7. Célmező3: Kapcsoló
+
+3.1.1.2.3.4. Célmező2: Kapcsoló
+3.1.1.2.3.4.1. Célmező3: Üresmező
+3.1.1.2.3.4.2. Célmező3: Célhely
+3.1.1.2.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.3.4.5. Célmező3: Fal
+3.1.1.2.3.4.6. Célmező3: Lyuk
+3.1.1.2.3.4.7. Célmező3: Kapcsoló
+
+3.1.1.2.4. Célmező1: Kapcsoló
+3.1.1.2.4.1. Célmező2: Üresmező
+3.1.1.2.4.1.1. Célmező3: Üresmező
+3.1.1.2.4.1.2. Célmező3: Célhely
+3.1.1.2.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.4.1.5. Célmező3: Fal
+3.1.1.2.4.1.6. Célmező3: Lyuk
+3.1.1.2.4.1.7. Célmező3: Kapcsoló
+
+3.1.1.2.4.2. Célmező2: Célhely
+3.1.1.2.4.2.1. Célmező3: Üresmező
+3.1.1.2.4.2.2. Célmező3: Célhely
+3.1.1.2.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.4.2.5. Célmező3: Fal
+3.1.1.2.4.2.6. Célmező3: Lyuk
+3.1.1.2.4.2.7. Célmező3: Kapcsoló
+
+3.1.1.2.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.2.4.3.1. Célmező3: Üresmező
+3.1.1.2.4.3.2. Célmező3: Célhely
+3.1.1.2.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.4.3.5. Célmező3: Fal
+3.1.1.2.4.3.6. Célmező3: Lyuk
+3.1.1.2.4.3.7. Célmező3: Kapcsoló
+
+3.1.1.2.4.4. Célmező2: Kapcsoló
+3.1.1.2.4.4.1. Célmező3: Üresmező
+3.1.1.2.4.4.2. Célmező3: Célhely
+3.1.1.2.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.2.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.2.4.4.5. Célmező3: Fal
+3.1.1.2.4.4.6. Célmező3: Lyuk
+3.1.1.2.4.4.7. Célmező3: Kapcsoló
+
+3.1.1.3. Kiindulómező: Csapdaajtó(csukott)
+3.1.1.3.1. Célmező1: Üresmező
+3.1.1.3.1.1. Célmező2: Üresmező
+3.1.1.3.1.1.1. Célmező3: Üresmező
+3.1.1.3.1.1.2. Célmező3: Célhely
+3.1.1.3.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.1.1.5. Célmező3: Fal
+3.1.1.3.1.1.6. Célmező3: Lyuk
+3.1.1.3.1.1.7. Célmező3: Kapcsoló
+
+3.1.1.3.1.2. Célmező2: Célhely
+3.1.1.3.1.2.1. Célmező3: Üresmező
+3.1.1.3.1.2.2. Célmező3: Célhely
+3.1.1.3.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.1.2.5. Célmező3: Fal
+3.1.1.3.1.2.6. Célmező3: Lyuk
+3.1.1.3.1.2.7. Célmező3: Kapcsoló
+
+3.1.1.3.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.3.1.3.1. Célmező3: Üresmező
+3.1.1.3.1.3.2. Célmező3: Célhely
+3.1.1.3.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.1.3.5. Célmező3: Fal
+3.1.1.3.1.3.6. Célmező3: Lyuk
+3.1.1.3.1.3.7. Célmező3: Kapcsoló
+
+3.1.1.3.1.4. Célmező2: Kapcsoló
+3.1.1.3.1.4.1. Célmező3: Üresmező
+3.1.1.3.1.4.2. Célmező3: Célhely
+3.1.1.3.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.1.4.5. Célmező3: Fal
+3.1.1.3.1.4.6. Célmező3: Lyuk
+3.1.1.3.1.4.7. Célmező3: Kapcsoló
+
+3.1.1.3.2. Célmező1: Célhely
+3.1.1.3.2.1. Célmező2: Üresmező
+3.1.1.3.2.1.1. Célmező3: Üresmező
+3.1.1.3.2.1.2. Célmező3: Célhely
+3.1.1.3.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.2.1.5. Célmező3: Fal
+3.1.1.3.2.1.6. Célmező3: Lyuk
+3.1.1.3.2.1.7. Célmező3: Kapcsoló
+
+3.1.1.3.2.2. Célmező2: Célhely
+3.1.1.3.2.2.1. Célmező3: Üresmező
+3.1.1.3.2.2.2. Célmező3: Célhely
+3.1.1.3.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.2.2.5. Célmező3: Fal
+3.1.1.3.2.2.6. Célmező3: Lyuk
+3.1.1.3.2.2.7. Célmező3: Kapcsoló
+
+3.1.1.3.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.3.2.3.1. Célmező3: Üresmező
+3.1.1.3.2.3.2. Célmező3: Célhely
+3.1.1.3.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.2.3.5. Célmező3: Fal
+3.1.1.3.2.3.6. Célmező3: Lyuk
+3.1.1.3.2.3.7. Célmező3: Kapcsoló
+
+3.1.1.3.2.4. Célmező2: Kapcsoló
+3.1.1.3.2.4.1. Célmező3: Üresmező
+3.1.1.3.2.4.2. Célmező3: Célhely
+3.1.1.3.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.2.4.5. Célmező3: Fal
+3.1.1.3.2.4.6. Célmező3: Lyuk
+3.1.1.3.2.4.7. Célmező3: Kapcsoló
+
+3.1.1.3.3. Célmező1: Csapdaajtó(csukott)
+3.1.1.3.3.1. Célmező2: Üresmező
+3.1.1.3.3.1.1. Célmező3: Üresmező
+3.1.1.3.3.1.2. Célmező3: Célhely
+3.1.1.3.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.3.1.5. Célmező3: Fal
+3.1.1.3.3.1.6. Célmező3: Lyuk
+3.1.1.3.3.1.7. Célmező3: Kapcsoló
+
+3.1.1.3.3.2. Célmező2: Célhely
+3.1.1.3.3.2.1. Célmező3: Üresmező
+3.1.1.3.3.2.2. Célmező3: Célhely
+3.1.1.3.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.3.2.5. Célmező3: Fal
+3.1.1.3.3.2.6. Célmező3: Lyuk
+3.1.1.3.3.2.7. Célmező3: Kapcsoló
+
+3.1.1.3.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.3.3.3.1. Célmező3: Üresmező
+3.1.1.3.3.3.2. Célmező3: Célhely
+3.1.1.3.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.3.3.5. Célmező3: Fal
+3.1.1.3.3.3.6. Célmező3: Lyuk
+3.1.1.3.3.3.7. Célmező3: Kapcsoló
+
+3.1.1.3.3.4. Célmező2: Kapcsoló
+3.1.1.3.3.4.1. Célmező3: Üresmező
+3.1.1.3.3.4.2. Célmező3: Célhely
+3.1.1.3.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.3.4.5. Célmező3: Fal
+3.1.1.3.3.4.6. Célmező3: Lyuk
+3.1.1.3.3.4.7. Célmező3: Kapcsoló
+
+3.1.1.3.4. Célmező1: Kapcsoló
+3.1.1.3.4.1. Célmező2: Üresmező
+3.1.1.3.4.1.1. Célmező3: Üresmező
+3.1.1.3.4.1.2. Célmező3: Célhely
+3.1.1.3.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.4.1.5. Célmező3: Fal
+3.1.1.3.4.1.6. Célmező3: Lyuk
+3.1.1.3.4.1.7. Célmező3: Kapcsoló
+
+3.1.1.3.4.2. Célmező2: Célhely
+3.1.1.3.4.2.1. Célmező3: Üresmező
+3.1.1.3.4.2.2. Célmező3: Célhely
+3.1.1.3.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.4.2.5. Célmező3: Fal
+3.1.1.3.4.2.6. Célmező3: Lyuk
+3.1.1.3.4.2.7. Célmező3: Kapcsoló
+
+3.1.1.3.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.3.4.3.1. Célmező3: Üresmező
+3.1.1.3.4.3.2. Célmező3: Célhely
+3.1.1.3.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.4.3.5. Célmező3: Fal
+3.1.1.3.4.3.6. Célmező3: Lyuk
+3.1.1.3.4.3.7. Célmező3: Kapcsoló
+
+3.1.1.3.4.4. Célmező2: Kapcsoló
+3.1.1.3.4.4.1. Célmező3: Üresmező
+3.1.1.3.4.4.2. Célmező3: Célhely
+3.1.1.3.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.3.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.3.4.4.5. Célmező3: Fal
+3.1.1.3.4.4.6. Célmező3: Lyuk
+3.1.1.3.4.4.7. Célmező3: Kapcsoló
+
+3.1.1.4. Kiindulómező: Kapcsoló
+3.1.1.4.1. Célmező1: Üresmező
+3.1.1.4.1.1. Célmező2: Üresmező
+3.1.1.4.1.1.1. Célmező3: Üresmező
+3.1.1.4.1.1.2. Célmező3: Célhely
+3.1.1.4.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.1.1.5. Célmező3: Fal
+3.1.1.4.1.1.6. Célmező3: Lyuk
+3.1.1.4.1.1.7. Célmező3: Kapcsoló
+
+3.1.1.4.1.2. Célmező2: Célhely
+3.1.1.4.1.2.1. Célmező3: Üresmező
+3.1.1.4.1.2.2. Célmező3: Célhely
+3.1.1.4.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.1.2.5. Célmező3: Fal
+3.1.1.4.1.2.6. Célmező3: Lyuk
+3.1.1.4.1.2.7. Célmező3: Kapcsoló
+
+3.1.1.4.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.4.1.3.1. Célmező3: Üresmező
+3.1.1.4.1.3.2. Célmező3: Célhely
+3.1.1.4.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.1.3.5. Célmező3: Fal
+3.1.1.4.1.3.6. Célmező3: Lyuk
+3.1.1.4.1.3.7. Célmező3: Kapcsoló
+
+3.1.1.4.1.4. Célmező2: Kapcsoló
+3.1.1.4.1.4.1. Célmező3: Üresmező
+3.1.1.4.1.4.2. Célmező3: Célhely
+3.1.1.4.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.1.4.5. Célmező3: Fal
+3.1.1.4.1.4.6. Célmező3: Lyuk
+3.1.1.4.1.4.7. Célmező3: Kapcsoló
+
+3.1.1.4.2. Célmező1: Célhely
+3.1.1.4.2.1. Célmező2: Üresmező
+3.1.1.4.2.1.1. Célmező3: Üresmező
+3.1.1.4.2.1.2. Célmező3: Célhely
+3.1.1.4.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.2.1.5. Célmező3: Fal
+3.1.1.4.2.1.6. Célmező3: Lyuk
+3.1.1.4.2.1.7. Célmező3: Kapcsoló
+
+3.1.1.4.2.2. Célmező2: Célhely
+3.1.1.4.2.2.1. Célmező3: Üresmező
+3.1.1.4.2.2.2. Célmező3: Célhely
+3.1.1.4.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.2.2.5. Célmező3: Fal
+3.1.1.4.2.2.6. Célmező3: Lyuk
+3.1.1.4.2.2.7. Célmező3: Kapcsoló
+
+3.1.1.4.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.4.2.3.1. Célmező3: Üresmező
+3.1.1.4.2.3.2. Célmező3: Célhely
+3.1.1.4.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.2.3.5. Célmező3: Fal
+3.1.1.4.2.3.6. Célmező3: Lyuk
+3.1.1.4.2.3.7. Célmező3: Kapcsoló
+
+3.1.1.4.2.4. Célmező2: Kapcsoló
+3.1.1.4.2.4.1. Célmező3: Üresmező
+3.1.1.4.2.4.2. Célmező3: Célhely
+3.1.1.4.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.2.4.5. Célmező3: Fal
+3.1.1.4.2.4.6. Célmező3: Lyuk
+3.1.1.4.2.4.7. Célmező3: Kapcsoló
+
+3.1.1.4.3. Célmező1: Csapdaajtó(csukott)
+3.1.1.4.3.1. Célmező2: Üresmező
+3.1.1.4.3.1.1. Célmező3: Üresmező
+3.1.1.4.3.1.2. Célmező3: Célhely
+3.1.1.4.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.3.1.5. Célmező3: Fal
+3.1.1.4.3.1.6. Célmező3: Lyuk
+3.1.1.4.3.1.7. Célmező3: Kapcsoló
+
+3.1.1.4.3.2. Célmező2: Célhely
+3.1.1.4.3.2.1. Célmező3: Üresmező
+3.1.1.4.3.2.2. Célmező3: Célhely
+3.1.1.4.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.3.2.5. Célmező3: Fal
+3.1.1.4.3.2.6. Célmező3: Lyuk
+3.1.1.4.3.2.7. Célmező3: Kapcsoló
+
+3.1.1.4.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.4.3.3.1. Célmező3: Üresmező
+3.1.1.4.3.3.2. Célmező3: Célhely
+3.1.1.4.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.3.3.5. Célmező3: Fal
+3.1.1.4.3.3.6. Célmező3: Lyuk
+3.1.1.4.3.3.7. Célmező3: Kapcsoló
+
+3.1.1.4.3.4. Célmező2: Kapcsoló
+3.1.1.4.3.4.1. Célmező3: Üresmező
+3.1.1.4.3.4.2. Célmező3: Célhely
+3.1.1.4.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.3.4.5. Célmező3: Fal
+3.1.1.4.3.4.6. Célmező3: Lyuk
+3.1.1.4.3.4.7. Célmező3: Kapcsoló
+
+3.1.1.4.4. Célmező1: Kapcsoló
+3.1.1.4.4.1. Célmező2: Üresmező
+3.1.1.4.4.1.1. Célmező3: Üresmező
+3.1.1.4.4.1.2. Célmező3: Célhely
+3.1.1.4.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.4.1.5. Célmező3: Fal
+3.1.1.4.4.1.6. Célmező3: Lyuk
+3.1.1.4.4.1.7. Célmező3: Kapcsoló
+
+3.1.1.4.4.2. Célmező2: Célhely
+3.1.1.4.4.2.1. Célmező3: Üresmező
+3.1.1.4.4.2.2. Célmező3: Célhely
+3.1.1.4.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.4.2.5. Célmező3: Fal
+3.1.1.4.4.2.6. Célmező3: Lyuk
+3.1.1.4.4.2.7. Célmező3: Kapcsoló
+
+3.1.1.4.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.1.4.4.3.1. Célmező3: Üresmező
+3.1.1.4.4.3.2. Célmező3: Célhely
+3.1.1.4.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.4.3.5. Célmező3: Fal
+3.1.1.4.4.3.6. Célmező3: Lyuk
+3.1.1.4.4.3.7. Célmező3: Kapcsoló
+
+3.1.1.4.4.4. Célmező2: Kapcsoló
+3.1.1.4.4.4.1. Célmező3: Üresmező
+3.1.1.4.4.4.2. Célmező3: Célhely
+3.1.1.4.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.1.4.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.1.4.4.4.5. Célmező3: Fal
+3.1.1.4.4.4.6. Célmező3: Lyuk
+3.1.1.4.4.4.7. Célmező3: Kapcsoló
+
+3.1.2. Léptethető2: Játékos2
+3.1.2.1. Kiindulómező: Üresmező
+3.1.2.1.1. Célmező1: Üresmező
+3.1.2.1.1.1. Célmező2: Üresmező
+3.1.2.1.1.1.1. Célmező3: Üresmező
+3.1.2.1.1.1.2. Célmező3: Célhely
+3.1.2.1.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.1.1.5. Célmező3: Fal
+3.1.2.1.1.1.6. Célmező3: Lyuk
+3.1.2.1.1.1.7. Célmező3: Kapcsoló
+
+3.1.2.1.1.2. Célmező2: Célhely
+3.1.2.1.1.2.1. Célmező3: Üresmező
+3.1.2.1.1.2.2. Célmező3: Célhely
+3.1.2.1.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.1.2.5. Célmező3: Fal
+3.1.2.1.1.2.6. Célmező3: Lyuk
+3.1.2.1.1.2.7. Célmező3: Kapcsoló
+
+3.1.2.1.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.1.1.3.1. Célmező3: Üresmező
+3.1.2.1.1.3.2. Célmező3: Célhely
+3.1.2.1.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.1.3.5. Célmező3: Fal
+3.1.2.1.1.3.6. Célmező3: Lyuk
+3.1.2.1.1.3.7. Célmező3: Kapcsoló
+
+3.1.2.1.1.4. Célmező2: Kapcsoló
+3.1.2.1.1.4.1. Célmező3: Üresmező
+3.1.2.1.1.4.2. Célmező3: Célhely
+3.1.2.1.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.1.4.5. Célmező3: Fal
+3.1.2.1.1.4.6. Célmező3: Lyuk
+3.1.2.1.1.4.7. Célmező3: Kapcsoló
+
+3.1.2.1.2. Célmező1: Célhely
+3.1.2.1.2.1. Célmező2: Üresmező
+3.1.2.1.2.1.1. Célmező3: Üresmező
+3.1.2.1.2.1.2. Célmező3: Célhely
+3.1.2.1.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.2.1.5. Célmező3: Fal
+3.1.2.1.2.1.6. Célmező3: Lyuk
+3.1.2.1.2.1.7. Célmező3: Kapcsoló
+
+3.1.2.1.2.2. Célmező2: Célhely
+3.1.2.1.2.2.1. Célmező3: Üresmező
+3.1.2.1.2.2.2. Célmező3: Célhely
+3.1.2.1.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.2.2.5. Célmező3: Fal
+3.1.2.1.2.2.6. Célmező3: Lyuk
+3.1.2.1.2.2.7. Célmező3: Kapcsoló
+
+3.1.2.1.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.1.2.3.1. Célmező3: Üresmező
+3.1.2.1.2.3.2. Célmező3: Célhely
+3.1.2.1.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.2.3.5. Célmező3: Fal
+3.1.2.1.2.3.6. Célmező3: Lyuk
+3.1.2.1.2.3.7. Célmező3: Kapcsoló
+
+3.1.2.1.2.4. Célmező2: Kapcsoló
+3.1.2.1.2.4.1. Célmező3: Üresmező
+3.1.2.1.2.4.2. Célmező3: Célhely
+3.1.2.1.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.2.4.5. Célmező3: Fal
+3.1.2.1.2.4.6. Célmező3: Lyuk
+3.1.2.1.2.4.7. Célmező3: Kapcsoló
+
+3.1.2.1.3. Célmező1: Csapdaajtó(csukott)
+3.1.2.1.3.1. Célmező2: Üresmező
+3.1.2.1.3.1.1. Célmező3: Üresmező
+3.1.2.1.3.1.2. Célmező3: Célhely
+3.1.2.1.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.3.1.5. Célmező3: Fal
+3.1.2.1.3.1.6. Célmező3: Lyuk
+3.1.2.1.3.1.7. Célmező3: Kapcsoló
+
+3.1.2.1.3.2. Célmező2: Célhely
+3.1.2.1.3.2.1. Célmező3: Üresmező
+3.1.2.1.3.2.2. Célmező3: Célhely
+3.1.2.1.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.3.2.5. Célmező3: Fal
+3.1.2.1.3.2.6. Célmező3: Lyuk
+3.1.2.1.3.2.7. Célmező3: Kapcsoló
+
+3.1.2.1.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.1.3.3.1. Célmező3: Üresmező
+3.1.2.1.3.3.2. Célmező3: Célhely
+3.1.2.1.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.3.3.5. Célmező3: Fal
+3.1.2.1.3.3.6. Célmező3: Lyuk
+3.1.2.1.3.3.7. Célmező3: Kapcsoló
+
+3.1.2.1.3.4. Célmező2: Kapcsoló
+3.1.2.1.3.4.1. Célmező3: Üresmező
+3.1.2.1.3.4.2. Célmező3: Célhely
+3.1.2.1.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.3.4.5. Célmező3: Fal
+3.1.2.1.3.4.6. Célmező3: Lyuk
+3.1.2.1.3.4.7. Célmező3: Kapcsoló
+
+3.1.2.1.4. Célmező1: Kapcsoló
+3.1.2.1.4.1. Célmező2: Üresmező
+3.1.2.1.4.1.1. Célmező3: Üresmező
+3.1.2.1.4.1.2. Célmező3: Célhely
+3.1.2.1.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.4.1.5. Célmező3: Fal
+3.1.2.1.4.1.6. Célmező3: Lyuk
+3.1.2.1.4.1.7. Célmező3: Kapcsoló
+
+3.1.2.1.4.2. Célmező2: Célhely
+3.1.2.1.4.2.1. Célmező3: Üresmező
+3.1.2.1.4.2.2. Célmező3: Célhely
+3.1.2.1.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.4.2.5. Célmező3: Fal
+3.1.2.1.4.2.6. Célmező3: Lyuk
+3.1.2.1.4.2.7. Célmező3: Kapcsoló
+
+3.1.2.1.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.1.4.3.1. Célmező3: Üresmező
+3.1.2.1.4.3.2. Célmező3: Célhely
+3.1.2.1.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.4.3.5. Célmező3: Fal
+3.1.2.1.4.3.6. Célmező3: Lyuk
+3.1.2.1.4.3.7. Célmező3: Kapcsoló
+
+3.1.2.1.4.4. Célmező2: Kapcsoló
+3.1.2.1.4.4.1. Célmező3: Üresmező
+3.1.2.1.4.4.2. Célmező3: Célhely
+3.1.2.1.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.1.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.1.4.4.5. Célmező3: Fal
+3.1.2.1.4.4.6. Célmező3: Lyuk
+3.1.2.1.4.4.7. Célmező3: Kapcsoló
+
+3.1.2.2. Kiindulómező: Célhely
+3.1.2.2.1. Célmező1: Üresmező
+3.1.2.2.1.1. Célmező2: Üresmező
+3.1.2.2.1.1.1. Célmező3: Üresmező
+3.1.2.2.1.1.2. Célmező3: Célhely
+3.1.2.2.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.1.1.5. Célmező3: Fal
+3.1.2.2.1.1.6. Célmező3: Lyuk
+3.1.2.2.1.1.7. Célmező3: Kapcsoló
+
+3.1.2.2.1.2. Célmező2: Célhely
+3.1.2.2.1.2.1. Célmező3: Üresmező
+3.1.2.2.1.2.2. Célmező3: Célhely
+3.1.2.2.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.1.2.5. Célmező3: Fal
+3.1.2.2.1.2.6. Célmező3: Lyuk
+3.1.2.2.1.2.7. Célmező3: Kapcsoló
+
+3.1.2.2.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.2.1.3.1. Célmező3: Üresmező
+3.1.2.2.1.3.2. Célmező3: Célhely
+3.1.2.2.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.1.3.5. Célmező3: Fal
+3.1.2.2.1.3.6. Célmező3: Lyuk
+3.1.2.2.1.3.7. Célmező3: Kapcsoló
+
+3.1.2.2.1.4. Célmező2: Kapcsoló
+3.1.2.2.1.4.1. Célmező3: Üresmező
+3.1.2.2.1.4.2. Célmező3: Célhely
+3.1.2.2.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.1.4.5. Célmező3: Fal
+3.1.2.2.1.4.6. Célmező3: Lyuk
+3.1.2.2.1.4.7. Célmező3: Kapcsoló
+
+3.1.2.2.2. Célmező1: Célhely
+3.1.2.2.2.1. Célmező2: Üresmező
+3.1.2.2.2.1.1. Célmező3: Üresmező
+3.1.2.2.2.1.2. Célmező3: Célhely
+3.1.2.2.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.2.1.5. Célmező3: Fal
+3.1.2.2.2.1.6. Célmező3: Lyuk
+3.1.2.2.2.1.7. Célmező3: Kapcsoló
+
+3.1.2.2.2.2. Célmező2: Célhely
+3.1.2.2.2.2.1. Célmező3: Üresmező
+3.1.2.2.2.2.2. Célmező3: Célhely
+3.1.2.2.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.2.2.5. Célmező3: Fal
+3.1.2.2.2.2.6. Célmező3: Lyuk
+3.1.2.2.2.2.7. Célmező3: Kapcsoló
+
+3.1.2.2.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.2.2.3.1. Célmező3: Üresmező
+3.1.2.2.2.3.2. Célmező3: Célhely
+3.1.2.2.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.2.3.5. Célmező3: Fal
+3.1.2.2.2.3.6. Célmező3: Lyuk
+3.1.2.2.2.3.7. Célmező3: Kapcsoló
+
+3.1.2.2.2.4. Célmező2: Kapcsoló
+3.1.2.2.2.4.1. Célmező3: Üresmező
+3.1.2.2.2.4.2. Célmező3: Célhely
+3.1.2.2.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.2.4.5. Célmező3: Fal
+3.1.2.2.2.4.6. Célmező3: Lyuk
+3.1.2.2.2.4.7. Célmező3: Kapcsoló
+
+3.1.2.2.3. Célmező1: Csapdaajtó(csukott)
+3.1.2.2.3.1. Célmező2: Üresmező
+3.1.2.2.3.1.1. Célmező3: Üresmező
+3.1.2.2.3.1.2. Célmező3: Célhely
+3.1.2.2.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.3.1.5. Célmező3: Fal
+3.1.2.2.3.1.6. Célmező3: Lyuk
+3.1.2.2.3.1.7. Célmező3: Kapcsoló
+
+3.1.2.2.3.2. Célmező2: Célhely
+3.1.2.2.3.2.1. Célmező3: Üresmező
+3.1.2.2.3.2.2. Célmező3: Célhely
+3.1.2.2.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.3.2.5. Célmező3: Fal
+3.1.2.2.3.2.6. Célmező3: Lyuk
+3.1.2.2.3.2.7. Célmező3: Kapcsoló
+
+3.1.2.2.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.2.3.3.1. Célmező3: Üresmező
+3.1.2.2.3.3.2. Célmező3: Célhely
+3.1.2.2.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.3.3.5. Célmező3: Fal
+3.1.2.2.3.3.6. Célmező3: Lyuk
+3.1.2.2.3.3.7. Célmező3: Kapcsoló
+
+3.1.2.2.3.4. Célmező2: Kapcsoló
+3.1.2.2.3.4.1. Célmező3: Üresmező
+3.1.2.2.3.4.2. Célmező3: Célhely
+3.1.2.2.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.3.4.5. Célmező3: Fal
+3.1.2.2.3.4.6. Célmező3: Lyuk
+3.1.2.2.3.4.7. Célmező3: Kapcsoló
+
+3.1.2.2.4. Célmező1: Kapcsoló
+3.1.2.2.4.1. Célmező2: Üresmező
+3.1.2.2.4.1.1. Célmező3: Üresmező
+3.1.2.2.4.1.2. Célmező3: Célhely
+3.1.2.2.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.4.1.5. Célmező3: Fal
+3.1.2.2.4.1.6. Célmező3: Lyuk
+3.1.2.2.4.1.7. Célmező3: Kapcsoló
+
+3.1.2.2.4.2. Célmező2: Célhely
+3.1.2.2.4.2.1. Célmező3: Üresmező
+3.1.2.2.4.2.2. Célmező3: Célhely
+3.1.2.2.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.4.2.5. Célmező3: Fal
+3.1.2.2.4.2.6. Célmező3: Lyuk
+3.1.2.2.4.2.7. Célmező3: Kapcsoló
+
+3.1.2.2.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.2.4.3.1. Célmező3: Üresmező
+3.1.2.2.4.3.2. Célmező3: Célhely
+3.1.2.2.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.4.3.5. Célmező3: Fal
+3.1.2.2.4.3.6. Célmező3: Lyuk
+3.1.2.2.4.3.7. Célmező3: Kapcsoló
+
+3.1.2.2.4.4. Célmező2: Kapcsoló
+3.1.2.2.4.4.1. Célmező3: Üresmező
+3.1.2.2.4.4.2. Célmező3: Célhely
+3.1.2.2.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.2.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.2.4.4.5. Célmező3: Fal
+3.1.2.2.4.4.6. Célmező3: Lyuk
+3.1.2.2.4.4.7. Célmező3: Kapcsoló
+
+3.1.2.3. Kiindulómező: Csapdaajtó(csukott)
+3.1.2.3.1. Célmező1: Üresmező
+3.1.2.3.1.1. Célmező2: Üresmező
+3.1.2.3.1.1.1. Célmező3: Üresmező
+3.1.2.3.1.1.2. Célmező3: Célhely
+3.1.2.3.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.1.1.5. Célmező3: Fal
+3.1.2.3.1.1.6. Célmező3: Lyuk
+3.1.2.3.1.1.7. Célmező3: Kapcsoló
+
+3.1.2.3.1.2. Célmező2: Célhely
+3.1.2.3.1.2.1. Célmező3: Üresmező
+3.1.2.3.1.2.2. Célmező3: Célhely
+3.1.2.3.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.1.2.5. Célmező3: Fal
+3.1.2.3.1.2.6. Célmező3: Lyuk
+3.1.2.3.1.2.7. Célmező3: Kapcsoló
+
+3.1.2.3.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.3.1.3.1. Célmező3: Üresmező
+3.1.2.3.1.3.2. Célmező3: Célhely
+3.1.2.3.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.1.3.5. Célmező3: Fal
+3.1.2.3.1.3.6. Célmező3: Lyuk
+3.1.2.3.1.3.7. Célmező3: Kapcsoló
+
+3.1.2.3.1.4. Célmező2: Kapcsoló
+3.1.2.3.1.4.1. Célmező3: Üresmező
+3.1.2.3.1.4.2. Célmező3: Célhely
+3.1.2.3.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.1.4.5. Célmező3: Fal
+3.1.2.3.1.4.6. Célmező3: Lyuk
+3.1.2.3.1.4.7. Célmező3: Kapcsoló
+
+3.1.2.3.2. Célmező1: Célhely
+3.1.2.3.2.1. Célmező2: Üresmező
+3.1.2.3.2.1.1. Célmező3: Üresmező
+3.1.2.3.2.1.2. Célmező3: Célhely
+3.1.2.3.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.2.1.5. Célmező3: Fal
+3.1.2.3.2.1.6. Célmező3: Lyuk
+3.1.2.3.2.1.7. Célmező3: Kapcsoló
+
+3.1.2.3.2.2. Célmező2: Célhely
+3.1.2.3.2.2.1. Célmező3: Üresmező
+3.1.2.3.2.2.2. Célmező3: Célhely
+3.1.2.3.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.2.2.5. Célmező3: Fal
+3.1.2.3.2.2.6. Célmező3: Lyuk
+3.1.2.3.2.2.7. Célmező3: Kapcsoló
+
+3.1.2.3.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.3.2.3.1. Célmező3: Üresmező
+3.1.2.3.2.3.2. Célmező3: Célhely
+3.1.2.3.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.2.3.5. Célmező3: Fal
+3.1.2.3.2.3.6. Célmező3: Lyuk
+3.1.2.3.2.3.7. Célmező3: Kapcsoló
+
+3.1.2.3.2.4. Célmező2: Kapcsoló
+3.1.2.3.2.4.1. Célmező3: Üresmező
+3.1.2.3.2.4.2. Célmező3: Célhely
+3.1.2.3.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.2.4.5. Célmező3: Fal
+3.1.2.3.2.4.6. Célmező3: Lyuk
+3.1.2.3.2.4.7. Célmező3: Kapcsoló
+
+3.1.2.3.3. Célmező1: Csapdaajtó(csukott)
+3.1.2.3.3.1. Célmező2: Üresmező
+3.1.2.3.3.1.1. Célmező3: Üresmező
+3.1.2.3.3.1.2. Célmező3: Célhely
+3.1.2.3.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.3.1.5. Célmező3: Fal
+3.1.2.3.3.1.6. Célmező3: Lyuk
+3.1.2.3.3.1.7. Célmező3: Kapcsoló
+
+3.1.2.3.3.2. Célmező2: Célhely
+3.1.2.3.3.2.1. Célmező3: Üresmező
+3.1.2.3.3.2.2. Célmező3: Célhely
+3.1.2.3.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.3.2.5. Célmező3: Fal
+3.1.2.3.3.2.6. Célmező3: Lyuk
+3.1.2.3.3.2.7. Célmező3: Kapcsoló
+
+3.1.2.3.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.3.3.3.1. Célmező3: Üresmező
+3.1.2.3.3.3.2. Célmező3: Célhely
+3.1.2.3.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.3.3.5. Célmező3: Fal
+3.1.2.3.3.3.6. Célmező3: Lyuk
+3.1.2.3.3.3.7. Célmező3: Kapcsoló
+
+3.1.2.3.3.4. Célmező2: Kapcsoló
+3.1.2.3.3.4.1. Célmező3: Üresmező
+3.1.2.3.3.4.2. Célmező3: Célhely
+3.1.2.3.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.3.4.5. Célmező3: Fal
+3.1.2.3.3.4.6. Célmező3: Lyuk
+3.1.2.3.3.4.7. Célmező3: Kapcsoló
+
+3.1.2.3.4. Célmező1: Kapcsoló
+3.1.2.3.4.1. Célmező2: Üresmező
+3.1.2.3.4.1.1. Célmező3: Üresmező
+3.1.2.3.4.1.2. Célmező3: Célhely
+3.1.2.3.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.4.1.5. Célmező3: Fal
+3.1.2.3.4.1.6. Célmező3: Lyuk
+3.1.2.3.4.1.7. Célmező3: Kapcsoló
+
+3.1.2.3.4.2. Célmező2: Célhely
+3.1.2.3.4.2.1. Célmező3: Üresmező
+3.1.2.3.4.2.2. Célmező3: Célhely
+3.1.2.3.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.4.2.5. Célmező3: Fal
+3.1.2.3.4.2.6. Célmező3: Lyuk
+3.1.2.3.4.2.7. Célmező3: Kapcsoló
+
+3.1.2.3.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.3.4.3.1. Célmező3: Üresmező
+3.1.2.3.4.3.2. Célmező3: Célhely
+3.1.2.3.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.4.3.5. Célmező3: Fal
+3.1.2.3.4.3.6. Célmező3: Lyuk
+3.1.2.3.4.3.7. Célmező3: Kapcsoló
+
+3.1.2.3.4.4. Célmező2: Kapcsoló
+3.1.2.3.4.4.1. Célmező3: Üresmező
+3.1.2.3.4.4.2. Célmező3: Célhely
+3.1.2.3.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.3.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.3.4.4.5. Célmező3: Fal
+3.1.2.3.4.4.6. Célmező3: Lyuk
+3.1.2.3.4.4.7. Célmező3: Kapcsoló
+
+3.1.2.4. Kiindulómező: Kapcsoló
+3.1.2.4.1. Célmező1: Üresmező
+3.1.2.4.1.1. Célmező2: Üresmező
+3.1.2.4.1.1.1. Célmező3: Üresmező
+3.1.2.4.1.1.2. Célmező3: Célhely
+3.1.2.4.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.1.1.5. Célmező3: Fal
+3.1.2.4.1.1.6. Célmező3: Lyuk
+3.1.2.4.1.1.7. Célmező3: Kapcsoló
+
+3.1.2.4.1.2. Célmező2: Célhely
+3.1.2.4.1.2.1. Célmező3: Üresmező
+3.1.2.4.1.2.2. Célmező3: Célhely
+3.1.2.4.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.1.2.5. Célmező3: Fal
+3.1.2.4.1.2.6. Célmező3: Lyuk
+3.1.2.4.1.2.7. Célmező3: Kapcsoló
+
+3.1.2.4.1.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.4.1.3.1. Célmező3: Üresmező
+3.1.2.4.1.3.2. Célmező3: Célhely
+3.1.2.4.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.1.3.5. Célmező3: Fal
+3.1.2.4.1.3.6. Célmező3: Lyuk
+3.1.2.4.1.3.7. Célmező3: Kapcsoló
+
+3.1.2.4.1.4. Célmező2: Kapcsoló
+3.1.2.4.1.4.1. Célmező3: Üresmező
+3.1.2.4.1.4.2. Célmező3: Célhely
+3.1.2.4.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.1.4.5. Célmező3: Fal
+3.1.2.4.1.4.6. Célmező3: Lyuk
+3.1.2.4.1.4.7. Célmező3: Kapcsoló
+
+3.1.2.4.2. Célmező1: Célhely
+3.1.2.4.2.1. Célmező2: Üresmező
+3.1.2.4.2.1.1. Célmező3: Üresmező
+3.1.2.4.2.1.2. Célmező3: Célhely
+3.1.2.4.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.2.1.5. Célmező3: Fal
+3.1.2.4.2.1.6. Célmező3: Lyuk
+3.1.2.4.2.1.7. Célmező3: Kapcsoló
+
+3.1.2.4.2.2. Célmező2: Célhely
+3.1.2.4.2.2.1. Célmező3: Üresmező
+3.1.2.4.2.2.2. Célmező3: Célhely
+3.1.2.4.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.2.2.5. Célmező3: Fal
+3.1.2.4.2.2.6. Célmező3: Lyuk
+3.1.2.4.2.2.7. Célmező3: Kapcsoló
+
+3.1.2.4.2.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.4.2.3.1. Célmező3: Üresmező
+3.1.2.4.2.3.2. Célmező3: Célhely
+3.1.2.4.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.2.3.5. Célmező3: Fal
+3.1.2.4.2.3.6. Célmező3: Lyuk
+3.1.2.4.2.3.7. Célmező3: Kapcsoló
+
+3.1.2.4.2.4. Célmező2: Kapcsoló
+3.1.2.4.2.4.1. Célmező3: Üresmező
+3.1.2.4.2.4.2. Célmező3: Célhely
+3.1.2.4.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.2.4.5. Célmező3: Fal
+3.1.2.4.2.4.6. Célmező3: Lyuk
+3.1.2.4.2.4.7. Célmező3: Kapcsoló
+
+3.1.2.4.3. Célmező1: Csapdaajtó(csukott)
+3.1.2.4.3.1. Célmező2: Üresmező
+3.1.2.4.3.1.1. Célmező3: Üresmező
+3.1.2.4.3.1.2. Célmező3: Célhely
+3.1.2.4.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.3.1.5. Célmező3: Fal
+3.1.2.4.3.1.6. Célmező3: Lyuk
+3.1.2.4.3.1.7. Célmező3: Kapcsoló
+
+3.1.2.4.3.2. Célmező2: Célhely
+3.1.2.4.3.2.1. Célmező3: Üresmező
+3.1.2.4.3.2.2. Célmező3: Célhely
+3.1.2.4.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.3.2.5. Célmező3: Fal
+3.1.2.4.3.2.6. Célmező3: Lyuk
+3.1.2.4.3.2.7. Célmező3: Kapcsoló
+
+3.1.2.4.3.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.4.3.3.1. Célmező3: Üresmező
+3.1.2.4.3.3.2. Célmező3: Célhely
+3.1.2.4.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.3.3.5. Célmező3: Fal
+3.1.2.4.3.3.6. Célmező3: Lyuk
+3.1.2.4.3.3.7. Célmező3: Kapcsoló
+
+3.1.2.4.3.4. Célmező2: Kapcsoló
+3.1.2.4.3.4.1. Célmező3: Üresmező
+3.1.2.4.3.4.2. Célmező3: Célhely
+3.1.2.4.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.3.4.5. Célmező3: Fal
+3.1.2.4.3.4.6. Célmező3: Lyuk
+3.1.2.4.3.4.7. Célmező3: Kapcsoló
+
+3.1.2.4.4. Célmező1: Kapcsoló
+3.1.2.4.4.1. Célmező2: Üresmező
+3.1.2.4.4.1.1. Célmező3: Üresmező
+3.1.2.4.4.1.2. Célmező3: Célhely
+3.1.2.4.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.4.1.5. Célmező3: Fal
+3.1.2.4.4.1.6. Célmező3: Lyuk
+3.1.2.4.4.1.7. Célmező3: Kapcsoló
+
+3.1.2.4.4.2. Célmező2: Célhely
+3.1.2.4.4.2.1. Célmező3: Üresmező
+3.1.2.4.4.2.2. Célmező3: Célhely
+3.1.2.4.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.4.2.5. Célmező3: Fal
+3.1.2.4.4.2.6. Célmező3: Lyuk
+3.1.2.4.4.2.7. Célmező3: Kapcsoló
+
+3.1.2.4.4.3. Célmező2: Csapdaajtó(csukott)
+3.1.2.4.4.3.1. Célmező3: Üresmező
+3.1.2.4.4.3.2. Célmező3: Célhely
+3.1.2.4.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.4.3.5. Célmező3: Fal
+3.1.2.4.4.3.6. Célmező3: Lyuk
+3.1.2.4.4.3.7. Célmező3: Kapcsoló
+
+3.1.2.4.4.4. Célmező2: Kapcsoló
+3.1.2.4.4.4.1. Célmező3: Üresmező
+3.1.2.4.4.4.2. Célmező3: Célhely
+3.1.2.4.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.1.2.4.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.1.2.4.4.4.5. Célmező3: Fal
+3.1.2.4.4.4.6. Célmező3: Lyuk
+3.1.2.4.4.4.7. Célmező3: Kapcsoló
+
+3.2. Léptethető1: Játékos2
+3.2.1. Léptethető2: Doboz
+3.2.1.1. Kiindulómező: Üresmező
+3.2.1.1.1. Célmező1: Üresmező
+3.2.1.1.1.1. Célmező2: Üresmező
+3.2.1.1.1.1.1. Célmező3: Üresmező
+3.2.1.1.1.1.2. Célmező3: Célhely
+3.2.1.1.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.1.1.5. Célmező3: Fal
+3.2.1.1.1.1.6. Célmező3: Lyuk
+3.2.1.1.1.1.7. Célmező3: Kapcsoló
+
+3.2.1.1.1.2. Célmező2: Célhely
+3.2.1.1.1.2.1. Célmező3: Üresmező
+3.2.1.1.1.2.2. Célmező3: Célhely
+3.2.1.1.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.1.2.5. Célmező3: Fal
+3.2.1.1.1.2.6. Célmező3: Lyuk
+3.2.1.1.1.2.7. Célmező3: Kapcsoló
+
+3.2.1.1.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.1.1.3.1. Célmező3: Üresmező
+3.2.1.1.1.3.2. Célmező3: Célhely
+3.2.1.1.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.1.3.5. Célmező3: Fal
+3.2.1.1.1.3.6. Célmező3: Lyuk
+3.2.1.1.1.3.7. Célmező3: Kapcsoló
+
+3.2.1.1.1.4. Célmező2: Kapcsoló
+3.2.1.1.1.4.1. Célmező3: Üresmező
+3.2.1.1.1.4.2. Célmező3: Célhely
+3.2.1.1.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.1.4.5. Célmező3: Fal
+3.2.1.1.1.4.6. Célmező3: Lyuk
+3.2.1.1.1.4.7. Célmező3: Kapcsoló
+
+3.2.1.1.2. Célmező1: Célhely
+3.2.1.1.2.1. Célmező2: Üresmező
+3.2.1.1.2.1.1. Célmező3: Üresmező
+3.2.1.1.2.1.2. Célmező3: Célhely
+3.2.1.1.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.2.1.5. Célmező3: Fal
+3.2.1.1.2.1.6. Célmező3: Lyuk
+3.2.1.1.2.1.7. Célmező3: Kapcsoló
+
+3.2.1.1.2.2. Célmező2: Célhely
+3.2.1.1.2.2.1. Célmező3: Üresmező
+3.2.1.1.2.2.2. Célmező3: Célhely
+3.2.1.1.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.2.2.5. Célmező3: Fal
+3.2.1.1.2.2.6. Célmező3: Lyuk
+3.2.1.1.2.2.7. Célmező3: Kapcsoló
+
+3.2.1.1.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.1.2.3.1. Célmező3: Üresmező
+3.2.1.1.2.3.2. Célmező3: Célhely
+3.2.1.1.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.2.3.5. Célmező3: Fal
+3.2.1.1.2.3.6. Célmező3: Lyuk
+3.2.1.1.2.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.2.4. Célmező2: Kapcsoló
+3.2.1.1.2.4.1. Célmező3: Üresmező
+3.2.1.1.2.4.2. Célmező3: Célhely
+3.2.1.1.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.2.4.5. Célmező3: Fal
+3.2.1.1.2.4.6. Célmező3: Lyuk
+3.2.1.1.2.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.3. Célmező1: Csapdaajtó(csukott)
+3.2.1.1.3.1. Célmező2: Üresmező
+3.2.1.1.3.1.1. Célmező3: Üresmező
+3.2.1.1.3.1.2. Célmező3: Célhely
+3.2.1.1.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.3.1.5. Célmező3: Fal
+3.2.1.1.3.1.6. Célmező3: Lyuk
+3.2.1.1.3.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.3.2. Célmező2: Célhely
+3.2.1.1.3.2.1. Célmező3: Üresmező
+3.2.1.1.3.2.2. Célmező3: Célhely
+3.2.1.1.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.3.2.5. Célmező3: Fal
+3.2.1.1.3.2.6. Célmező3: Lyuk
+3.2.1.1.3.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.1.3.3.1. Célmező3: Üresmező
+3.2.1.1.3.3.2. Célmező3: Célhely
+3.2.1.1.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.3.3.5. Célmező3: Fal
+3.2.1.1.3.3.6. Célmező3: Lyuk
+3.2.1.1.3.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.3.4. Célmező2: Kapcsoló
+3.2.1.1.3.4.1. Célmező3: Üresmező
+3.2.1.1.3.4.2. Célmező3: Célhely
+3.2.1.1.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.3.4.5. Célmező3: Fal
+3.2.1.1.3.4.6. Célmező3: Lyuk
+3.2.1.1.3.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.4. Célmező1: Kapcsoló
+3.2.1.1.4.1. Célmező2: Üresmező
+3.2.1.1.4.1.1. Célmező3: Üresmező
+3.2.1.1.4.1.2. Célmező3: Célhely
+3.2.1.1.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.4.1.5. Célmező3: Fal
+3.2.1.1.4.1.6. Célmező3: Lyuk
+3.2.1.1.4.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.4.2. Célmező2: Célhely
+3.2.1.1.4.2.1. Célmező3: Üresmező
+3.2.1.1.4.2.2. Célmező3: Célhely
+3.2.1.1.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.4.2.5. Célmező3: Fal
+3.2.1.1.4.2.6. Célmező3: Lyuk
+3.2.1.1.4.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.1.4.3.1. Célmező3: Üresmező
+3.2.1.1.4.3.2. Célmező3: Célhely
+3.2.1.1.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.4.3.5. Célmező3: Fal
+3.2.1.1.4.3.6. Célmező3: Lyuk
+3.2.1.1.4.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.1.4.4. Célmező2: Kapcsoló
+3.2.1.1.4.4.1. Célmező3: Üresmező
+3.2.1.1.4.4.2. Célmező3: Célhely
+3.2.1.1.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.1.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.1.4.4.5. Célmező3: Fal
+3.2.1.1.4.4.6. Célmező3: Lyuk
+3.2.1.1.4.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.2. Kiindulómező: Célhely
+3.2.1.2.1. Célmező1: Üresmező
+3.2.1.2.1.1. Célmező2: Üresmező
+3.2.1.2.1.1.1. Célmező3: Üresmező
+3.2.1.2.1.1.2. Célmező3: Célhely
+3.2.1.2.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.1.1.5. Célmező3: Fal
+3.2.1.2.1.1.6. Célmező3: Lyuk
+3.2.1.2.1.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.1.2. Célmező2: Célhely
+3.2.1.2.1.2.1. Célmező3: Üresmező
+3.2.1.2.1.2.2. Célmező3: Célhely
+3.2.1.2.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.1.2.5. Célmező3: Fal
+3.2.1.2.1.2.6. Célmező3: Lyuk
+3.2.1.2.1.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.2.1.3.1. Célmező3: Üresmező
+3.2.1.2.1.3.2. Célmező3: Célhely
+3.2.1.2.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.1.3.5. Célmező3: Fal
+3.2.1.2.1.3.6. Célmező3: Lyuk
+3.2.1.2.1.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.1.4. Célmező2: Kapcsoló
+3.2.1.2.1.4.1. Célmező3: Üresmező
+3.2.1.2.1.4.2. Célmező3: Célhely
+3.2.1.2.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.1.4.5. Célmező3: Fal
+3.2.1.2.1.4.6. Célmező3: Lyuk
+3.2.1.2.1.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.2. Célmező1: Célhely
+3.2.1.2.2.1. Célmező2: Üresmező
+3.2.1.2.2.1.1. Célmező3: Üresmező
+3.2.1.2.2.1.2. Célmező3: Célhely
+3.2.1.2.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.2.1.5. Célmező3: Fal
+3.2.1.2.2.1.6. Célmező3: Lyuk
+3.2.1.2.2.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.2.2. Célmező2: Célhely
+3.2.1.2.1.2.1. Célmező3: Üresmező
+3.2.1.2.1.2.2. Célmező3: Célhely
+3.2.1.2.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.1.2.5. Célmező3: Fal
+3.2.1.2.1.2.6. Célmező3: Lyuk
+3.2.1.2.1.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.2.1.3.1. Célmező3: Üresmező
+3.2.1.2.1.3.2. Célmező3: Célhely
+3.2.1.2.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.1.3.5. Célmező3: Fal
+3.2.1.2.1.3.6. Célmező3: Lyuk
+3.2.1.2.1.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.2.4. Célmező2: Kapcsoló
+3.2.1.2.1.4.1. Célmező3: Üresmező
+3.2.1.2.1.4.2. Célmező3: Célhely
+3.2.1.2.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.1.4.5. Célmező3: Fal
+3.2.1.2.1.4.6. Célmező3: Lyuk
+3.2.1.2.1.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.3. Célmező1: Csapdaajtó(csukott)
+3.2.1.2.3.1. Célmező2: Üresmező
+3.2.1.2.3.1.1. Célmező3: Üresmező
+3.2.1.2.3.1.2. Célmező3: Célhely
+3.2.1.2.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.3.1.5. Célmező3: Fal
+3.2.1.2.3.1.6. Célmező3: Lyuk
+3.2.1.2.3.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.3.2. Célmező2: Célhely
+3.2.1.2.3.2.1. Célmező3: Üresmező
+3.2.1.2.3.2.2. Célmező3: Célhely
+3.2.1.2.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.3.2.5. Célmező3: Fal
+3.2.1.2.3.2.6. Célmező3: Lyuk
+3.2.1.2.3.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.2.3.3.1. Célmező3: Üresmező
+3.2.1.2.3.3.2. Célmező3: Célhely
+3.2.1.2.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.3.3.5. Célmező3: Fal
+3.2.1.2.3.3.6. Célmező3: Lyuk
+3.2.1.2.3.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.3.4. Célmező2: Kapcsoló
+3.2.1.2.3.4.1. Célmező3: Üresmező
+3.2.1.2.3.4.2. Célmező3: Célhely
+3.2.1.2.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.3.4.5. Célmező3: Fal
+3.2.1.2.3.4.6. Célmező3: Lyuk
+3.2.1.2.3.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.4. Célmező1: Kapcsoló
+3.2.1.2.4.1. Célmező2: Üresmező
+3.2.1.2.4.1.1. Célmező3: Üresmező
+3.2.1.2.4.1.2. Célmező3: Célhely
+3.2.1.2.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.4.1.5. Célmező3: Fal
+3.2.1.2.4.1.6. Célmező3: Lyuk
+3.2.1.2.4.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.4.2. Célmező2: Célhely
+3.2.1.2.4.2.1. Célmező3: Üresmező
+3.2.1.2.4.2.2. Célmező3: Célhely
+3.2.1.2.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.4.2.5. Célmező3: Fal
+3.2.1.2.4.2.6. Célmező3: Lyuk
+3.2.1.2.4.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.2.4.3.1. Célmező3: Üresmező
+3.2.1.2.4.3.2. Célmező3: Célhely
+3.2.1.2.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.4.3.5. Célmező3: Fal
+3.2.1.2.4.3.6. Célmező3: Lyuk
+3.2.1.2.4.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.2.4.4. Célmező2: Kapcsoló
+3.2.1.2.4.4.1. Célmező3: Üresmező
+3.2.1.2.4.4.2. Célmező3: Célhely
+3.2.1.2.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.2.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.2.4.4.5. Célmező3: Fal
+3.2.1.2.4.4.6. Célmező3: Lyuk
+3.2.1.2.4.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.3. Kiindulómező: Csapdaajtó(csukott)
+3.2.1.3.1. Célmező1: Üresmező
+3.2.1.3.1.1. Célmező2: Üresmező
+3.2.1.3.1.1.1. Célmező3: Üresmező
+3.2.1.3.1.1.2. Célmező3: Célhely
+3.2.1.3.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.1.1.5. Célmező3: Fal
+3.2.1.3.1.1.6. Célmező3: Lyuk
+3.2.1.3.1.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.1.2. Célmező2: Célhely
+3.2.1.3.1.2.1. Célmező3: Üresmező
+3.2.1.3.1.2.2. Célmező3: Célhely
+3.2.1.3.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.1.2.5. Célmező3: Fal
+3.2.1.3.1.2.6. Célmező3: Lyuk
+3.2.1.3.1.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.3.1.3.1. Célmező3: Üresmező
+3.2.1.3.1.3.2. Célmező3: Célhely
+3.2.1.3.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.1.3.5. Célmező3: Fal
+3.2.1.3.1.3.6. Célmező3: Lyuk
+3.2.1.3.1.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.1.4. Célmező2: Kapcsoló
+3.2.1.3.1.4.1. Célmező3: Üresmező
+3.2.1.3.1.4.2. Célmező3: Célhely
+3.2.1.3.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.1.4.5. Célmező3: Fal
+3.2.1.3.1.4.6. Célmező3: Lyuk
+3.2.1.3.1.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.2. Célmező1: Célhely
+3.2.1.3.2.1. Célmező2: Üresmező
+3.2.1.3.2.1.1. Célmező3: Üresmező
+3.2.1.3.2.1.2. Célmező3: Célhely
+3.2.1.3.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.2.1.5. Célmező3: Fal
+3.2.1.3.2.1.6. Célmező3: Lyuk
+3.2.1.3.2.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.2.2. Célmező2: Célhely
+3.2.1.3.2.2.1. Célmező3: Üresmező
+3.2.1.3.2.2.2. Célmező3: Célhely
+3.2.1.3.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.2.2.5. Célmező3: Fal
+3.2.1.3.2.2.6. Célmező3: Lyuk
+3.2.1.3.2.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.3.2.3.1. Célmező3: Üresmező
+3.2.1.3.2.3.2. Célmező3: Célhely
+3.2.1.3.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.2.3.5. Célmező3: Fal
+3.2.1.3.2.3.6. Célmező3: Lyuk
+3.2.1.3.2.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.2.4. Célmező2: Kapcsoló
+3.2.1.3.2.4.1. Célmező3: Üresmező
+3.2.1.3.2.4.2. Célmező3: Célhely
+3.2.1.3.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.2.4.5. Célmező3: Fal
+3.2.1.3.2.4.6. Célmező3: Lyuk
+3.2.1.3.2.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.3. Célmező1: Csapdaajtó(csukott)
+3.2.1.3.3.1. Célmező2: Üresmező
+3.2.1.3.3.1.1. Célmező3: Üresmező
+3.2.1.3.3.1.2. Célmező3: Célhely
+3.2.1.3.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.3.1.5. Célmező3: Fal
+3.2.1.3.3.1.6. Célmező3: Lyuk
+3.2.1.3.3.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.3.2. Célmező2: Célhely
+3.2.1.3.3.2.1. Célmező3: Üresmező
+3.2.1.3.3.2.2. Célmező3: Célhely
+3.2.1.3.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.3.2.5. Célmező3: Fal
+3.2.1.3.3.2.6. Célmező3: Lyuk
+3.2.1.3.3.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.3.3.3.1. Célmező3: Üresmező
+3.2.1.3.3.3.2. Célmező3: Célhely
+3.2.1.3.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.3.3.5. Célmező3: Fal
+3.2.1.3.3.3.6. Célmező3: Lyuk
+3.2.1.3.3.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.3.4. Célmező2: Kapcsoló
+3.2.1.3.3.4.1. Célmező3: Üresmező
+3.2.1.3.3.4.2. Célmező3: Célhely
+3.2.1.3.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.3.4.5. Célmező3: Fal
+3.2.1.3.3.4.6. Célmező3: Lyuk
+3.2.1.3.3.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.4. Célmező1: Kapcsoló
+3.2.1.3.4.1. Célmező2: Üresmező
+3.2.1.3.4.1.1. Célmező3: Üresmező
+3.2.1.3.4.1.2. Célmező3: Célhely
+3.2.1.3.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.4.1.5. Célmező3: Fal
+3.2.1.3.4.1.6. Célmező3: Lyuk
+3.2.1.3.4.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.4.2. Célmező2: Célhely
+3.2.1.3.4.2.1. Célmező3: Üresmező
+3.2.1.3.4.2.2. Célmező3: Célhely
+3.2.1.3.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.4.2.5. Célmező3: Fal
+3.2.1.3.4.2.6. Célmező3: Lyuk
+3.2.1.3.4.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.3.4.3.1. Célmező3: Üresmező
+3.2.1.3.4.3.2. Célmező3: Célhely
+3.2.1.3.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.4.3.5. Célmező3: Fal
+3.2.1.3.4.3.6. Célmező3: Lyuk
+3.2.1.3.4.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.3.4.4. Célmező2: Kapcsoló
+3.2.1.3.4.4.1. Célmező3: Üresmező
+3.2.1.3.4.4.2. Célmező3: Célhely
+3.2.1.3.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.3.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.3.4.4.5. Célmező3: Fal
+3.2.1.3.4.4.6. Célmező3: Lyuk
+3.2.1.3.4.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.4. Kiindulómező: Kapcsoló
+3.2.1.4.1. Célmező1: Üresmező
+3.2.1.4.1.1. Célmező2: Üresmező
+3.2.1.4.1.1.1. Célmező3: Üresmező
+3.2.1.4.1.1.2. Célmező3: Célhely
+3.2.1.4.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.1.1.5. Célmező3: Fal
+3.2.1.4.1.1.6. Célmező3: Lyuk
+3.2.1.4.1.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.1.2. Célmező2: Célhely
+3.2.1.4.1.2.1. Célmező3: Üresmező
+3.2.1.4.1.2.2. Célmező3: Célhely
+3.2.1.4.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.1.2.5. Célmező3: Fal
+3.2.1.4.1.2.6. Célmező3: Lyuk
+3.2.1.4.1.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.4.1.3.1. Célmező3: Üresmező
+3.2.1.4.1.3.2. Célmező3: Célhely
+3.2.1.4.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.1.3.5. Célmező3: Fal
+3.2.1.4.1.3.6. Célmező3: Lyuk
+3.2.1.4.1.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.1.4. Célmező2: Kapcsoló
+3.2.1.4.1.4.1. Célmező3: Üresmező
+3.2.1.4.1.4.2. Célmező3: Célhely
+3.2.1.4.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.1.4.5. Célmező3: Fal
+3.2.1.4.1.4.6. Célmező3: Lyuk
+3.2.1.4.1.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.2. Célmező1: Célhely
+3.2.1.4.2.1. Célmező2: Üresmező
+3.2.1.4.2.1.1. Célmező3: Üresmező
+3.2.1.4.2.1.2. Célmező3: Célhely
+3.2.1.4.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.2.1.5. Célmező3: Fal
+3.2.1.4.2.1.6. Célmező3: Lyuk
+3.2.1.4.2.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.2.2. Célmező2: Célhely
+3.2.1.4.2.2.1. Célmező3: Üresmező
+3.2.1.4.2.2.2. Célmező3: Célhely
+3.2.1.4.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.2.2.5. Célmező3: Fal
+3.2.1.4.2.2.6. Célmező3: Lyuk
+3.2.1.4.2.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.4.2.3.1. Célmező3: Üresmező
+3.2.1.4.2.3.2. Célmező3: Célhely
+3.2.1.4.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.2.3.5. Célmező3: Fal
+3.2.1.4.2.3.6. Célmező3: Lyuk
+3.2.1.4.2.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.2.4. Célmező2: Kapcsoló
+3.2.1.4.2.4.1. Célmező3: Üresmező
+3.2.1.4.2.4.2. Célmező3: Célhely
+3.2.1.4.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.2.4.5. Célmező3: Fal
+3.2.1.4.2.4.6. Célmező3: Lyuk
+3.2.1.4.2.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.3. Célmező1: Csapdaajtó(csukott)
+3.2.1.4.3.1. Célmező2: Üresmező
+3.2.1.4.3.1.1. Célmező3: Üresmező
+3.2.1.4.3.1.2. Célmező3: Célhely
+3.2.1.4.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.3.1.5. Célmező3: Fal
+3.2.1.4.3.1.6. Célmező3: Lyuk
+3.2.1.4.3.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.3.2. Célmező2: Célhely
+3.2.1.4.3.2.1. Célmező3: Üresmező
+3.2.1.4.3.2.2. Célmező3: Célhely
+3.2.1.4.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.3.2.5. Célmező3: Fal
+3.2.1.4.3.2.6. Célmező3: Lyuk
+3.2.1.4.3.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.4.3.3.1. Célmező3: Üresmező
+3.2.1.4.3.3.2. Célmező3: Célhely
+3.2.1.4.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.3.3.5. Célmező3: Fal
+3.2.1.4.3.3.6. Célmező3: Lyuk
+3.2.1.4.3.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.3.4. Célmező2: Kapcsoló
+3.2.1.4.3.4.1. Célmező3: Üresmező
+3.2.1.4.3.4.2. Célmező3: Célhely
+3.2.1.4.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.3.4.5. Célmező3: Fal
+3.2.1.4.3.4.6. Célmező3: Lyuk
+3.2.1.4.3.4.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.4. Célmező1: Kapcsoló
+3.2.1.4.4.1. Célmező2: Üresmező
+3.2.1.4.4.1.1. Célmező3: Üresmező
+3.2.1.4.4.1.2. Célmező3: Célhely
+3.2.1.4.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.4.1.5. Célmező3: Fal
+3.2.1.4.4.1.6. Célmező3: Lyuk
+3.2.1.4.4.1.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.4.2. Célmező2: Célhely
+3.2.1.4.4.2.1. Célmező3: Üresmező
+3.2.1.4.4.2.2. Célmező3: Célhely
+3.2.1.4.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.4.2.5. Célmező3: Fal
+3.2.1.4.4.2.6. Célmező3: Lyuk
+3.2.1.4.4.2.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.1.4.4.3.1. Célmező3: Üresmező
+3.2.1.4.4.3.2. Célmező3: Célhely
+3.2.1.4.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.4.3.5. Célmező3: Fal
+3.2.1.4.4.3.6. Célmező3: Lyuk
+3.2.1.4.4.3.7. Célmező3: Kapcsoló
+ 
+3.2.1.4.4.4. Célmező2: Kapcsoló
+3.2.1.4.4.4.1. Célmező3: Üresmező
+3.2.1.4.4.4.2. Célmező3: Célhely
+3.2.1.4.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.1.4.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.1.4.4.4.5. Célmező3: Fal
+3.2.1.4.4.4.6. Célmező3: Lyuk
+3.2.1.4.4.4.7. Célmező3: Kapcsoló
+ 
+3.2.2. Léptethető2: Játékos3
+3.2.2.1. Kiindulómező: Üresmező
+3.2.2.1.1. Célmező1: Üresmező
+3.2.2.1.1.1. Célmező2: Üresmező
+3.2.2.1.1.1.1. Célmező3: Üresmező
+3.2.2.1.1.1.2. Célmező3: Célhely
+3.2.2.1.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.1.1.5. Célmező3: Fal
+3.2.2.1.1.1.6. Célmező3: Lyuk
+3.2.2.1.1.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.1.2. Célmező2: Célhely
+3.2.2.1.1.2.1. Célmező3: Üresmező
+3.2.2.1.1.2.2. Célmező3: Célhely
+3.2.2.1.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.1.2.5. Célmező3: Fal
+3.2.2.1.1.2.6. Célmező3: Lyuk
+3.2.2.1.1.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.1.1.3.1. Célmező3: Üresmező
+3.2.2.1.1.3.2. Célmező3: Célhely
+3.2.2.1.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.1.3.5. Célmező3: Fal
+3.2.2.1.1.3.6. Célmező3: Lyuk
+3.2.2.1.1.3.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.1.4. Célmező2: Kapcsoló
+3.2.2.1.1.4.1. Célmező3: Üresmező
+3.2.2.1.1.4.2. Célmező3: Célhely
+3.2.2.1.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.1.4.5. Célmező3: Fal
+3.2.2.1.1.4.6. Célmező3: Lyuk
+3.2.2.1.1.4.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.2. Célmező1: Célhely
+3.2.2.1.2.1. Célmező2: Üresmező
+3.2.2.1.2.1.1. Célmező3: Üresmező
+3.2.2.1.2.1.2. Célmező3: Célhely
+3.2.2.1.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.2.1.5. Célmező3: Fal
+3.2.2.1.2.1.6. Célmező3: Lyuk
+3.2.2.1.2.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.2.2. Célmező2: Célhely
+3.2.2.1.2.2.1. Célmező3: Üresmező
+3.2.2.1.2.2.2. Célmező3: Célhely
+3.2.2.1.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.2.2.5. Célmező3: Fal
+3.2.2.1.2.2.6. Célmező3: Lyuk
+3.2.2.1.2.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.1.2.3.1. Célmező3: Üresmező
+3.2.2.1.2.3.2. Célmező3: Célhely
+3.2.2.1.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.2.3.5. Célmező3: Fal
+3.2.2.1.2.3.6. Célmező3: Lyuk
+3.2.2.1.2.3.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.2.4. Célmező2: Kapcsoló
+3.2.2.1.2.4.1. Célmező3: Üresmező
+3.2.2.1.2.4.2. Célmező3: Célhely
+3.2.2.1.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.2.4.5. Célmező3: Fal
+3.2.2.1.2.4.6. Célmező3: Lyuk
+3.2.2.1.2.4.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.3. Célmező1: Csapdaajtó(csukott)
+3.2.2.1.3.1. Célmező2: Üresmező
+3.2.2.1.3.1.1. Célmező3: Üresmező
+3.2.2.1.3.1.2. Célmező3: Célhely
+3.2.2.1.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.3.1.5. Célmező3: Fal
+3.2.2.1.3.1.6. Célmező3: Lyuk
+3.2.2.1.3.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.3.2. Célmező2: Célhely
+3.2.2.1.3.2.1. Célmező3: Üresmező
+3.2.2.1.3.2.2. Célmező3: Célhely
+3.2.2.1.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.3.2.5. Célmező3: Fal
+3.2.2.1.3.2.6. Célmező3: Lyuk
+3.2.2.1.3.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.1.3.3.1. Célmező3: Üresmező
+3.2.2.1.3.3.2. Célmező3: Célhely
+3.2.2.1.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.3.3.5. Célmező3: Fal
+3.2.2.1.3.3.6. Célmező3: Lyuk
+3.2.2.1.3.3.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.3.4. Célmező2: Kapcsoló
+3.2.2.1.3.4.1. Célmező3: Üresmező
+3.2.2.1.3.4.2. Célmező3: Célhely
+3.2.2.1.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.3.4.5. Célmező3: Fal
+3.2.2.1.3.4.6. Célmező3: Lyuk
+3.2.2.1.3.4.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.4. Célmező1: Kapcsoló
+3.2.2.1.4.1. Célmező2: Üresmező
+3.2.2.1.4.1.1. Célmező3: Üresmező
+3.2.2.1.4.1.2. Célmező3: Célhely
+3.2.2.1.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.4.1.5. Célmező3: Fal
+3.2.2.1.4.1.6. Célmező3: Lyuk
+3.2.2.1.4.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.4.2. Célmező2: Célhely
+3.2.2.1.4.2.1. Célmező3: Üresmező
+3.2.2.1.4.2.2. Célmező3: Célhely
+3.2.2.1.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.4.2.5. Célmező3: Fal
+3.2.2.1.4.2.6. Célmező3: Lyuk
+3.2.2.1.4.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.1.4.3.1. Célmező3: Üresmező
+3.2.2.1.4.3.2. Célmező3: Célhely
+3.2.2.1.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.4.3.5. Célmező3: Fal
+3.2.2.1.4.3.6. Célmező3: Lyuk
+3.2.2.1.4.3.7. Célmező3: Kapcsoló
+ 
+3.2.2.1.4.4. Célmező2: Kapcsoló
+3.2.2.1.4.4.1. Célmező3: Üresmező
+3.2.2.1.4.4.2. Célmező3: Célhely
+3.2.2.1.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.1.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.1.4.4.5. Célmező3: Fal
+3.2.2.1.4.4.6. Célmező3: Lyuk
+3.2.2.1.4.4.7. Célmező3: Kapcsoló
+ 
+3.2.2.2. Kiindulómező: Célhely
+3.2.2.2.1. Célmező1: Üresmező
+3.2.2.2.1.1. Célmező2: Üresmező
+3.2.2.2.1.1.1. Célmező3: Üresmező
+3.2.2.2.1.1.2. Célmező3: Célhely
+3.2.2.2.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.1.1.5. Célmező3: Fal
+3.2.2.2.1.1.6. Célmező3: Lyuk
+3.2.2.2.1.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.1.2. Célmező2: Célhely
+3.2.2.2.1.2.1. Célmező3: Üresmező
+3.2.2.2.1.2.2. Célmező3: Célhely
+3.2.2.2.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.1.2.5. Célmező3: Fal
+3.2.2.2.1.2.6. Célmező3: Lyuk
+3.2.2.2.1.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.2.1.3.1. Célmező3: Üresmező
+3.2.2.2.1.3.2. Célmező3: Célhely
+3.2.2.2.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.1.3.5. Célmező3: Fal
+3.2.2.2.1.3.6. Célmező3: Lyuk
+3.2.2.2.1.3.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.1.4. Célmező2: Kapcsoló
+3.2.2.2.1.4.1. Célmező3: Üresmező
+3.2.2.2.1.4.2. Célmező3: Célhely
+3.2.2.2.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.1.4.5. Célmező3: Fal
+3.2.2.2.1.4.6. Célmező3: Lyuk
+3.2.2.2.1.4.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.2. Célmező1: Célhely
+3.2.2.2.2.1. Célmező2: Üresmező
+3.2.2.2.2.1.1. Célmező3: Üresmező
+3.2.2.2.2.1.2. Célmező3: Célhely
+3.2.2.2.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.2.1.5. Célmező3: Fal
+3.2.2.2.2.1.6. Célmező3: Lyuk
+3.2.2.2.2.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.2.2. Célmező2: Célhely
+3.2.2.2.2.2.1. Célmező3: Üresmező
+3.2.2.2.2.2.2. Célmező3: Célhely
+3.2.2.2.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.2.2.5. Célmező3: Fal
+3.2.2.2.2.2.6. Célmező3: Lyuk
+3.2.2.2.2.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.2.2.3.1. Célmező3: Üresmező
+3.2.2.2.2.3.2. Célmező3: Célhely
+3.2.2.2.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.2.3.5. Célmező3: Fal
+3.2.2.2.2.3.6. Célmező3: Lyuk
+3.2.2.2.2.3.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.2.4. Célmező2: Kapcsoló
+3.2.2.2.2.4.1. Célmező3: Üresmező
+3.2.2.2.2.4.2. Célmező3: Célhely
+3.2.2.2.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.2.4.5. Célmező3: Fal
+3.2.2.2.2.4.6. Célmező3: Lyuk
+3.2.2.2.2.4.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.3. Célmező1: Csapdaajtó(csukott)
+3.2.2.2.3.1. Célmező2: Üresmező
+3.2.2.2.3.1.1. Célmező3: Üresmező
+3.2.2.2.3.1.2. Célmező3: Célhely
+3.2.2.2.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.3.1.5. Célmező3: Fal
+3.2.2.2.3.1.6. Célmező3: Lyuk
+3.2.2.2.3.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.3.2. Célmező2: Célhely
+3.2.2.2.3.2.1. Célmező3: Üresmező
+3.2.2.2.3.2.2. Célmező3: Célhely
+3.2.2.2.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.3.2.5. Célmező3: Fal
+3.2.2.2.3.2.6. Célmező3: Lyuk
+3.2.2.2.3.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.2.3.3.1. Célmező3: Üresmező
+3.2.2.2.3.3.2. Célmező3: Célhely
+3.2.2.2.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.3.3.5. Célmező3: Fal
+3.2.2.2.3.3.6. Célmező3: Lyuk
+3.2.2.2.3.3.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.3.4. Célmező2: Kapcsoló
+3.2.2.2.3.4.1. Célmező3: Üresmező
+3.2.2.2.3.4.2. Célmező3: Célhely
+3.2.2.2.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.3.4.5. Célmező3: Fal
+3.2.2.2.3.4.6. Célmező3: Lyuk
+3.2.2.2.3.4.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.4. Célmező1: Kapcsoló
+3.2.2.2.4.1. Célmező2: Üresmező
+3.2.2.2.4.1.1. Célmező3: Üresmező
+3.2.2.2.4.1.2. Célmező3: Célhely
+3.2.2.2.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.4.1.5. Célmező3: Fal
+3.2.2.2.4.1.6. Célmező3: Lyuk
+3.2.2.2.4.1.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.4.2. Célmező2: Célhely
+3.2.2.2.4.2.1. Célmező3: Üresmező
+3.2.2.2.4.2.2. Célmező3: Célhely
+3.2.2.2.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.4.2.5. Célmező3: Fal
+3.2.2.2.4.2.6. Célmező3: Lyuk
+3.2.2.2.4.2.7. Célmező3: Kapcsoló
+ 
+3.2.2.2.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.2.4.3.1. Célmező3: Üresmező
+3.2.2.2.4.3.2. Célmező3: Célhely
+3.2.2.2.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.4.3.5. Célmező3: Fal
+3.2.2.2.4.3.6. Célmező3: Lyuk
+3.2.2.2.4.3.7. Célmező3: Kapcsoló
+
+3.2.2.2.4.4. Célmező2: Kapcsoló
+3.2.2.2.4.4.1. Célmező3: Üresmező
+3.2.2.2.4.4.2. Célmező3: Célhely
+3.2.2.2.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.2.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.2.4.4.5. Célmező3: Fal
+3.2.2.2.4.4.6. Célmező3: Lyuk
+3.2.2.2.4.4.7. Célmező3: Kapcsoló
+
+3.2.2.3. Kiindulómező: Csapdaajtó(csukott)
+3.2.2.3.1. Célmező1: Üresmező
+3.2.2.3.1.1. Célmező2: Üresmező
+3.2.2.3.1.1.1. Célmező3: Üresmező
+3.2.2.3.1.1.2. Célmező3: Célhely
+3.2.2.3.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.1.1.5. Célmező3: Fal
+3.2.2.3.1.1.6. Célmező3: Lyuk
+3.2.2.3.1.1.7. Célmező3: Kapcsoló
+
+3.2.2.3.1.2. Célmező2: Célhely
+3.2.2.3.1.2.1. Célmező3: Üresmező
+3.2.2.3.1.2.2. Célmező3: Célhely
+3.2.2.3.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.1.2.5. Célmező3: Fal
+3.2.2.3.1.2.6. Célmező3: Lyuk
+3.2.2.3.1.2.7. Célmező3: Kapcsoló
+
+3.2.2.3.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.3.1.3.1. Célmező3: Üresmező
+3.2.2.3.1.3.2. Célmező3: Célhely
+3.2.2.3.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.1.3.5. Célmező3: Fal
+3.2.2.3.1.3.6. Célmező3: Lyuk
+3.2.2.3.1.3.7. Célmező3: Kapcsoló
+
+3.2.2.3.1.4. Célmező2: Kapcsoló
+3.2.2.3.1.4.1. Célmező3: Üresmező
+3.2.2.3.1.4.2. Célmező3: Célhely
+3.2.2.3.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.1.4.5. Célmező3: Fal
+3.2.2.3.1.4.6. Célmező3: Lyuk
+3.2.2.3.1.4.7. Célmező3: Kapcsoló
+
+3.2.2.3.2. Célmező1: Célhely
+3.2.2.3.2.1. Célmező2: Üresmező
+3.2.2.3.2.1.1. Célmező3: Üresmező
+3.2.2.3.2.1.2. Célmező3: Célhely
+3.2.2.3.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.2.1.5. Célmező3: Fal
+3.2.2.3.2.1.6. Célmező3: Lyuk
+3.2.2.3.2.1.7. Célmező3: Kapcsoló
+
+3.2.2.3.2.2. Célmező2: Célhely
+3.2.2.3.2.2.1. Célmező3: Üresmező
+3.2.2.3.2.2.2. Célmező3: Célhely
+3.2.2.3.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.2.2.5. Célmező3: Fal
+3.2.2.3.2.2.6. Célmező3: Lyuk
+3.2.2.3.2.2.7. Célmező3: Kapcsoló
+
+3.2.2.3.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.3.2.3.1. Célmező3: Üresmező
+3.2.2.3.2.3.2. Célmező3: Célhely
+3.2.2.3.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.2.3.5. Célmező3: Fal
+3.2.2.3.2.3.6. Célmező3: Lyuk
+3.2.2.3.2.3.7. Célmező3: Kapcsoló
+
+3.2.2.3.2.4. Célmező2: Kapcsoló
+3.2.2.3.2.4.1. Célmező3: Üresmező
+3.2.2.3.2.4.2. Célmező3: Célhely
+3.1.2.3.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.2.4.5. Célmező3: Fal
+3.2.2.3.2.4.6. Célmező3: Lyuk
+3.2.2.3.2.4.7. Célmező3: Kapcsoló
+
+3.2.2.3.3. Célmező1: Csapdaajtó(csukott)
+3.2.2.3.3.1. Célmező2: Üresmező
+3.2.2.3.3.1.1. Célmező3: Üresmező
+3.2.2.3.3.1.2. Célmező3: Célhely
+3.2.2.3.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.3.1.5. Célmező3: Fal
+3.2.2.3.3.1.6. Célmező3: Lyuk
+3.2.2.3.3.1.7. Célmező3: Kapcsoló
+
+3.2.2.3.3.2. Célmező2: Célhely
+3.2.2.3.3.2.1. Célmező3: Üresmező
+3.2.2.3.3.2.2. Célmező3: Célhely
+3.2.2.3.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.3.2.5. Célmező3: Fal
+3.2.2.3.3.2.6. Célmező3: Lyuk
+3.2.2.3.3.2.7. Célmező3: Kapcsoló
+
+3.2.2.3.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.3.3.3.1. Célmező3: Üresmező
+3.2.2.3.3.3.2. Célmező3: Célhely
+3.2.2.3.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.3.3.5. Célmező3: Fal
+3.2.2.3.3.3.6. Célmező3: Lyuk
+3.2.2.3.3.3.7. Célmező3: Kapcsoló
+
+3.2.2.3.3.4. Célmező2: Kapcsoló
+3.2.2.3.3.4.1. Célmező3: Üresmező
+3.2.2.3.3.4.2. Célmező3: Célhely
+3.2.2.3.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.3.4.5. Célmező3: Fal
+3.2.2.3.3.4.6. Célmező3: Lyuk
+3.2.2.3.3.4.7. Célmező3: Kapcsoló
+
+3.2.2.3.4. Célmező1: Kapcsoló
+3.2.2.3.4.1. Célmező2: Üresmező
+3.2.2.3.4.1.1. Célmező3: Üresmező
+3.2.2.3.4.1.2. Célmező3: Célhely
+3.2.2.3.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.4.1.5. Célmező3: Fal
+3.2.2.3.4.1.6. Célmező3: Lyuk
+3.2.2.3.4.1.7. Célmező3: Kapcsoló
+
+3.2.2.3.4.2. Célmező2: Célhely
+3.2.2.3.4.2.1. Célmező3: Üresmező
+3.2.2.3.4.2.2. Célmező3: Célhely
+3.2.2.3.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.4.2.5. Célmező3: Fal
+3.2.2.3.4.2.6. Célmező3: Lyuk
+3.2.2.3.4.2.7. Célmező3: Kapcsoló
+
+3.2.2.3.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.3.4.3.1. Célmező3: Üresmező
+3.2.2.3.4.3.2. Célmező3: Célhely
+3.2.2.3.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.4.3.5. Célmező3: Fal
+3.2.2.3.4.3.6. Célmező3: Lyuk
+3.2.2.3.4.3.7. Célmező3: Kapcsoló
+
+3.2.2.3.4.4. Célmező2: Kapcsoló
+3.2.2.3.4.4.1. Célmező3: Üresmező
+3.2.2.3.4.4.2. Célmező3: Célhely
+3.2.2.3.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.3.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.3.4.4.5. Célmező3: Fal
+3.2.2.3.4.4.6. Célmező3: Lyuk
+3.2.2.3.4.4.7. Célmező3: Kapcsoló
+
+3.2.2.4. Kiindulómező: Kapcsoló
+3.2.2.4.1. Célmező1: Üresmező
+3.2.2.4.1.1. Célmező2: Üresmező
+3.2.2.4.1.1.1. Célmező3: Üresmező
+3.2.2.4.1.1.2. Célmező3: Célhely
+3.2.2.4.1.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.1.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.1.1.5. Célmező3: Fal
+3.2.2.4.1.1.6. Célmező3: Lyuk
+3.2.2.4.1.1.7. Célmező3: Kapcsoló
+
+3.2.2.4.1.2. Célmező2: Célhely
+3.2.2.4.1.2.1. Célmező3: Üresmező
+3.2.2.4.1.2.2. Célmező3: Célhely
+3.2.2.4.1.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.1.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.1.2.5. Célmező3: Fal
+3.2.2.4.1.2.6. Célmező3: Lyuk
+3.2.2.4.1.2.7. Célmező3: Kapcsoló
+
+3.2.2.4.1.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.4.1.3.1. Célmező3: Üresmező
+3.2.2.4.1.3.2. Célmező3: Célhely
+3.2.2.4.1.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.1.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.1.3.5. Célmező3: Fal
+3.2.2.4.1.3.6. Célmező3: Lyuk
+3.2.2.4.1.3.7. Célmező3: Kapcsoló
+
+3.2.2.4.1.4. Célmező2: Kapcsoló
+3.2.2.4.1.4.1. Célmező3: Üresmező
+3.2.2.4.1.4.2. Célmező3: Célhely
+3.2.2.4.1.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.1.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.1.4.5. Célmező3: Fal
+3.2.2.4.1.4.6. Célmező3: Lyuk
+3.2.2.4.1.4.7. Célmező3: Kapcsoló
+
+3.2.2.4.2. Célmező1: Célhely
+3.2.2.4.2.1. Célmező2: Üresmező
+3.2.2.4.2.1.1. Célmező3: Üresmező
+3.2.2.4.2.1.2. Célmező3: Célhely
+3.2.2.4.2.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.2.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.2.1.5. Célmező3: Fal
+3.2.2.4.2.1.6. Célmező3: Lyuk
+3.2.2.4.2.1.7. Célmező3: Kapcsoló
+
+3.2.2.4.2.2. Célmező2: Célhely
+3.2.2.4.2.2.1. Célmező3: Üresmező
+3.2.2.4.2.2.2. Célmező3: Célhely
+3.2.2.4.2.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.2.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.2.2.5. Célmező3: Fal
+3.2.2.4.2.2.6. Célmező3: Lyuk
+3.2.2.4.2.2.7. Célmező3: Kapcsoló
+
+3.2.2.4.2.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.4.2.3.1. Célmező3: Üresmező
+3.2.2.4.2.3.2. Célmező3: Célhely
+3.2.2.4.2.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.2.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.2.3.5. Célmező3: Fal
+3.2.2.4.2.3.6. Célmező3: Lyuk
+3.2.2.4.2.3.7. Célmező3: Kapcsoló
+
+3.2.2.4.2.4. Célmező2: Kapcsoló
+3.2.2.4.2.4.1. Célmező3: Üresmező
+3.2.2.4.2.4.2. Célmező3: Célhely
+3.2.2.4.2.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.2.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.2.4.5. Célmező3: Fal
+3.2.2.4.2.4.6. Célmező3: Lyuk
+3.2.2.4.2.4.7. Célmező3: Kapcsoló
+
+3.2.2.4.3. Célmező1: Csapdaajtó(csukott)
+3.2.2.4.3.1. Célmező2: Üresmező
+3.2.2.4.3.1.1. Célmező3: Üresmező
+3.2.2.4.3.1.2. Célmező3: Célhely
+3.2.2.4.3.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.3.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.3.1.5. Célmező3: Fal
+3.2.2.4.3.1.6. Célmező3: Lyuk
+3.2.2.4.3.1.7. Célmező3: Kapcsoló
+
+3.2.2.4.3.2. Célmező2: Célhely
+3.2.2.4.3.2.1. Célmező3: Üresmező
+3.2.2.4.3.2.2. Célmező3: Célhely
+3.2.2.4.3.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.3.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.3.2.5. Célmező3: Fal
+3.2.2.4.3.2.6. Célmező3: Lyuk
+3.2.2.4.3.2.7. Célmező3: Kapcsoló
+
+3.2.2.4.3.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.4.3.3.1. Célmező3: Üresmező
+3.2.2.4.3.3.2. Célmező3: Célhely
+3.2.2.4.3.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.3.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.3.3.5. Célmező3: Fal
+3.2.2.4.3.3.6. Célmező3: Lyuk
+3.2.2.4.3.3.7. Célmező3: Kapcsoló
+
+3.2.2.4.3.4. Célmező2: Kapcsoló
+3.2.2.4.3.4.1. Célmező3: Üresmező
+3.2.2.4.3.4.2. Célmező3: Célhely
+3.2.2.4.3.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.3.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.3.4.5. Célmező3: Fal
+3.2.2.4.3.4.6. Célmező3: Lyuk
+3.2.2.4.3.4.7. Célmező3: Kapcsoló
+
+3.2.2.4.4. Célmező1: Kapcsoló
+3.2.2.4.4.1. Célmező2: Üresmező
+3.2.2.4.4.1.1. Célmező3: Üresmező
+3.2.2.4.4.1.2. Célmező3: Célhely
+3.2.2.4.4.1.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.4.1.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.4.1.5. Célmező3: Fal
+3.2.2.4.4.1.6. Célmező3: Lyuk
+3.2.2.4.4.1.7. Célmező3: Kapcsoló
+
+3.2.2.4.4.2. Célmező2: Célhely
+3.2.2.4.4.2.1. Célmező3: Üresmező
+3.2.2.4.4.2.2. Célmező3: Célhely
+3.2.2.4.4.2.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.4.2.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.4.2.5. Célmező3: Fal
+3.2.2.4.4.2.6. Célmező3: Lyuk
+3.2.2.4.4.2.7. Célmező3: Kapcsoló
+
+3.2.2.4.4.3. Célmező2: Csapdaajtó(csukott)
+3.2.2.4.4.3.1. Célmező3: Üresmező
+3.2.2.4.4.3.2. Célmező3: Célhely
+3.2.2.4.4.3.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.4.3.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.4.3.5. Célmező3: Fal
+3.2.2.4.4.3.6. Célmező3: Lyuk
+3.2.2.4.4.3.7. Célmező3: Kapcsoló
+
+3.2.2.4.4.4. Célmező2: Kapcsoló
+3.2.2.4.4.4.1. Célmező3: Üresmező
+3.2.2.4.4.4.2. Célmező3: Célhely
+3.2.2.4.4.4.3. Célmező3: Csapdaajtó(nyitott)
+3.2.2.4.4.4.4. Célmező3: Csapdaajtó(csukott)
+3.2.2.4.4.4.5. Célmező3: Fal
+3.2.2.4.4.4.6. Célmező3: Lyuk
+3.2.2.4.4.4.7. Célmező3: Kapcsoló
