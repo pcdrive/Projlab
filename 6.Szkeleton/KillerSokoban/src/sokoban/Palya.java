@@ -41,7 +41,7 @@ public class Palya {
     /**
      * A jatekos lepeset inditja el.
      *
-     * @param i Irany amerre lepni akarunk
+     * @param i   Irany amerre lepni akarunk
      * @param nev A jatekos neve, azonositoja, akit leptetni akarunk.
      */
     public void Leptet(Irany i, String nev) {

@@ -23,8 +23,8 @@ public class Jatekos extends Leptetheto {
      * Az osztaly konstruktora. Beallitja a nevet, palyat és a mezot.
      *
      * @param nev A jatekos neve.
-     * @param p A palya.
-     * @param m A mezo, amin all.
+     * @param p   A palya.
+     * @param m   A mezo, amin all.
      */
     public Jatekos(String nev, Palya p, UresMezo m) {
         super(p, m);
@@ -85,8 +85,7 @@ public class Jatekos extends Leptetheto {
      * Az objektumot egy doboz tolta meg, és az ezzel valo interakciot kezeli.
      *
      * @param i Irany amerre a dobozt tolták
-     * @param j  Jatekos, aki tolást kezdte
-     *
+     * @param j Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     public boolean Utkozik(Irany i, Jatekos j) {
@@ -110,8 +109,7 @@ public class Jatekos extends Leptetheto {
      * Az objektumot egy jatekos tolta meg, és az ezzel valo interakciot kezeli.
      *
      * @param i Irany amerre a dobozt tolták
-     * @param j  Jatekos, aki tolást kezdte
-     *
+     * @param j Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     public boolean Tol(Irany i, Jatekos j) {

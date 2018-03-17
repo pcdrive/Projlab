@@ -51,7 +51,6 @@ public class Pontok {
      * metodusat.
      *
      * @param nev A jatekos neve.
-     *
      * @return int A pontok szama.
      */
     public int getPont(String nev) {

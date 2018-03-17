@@ -33,10 +33,9 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd JeloltDoboz, ami a mezore kivan lepni
      * @param j  Jatekos, aki lepest tette.
-     *
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
@@ -60,10 +59,9 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
-     * @param j  Jatekos, aki lepest tette.
-     *
+     * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
@@ -81,8 +79,7 @@ public class Celhely extends UresMezo {
      *
      * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d Doboz, ami a mezore kivan lepni
-     * @param j  Jatekos, aki lepest tette.
-     *
+     * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {

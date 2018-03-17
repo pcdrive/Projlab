@@ -52,8 +52,7 @@ public class Doboz extends Leptetheto {
      * Az objektumot egy doboz tolta meg, �s az ezzel valo interakciot kezeli.
      *
      * @param i Irany amerre a dobozt tolt�k
-     * @param j  Jatekos, aki tol�st kezdte
-     *
+     * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     public boolean Utkozik(Irany i, Jatekos j) {
@@ -69,8 +68,7 @@ public class Doboz extends Leptetheto {
      * Az objektumot egy jatekos tolta meg, �s az ezzel valo interakciot kezeli.
      *
      * @param i Irany amerre a dobozt tolt�k
-     * @param j  Jatekos, aki tol�st kezdte
-     *
+     * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     public boolean Tol(Irany i, Jatekos j) {

@@ -22,8 +22,8 @@ public abstract class Leptetheto {
     /**
      * Az osztaly konstruktora.
      *
-     * @param p  A palya.
-     * @param m  A mezo amin all.
+     * @param p A palya.
+     * @param m A mezo amin all.
      */
     public Leptetheto(Palya p, UresMezo m) {
         palya = p;
@@ -34,8 +34,7 @@ public abstract class Leptetheto {
      * Az objektumot egy doboz tolta meg, �s az ezzel valo interakciot kezeli.
      *
      * @param i Irany amerre a dobozt tolt�k
-     * @param j  Jatekos, aki tol�st kezdte
-     *
+     * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
      */
     public abstract boolean Utkozik(Irany i, Jatekos j);
@@ -44,8 +43,7 @@ public abstract class Leptetheto {
      * Az objektumot egy doboz jatekos meg, �s az ezzel valo interakciot kezeli.
      *
      * @param i Irany amerre a dobozt tolt�k
-     * @param j  Jatekos, aki tol�st kezdte
-     *
+     * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
      */
     public abstract boolean Tol(Irany i, Jatekos j);
