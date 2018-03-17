@@ -15,25 +15,37 @@
 
 package sokoban;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class Pontok {
 
-	private List<Pont> pontok;
+	private ArrayList<Pont> pontok;
 	   
 	   /**
 	   * Az osztaly konstruktora. Letrehozza a pontok listajat.
 	   */	
 	public Pontok() 
-	{
+	{ 
+		pontok = new ArrayList<Pont>();
 	}
 	
 	   /**
 	   * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaly pontot kap
 	   * metodusat.
+	   * 
+	   * @param nev A jatekos neve, aki a pontot kapja.
 	   */
-	public void PontotKap(Jatekos j) {
+	public void PontotKap(String nev) {
 		System.out.println("Pontok"+'\t'+"PontotKap(Jatekos)");
+		
+		for (Pont p: pontok) 
+		{
+			if (p.getNev()==nev) 
+			{
+				p.PontotAd();
+			}
+		}
+		
 	}
 	
 	   /**
@@ -45,8 +57,15 @@ public class Pontok {
 	   * @return int A pontok szama.
 	   */
 	public int getPont(String nev) {
-		System.out.println("Pontok"+'\t'+"getPont(int)");
-		System.out.println("A jatekos pontjainak szama");
+		
+		for (Pont p: pontok) 
+		{
+			if (p.getNev()==nev) 
+			{
+				return p.getPont();
+			}
+		}
+		
 		return 0;
 	}
 	

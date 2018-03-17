@@ -21,6 +21,9 @@ public class JeloltDoboz extends Doboz {
 	
 	   /**
 	   * Az osztaly konstruktora. Beallitja a jelet, palyat es a mezot.
+	   * 
+	   * @param p A palya.
+	   * @param m A mezo, amin all.
 	   */
 	public JeloltDoboz(Palya p, UresMezo m) {
 		super(p,m);
@@ -32,6 +35,7 @@ public class JeloltDoboz extends Doboz {
 	   */
 	public void JeletTorol() {
 		System.out.println("JeloltDoboz"+'\t'+"JeletTorol()");
+		jel = false;
 	}
 	
 	   /**

@@ -53,11 +53,9 @@ public class Pont {
 	
 	   /**
 	   * Pontot ad a jatekosnak.
-	   * 
-	   * @param i A pontok erteke.
 	   */
-	public void PontotAd(int i) {
-		
+	public void PontotAd() {
+		pont++;
 	}
 	
 }

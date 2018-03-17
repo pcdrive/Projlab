@@ -19,6 +19,9 @@ public class Doboz extends Leptetheto {
 	
 	   /**
 	   * Az osztaly konstruktora. Beallitja a mezot es a palyat.
+	   * 
+	   * @param p A palya.
+	   * @param m A mezo, amin all.
 	   */
 	public Doboz(Palya p, UresMezo m) {
 		super(p,m);
@@ -55,7 +58,7 @@ public class Doboz extends Leptetheto {
 		System.out.println("Doboz"+'\t'+"Utkozik(Irany, Jatekos)");
 		boolean success=mezo.GetSzomszed(i).Fogad(i, this, j);
 		if(success==true)
-		mezo.Enged(this);
+		mezo.Enged();
 		System.out.println(success);
 		return success;
 	}
@@ -72,7 +75,7 @@ public class Doboz extends Leptetheto {
 		System.out.println("Doboz"+'\t'+"Tol(Irany, Jatekos)");
 		boolean success=mezo.GetSzomszed(i).Fogad(i, this, j);
 		if(success==true)
-		mezo.Enged(this);
+		mezo.Enged();
 		System.out.println(success);
 		return success;
 	}

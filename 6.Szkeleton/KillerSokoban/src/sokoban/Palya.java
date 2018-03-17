@@ -15,6 +15,7 @@
 
 package sokoban;
 
+import java.util.ArrayList;
 
 @SuppressWarnings("unused")
 
@@ -22,8 +23,8 @@ public class Palya{
 	private Jatek jatek;
 	private UresMezo mezok[];
 	private Pontok pontok;
-	private Doboz dobozok[];
-	private Jatekos jatekosok[];
+	private ArrayList<Doboz> dobozok;
+	private ArrayList<Jatekos> jatekosok;
 	
 	   /**
 	   * Az osztaly konstruktora. Letrehozza a pontok osztalyt, és beallitja a jatekot.
@@ -31,6 +32,8 @@ public class Palya{
 	public Palya(Jatek j) {
 		jatek=j;
 		pontok = new Pontok();
+		dobozok = new ArrayList<Doboz>();
+		jatekosok = new ArrayList<Jatekos>();
 	}
 	
 
@@ -42,6 +45,14 @@ public class Palya{
 	   */
 	public void Leptet(Irany i, String nev) {
 		System.out.println("Palya"+'\t'+"Leptet()");
+		
+		for (Jatekos j: jatekosok) 
+		{
+			if (j.getNev()==nev) 
+			{
+				j.Lepes(i);
+			}
+		}
 	}
 
 	   /**
@@ -51,24 +62,29 @@ public class Palya{
 	   */
 	public void Halal(Jatekos j) {
 		System.out.println("Palya"+'\t'+"Halal(Jatekos)");
+		
+		jatekosok.remove(j);
 	}
 
 	   /**
 	   * A dobozt torli a listabol.
 	   * 
-	   * @param j A doboz akinek meg kell halnia.
+	   * @param d A doboz akinek meg kell halnia.
 	   */
 	public void Halal(Doboz d) {
 		System.out.println("Palya"+'\t'+"Halal(Doboz)");
+		dobozok.remove(d);
 	}
 	
 	   /**
 	   * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaj pontot kap
 	   * metodusat.
+	   * 
+	   * @param j A jatekos aki a pontot kapja.
 	   */
 	public void PontotKap(Jatekos j) {
 		System.out.println("Palya"+'\t'+"PontotKap(Jatekos)");
-		pontok.PontotKap(j);
+		pontok.PontotKap(j.getNev());
 	}
 	
 	   /**

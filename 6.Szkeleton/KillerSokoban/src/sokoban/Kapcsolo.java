@@ -15,16 +15,18 @@
 
 package sokoban;
 
+import java.util.ArrayList;
+
 public class Kapcsolo extends UresMezo {
 	
-	private Csapdaajto csapdak[];
+	private ArrayList<Csapdaajto> csapdak;
 	
 	   /**
 	   * Az osztaly konstruktora. Letrehozza a tombbot amiben a szomszedokat taroljuk.
 	   */
 	public Kapcsolo(){
 		super();
-		csapdak = new Csapdaajto[4];
+		csapdak = new ArrayList<Csapdaajto>();
 	}
 	
 	   /**
@@ -43,11 +45,12 @@ public class Kapcsolo extends UresMezo {
 		System.out.println("Kapcsolo"+'\t'+"Fogad(Jatekos)");
 		boolean success=super.Fogad(i,aktj,j);
 		
-		if(success==true) {
+		if(success) {
 			for(Csapdaajto c: csapdak) {
 				c.Csuk();
 			}
 		}
+		
 		System.out.println(success);
 		return success;
 	}
@@ -65,18 +68,28 @@ public class Kapcsolo extends UresMezo {
 	   * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
 	   */
 	public boolean Fogad(Irany i, Doboz d, Jatekos j) {
+		
 		System.out.println("Kapcsolo"+'\t'+"Fogad(Doboz,Jatekos)");
 		boolean success=super.Fogad(i, d, j);
 		
 		if(success==true) {
-		for(Csapdaajto c: csapdak) {
-			c.Nyit();
+			for(Csapdaajto c: csapdak) {
+				c.Nyit();
+			}
 		}
-		}
+		
 		System.out.println(success);
 		return success;
 	}
 	
-	
+	   /**
+	   * A kapcsolora kot egy csapdat.
+	   * 
+	   * @param c A kapcsolohoz adni kivant csapda.
+	   */
+	public void addCsapda(Csapdaajto c) 
+	{
+		csapdak.add(c);
+	}
 	
 }

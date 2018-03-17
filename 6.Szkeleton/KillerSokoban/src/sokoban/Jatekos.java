@@ -20,6 +20,10 @@ public class Jatekos extends Leptetheto{
 	
 	   /**
 	   * Az osztaly konstruktora. Beallitja a nevet, palyat és a mezot.
+	   * 
+	   * @param nev A jatekos neve.
+	   * @param p A palya.
+	   * @param m A mezo, amin all.
 	   */
 	public Jatekos(String nev, Palya p, UresMezo m) {
 		super(p,m);
@@ -46,11 +50,10 @@ public class Jatekos extends Leptetheto{
 	   */
 	public void Lepes(Irany i) {
 		System.out.println("Jatekos"+'\t'+"Lepes(Irany)");
-		UresMezo celmezo=mezo.GetSzomszed(i);
-		boolean success=celmezo.Fogad(i, this, this);
+		boolean success = mezo.GetSzomszed(i).Fogad(i, this, this);
 		
 		if(success==true) {
-			mezo.Enged(this);
+			mezo.Enged();
 		}		
 		palya.Vegellenorzes();			
 	}
@@ -83,15 +86,15 @@ public class Jatekos extends Leptetheto{
 	   * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
 	   */
 	public boolean Utkozik(Irany i, Jatekos j) {
+		
 		System.out.println("Jatekos"+'\t'+"Utkozik(Irany, Jatekos)");
-		for(Irany option: Irany.values()) {
-			UresMezo celmezo=mezo.GetSzomszed(option);
-			boolean success=celmezo.Fogad(i, this, j);
-			if(success==true) {
-			mezo.Enged(this);
+		
+		
+		boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
+		if(success==true) {
+			mezo.Enged();
 			System.out.println(true);
 			return true;
-			}
 		}
 		
 		Halal();
@@ -108,11 +111,12 @@ public class Jatekos extends Leptetheto{
 	   * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
 	   */
 	public boolean Tol(Irany i, Jatekos j) {
+		
 		System.out.println("Jatekos"+'\t'+"Tol(Irany, Jatekos)");
-		UresMezo celmezo=mezo.GetSzomszed(i);
-		boolean success=celmezo.Fogad(i, this, j);
-		if(success==true)
-		mezo.Enged(this);
+		
+		boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
+		if (success == true)
+		mezo.Enged();
 		System.out.println(success);
 		return success;
 	}

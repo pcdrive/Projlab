@@ -20,6 +20,11 @@ public class UresMezo {
 	private UresMezo szomszed[];
 	protected Leptetheto leptetheto;
 	
+	public UresMezo() 
+	{
+		szomszed = new UresMezo[4];
+	}
+	
 	
 	   /**
 	   * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a 
@@ -35,7 +40,7 @@ public class UresMezo {
 	   */
 	public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
 		System.out.println("UresMezo"+'\t'+"Fogad(JeloltDoboz, Jatekos)");
-		boolean success=this.Fogad(i, (Doboz)jd, j);
+		boolean success = this.Fogad(i, (Doboz)jd, j);
 		System.out.println(success);
 		return success;
 	}
@@ -57,7 +62,7 @@ public class UresMezo {
 		if(leptetheto==null) {
 			return true;
 		}
-		boolean success=leptetheto.Tol(Irany.BALRA, j);
+		boolean success=leptetheto.Tol(i, j);
 		System.out.println(success);
 		return success;
 	}
@@ -80,18 +85,17 @@ public class UresMezo {
 			System.out.println(true);
 			return true;
 		}
-		boolean success=leptetheto.Utkozik(Irany.BALRA, j);
+		boolean success=leptetheto.Utkozik(i, j);
 		System.out.println(success);
 		return success;
 	}
 	
 	   /**
 	   * Elengedi a leptethetot, amikor az ellep a mezorol.
-	   * 
-	   * @param l Az objektum amit el kell engedni.
 	   */
-	public void Enged(Leptetheto l) {
+	public void Enged() {
 		System.out.println("UresMezo"+'\t'+"Enged(Leptetheto)");
+		leptetheto = null; 
 	}
 	
 	   /**
@@ -114,6 +118,7 @@ public class UresMezo {
 	   */
 	public void SetSzomszed(Irany i, UresMezo u) {
 		System.out.println("UresMezo"+'\t'+"SetSzomszed(Irany, UresMezo)");
+		szomszed[i.ordinal()] = u;
 	}
 	
 }
