@@ -57,9 +57,10 @@ public class Csapdaajto extends UresMezo {
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Jatekos)");
-        if (nyitva == true) {
+        if (nyitva) {
             aktj.Halal();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;
@@ -81,9 +82,10 @@ public class Csapdaajto extends UresMezo {
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Doboz, Jatekos)");
-        if (nyitva == true) {
+        if (nyitva) {
             d.Halal();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;

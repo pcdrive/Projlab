@@ -42,6 +42,7 @@ public class Doboz extends Leptetheto {
     /**
      * megoli a dobozt, a palya megfelelo fuggvenyenek hivasaval.
      */
+    @Override
     public void Halal() {
         Printer.PrintTabIn("Doboz" + '\t' + "Halal()");
         palya.Halal(this);
@@ -55,10 +56,11 @@ public class Doboz extends Leptetheto {
      * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
+    @Override
     public boolean Utkozik(Irany i, Jatekos j) {
         Printer.PrintTabIn("Doboz" + '\t' + "Utkozik(Irany, Jatekos)");
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
-        if (success == true)
+        if (success)
             mezo.Enged();
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
@@ -71,10 +73,11 @@ public class Doboz extends Leptetheto {
      * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
+    @Override
     public boolean Tol(Irany i, Jatekos j) {
         Printer.PrintTabIn("Doboz" + '\t' + "Tol(Irany, Jatekos)");
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
-        if (success == true)
+        if (success)
             mezo.Enged();
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;

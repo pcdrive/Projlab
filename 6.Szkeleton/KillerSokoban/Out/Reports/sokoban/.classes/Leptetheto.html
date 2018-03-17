@@ -1,138 +1,140 @@
+
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="htmlId">
 <head>
-    <title>Coverage Report :: Leptetheto</title>
-    <style type="text/css">
+  <title>Coverage Report :: Leptetheto</title>
+  <style type="text/css">
     @import "../../.css/coverage.css";
-
-    </style>
+  </style>
 </head>
 
 <body>
 <div class="header"></div>
 
 <div class="content">
-    <div class="breadCrumbs">
-        [ <a href="../../index.html">all classes</a> ]
-        [ <a href="../index.html">sokoban</a> ]
-    </div>
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">sokoban</a> ]
+</div>
 
-    <h1>Coverage Summary for Class: Leptetheto (sokoban)</h1>
+<h1>Coverage Summary for Class: Leptetheto (sokoban)</h1>
 
-    <table class="coverageStats">
-        <tr>
-            <th class="name">Class</th>
-            <th class="coverageStat
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
 ">
-                Class, %
-            </th>
-            <th class="coverageStat
+  Class, %
+</th>
+<th class="coverageStat 
 ">
-                Method, %
-            </th>
-            <th class="coverageStat
+  Method, %
+</th>
+<th class="coverageStat 
 ">
-                Line, %
-            </th>
-        </tr>
-        <tr>
-            <td class="name">Leptetheto</td>
-            <td class="coverageStat">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Leptetheto</td>
+<td class="coverageStat">
   <span class="percent">
     100%
   </span>
-                <span class="absValue">
+  <span class="absValue">
     (1/ 1)
   </span>
-            </td>
-            <td class="coverageStat">
+</td>
+<td class="coverageStat">
   <span class="percent">
     100%
   </span>
-                <span class="absValue">
+  <span class="absValue">
     (1/ 1)
   </span>
-            </td>
-            <td class="coverageStat">
+</td>
+<td class="coverageStat">
   <span class="percent">
     100%
   </span>
-                <span class="absValue">
+  <span class="absValue">
     (4/ 4)
   </span>
-            </td>
-        </tr>
+</td>
+</tr>
 
-    </table>
+</table>
 
-    <br/>
-    <br/>
+<br/>
+<br/>
 
 
-    <div class="sourceCode"><i>1</i>&nbsp;/**
-        <i>2</i>&nbsp; * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
-        <i>3</i>&nbsp; * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
-        <i>4</i>&nbsp; *
-        <i>5</i>&nbsp; * @author Horvath Gergo
-        <i>6</i>&nbsp; * @author Mocsari Andras
-        <i>7</i>&nbsp; * @author Zsiros Balint
-        <i>8</i>&nbsp; * @author Bottlik Judit
-        <i>9</i>&nbsp; * @author Holub Csongor
-        <i>10</i>&nbsp; * @version 1.0
-        <i>11</i>&nbsp; * @since 2018-02-09
-        <i>12</i>&nbsp; */
-        <i>13</i>&nbsp;
-        <i>14</i>&nbsp;
-        <i>15</i>&nbsp;package sokoban;
-        <i>16</i>&nbsp;
-        <i>17</i>&nbsp;public abstract class Leptetheto {
-        <i>18</i>&nbsp;
-        <i>19</i>&nbsp; protected UresMezo mezo;
-        <i>20</i>&nbsp; protected Palya palya;
-        <i>21</i>&nbsp;
-        <i>22</i>&nbsp; /**
-        <i>23</i>&nbsp; * Az osztaly konstruktora.
-        <i>24</i>&nbsp; *
-        <i>25</i>&nbsp; * @param p A palya.
-        <i>26</i>&nbsp; * @param m A mezo amin all.
-        <i>27</i>&nbsp; */
-        <b class="fc"><i>28</i>&nbsp; public Leptetheto(Palya p, UresMezo m) {</b>
-        <b class="fc"><i>29</i>&nbsp; palya = p;</b>
-        <b class="fc"><i>30</i>&nbsp; mezo = m;</b>
-        <b class="fc"><i>31</i>&nbsp; }</b>
-        <i>32</i>&nbsp;
-        <i>33</i>&nbsp; /**
-        <i>34</i>&nbsp; * Az objektumot egy doboz tolta meg, ?s az ezzel valo interakciot kezeli.
-        <i>35</i>&nbsp; *
-        <i>36</i>&nbsp; * @param i Irany amerre a dobozt tolt?k
-        <i>37</i>&nbsp; * @param j Jatekos, aki tol?st kezdte
-        <i>38</i>&nbsp; * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
-        <i>39</i>&nbsp; */
-        <i>40</i>&nbsp; public abstract boolean Utkozik(Irany i, Jatekos j);
-        <i>41</i>&nbsp;
-        <i>42</i>&nbsp; /**
-        <i>43</i>&nbsp; * Az objektumot egy doboz jatekos meg, ?s az ezzel valo interakciot kezeli.
-        <i>44</i>&nbsp; *
-        <i>45</i>&nbsp; * @param i Irany amerre a dobozt tolt?k
-        <i>46</i>&nbsp; * @param j Jatekos, aki tol?st kezdte
-        <i>47</i>&nbsp; * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
-        <i>48</i>&nbsp; */
-        <i>49</i>&nbsp; public abstract boolean Tol(Irany i, Jatekos j);
-        <i>50</i>&nbsp;
-        <i>51</i>&nbsp; /**
-        <i>52</i>&nbsp; * A jatekos halalat kezeli. Ezt hivja meg a mezo,
-        <i>53</i>&nbsp; * ez pedig tovabbhivja a palya halal metodusat.
-        <i>54</i>&nbsp; */
-        <i>55</i>&nbsp; public abstract void Halal();
-        <i>56</i>&nbsp;
-        <i>57</i>&nbsp;}
-    </div>
+<div class="sourceCode"><i>1</i>&nbsp;/**
+<i>2</i>&nbsp; * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+<i>3</i>&nbsp; * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+<i>4</i>&nbsp; *
+<i>5</i>&nbsp; * @author Horvath Gergo
+<i>6</i>&nbsp; * @author Mocsari Andras
+<i>7</i>&nbsp; * @author Zsiros Balint
+<i>8</i>&nbsp; * @author Bottlik Judit
+<i>9</i>&nbsp; * @author Holub Csongor
+<i>10</i>&nbsp; * @version 1.0
+<i>11</i>&nbsp; * @since 2018-02-09
+<i>12</i>&nbsp; */
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;package sokoban;
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;public abstract class Leptetheto {
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;    protected UresMezo mezo;
+<i>20</i>&nbsp;    protected Palya palya;
+<i>21</i>&nbsp;
+<i>22</i>&nbsp;    /**
+<i>23</i>&nbsp;     * Az osztaly konstruktora.
+<i>24</i>&nbsp;     *
+<i>25</i>&nbsp;     * @param p A palya.
+<i>26</i>&nbsp;     * @param m A mezo amin all.
+<i>27</i>&nbsp;     */
+<b class="fc"><i>28</i>&nbsp;    public Leptetheto(Palya p, UresMezo m) {</b>
+<b class="fc"><i>29</i>&nbsp;        palya = p;</b>
+<b class="fc"><i>30</i>&nbsp;        mezo = m;</b>
+<b class="fc"><i>31</i>&nbsp;    }</b>
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;    /**
+<i>34</i>&nbsp;     * Az objektumot egy doboz tolta meg, ?s az ezzel valo interakciot kezeli.
+<i>35</i>&nbsp;     *
+<i>36</i>&nbsp;     * @param i Irany amerre a dobozt tolt?k
+<i>37</i>&nbsp;     * @param j Jatekos, aki tol?st kezdte
+<i>38</i>&nbsp;     * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
+<i>39</i>&nbsp;     */
+<i>40</i>&nbsp;    public abstract boolean Utkozik(Irany i, Jatekos j);
+<i>41</i>&nbsp;
+<i>42</i>&nbsp;    /**
+<i>43</i>&nbsp;     * Az objektumot egy doboz jatekos meg, ?s az ezzel valo interakciot kezeli.
+<i>44</i>&nbsp;     *
+<i>45</i>&nbsp;     * @param i Irany amerre a dobozt tolt?k
+<i>46</i>&nbsp;     * @param j Jatekos, aki tol?st kezdte
+<i>47</i>&nbsp;     * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
+<i>48</i>&nbsp;     */
+<i>49</i>&nbsp;    public abstract boolean Tol(Irany i, Jatekos j);
+<i>50</i>&nbsp;
+<i>51</i>&nbsp;    /**
+<i>52</i>&nbsp;     * A jatekos halalat kezeli. Ezt hivja meg a mezo,
+<i>53</i>&nbsp;     * ez pedig tovabbhivja a palya halal metodusat.
+<i>54</i>&nbsp;     */
+<i>55</i>&nbsp;    public abstract void Halal();
+<i>56</i>&nbsp;
+<i>57</i>&nbsp;}
+</div>
 </div>
 
 <div class="footer">
-
-    <div style="float:right;">generated on 2018-03-17 15:24</div>
+    
+    <div style="float:right;">generated on 2018-03-17 20:56</div>
 </div>
 </body>
 </html>

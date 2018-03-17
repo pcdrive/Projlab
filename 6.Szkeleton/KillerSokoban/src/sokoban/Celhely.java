@@ -38,15 +38,16 @@ public class Celhely extends UresMezo {
      * @param j  Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
         Printer.PrintTabIn("Celhely" + '\t' + "Fogad(JeloltDoboz,Jatekos)");
         boolean success = super.Fogad(i, jd, j);
-        if (jel == false || jd.getJel() == false) {
+        if (!jel || !jd.getJel()) {
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }
 
-        if (success == true) {
+        if (success) {
             jd.JeletTorol();
             j.PontotKap();
         }
@@ -65,6 +66,7 @@ public class Celhely extends UresMezo {
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Jatekos)");
         boolean success = super.Fogad(i, aktj, j);
@@ -83,6 +85,7 @@ public class Celhely extends UresMezo {
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Doboz,Jatekos)");
         boolean success = super.Fogad(i, d, j);

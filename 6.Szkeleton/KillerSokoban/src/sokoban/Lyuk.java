@@ -36,6 +36,7 @@ public class Lyuk extends UresMezo {
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Jatekos)");
         j.Halal();
@@ -54,6 +55,7 @@ public class Lyuk extends UresMezo {
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Doboz,Jatekos)");
         d.Halal();

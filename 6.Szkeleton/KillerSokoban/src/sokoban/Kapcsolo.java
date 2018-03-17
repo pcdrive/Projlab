@@ -41,6 +41,7 @@ public class Kapcsolo extends UresMezo {
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Jatekos)");
         boolean success = super.Fogad(i, aktj, j);
@@ -66,12 +67,13 @@ public class Kapcsolo extends UresMezo {
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
 
         Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Doboz,Jatekos)");
         boolean success = super.Fogad(i, d, j);
 
-        if (success == true) {
+        if (success) {
             for (Csapdaajto c : csapdak) {
                 c.Nyit();
             }

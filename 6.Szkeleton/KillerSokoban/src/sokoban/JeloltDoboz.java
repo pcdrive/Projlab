@@ -51,4 +51,23 @@ public class JeloltDoboz extends Doboz {
         return jel;
     }
 
+    @Override
+    public boolean Tol(Irany i, Jatekos j) {
+        Printer.PrintTabIn("JeloltDoboz" + '\t' + "Tol(Irany, Jatekos)");
+        boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
+        if (success)
+            mezo.Enged();
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
+        return success;
+    }
+
+    @Override
+    public boolean Utkozik(Irany i, Jatekos j) {
+        Printer.PrintTabIn("JeloltDoboz" + '\t' + "Utkozik(Irany, Jatekos)");
+        boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
+        if (success)
+            mezo.Enged();
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
+        return success;
+    }
 }

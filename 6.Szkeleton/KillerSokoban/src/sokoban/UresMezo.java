@@ -39,7 +39,15 @@ public class UresMezo {
      */
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
-        boolean success = this.Fogad(i, (Doboz) jd, j);
+        if (leptetheto == null) {
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            leptetheto = jd;
+            return true;
+        }
+        boolean success = leptetheto.Utkozik(i, j);
+        if (success) {
+            leptetheto = jd;
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
