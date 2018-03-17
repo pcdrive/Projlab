@@ -25,7 +25,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_1_2(){
@@ -49,7 +49,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_1_3(){
@@ -74,7 +74,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_1_4(){
@@ -98,7 +98,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_1_5(){
@@ -123,7 +123,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_1_6(){
@@ -147,7 +147,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_1_7(){
@@ -171,7 +171,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_2_1(){
@@ -195,7 +195,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_2_2(){
@@ -219,7 +219,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_2_3(){
@@ -244,7 +244,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_2_4(){
@@ -268,7 +268,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_2_5(){
@@ -293,7 +293,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_2_6(){
@@ -317,7 +317,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_2_7(){
@@ -341,7 +341,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_3_1(){
@@ -365,7 +365,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_3_2(){
@@ -389,7 +389,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_3_3(){
@@ -414,7 +414,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_3_4(){
@@ -438,7 +438,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_3_5(){
@@ -463,7 +463,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_3_6(){
@@ -487,7 +487,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_3_7(){
@@ -511,7 +511,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_4_1(){
@@ -535,7 +535,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_4_2(){
@@ -559,7 +559,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_4_3(){
@@ -584,7 +584,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_4_4(){
@@ -608,7 +608,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_4_5(){
@@ -633,7 +633,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_4_6(){
@@ -657,7 +657,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_1_4_7(){
@@ -681,7 +681,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_1_1(){
@@ -705,7 +705,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_1_2(){
@@ -729,7 +729,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_1_3(){
@@ -754,7 +754,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_1_4(){
@@ -778,7 +778,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_1_5(){
@@ -803,7 +803,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_1_6(){
@@ -827,7 +827,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_1_7(){
@@ -851,7 +851,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_2_1(){
@@ -875,7 +875,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_2_2(){
@@ -899,7 +899,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_2_3(){
@@ -924,7 +924,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_2_4(){
@@ -948,7 +948,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_2_5(){
@@ -973,7 +973,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_2_6(){
@@ -997,7 +997,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_2_7(){
@@ -1021,7 +1021,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_3_1(){
@@ -1045,7 +1045,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_3_2(){
@@ -1069,7 +1069,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_3_3(){
@@ -1094,7 +1094,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_3_4(){
@@ -1118,7 +1118,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_3_5(){
@@ -1143,7 +1143,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_3_6(){
@@ -1167,7 +1167,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_3_7(){
@@ -1191,7 +1191,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_4_1(){
@@ -1215,7 +1215,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_4_2(){
@@ -1239,7 +1239,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_4_3(){
@@ -1264,7 +1264,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_4_4(){
@@ -1288,7 +1288,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_4_5(){
@@ -1313,7 +1313,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_4_6(){
@@ -1337,7 +1337,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_2_4_7(){
@@ -1361,7 +1361,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_1_1(){
@@ -1385,7 +1385,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_1_2(){
@@ -1409,7 +1409,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_1_3(){
@@ -1434,7 +1434,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_1_4(){
@@ -1458,7 +1458,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_1_5(){
@@ -1483,7 +1483,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_1_6(){
@@ -1507,7 +1507,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_1_7(){
@@ -1531,7 +1531,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_2_1(){
@@ -1555,7 +1555,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_2_2(){
@@ -1579,7 +1579,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_2_3(){
@@ -1604,7 +1604,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_2_4(){
@@ -1628,7 +1628,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_2_5(){
@@ -1653,7 +1653,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_2_6(){
@@ -1677,7 +1677,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_2_7(){
@@ -1701,7 +1701,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_3_1(){
@@ -1725,7 +1725,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_3_2(){
@@ -1749,7 +1749,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_3_3(){
@@ -1774,7 +1774,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_3_4(){
@@ -1798,7 +1798,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_3_5(){
@@ -1823,7 +1823,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_3_6(){
@@ -1847,7 +1847,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_3_7(){
@@ -1871,7 +1871,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_4_1(){
@@ -1895,7 +1895,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_4_2(){
@@ -1919,7 +1919,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_4_3(){
@@ -1944,7 +1944,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_4_4(){
@@ -1968,7 +1968,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_4_5(){
@@ -1993,7 +1993,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_4_6(){
@@ -2017,7 +2017,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_3_4_7(){
@@ -2041,7 +2041,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_1_1(){
@@ -2067,7 +2067,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_1_2(){
@@ -2093,7 +2093,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_1_3(){
@@ -2120,7 +2120,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_1_4(){
@@ -2146,7 +2146,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_1_5(){
@@ -2173,7 +2173,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_1_6(){
@@ -2199,7 +2199,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_1_7(){
@@ -2225,7 +2225,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_2_1(){
@@ -2251,7 +2251,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_2_2(){
@@ -2277,7 +2277,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_2_3(){
@@ -2304,7 +2304,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_2_4(){
@@ -2330,7 +2330,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_2_5(){
@@ -2357,7 +2357,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_2_6(){
@@ -2383,7 +2383,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_2_7(){
@@ -2409,7 +2409,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_3_1(){
@@ -2435,7 +2435,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_3_2(){
@@ -2461,7 +2461,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_3_3(){
@@ -2488,7 +2488,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_3_4(){
@@ -2514,7 +2514,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_3_5(){
@@ -2541,7 +2541,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_3_6(){
@@ -2567,7 +2567,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_3_7(){
@@ -2593,7 +2593,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_4_1(){
@@ -2619,7 +2619,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_4_2(){
@@ -2645,7 +2645,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_4_3(){
@@ -2672,7 +2672,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_4_4(){
@@ -2698,7 +2698,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_4_5(){
@@ -2725,7 +2725,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_4_6(){
@@ -2751,7 +2751,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_1_4_4_7(){
@@ -2777,7 +2777,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_1_1(){
@@ -2801,7 +2801,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_1_2(){
@@ -2825,7 +2825,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_1_3(){
@@ -2850,7 +2850,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_1_4(){
@@ -2874,7 +2874,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_1_5(){
@@ -2899,7 +2899,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_1_6(){
@@ -2923,7 +2923,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_1_7(){
@@ -2947,7 +2947,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_2_1(){
@@ -2971,7 +2971,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_2_2(){
@@ -2995,7 +2995,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_2_3(){
@@ -3020,7 +3020,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_2_4(){
@@ -3044,7 +3044,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_2_5(){
@@ -3069,7 +3069,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_2_6(){
@@ -3093,7 +3093,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_2_7(){
@@ -3117,7 +3117,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_3_1(){
@@ -3141,7 +3141,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_3_2(){
@@ -3165,7 +3165,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_3_3(){
@@ -3190,7 +3190,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_3_4(){
@@ -3214,7 +3214,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_3_5(){
@@ -3239,7 +3239,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_3_6(){
@@ -3263,7 +3263,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_3_7(){
@@ -3287,7 +3287,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_4_1(){
@@ -3311,7 +3311,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_4_2(){
@@ -3335,7 +3335,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_4_3(){
@@ -3360,7 +3360,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_4_4(){
@@ -3384,7 +3384,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_4_5(){
@@ -3409,7 +3409,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_4_6(){
@@ -3433,7 +3433,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_1_4_7(){
@@ -3457,7 +3457,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_1_1(){
@@ -3481,7 +3481,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_1_2(){
@@ -3505,7 +3505,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_1_3(){
@@ -3530,7 +3530,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_1_4(){
@@ -3554,7 +3554,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_1_5(){
@@ -3579,7 +3579,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_1_6(){
@@ -3603,7 +3603,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_1_7(){
@@ -3627,7 +3627,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_2_1(){
@@ -3651,7 +3651,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_2_2(){
@@ -3675,7 +3675,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_2_3(){
@@ -3700,7 +3700,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_2_4(){
@@ -3724,7 +3724,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_2_5(){
@@ -3749,7 +3749,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_2_6(){
@@ -3773,7 +3773,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_2_7(){
@@ -3797,7 +3797,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_3_1(){
@@ -3821,7 +3821,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_3_2(){
@@ -3845,7 +3845,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_3_3(){
@@ -3870,7 +3870,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_3_4(){
@@ -3894,7 +3894,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_3_5(){
@@ -3919,7 +3919,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_3_6(){
@@ -3943,7 +3943,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_3_7(){
@@ -3967,7 +3967,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_4_1(){
@@ -3991,7 +3991,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_4_2(){
@@ -4015,7 +4015,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_4_3(){
@@ -4040,7 +4040,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_4_4(){
@@ -4064,7 +4064,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_4_5(){
@@ -4089,7 +4089,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_4_6(){
@@ -4113,7 +4113,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_2_4_7(){
@@ -4137,7 +4137,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_1_1(){
@@ -4161,7 +4161,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_1_2(){
@@ -4185,7 +4185,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_1_3(){
@@ -4210,7 +4210,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_1_4(){
@@ -4234,7 +4234,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_1_5(){
@@ -4259,7 +4259,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_1_6(){
@@ -4283,7 +4283,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_1_7(){
@@ -4307,7 +4307,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_2_1(){
@@ -4331,7 +4331,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_2_2(){
@@ -4355,7 +4355,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_2_3(){
@@ -4380,7 +4380,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_2_4(){
@@ -4404,7 +4404,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_2_5(){
@@ -4429,7 +4429,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_2_6(){
@@ -4453,7 +4453,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_2_7(){
@@ -4477,7 +4477,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_3_1(){
@@ -4501,7 +4501,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_3_2(){
@@ -4525,7 +4525,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_3_3(){
@@ -4550,7 +4550,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_3_4(){
@@ -4574,7 +4574,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_3_5(){
@@ -4599,7 +4599,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_3_6(){
@@ -4623,7 +4623,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_3_7(){
@@ -4647,7 +4647,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_4_1(){
@@ -4671,7 +4671,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_4_2(){
@@ -4695,7 +4695,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_4_3(){
@@ -4720,7 +4720,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_4_4(){
@@ -4744,7 +4744,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_4_5(){
@@ -4769,7 +4769,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_4_6(){
@@ -4793,7 +4793,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_3_4_7(){
@@ -4817,7 +4817,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_1_1(){
@@ -4843,7 +4843,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_1_2(){
@@ -4869,7 +4869,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_1_3(){
@@ -4896,7 +4896,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_1_4(){
@@ -4922,7 +4922,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_1_5(){
@@ -4949,7 +4949,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_1_6(){
@@ -4975,7 +4975,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_1_7(){
@@ -5001,7 +5001,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_2_1(){
@@ -5027,7 +5027,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_2_2(){
@@ -5053,7 +5053,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_2_3(){
@@ -5080,7 +5080,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_2_4(){
@@ -5106,7 +5106,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_2_5(){
@@ -5133,7 +5133,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_2_6(){
@@ -5159,7 +5159,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_2_7(){
@@ -5185,7 +5185,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_3_1(){
@@ -5211,7 +5211,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_3_2(){
@@ -5237,7 +5237,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_3_3(){
@@ -5264,7 +5264,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_3_4(){
@@ -5290,7 +5290,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_3_5(){
@@ -5317,7 +5317,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_3_6(){
@@ -5343,7 +5343,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_3_7(){
@@ -5369,7 +5369,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_4_1(){
@@ -5395,7 +5395,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_4_2(){
@@ -5421,7 +5421,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_4_3(){
@@ -5448,7 +5448,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_4_4(){
@@ -5474,7 +5474,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_4_5(){
@@ -5501,7 +5501,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_4_6(){
@@ -5527,7 +5527,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_2_4_4_7(){
@@ -5553,7 +5553,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_1_1(){
@@ -5577,7 +5577,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_1_2(){
@@ -5601,7 +5601,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_1_3(){
@@ -5626,7 +5626,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_1_4(){
@@ -5650,7 +5650,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_1_5(){
@@ -5675,7 +5675,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_1_6(){
@@ -5699,7 +5699,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_1_7(){
@@ -5723,7 +5723,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_2_1(){
@@ -5747,7 +5747,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_2_2(){
@@ -5771,7 +5771,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_2_3(){
@@ -5796,7 +5796,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_2_4(){
@@ -5820,7 +5820,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_2_5(){
@@ -5845,7 +5845,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_2_6(){
@@ -5869,7 +5869,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_2_7(){
@@ -5893,7 +5893,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_3_1(){
@@ -5917,7 +5917,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_3_2(){
@@ -5941,7 +5941,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_3_3(){
@@ -5966,7 +5966,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_3_4(){
@@ -5990,7 +5990,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_3_5(){
@@ -6015,7 +6015,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_3_6(){
@@ -6039,7 +6039,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_3_7(){
@@ -6063,7 +6063,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_4_1(){
@@ -6087,7 +6087,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_4_2(){
@@ -6111,7 +6111,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_4_3(){
@@ -6136,7 +6136,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_4_4(){
@@ -6160,7 +6160,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_4_5(){
@@ -6185,7 +6185,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_4_6(){
@@ -6209,7 +6209,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_1_4_7(){
@@ -6233,7 +6233,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_1_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_1_1(){
@@ -6257,7 +6257,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_1_2(){
@@ -6281,7 +6281,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_1_3(){
@@ -6306,7 +6306,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_1_4(){
@@ -6330,7 +6330,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_1_5(){
@@ -6355,7 +6355,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_1_6(){
@@ -6379,7 +6379,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_1_7(){
@@ -6403,7 +6403,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_2_1(){
@@ -6427,7 +6427,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_2_2(){
@@ -6451,7 +6451,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_2_3(){
@@ -6476,7 +6476,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_2_4(){
@@ -6500,7 +6500,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_2_5(){
@@ -6525,7 +6525,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_2_6(){
@@ -6549,7 +6549,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_2_7(){
@@ -6573,7 +6573,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_3_1(){
@@ -6597,7 +6597,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_3_2(){
@@ -6621,7 +6621,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_3_3(){
@@ -6646,7 +6646,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_3_4(){
@@ -6670,7 +6670,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_3_5(){
@@ -6695,7 +6695,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_3_6(){
@@ -6719,7 +6719,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_3_7(){
@@ -6743,7 +6743,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_4_1(){
@@ -6767,7 +6767,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_4_2(){
@@ -6791,7 +6791,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_4_3(){
@@ -6816,7 +6816,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_4_4(){
@@ -6840,7 +6840,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_4_5(){
@@ -6865,7 +6865,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_4_6(){
@@ -6889,7 +6889,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_2_4_7(){
@@ -6913,7 +6913,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_2_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_1_1(){
@@ -6937,7 +6937,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_1_2(){
@@ -6961,7 +6961,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_1_3(){
@@ -6986,7 +6986,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_1_4(){
@@ -7010,7 +7010,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_1_5(){
@@ -7035,7 +7035,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_1_6(){
@@ -7059,7 +7059,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_1_7(){
@@ -7083,7 +7083,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_2_1(){
@@ -7107,7 +7107,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_2_2(){
@@ -7131,7 +7131,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_2_3(){
@@ -7156,7 +7156,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_2_4(){
@@ -7180,7 +7180,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_2_5(){
@@ -7205,7 +7205,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_2_6(){
@@ -7229,7 +7229,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_2_7(){
@@ -7253,7 +7253,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_3_1(){
@@ -7277,7 +7277,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_3_2(){
@@ -7301,7 +7301,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_3_3(){
@@ -7326,7 +7326,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_3_4(){
@@ -7350,7 +7350,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_3_5(){
@@ -7375,7 +7375,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_3_6(){
@@ -7399,7 +7399,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_3_7(){
@@ -7423,7 +7423,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_4_1(){
@@ -7447,7 +7447,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_4_2(){
@@ -7471,7 +7471,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_4_3(){
@@ -7496,7 +7496,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_4_4(){
@@ -7520,7 +7520,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_4_5(){
@@ -7545,7 +7545,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_4_6(){
@@ -7569,7 +7569,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_3_4_7(){
@@ -7593,7 +7593,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_3_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_1_1(){
@@ -7619,7 +7619,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_1_2(){
@@ -7645,7 +7645,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_1_3(){
@@ -7672,7 +7672,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_1_4(){
@@ -7698,7 +7698,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_1_5(){
@@ -7725,7 +7725,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_1_6(){
@@ -7751,7 +7751,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_1_7(){
@@ -7777,7 +7777,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_2_1(){
@@ -7803,7 +7803,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_2_2(){
@@ -7829,7 +7829,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_2_3(){
@@ -7856,7 +7856,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_2_4(){
@@ -7882,7 +7882,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_2_5(){
@@ -7909,7 +7909,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_2_6(){
@@ -7935,7 +7935,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_2_7(){
@@ -7961,7 +7961,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_3_1(){
@@ -7987,7 +7987,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_3_2(){
@@ -8013,7 +8013,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_3_3(){
@@ -8040,7 +8040,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_3_4(){
@@ -8066,7 +8066,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_3_5(){
@@ -8093,7 +8093,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_3_6(){
@@ -8119,7 +8119,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_3_7(){
@@ -8145,7 +8145,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_4_1(){
@@ -8171,7 +8171,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_1 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_4_2(){
@@ -8197,7 +8197,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_2 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_4_3(){
@@ -8224,7 +8224,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_3 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_4_4(){
@@ -8250,7 +8250,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_4 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_4_5(){
@@ -8277,7 +8277,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_5 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_4_6(){
@@ -8303,7 +8303,7 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_6 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 @Test
 public void Test_2_3_4_4_7(){
@@ -8329,6 +8329,6 @@ celmezo1.Fogad(null, leptetheto, null);
 System.out.println("\n<===================== START OF TEST_2_3_4_7 =====================>");
 Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
-System.out.println("<========================= END OF TEST =========================>");
+System.out.println("<========================== END OF TEST ==========================>");
 }
 }
