@@ -1,0 +1,178 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: Kapcsolo</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">sokoban</a> ]
+</div>
+
+<h1>Coverage Summary for Class: Kapcsolo (sokoban)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Kapcsolo</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    75%
+  </span>
+  <span class="absValue">
+    (3/ 4)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    65,2%
+  </span>
+  <span class="absValue">
+    (15/ 23)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/**
+<i>2</i>&nbsp; * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+<i>3</i>&nbsp; * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+<i>4</i>&nbsp; *
+<i>5</i>&nbsp; * @author Horvath Gergo
+<i>6</i>&nbsp; * @author Mocsari Andras
+<i>7</i>&nbsp; * @author Zsiros Balint
+<i>8</i>&nbsp; * @author Bottlik Judit
+<i>9</i>&nbsp; * @author Holub Csongor
+<i>10</i>&nbsp; * @version 1.0
+<i>11</i>&nbsp; * @since 2018-02-09
+<i>12</i>&nbsp; */
+<i>13</i>&nbsp;
+<i>14</i>&nbsp;
+<i>15</i>&nbsp;package sokoban;
+<i>16</i>&nbsp;
+<i>17</i>&nbsp;import Tools.Printer;
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;import java.util.ArrayList;
+<i>20</i>&nbsp;
+<i>21</i>&nbsp;public class Kapcsolo extends UresMezo {
+<i>22</i>&nbsp;
+<i>23</i>&nbsp;    private ArrayList&lt;Csapdaajto&gt; csapdak;
+<i>24</i>&nbsp;
+<i>25</i>&nbsp;    /**
+<i>26</i>&nbsp;     * Az osztaly konstruktora. Letrehozza a tombbot amiben a szomszedokat taroljuk.
+<i>27</i>&nbsp;     */
+<i>28</i>&nbsp;    public Kapcsolo() {
+<b class="fc"><i>29</i>&nbsp;        super();</b>
+<b class="fc"><i>30</i>&nbsp;        csapdak = new ArrayList&lt;Csapdaajto&gt;();</b>
+<b class="fc"><i>31</i>&nbsp;    }</b>
+<i>32</i>&nbsp;
+<i>33</i>&nbsp;    /**
+<i>34</i>&nbsp;     * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a
+<i>35</i>&nbsp;     * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
+<i>36</i>&nbsp;     * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
+<i>37</i>&nbsp;     * a pontot erte.
+<i>38</i>&nbsp;     *
+<i>39</i>&nbsp;     * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
+<i>40</i>&nbsp;     * @param aktj Jatekos, ami a mezore kivan lepni
+<i>41</i>&nbsp;     * @param j    Jatekos, aki lepest tette.
+<i>42</i>&nbsp;     * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
+<i>43</i>&nbsp;     */
+<i>44</i>&nbsp;    public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
+<b class="fc"><i>45</i>&nbsp;        Printer.PrintTabIn(&quot;Kapcsolo&quot; + &#39;\t&#39; + &quot;Fogad(Jatekos)&quot;);</b>
+<b class="fc"><i>46</i>&nbsp;        boolean success = super.Fogad(i, aktj, j);</b>
+<i>47</i>&nbsp;
+<b class="fc"><i>48</i>&nbsp;        if (success) {</b>
+<b class="fc"><i>49</i>&nbsp;            for (Csapdaajto c : csapdak) {</b>
+<b class="fc"><i>50</i>&nbsp;                c.Csuk();</b>
+<b class="fc"><i>51</i>&nbsp;            }</b>
+<i>52</i>&nbsp;        }
+<i>53</i>&nbsp;
+<b class="fc"><i>54</i>&nbsp;        Printer.PrintTabOut(&quot;Return &quot; + Boolean.toString(success));</b>
+<b class="fc"><i>55</i>&nbsp;        return success;</b>
+<i>56</i>&nbsp;    }
+<i>57</i>&nbsp;
+<i>58</i>&nbsp;    /**
+<i>59</i>&nbsp;     * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a
+<i>60</i>&nbsp;     * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
+<i>61</i>&nbsp;     * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
+<i>62</i>&nbsp;     * a pontot erte.
+<i>63</i>&nbsp;     *
+<i>64</i>&nbsp;     * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
+<i>65</i>&nbsp;     * @param d Doboz, ami a mezore kivan lepni
+<i>66</i>&nbsp;     * @param j Jatekos, aki lepest tette.
+<i>67</i>&nbsp;     * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
+<i>68</i>&nbsp;     */
+<i>69</i>&nbsp;    public boolean Fogad(Irany i, Doboz d, Jatekos j) {
+<i>70</i>&nbsp;
+<b class="nc"><i>71</i>&nbsp;        Printer.PrintTabIn(&quot;Kapcsolo&quot; + &#39;\t&#39; + &quot;Fogad(Doboz,Jatekos)&quot;);</b>
+<b class="nc"><i>72</i>&nbsp;        boolean success = super.Fogad(i, d, j);</b>
+<i>73</i>&nbsp;
+<b class="nc"><i>74</i>&nbsp;        if (success == true) {</b>
+<b class="nc"><i>75</i>&nbsp;            for (Csapdaajto c : csapdak) {</b>
+<b class="nc"><i>76</i>&nbsp;                c.Nyit();</b>
+<b class="nc"><i>77</i>&nbsp;            }</b>
+<i>78</i>&nbsp;        }
+<i>79</i>&nbsp;
+<b class="nc"><i>80</i>&nbsp;        Printer.PrintTabOut(&quot;Return: &quot; + Boolean.toString(success));</b>
+<b class="nc"><i>81</i>&nbsp;        return success;</b>
+<i>82</i>&nbsp;    }
+<i>83</i>&nbsp;
+<i>84</i>&nbsp;    /**
+<i>85</i>&nbsp;     * A kapcsolora kot egy csapdat.
+<i>86</i>&nbsp;     *
+<i>87</i>&nbsp;     * @param c A kapcsolohoz adni kivant csapda.
+<i>88</i>&nbsp;     */
+<i>89</i>&nbsp;    public void AddCsapda(Csapdaajto c) {
+<b class="fc"><i>90</i>&nbsp;        Printer.PrintTabIn(&quot;Kapcsolo&quot; + &#39;\t&#39; + &quot;AddCsapda(Csapdaajto)&quot;);</b>
+<b class="fc"><i>91</i>&nbsp;        csapdak.add(c);</b>
+<b class="fc"><i>92</i>&nbsp;        Printer.PrintTabOut(&quot;Return&quot;);</b>
+<b class="fc"><i>93</i>&nbsp;    }</b>
+<i>94</i>&nbsp;
+<i>95</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2018-03-17 15:24</div>
+</div>
+</body>
+</html>
