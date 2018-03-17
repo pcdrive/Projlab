@@ -42,6 +42,7 @@ public class Celhely extends UresMezo {
         Printer.PrintTabIn("Celhely" + '\t' + "Fogad(JeloltDoboz,Jatekos)");
         boolean success = super.Fogad(i, jd, j);
         if (jel == false || jd.getJel() == false) {
+            Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }
 

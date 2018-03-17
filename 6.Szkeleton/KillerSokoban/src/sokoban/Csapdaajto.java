@@ -58,7 +58,7 @@ public class Csapdaajto extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabOut("Csapdaajto" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Jatekos)");
         if (nyitva == true) {
             aktj.Halal();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));

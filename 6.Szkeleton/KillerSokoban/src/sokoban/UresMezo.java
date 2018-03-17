@@ -38,9 +38,9 @@ public class UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        System.out.println("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
         boolean success = this.Fogad(i, (Doboz) jd, j);
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 

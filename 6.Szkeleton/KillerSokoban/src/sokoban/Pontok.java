@@ -57,6 +57,7 @@ public class Pontok {
         Printer.PrintTabIn("Pontok" + '\t' + "getPont(String)");
         for (Pont p : pontok) {
             if (p.getNev() == nev) {
+                Printer.PrintTabOut("Return: " + p.getPont());
                 return p.getPont();
             }
         }
