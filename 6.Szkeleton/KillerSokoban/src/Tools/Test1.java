@@ -1,4 +1,5 @@
-package Tools;import org.junit.Test;
+package Tools;
+import org.junit.Test;
 import sokoban.*;
 public class Test1{
     @Test
