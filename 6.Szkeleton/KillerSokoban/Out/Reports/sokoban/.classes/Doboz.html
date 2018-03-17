@@ -1,165 +1,164 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="htmlId">
 <head>
-  <title>Coverage Report :: Doboz</title>
-  <style type="text/css">
+    <title>Coverage Report :: Doboz</title>
+    <style type="text/css">
     @import "../../.css/coverage.css";
-  </style>
+
+    </style>
 </head>
 
 <body>
 <div class="header"></div>
 
 <div class="content">
-<div class="breadCrumbs">
-    [ <a href="../../index.html">all classes</a> ]
-    [ <a href="../index.html">sokoban</a> ]
-</div>
+    <div class="breadCrumbs">
+        [ <a href="../../index.html">all classes</a> ]
+        [ <a href="../index.html">sokoban</a> ]
+    </div>
 
-<h1>Coverage Summary for Class: Doboz (sokoban)</h1>
+    <h1>Coverage Summary for Class: Doboz (sokoban)</h1>
 
-<table class="coverageStats">
-<tr>
-  <th class="name">Class</th>
-<th class="coverageStat 
+    <table class="coverageStats">
+        <tr>
+            <th class="name">Class</th>
+            <th class="coverageStat
 ">
-  Class, %
-</th>
-<th class="coverageStat 
+                Class, %
+            </th>
+            <th class="coverageStat
 ">
-  Method, %
-</th>
-<th class="coverageStat 
+                Method, %
+            </th>
+            <th class="coverageStat
 ">
-  Line, %
-</th>
-</tr>
-<tr>
-  <td class="name">Doboz</td>
-<td class="coverageStat">
+                Line, %
+            </th>
+        </tr>
+        <tr>
+            <td class="name">Doboz</td>
+            <td class="coverageStat">
   <span class="percent">
     0%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (0/ 1)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     0%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (0/ 5)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     0%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (0/ 21)
   </span>
-</td>
-</tr>
+            </td>
+        </tr>
 
-</table>
+    </table>
 
-<br/>
-<br/>
+    <br/>
+    <br/>
 
 
-<div class="sourceCode"><i>1</i>&nbsp;/**
-<i>2</i>&nbsp; * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
-<i>3</i>&nbsp; * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
-<i>4</i>&nbsp; *
-<i>5</i>&nbsp; * @author Horvath Gergo
-<i>6</i>&nbsp; * @author Mocsari Andras
-<i>7</i>&nbsp; * @author Zsiros Balint
-<i>8</i>&nbsp; * @author Bottlik Judit
-<i>9</i>&nbsp; * @author Holub Csongor
-<i>10</i>&nbsp; * @version 1.0
-<i>11</i>&nbsp; * @since 2018-02-09
-<i>12</i>&nbsp; */
-<i>13</i>&nbsp;
-<i>14</i>&nbsp;
-<i>15</i>&nbsp;package sokoban;
-<i>16</i>&nbsp;
-<i>17</i>&nbsp;import Tools.Printer;
-<i>18</i>&nbsp;
-<i>19</i>&nbsp;public class Doboz extends Leptetheto {
-<i>20</i>&nbsp;
-<i>21</i>&nbsp;    /**
-<i>22</i>&nbsp;     * Az osztaly konstruktora. Beallitja a mezot es a palyat.
-<i>23</i>&nbsp;     *
-<i>24</i>&nbsp;     * @param p A palya.
-<i>25</i>&nbsp;     * @param m A mezo, amin all.
-<i>26</i>&nbsp;     */
-<i>27</i>&nbsp;    public Doboz(Palya p, UresMezo m) {
-<b class="nc"><i>28</i>&nbsp;        super(p, m);</b>
-<b class="nc"><i>29</i>&nbsp;    }</b>
-<i>30</i>&nbsp;
-<i>31</i>&nbsp;    /**
-<i>32</i>&nbsp;     * A doboz mozgathatosagat kerdezi le.
-<i>33</i>&nbsp;     *
-<i>34</i>&nbsp;     * @return boolean Annak az erteke, hogy mozgathato-e.
-<i>35</i>&nbsp;     */
-<i>36</i>&nbsp;    public boolean Vege() {
-<b class="nc"><i>37</i>&nbsp;        Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Vege()&quot;);</b>
-<b class="nc"><i>38</i>&nbsp;        Printer.PrintTabOut(&quot;Return: &quot; + Boolean.toString(true));</b>
-<b class="nc"><i>39</i>&nbsp;        return true;</b>
-<i>40</i>&nbsp;    }
-<i>41</i>&nbsp;
-<i>42</i>&nbsp;    /**
-<i>43</i>&nbsp;     * megoli a dobozt, a palya megfelelo fuggvenyenek hivasaval.
-<i>44</i>&nbsp;     */
-<i>45</i>&nbsp;    public void Halal() {
-<b class="nc"><i>46</i>&nbsp;        Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Halal()&quot;);</b>
-<b class="nc"><i>47</i>&nbsp;        palya.Halal(this);</b>
-<b class="nc"><i>48</i>&nbsp;        Printer.PrintTabOut(&quot;Return&quot;);</b>
-<b class="nc"><i>49</i>&nbsp;    }</b>
-<i>50</i>&nbsp;
-<i>51</i>&nbsp;    /**
-<i>52</i>&nbsp;     * Az objektumot egy doboz tolta meg, ?s az ezzel valo interakciot kezeli.
-<i>53</i>&nbsp;     *
-<i>54</i>&nbsp;     * @param i Irany amerre a dobozt tolt?k
-<i>55</i>&nbsp;     * @param j Jatekos, aki tol?st kezdte
-<i>56</i>&nbsp;     * @return boolean Annak az erteke, hogy a doboz tolhato-e.
-<i>57</i>&nbsp;     */
-<i>58</i>&nbsp;    public boolean Utkozik(Irany i, Jatekos j) {
-<b class="nc"><i>59</i>&nbsp;        Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Utkozik(Irany, Jatekos)&quot;);</b>
-<b class="nc"><i>60</i>&nbsp;        boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);</b>
-<b class="nc"><i>61</i>&nbsp;        if (success == true)</b>
-<b class="nc"><i>62</i>&nbsp;            mezo.Enged();</b>
-<b class="nc"><i>63</i>&nbsp;        Printer.PrintTabOut(&quot;Return: &quot; + Boolean.toString(success));</b>
-<b class="nc"><i>64</i>&nbsp;        return success;</b>
-<i>65</i>&nbsp;    }
-<i>66</i>&nbsp;
-<i>67</i>&nbsp;    /**
-<i>68</i>&nbsp;     * Az objektumot egy jatekos tolta meg, ?s az ezzel valo interakciot kezeli.
-<i>69</i>&nbsp;     *
-<i>70</i>&nbsp;     * @param i Irany amerre a dobozt tolt?k
-<i>71</i>&nbsp;     * @param j Jatekos, aki tol?st kezdte
-<i>72</i>&nbsp;     * @return boolean Annak az erteke, hogy a doboz tolhato-e.
-<i>73</i>&nbsp;     */
-<i>74</i>&nbsp;    public boolean Tol(Irany i, Jatekos j) {
-<b class="nc"><i>75</i>&nbsp;        Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Tol(Irany, Jatekos)&quot;);</b>
-<b class="nc"><i>76</i>&nbsp;        boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);</b>
-<b class="nc"><i>77</i>&nbsp;        if (success == true)</b>
-<b class="nc"><i>78</i>&nbsp;            mezo.Enged();</b>
-<b class="nc"><i>79</i>&nbsp;        Printer.PrintTabOut(&quot;Return: &quot; + Boolean.toString(success));</b>
-<b class="nc"><i>80</i>&nbsp;        return success;</b>
-<i>81</i>&nbsp;    }
-<i>82</i>&nbsp;
-<i>83</i>&nbsp;}
-</div>
+    <div class="sourceCode"><i>1</i>&nbsp;/**
+        <i>2</i>&nbsp; * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+        <i>3</i>&nbsp; * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+        <i>4</i>&nbsp; *
+        <i>5</i>&nbsp; * @author Horvath Gergo
+        <i>6</i>&nbsp; * @author Mocsari Andras
+        <i>7</i>&nbsp; * @author Zsiros Balint
+        <i>8</i>&nbsp; * @author Bottlik Judit
+        <i>9</i>&nbsp; * @author Holub Csongor
+        <i>10</i>&nbsp; * @version 1.0
+        <i>11</i>&nbsp; * @since 2018-02-09
+        <i>12</i>&nbsp; */
+        <i>13</i>&nbsp;
+        <i>14</i>&nbsp;
+        <i>15</i>&nbsp;package sokoban;
+        <i>16</i>&nbsp;
+        <i>17</i>&nbsp;import Tools.Printer;
+        <i>18</i>&nbsp;
+        <i>19</i>&nbsp;public class Doboz extends Leptetheto {
+        <i>20</i>&nbsp;
+        <i>21</i>&nbsp; /**
+        <i>22</i>&nbsp; * Az osztaly konstruktora. Beallitja a mezot es a palyat.
+        <i>23</i>&nbsp; *
+        <i>24</i>&nbsp; * @param p A palya.
+        <i>25</i>&nbsp; * @param m A mezo, amin all.
+        <i>26</i>&nbsp; */
+        <i>27</i>&nbsp; public Doboz(Palya p, UresMezo m) {
+        <b class="nc"><i>28</i>&nbsp; super(p, m);</b>
+        <b class="nc"><i>29</i>&nbsp; }</b>
+        <i>30</i>&nbsp;
+        <i>31</i>&nbsp; /**
+        <i>32</i>&nbsp; * A doboz mozgathatosagat kerdezi le.
+        <i>33</i>&nbsp; *
+        <i>34</i>&nbsp; * @return boolean Annak az erteke, hogy mozgathato-e.
+        <i>35</i>&nbsp; */
+        <i>36</i>&nbsp; public boolean Vege() {
+        <b class="nc"><i>37</i>&nbsp; Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Vege()&quot;);</b>
+        <b class="nc"><i>38</i>&nbsp; Printer.PrintTabOut(&quot;Return: &quot; + Boolean.toString(true));</b>
+        <b class="nc"><i>39</i>&nbsp; return true;</b>
+        <i>40</i>&nbsp; }
+        <i>41</i>&nbsp;
+        <i>42</i>&nbsp; /**
+        <i>43</i>&nbsp; * megoli a dobozt, a palya megfelelo fuggvenyenek hivasaval.
+        <i>44</i>&nbsp; */
+        <i>45</i>&nbsp; public void Halal() {
+        <b class="nc"><i>46</i>&nbsp; Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Halal()&quot;);</b>
+        <b class="nc"><i>47</i>&nbsp; palya.Halal(this);</b>
+        <b class="nc"><i>48</i>&nbsp; Printer.PrintTabOut(&quot;Return&quot;);</b>
+        <b class="nc"><i>49</i>&nbsp; }</b>
+        <i>50</i>&nbsp;
+        <i>51</i>&nbsp; /**
+        <i>52</i>&nbsp; * Az objektumot egy doboz tolta meg, ?s az ezzel valo interakciot kezeli.
+        <i>53</i>&nbsp; *
+        <i>54</i>&nbsp; * @param i Irany amerre a dobozt tolt?k
+        <i>55</i>&nbsp; * @param j Jatekos, aki tol?st kezdte
+        <i>56</i>&nbsp; * @return boolean Annak az erteke, hogy a doboz tolhato-e.
+        <i>57</i>&nbsp; */
+        <i>58</i>&nbsp; public boolean Utkozik(Irany i, Jatekos j) {
+        <b class="nc"><i>59</i>&nbsp; Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Utkozik(Irany,
+            Jatekos)&quot;);</b>
+        <b class="nc"><i>60</i>&nbsp; boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);</b>
+        <b class="nc"><i>61</i>&nbsp; if (success == true)</b>
+        <b class="nc"><i>62</i>&nbsp; mezo.Enged();</b>
+        <b class="nc"><i>63</i>&nbsp; Printer.PrintTabOut(&quot;Return: &quot; + Boolean.toString(success));</b>
+        <b class="nc"><i>64</i>&nbsp; return success;</b>
+        <i>65</i>&nbsp; }
+        <i>66</i>&nbsp;
+        <i>67</i>&nbsp; /**
+        <i>68</i>&nbsp; * Az objektumot egy jatekos tolta meg, ?s az ezzel valo interakciot kezeli.
+        <i>69</i>&nbsp; *
+        <i>70</i>&nbsp; * @param i Irany amerre a dobozt tolt?k
+        <i>71</i>&nbsp; * @param j Jatekos, aki tol?st kezdte
+        <i>72</i>&nbsp; * @return boolean Annak az erteke, hogy a doboz tolhato-e.
+        <i>73</i>&nbsp; */
+        <i>74</i>&nbsp; public boolean Tol(Irany i, Jatekos j) {
+        <b class="nc"><i>75</i>&nbsp; Printer.PrintTabIn(&quot;Doboz&quot; + &#39;\t&#39; + &quot;Tol(Irany, Jatekos)&quot;);</b>
+        <b class="nc"><i>76</i>&nbsp; boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);</b>
+        <b class="nc"><i>77</i>&nbsp; if (success == true)</b>
+        <b class="nc"><i>78</i>&nbsp; mezo.Enged();</b>
+        <b class="nc"><i>79</i>&nbsp; Printer.PrintTabOut(&quot;Return: &quot; + Boolean.toString(success));</b>
+        <b class="nc"><i>80</i>&nbsp; return success;</b>
+        <i>81</i>&nbsp; }
+        <i>82</i>&nbsp;
+        <i>83</i>&nbsp;}
+    </div>
 </div>
 
 <div class="footer">
-    
+
     <div style="float:right;">generated on 2018-03-17 15:24</div>
 </div>
 </body>

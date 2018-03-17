@@ -1,194 +1,193 @@
-
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html id="htmlId">
 <head>
-  <title>Coverage Report :: Palya</title>
-  <style type="text/css">
+    <title>Coverage Report :: Palya</title>
+    <style type="text/css">
     @import "../../.css/coverage.css";
-  </style>
+
+    </style>
 </head>
 
 <body>
 <div class="header"></div>
 
 <div class="content">
-<div class="breadCrumbs">
-    [ <a href="../../index.html">all classes</a> ]
-    [ <a href="../index.html">sokoban</a> ]
-</div>
+    <div class="breadCrumbs">
+        [ <a href="../../index.html">all classes</a> ]
+        [ <a href="../index.html">sokoban</a> ]
+    </div>
 
-<h1>Coverage Summary for Class: Palya (sokoban)</h1>
+    <h1>Coverage Summary for Class: Palya (sokoban)</h1>
 
-<table class="coverageStats">
-<tr>
-  <th class="name">Class</th>
-<th class="coverageStat 
+    <table class="coverageStats">
+        <tr>
+            <th class="name">Class</th>
+            <th class="coverageStat
 ">
-  Class, %
-</th>
-<th class="coverageStat 
+                Class, %
+            </th>
+            <th class="coverageStat
 ">
-  Method, %
-</th>
-<th class="coverageStat 
+                Method, %
+            </th>
+            <th class="coverageStat
 ">
-  Line, %
-</th>
-</tr>
-<tr>
-  <td class="name">Palya</td>
-<td class="coverageStat">
+                Line, %
+            </th>
+        </tr>
+        <tr>
+            <td class="name">Palya</td>
+            <td class="coverageStat">
   <span class="percent">
     100%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (1/ 1)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     50%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (3/ 6)
   </span>
-</td>
-<td class="coverageStat">
+            </td>
+            <td class="coverageStat">
   <span class="percent">
     42,9%
   </span>
-  <span class="absValue">
+                <span class="absValue">
     (15/ 35)
   </span>
-</td>
-</tr>
+            </td>
+        </tr>
 
-</table>
+    </table>
 
-<br/>
-<br/>
+    <br/>
+    <br/>
 
 
-<div class="sourceCode"><i>1</i>&nbsp;/**
-<i>2</i>&nbsp; * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
-<i>3</i>&nbsp; * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
-<i>4</i>&nbsp; *
-<i>5</i>&nbsp; * @author Horvath Gergo
-<i>6</i>&nbsp; * @author Mocsari Andras
-<i>7</i>&nbsp; * @author Zsiros Balint
-<i>8</i>&nbsp; * @author Bottlik Judit
-<i>9</i>&nbsp; * @author Holub Csongor
-<i>10</i>&nbsp; * @version 1.0
-<i>11</i>&nbsp; * @since 2018-02-09
-<i>12</i>&nbsp; */
-<i>13</i>&nbsp;
-<i>14</i>&nbsp;
-<i>15</i>&nbsp;package sokoban;
-<i>16</i>&nbsp;
-<i>17</i>&nbsp;import Tools.Printer;
-<i>18</i>&nbsp;
-<i>19</i>&nbsp;import java.util.ArrayList;
-<i>20</i>&nbsp;
-<i>21</i>&nbsp;@SuppressWarnings(&quot;unused&quot;)
-<i>22</i>&nbsp;
-<i>23</i>&nbsp;public class Palya {
-<i>24</i>&nbsp;    private Jatek jatek;
-<i>25</i>&nbsp;    private UresMezo mezok[];
-<i>26</i>&nbsp;    private Pontok pontok;
-<i>27</i>&nbsp;    private ArrayList&lt;Doboz&gt; dobozok;
-<i>28</i>&nbsp;    private ArrayList&lt;Jatekos&gt; jatekosok;
-<i>29</i>&nbsp;
-<i>30</i>&nbsp;    /**
-<i>31</i>&nbsp;     * Az osztaly konstruktora. Letrehozza a pontok osztalyt, ?s beallitja a jatekot.
-<i>32</i>&nbsp;     */
-<b class="fc"><i>33</i>&nbsp;    public Palya(Jatek j) {</b>
-<b class="fc"><i>34</i>&nbsp;        jatek = j;</b>
-<b class="fc"><i>35</i>&nbsp;        pontok = new Pontok();</b>
-<b class="fc"><i>36</i>&nbsp;        dobozok = new ArrayList&lt;Doboz&gt;();</b>
-<b class="fc"><i>37</i>&nbsp;        jatekosok = new ArrayList&lt;Jatekos&gt;();</b>
-<b class="fc"><i>38</i>&nbsp;    }</b>
-<i>39</i>&nbsp;
-<i>40</i>&nbsp;
-<i>41</i>&nbsp;    /**
-<i>42</i>&nbsp;     * A jatekos lepeset inditja el.
-<i>43</i>&nbsp;     *
-<i>44</i>&nbsp;     * @param i   Irany amerre lepni akarunk
-<i>45</i>&nbsp;     * @param nev A jatekos neve, azonositoja, akit leptetni akarunk.
-<i>46</i>&nbsp;     */
-<i>47</i>&nbsp;    public void Leptet(Irany i, String nev) {
-<b class="nc"><i>48</i>&nbsp;        Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;Leptet()&quot;);</b>
-<i>49</i>&nbsp;
-<b class="nc"><i>50</i>&nbsp;        for (Jatekos j : jatekosok) {</b>
-<b class="nc"><i>51</i>&nbsp;            if (j.getNev() == nev) {</b>
-<b class="nc"><i>52</i>&nbsp;                j.Lepes(i);</b>
-<i>53</i>&nbsp;            }
-<b class="nc"><i>54</i>&nbsp;        }</b>
-<b class="nc"><i>55</i>&nbsp;        Printer.PrintTabOut(&quot;Return&quot;);</b>
-<b class="nc"><i>56</i>&nbsp;    }</b>
-<i>57</i>&nbsp;
-<i>58</i>&nbsp;    /**
-<i>59</i>&nbsp;     * A jatekost torli a listabol.
-<i>60</i>&nbsp;     *
-<i>61</i>&nbsp;     * @param j A jatekos akinek meg kell halnia.
-<i>62</i>&nbsp;     */
-<i>63</i>&nbsp;    public void Halal(Jatekos j) {
-<b class="fc"><i>64</i>&nbsp;        Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;Halal(Jatekos)&quot;);</b>
-<i>65</i>&nbsp;
-<b class="fc"><i>66</i>&nbsp;        jatekosok.remove(j);</b>
-<b class="fc"><i>67</i>&nbsp;        Printer.PrintTabOut(&quot;Return&quot;);</b>
-<b class="fc"><i>68</i>&nbsp;    }</b>
-<i>69</i>&nbsp;
-<i>70</i>&nbsp;    /**
-<i>71</i>&nbsp;     * A dobozt torli a listabol.
-<i>72</i>&nbsp;     *
-<i>73</i>&nbsp;     * @param d A doboz akinek meg kell halnia.
-<i>74</i>&nbsp;     */
-<i>75</i>&nbsp;    public void Halal(Doboz d) {
-<b class="nc"><i>76</i>&nbsp;        Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;Halal(Doboz)&quot;);</b>
-<b class="nc"><i>77</i>&nbsp;        dobozok.remove(d);</b>
-<b class="nc"><i>78</i>&nbsp;        Printer.PrintTabOut(&quot;Return&quot;);</b>
-<b class="nc"><i>79</i>&nbsp;    }</b>
-<i>80</i>&nbsp;
-<i>81</i>&nbsp;    /**
-<i>82</i>&nbsp;     * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaj pontot kap
-<i>83</i>&nbsp;     * metodusat.
-<i>84</i>&nbsp;     *
-<i>85</i>&nbsp;     * @param j A jatekos aki a pontot kapja.
-<i>86</i>&nbsp;     */
-<i>87</i>&nbsp;    public void PontotKap(Jatekos j) {
-<b class="nc"><i>88</i>&nbsp;        Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;PontotKap(Jatekos)&quot;);</b>
-<b class="nc"><i>89</i>&nbsp;        pontok.PontotKap(j.getNev());</b>
-<b class="nc"><i>90</i>&nbsp;        Printer.PrintTabOut(&quot;Return&quot;);</b>
-<b class="nc"><i>91</i>&nbsp;    }</b>
-<i>92</i>&nbsp;
-<i>93</i>&nbsp;    /**
-<i>94</i>&nbsp;     * Vegignezi a dobozokat, es ellenorzi a jatek veget.
-<i>95</i>&nbsp;     */
-<i>96</i>&nbsp;    public void Vegellenorzes() {
-<b class="fc"><i>97</i>&nbsp;        Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;Vegellenorzes()&quot;);</b>
-<i>98</i>&nbsp;
-<b class="fc"><i>99</i>&nbsp;        for (Doboz d : dobozok) {</b>
-<b class="nc"><i>100</i>&nbsp;            boolean mozgathato = d.Vege();</b>
-<b class="nc"><i>101</i>&nbsp;            if (mozgathato == true) {</b>
-<b class="nc"><i>102</i>&nbsp;                Printer.PrintTabOut(&quot;Return&quot;);</b>
-<b class="nc"><i>103</i>&nbsp;                return;</b>
-<i>104</i>&nbsp;            }
-<b class="nc"><i>105</i>&nbsp;        }</b>
-<i>106</i>&nbsp;
-<b class="fc"><i>107</i>&nbsp;        jatek.EndGame();</b>
-<b class="fc"><i>108</i>&nbsp;        Printer.PrintTabOut(&quot;Return&quot;);</b>
-<b class="fc"><i>109</i>&nbsp;        return;</b>
-<i>110</i>&nbsp;    }
-<i>111</i>&nbsp;
-<i>112</i>&nbsp;}
-</div>
+    <div class="sourceCode"><i>1</i>&nbsp;/**
+        <i>2</i>&nbsp; * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+        <i>3</i>&nbsp; * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+        <i>4</i>&nbsp; *
+        <i>5</i>&nbsp; * @author Horvath Gergo
+        <i>6</i>&nbsp; * @author Mocsari Andras
+        <i>7</i>&nbsp; * @author Zsiros Balint
+        <i>8</i>&nbsp; * @author Bottlik Judit
+        <i>9</i>&nbsp; * @author Holub Csongor
+        <i>10</i>&nbsp; * @version 1.0
+        <i>11</i>&nbsp; * @since 2018-02-09
+        <i>12</i>&nbsp; */
+        <i>13</i>&nbsp;
+        <i>14</i>&nbsp;
+        <i>15</i>&nbsp;package sokoban;
+        <i>16</i>&nbsp;
+        <i>17</i>&nbsp;import Tools.Printer;
+        <i>18</i>&nbsp;
+        <i>19</i>&nbsp;import java.util.ArrayList;
+        <i>20</i>&nbsp;
+        <i>21</i>&nbsp;@SuppressWarnings(&quot;unused&quot;)
+        <i>22</i>&nbsp;
+        <i>23</i>&nbsp;public class Palya {
+        <i>24</i>&nbsp; private Jatek jatek;
+        <i>25</i>&nbsp; private UresMezo mezok[];
+        <i>26</i>&nbsp; private Pontok pontok;
+        <i>27</i>&nbsp; private ArrayList&lt;Doboz&gt; dobozok;
+        <i>28</i>&nbsp; private ArrayList&lt;Jatekos&gt; jatekosok;
+        <i>29</i>&nbsp;
+        <i>30</i>&nbsp; /**
+        <i>31</i>&nbsp; * Az osztaly konstruktora. Letrehozza a pontok osztalyt, ?s beallitja a jatekot.
+        <i>32</i>&nbsp; */
+        <b class="fc"><i>33</i>&nbsp; public Palya(Jatek j) {</b>
+        <b class="fc"><i>34</i>&nbsp; jatek = j;</b>
+        <b class="fc"><i>35</i>&nbsp; pontok = new Pontok();</b>
+        <b class="fc"><i>36</i>&nbsp; dobozok = new ArrayList&lt;Doboz&gt;();</b>
+        <b class="fc"><i>37</i>&nbsp; jatekosok = new ArrayList&lt;Jatekos&gt;();</b>
+        <b class="fc"><i>38</i>&nbsp; }</b>
+        <i>39</i>&nbsp;
+        <i>40</i>&nbsp;
+        <i>41</i>&nbsp; /**
+        <i>42</i>&nbsp; * A jatekos lepeset inditja el.
+        <i>43</i>&nbsp; *
+        <i>44</i>&nbsp; * @param i Irany amerre lepni akarunk
+        <i>45</i>&nbsp; * @param nev A jatekos neve, azonositoja, akit leptetni akarunk.
+        <i>46</i>&nbsp; */
+        <i>47</i>&nbsp; public void Leptet(Irany i, String nev) {
+        <b class="nc"><i>48</i>&nbsp; Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;Leptet()&quot;);</b>
+        <i>49</i>&nbsp;
+        <b class="nc"><i>50</i>&nbsp; for (Jatekos j : jatekosok) {</b>
+        <b class="nc"><i>51</i>&nbsp; if (j.getNev() == nev) {</b>
+        <b class="nc"><i>52</i>&nbsp; j.Lepes(i);</b>
+        <i>53</i>&nbsp; }
+        <b class="nc"><i>54</i>&nbsp; }</b>
+        <b class="nc"><i>55</i>&nbsp; Printer.PrintTabOut(&quot;Return&quot;);</b>
+        <b class="nc"><i>56</i>&nbsp; }</b>
+        <i>57</i>&nbsp;
+        <i>58</i>&nbsp; /**
+        <i>59</i>&nbsp; * A jatekost torli a listabol.
+        <i>60</i>&nbsp; *
+        <i>61</i>&nbsp; * @param j A jatekos akinek meg kell halnia.
+        <i>62</i>&nbsp; */
+        <i>63</i>&nbsp; public void Halal(Jatekos j) {
+        <b class="fc"><i>64</i>&nbsp; Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;Halal(Jatekos)&quot;);</b>
+        <i>65</i>&nbsp;
+        <b class="fc"><i>66</i>&nbsp; jatekosok.remove(j);</b>
+        <b class="fc"><i>67</i>&nbsp; Printer.PrintTabOut(&quot;Return&quot;);</b>
+        <b class="fc"><i>68</i>&nbsp; }</b>
+        <i>69</i>&nbsp;
+        <i>70</i>&nbsp; /**
+        <i>71</i>&nbsp; * A dobozt torli a listabol.
+        <i>72</i>&nbsp; *
+        <i>73</i>&nbsp; * @param d A doboz akinek meg kell halnia.
+        <i>74</i>&nbsp; */
+        <i>75</i>&nbsp; public void Halal(Doboz d) {
+        <b class="nc"><i>76</i>&nbsp; Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; +
+            &quot;Halal(Doboz)&quot;);</b>
+        <b class="nc"><i>77</i>&nbsp; dobozok.remove(d);</b>
+        <b class="nc"><i>78</i>&nbsp; Printer.PrintTabOut(&quot;Return&quot;);</b>
+        <b class="nc"><i>79</i>&nbsp; }</b>
+        <i>80</i>&nbsp;
+        <i>81</i>&nbsp; /**
+        <i>82</i>&nbsp; * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaj pontot kap
+        <i>83</i>&nbsp; * metodusat.
+        <i>84</i>&nbsp; *
+        <i>85</i>&nbsp; * @param j A jatekos aki a pontot kapja.
+        <i>86</i>&nbsp; */
+        <i>87</i>&nbsp; public void PontotKap(Jatekos j) {
+        <b class="nc"><i>88</i>&nbsp; Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;PontotKap(Jatekos)&quot;);</b>
+        <b class="nc"><i>89</i>&nbsp; pontok.PontotKap(j.getNev());</b>
+        <b class="nc"><i>90</i>&nbsp; Printer.PrintTabOut(&quot;Return&quot;);</b>
+        <b class="nc"><i>91</i>&nbsp; }</b>
+        <i>92</i>&nbsp;
+        <i>93</i>&nbsp; /**
+        <i>94</i>&nbsp; * Vegignezi a dobozokat, es ellenorzi a jatek veget.
+        <i>95</i>&nbsp; */
+        <i>96</i>&nbsp; public void Vegellenorzes() {
+        <b class="fc"><i>97</i>&nbsp; Printer.PrintTabIn(&quot;Palya&quot; + &#39;\t&#39; + &quot;Vegellenorzes()&quot;);</b>
+        <i>98</i>&nbsp;
+        <b class="fc"><i>99</i>&nbsp; for (Doboz d : dobozok) {</b>
+        <b class="nc"><i>100</i>&nbsp; boolean mozgathato = d.Vege();</b>
+        <b class="nc"><i>101</i>&nbsp; if (mozgathato == true) {</b>
+        <b class="nc"><i>102</i>&nbsp; Printer.PrintTabOut(&quot;Return&quot;);</b>
+        <b class="nc"><i>103</i>&nbsp; return;</b>
+        <i>104</i>&nbsp; }
+        <b class="nc"><i>105</i>&nbsp; }</b>
+        <i>106</i>&nbsp;
+        <b class="fc"><i>107</i>&nbsp; jatek.EndGame();</b>
+        <b class="fc"><i>108</i>&nbsp; Printer.PrintTabOut(&quot;Return&quot;);</b>
+        <b class="fc"><i>109</i>&nbsp; return;</b>
+        <i>110</i>&nbsp; }
+        <i>111</i>&nbsp;
+        <i>112</i>&nbsp;}
+    </div>
 </div>
 
 <div class="footer">
-    
+
     <div style="float:right;">generated on 2018-03-17 15:24</div>
 </div>
 </body>
