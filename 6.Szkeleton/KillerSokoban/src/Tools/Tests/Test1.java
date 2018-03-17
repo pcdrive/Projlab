@@ -1,5 +1,6 @@
-package Tools;
+package Tools.Tests;
 
+import Tools.Printer;
 import org.junit.Test;
 import sokoban.*;
 
