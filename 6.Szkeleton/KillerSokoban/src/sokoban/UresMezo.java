@@ -18,8 +18,8 @@ import Tools.Printer;
 
 public class UresMezo {
 
-    private UresMezo szomszed[];
     protected Leptetheto leptetheto;
+    private UresMezo szomszed[];
 
     public UresMezo() {
         szomszed = new UresMezo[4];
@@ -63,7 +63,7 @@ public class UresMezo {
             return true;
         }
         boolean success = leptetheto.Tol(i, j);
-        if(success){
+        if (success) {
             leptetheto = aktj;
         }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
@@ -89,7 +89,7 @@ public class UresMezo {
             return true;
         }
         boolean success = leptetheto.Utkozik(i, j);
-        if(success){
+        if (success) {
             leptetheto = d;
         }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));

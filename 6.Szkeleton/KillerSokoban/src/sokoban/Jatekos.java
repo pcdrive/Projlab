@@ -52,7 +52,7 @@ public class Jatekos extends Leptetheto {
     public void Lepes(Irany i) {
         Printer.PrintTabIn("Jatekos" + '\t' + "Lepes(Irany)");
 
-        Tol(i,this);
+        Tol(i, this);
         palya.Vegellenorzes();
 
         Printer.PrintTabOut("Return");
