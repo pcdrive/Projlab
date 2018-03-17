@@ -2,6 +2,7 @@ package Tools;
 
 public class Printer {
     private static int tabCount = 0;
+    private static boolean printEnabled = true;
 
     public static void PrintTabIn(String message) {
         tabCount++;
@@ -18,4 +19,14 @@ public class Printer {
         System.out.println(" " + message);
         tabCount--;
     }
+
+    public static void EnablePrint(){
+        printEnabled = true;
+    }
+
+    private static void DisablePrint(){
+        printEnabled = false;
+    }
+
+
 }
