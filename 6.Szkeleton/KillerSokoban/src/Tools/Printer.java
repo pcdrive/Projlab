@@ -5,26 +5,30 @@ public class Printer {
     private static boolean printEnabled = true;
 
     public static void PrintTabIn(String message) {
-        tabCount++;
-        for (int i = 0; i < tabCount; i++) {
-            System.out.print("\t");
+        if (printEnabled) {
+            tabCount++;
+            for (int i = 0; i < tabCount; i++) {
+                System.out.print("\t");
+            }
+            System.out.println(message);
         }
-        System.out.println(message);
     }
 
     public static void PrintTabOut(String message) {
-        for (int i = 0; i < tabCount; i++) {
-            System.out.print("\t");
+        if (printEnabled) {
+            for (int i = 0; i < tabCount; i++) {
+                System.out.print("\t");
+            }
+            System.out.println(" " + message);
+            tabCount--;
         }
-        System.out.println(" " + message);
-        tabCount--;
     }
 
-    public static void EnablePrint(){
+    public static void EnablePrint() {
         printEnabled = true;
     }
 
-    private static void DisablePrint(){
+    public static void DisablePrint() {
         printEnabled = false;
     }
 

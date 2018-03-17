@@ -5,7 +5,7 @@ import sokoban.*;
 public class Test1{
 @Test
 public void Test_1_1_1(){
-System.out.println("<===================== START OF TEST_1_1_1 =====================>");
+Printer.DisablePrint();
 UresMezo kiindulomezo = new UresMezo();
 UresMezo celmezo = new UresMezo();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -15,12 +15,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_1_1 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_1_2(){
-System.out.println("<===================== START OF TEST_1_1_2 =====================>");
+Printer.DisablePrint();
 UresMezo kiindulomezo = new UresMezo();
 Celhely celmezo = new Celhely();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -30,12 +32,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_1_2 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_1_3(){
-System.out.println("<===================== START OF TEST_1_1_3 =====================>");
+Printer.DisablePrint();
 UresMezo kiindulomezo = new UresMezo();
 Csapdaajto celmezo = new Csapdaajto();
 celmezo.Nyit();
@@ -46,12 +50,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_1_3 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_1_4(){
-System.out.println("<===================== START OF TEST_1_1_4 =====================>");
+Printer.DisablePrint();
 UresMezo kiindulomezo = new UresMezo();
 Csapdaajto celmezo = new Csapdaajto();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -61,12 +67,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_1_4 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_1_5(){
-System.out.println("<===================== START OF TEST_1_1_5 =====================>");
+Printer.DisablePrint();
 UresMezo kiindulomezo = new UresMezo();
 Kapcsolo celmezo = new Kapcsolo();
 celmezo.AddCsapda(new Csapdaajto());
@@ -77,12 +85,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_1_5 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_1_6(){
-System.out.println("<===================== START OF TEST_1_1_6 =====================>");
+Printer.DisablePrint();
 UresMezo kiindulomezo = new UresMezo();
 Lyuk celmezo = new Lyuk();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -92,12 +102,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_1_6 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_1_7(){
-System.out.println("<===================== START OF TEST_1_1_7 =====================>");
+Printer.DisablePrint();
 UresMezo kiindulomezo = new UresMezo();
 Fal celmezo = new Fal();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -107,12 +119,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_1_7 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_2_1(){
-System.out.println("<===================== START OF TEST_1_2_1 =====================>");
+Printer.DisablePrint();
 Celhely kiindulomezo = new Celhely();
 UresMezo celmezo = new UresMezo();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -122,12 +136,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_2_1 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_2_2(){
-System.out.println("<===================== START OF TEST_1_2_2 =====================>");
+Printer.DisablePrint();
 Celhely kiindulomezo = new Celhely();
 Celhely celmezo = new Celhely();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -137,12 +153,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_2_2 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_2_3(){
-System.out.println("<===================== START OF TEST_1_2_3 =====================>");
+Printer.DisablePrint();
 Celhely kiindulomezo = new Celhely();
 Csapdaajto celmezo = new Csapdaajto();
 celmezo.Nyit();
@@ -153,12 +171,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_2_3 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_2_4(){
-System.out.println("<===================== START OF TEST_1_2_4 =====================>");
+Printer.DisablePrint();
 Celhely kiindulomezo = new Celhely();
 Csapdaajto celmezo = new Csapdaajto();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -168,12 +188,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_2_4 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_2_5(){
-System.out.println("<===================== START OF TEST_1_2_5 =====================>");
+Printer.DisablePrint();
 Celhely kiindulomezo = new Celhely();
 Kapcsolo celmezo = new Kapcsolo();
 celmezo.AddCsapda(new Csapdaajto());
@@ -184,12 +206,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_2_5 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_2_6(){
-System.out.println("<===================== START OF TEST_1_2_6 =====================>");
+Printer.DisablePrint();
 Celhely kiindulomezo = new Celhely();
 Lyuk celmezo = new Lyuk();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -199,12 +223,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_2_6 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_2_7(){
-System.out.println("<===================== START OF TEST_1_2_7 =====================>");
+Printer.DisablePrint();
 Celhely kiindulomezo = new Celhely();
 Fal celmezo = new Fal();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -214,12 +240,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_2_7 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_3_1(){
-System.out.println("<===================== START OF TEST_1_3_1 =====================>");
+Printer.DisablePrint();
 Csapdaajto kiindulomezo = new Csapdaajto();
 UresMezo celmezo = new UresMezo();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -229,12 +257,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_3_1 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_3_2(){
-System.out.println("<===================== START OF TEST_1_3_2 =====================>");
+Printer.DisablePrint();
 Csapdaajto kiindulomezo = new Csapdaajto();
 Celhely celmezo = new Celhely();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -244,12 +274,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_3_2 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_3_3(){
-System.out.println("<===================== START OF TEST_1_3_3 =====================>");
+Printer.DisablePrint();
 Csapdaajto kiindulomezo = new Csapdaajto();
 Csapdaajto celmezo = new Csapdaajto();
 celmezo.Nyit();
@@ -260,12 +292,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_3_3 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_3_4(){
-System.out.println("<===================== START OF TEST_1_3_4 =====================>");
+Printer.DisablePrint();
 Csapdaajto kiindulomezo = new Csapdaajto();
 Csapdaajto celmezo = new Csapdaajto();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -275,12 +309,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_3_4 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_3_5(){
-System.out.println("<===================== START OF TEST_1_3_5 =====================>");
+Printer.DisablePrint();
 Csapdaajto kiindulomezo = new Csapdaajto();
 Kapcsolo celmezo = new Kapcsolo();
 celmezo.AddCsapda(new Csapdaajto());
@@ -291,12 +327,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_3_5 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_3_6(){
-System.out.println("<===================== START OF TEST_1_3_6 =====================>");
+Printer.DisablePrint();
 Csapdaajto kiindulomezo = new Csapdaajto();
 Lyuk celmezo = new Lyuk();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -306,12 +344,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_3_6 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_3_7(){
-System.out.println("<===================== START OF TEST_1_3_7 =====================>");
+Printer.DisablePrint();
 Csapdaajto kiindulomezo = new Csapdaajto();
 Fal celmezo = new Fal();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -321,12 +361,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_3_7 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_4_1(){
-System.out.println("<===================== START OF TEST_1_4_1 =====================>");
+Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
 kiindulomezo.AddCsapda(new Csapdaajto());
 UresMezo celmezo = new UresMezo();
@@ -337,12 +379,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_4_1 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_4_2(){
-System.out.println("<===================== START OF TEST_1_4_2 =====================>");
+Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
 kiindulomezo.AddCsapda(new Csapdaajto());
 Celhely celmezo = new Celhely();
@@ -353,12 +397,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_4_2 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_4_3(){
-System.out.println("<===================== START OF TEST_1_4_3 =====================>");
+Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
 kiindulomezo.AddCsapda(new Csapdaajto());
 Csapdaajto celmezo = new Csapdaajto();
@@ -370,12 +416,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_4_3 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_4_4(){
-System.out.println("<===================== START OF TEST_1_4_4 =====================>");
+Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
 kiindulomezo.AddCsapda(new Csapdaajto());
 Csapdaajto celmezo = new Csapdaajto();
@@ -386,12 +434,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_4_4 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_4_5(){
-System.out.println("<===================== START OF TEST_1_4_5 =====================>");
+Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
 kiindulomezo.AddCsapda(new Csapdaajto());
 Kapcsolo celmezo = new Kapcsolo();
@@ -403,12 +453,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_4_5 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_4_6(){
-System.out.println("<===================== START OF TEST_1_4_6 =====================>");
+Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
 kiindulomezo.AddCsapda(new Csapdaajto());
 Lyuk celmezo = new Lyuk();
@@ -419,12 +471,14 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_4_6 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
 @Test
 public void Test_1_4_7(){
-System.out.println("<===================== START OF TEST_1_4_7 =====================>");
+Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
 kiindulomezo.AddCsapda(new Csapdaajto());
 Fal celmezo = new Fal();
@@ -435,6 +489,8 @@ kiindulomezo.SetSzomszed(Irany.BALRA, null);
 kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
 kiindulomezo.SetSzomszed(Irany.LE, null);
 celmezo.SetSzomszed(Irany.LE, kiindulomezo);
+System.out.println("\n<===================== START OF TEST_1_4_7 =====================>");
+Printer.EnablePrint();
 jatekos1.Lepes(Irany.FEL);
 System.out.println("<========================= END OF TEST =========================>");
 }
