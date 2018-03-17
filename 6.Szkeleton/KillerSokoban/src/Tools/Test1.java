@@ -370,7 +370,9 @@ System.out.println("<========================= END OF TEST =====================
 public void Test_1_4_1(){
 Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
+for(int i = 0; i<5; i++){
 kiindulomezo.AddCsapda(new Csapdaajto());
+}
 UresMezo celmezo = new UresMezo();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
 kiindulomezo.Fogad(null, jatekos1, null);
@@ -388,7 +390,9 @@ System.out.println("<========================= END OF TEST =====================
 public void Test_1_4_2(){
 Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
+for(int i = 0; i<5; i++){
 kiindulomezo.AddCsapda(new Csapdaajto());
+}
 Celhely celmezo = new Celhely();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
 kiindulomezo.Fogad(null, jatekos1, null);
@@ -406,7 +410,9 @@ System.out.println("<========================= END OF TEST =====================
 public void Test_1_4_3(){
 Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
+for(int i = 0; i<5; i++){
 kiindulomezo.AddCsapda(new Csapdaajto());
+}
 Csapdaajto celmezo = new Csapdaajto();
 celmezo.Nyit();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -425,7 +431,9 @@ System.out.println("<========================= END OF TEST =====================
 public void Test_1_4_4(){
 Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
+for(int i = 0; i<5; i++){
 kiindulomezo.AddCsapda(new Csapdaajto());
+}
 Csapdaajto celmezo = new Csapdaajto();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
 kiindulomezo.Fogad(null, jatekos1, null);
@@ -443,7 +451,9 @@ System.out.println("<========================= END OF TEST =====================
 public void Test_1_4_5(){
 Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
+for(int i = 0; i<5; i++){
 kiindulomezo.AddCsapda(new Csapdaajto());
+}
 Kapcsolo celmezo = new Kapcsolo();
 celmezo.AddCsapda(new Csapdaajto());
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
@@ -462,7 +472,9 @@ System.out.println("<========================= END OF TEST =====================
 public void Test_1_4_6(){
 Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
+for(int i = 0; i<5; i++){
 kiindulomezo.AddCsapda(new Csapdaajto());
+}
 Lyuk celmezo = new Lyuk();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
 kiindulomezo.Fogad(null, jatekos1, null);
@@ -480,7 +492,9 @@ System.out.println("<========================= END OF TEST =====================
 public void Test_1_4_7(){
 Printer.DisablePrint();
 Kapcsolo kiindulomezo = new Kapcsolo();
+for(int i = 0; i<5; i++){
 kiindulomezo.AddCsapda(new Csapdaajto());
+}
 Fal celmezo = new Fal();
 Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
 kiindulomezo.Fogad(null, jatekos1, null);

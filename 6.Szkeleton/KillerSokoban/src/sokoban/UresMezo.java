@@ -59,9 +59,13 @@ public class UresMezo {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            leptetheto = aktj;
             return true;
         }
         boolean success = leptetheto.Tol(i, j);
+        if(success){
+            leptetheto = aktj;
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
@@ -81,9 +85,13 @@ public class UresMezo {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Doboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            leptetheto = d;
             return true;
         }
         boolean success = leptetheto.Utkozik(i, j);
+        if(success){
+            leptetheto = d;
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }

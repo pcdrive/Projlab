@@ -51,12 +51,10 @@ public class Jatekos extends Leptetheto {
      */
     public void Lepes(Irany i) {
         Printer.PrintTabIn("Jatekos" + '\t' + "Lepes(Irany)");
-        boolean success = mezo.GetSzomszed(i).Fogad(i, this, this);
 
-        if (success == true) {
-            mezo.Enged();
-        }
+        Tol(i,this);
         palya.Vegellenorzes();
+
         Printer.PrintTabOut("Return");
     }
 
