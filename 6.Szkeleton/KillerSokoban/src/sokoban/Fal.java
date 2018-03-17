@@ -36,9 +36,10 @@ public class Fal extends UresMezo {
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Fal" + '\t' + "Fogad(Jatekos)");
-        Printer.PrintTabOut(Boolean.toString(false));
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
     }
 
@@ -53,9 +54,10 @@ public class Fal extends UresMezo {
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
+    @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("Fal" + '\t' + "Fogad(Doboz,Jatekos)");
-        Printer.PrintTabOut(Boolean.toString(false));
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
     }
 

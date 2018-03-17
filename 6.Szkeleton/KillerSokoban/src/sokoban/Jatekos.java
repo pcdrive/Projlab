@@ -51,12 +51,10 @@ public class Jatekos extends Leptetheto {
      */
     public void Lepes(Irany i) {
         Printer.PrintTabIn("Jatekos" + '\t' + "Lepes(Irany)");
-        boolean success = mezo.GetSzomszed(i).Fogad(i, this, this);
 
-        if (success == true) {
-            mezo.Enged();
-        }
+        Tol(i, this);
         palya.Vegellenorzes();
+
         Printer.PrintTabOut("Return");
     }
 
@@ -75,6 +73,7 @@ public class Jatekos extends Leptetheto {
      * A jatekos halalat kezeli. Ezt hivja meg a mezo,
      * ez pedig tovabbhivja a palya halal metodusat.
      */
+    @Override
     public void Halal() {
         Printer.PrintTabIn("Jatekos" + '\t' + "Halal()");
         palya.Halal(this);
@@ -88,13 +87,14 @@ public class Jatekos extends Leptetheto {
      * @param j Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
+    @Override
     public boolean Utkozik(Irany i, Jatekos j) {
 
         Printer.PrintTabIn("Jatekos" + '\t' + "Utkozik(Irany, Jatekos)");
 
 
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
-        if (success == true) {
+        if (success) {
             mezo.Enged();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;
@@ -112,12 +112,13 @@ public class Jatekos extends Leptetheto {
      * @param j Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
+    @Override
     public boolean Tol(Irany i, Jatekos j) {
 
         Printer.PrintTabIn("Jatekos" + '\t' + "Tol(Irany, Jatekos)");
 
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
-        if (success == true)
+        if (success)
             mezo.Enged();
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;

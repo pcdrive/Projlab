@@ -18,8 +18,8 @@ import Tools.Printer;
 
 public class UresMezo {
 
-    private UresMezo szomszed[];
     protected Leptetheto leptetheto;
+    private UresMezo szomszed[];
 
     public UresMezo() {
         szomszed = new UresMezo[4];
@@ -39,7 +39,15 @@ public class UresMezo {
      */
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
-        boolean success = this.Fogad(i, (Doboz) jd, j);
+        if (leptetheto == null) {
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            leptetheto = jd;
+            return true;
+        }
+        boolean success = leptetheto.Utkozik(i, j);
+        if (success) {
+            leptetheto = jd;
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
@@ -59,9 +67,13 @@ public class UresMezo {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            leptetheto = aktj;
             return true;
         }
         boolean success = leptetheto.Tol(i, j);
+        if (success) {
+            leptetheto = aktj;
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
@@ -81,9 +93,13 @@ public class UresMezo {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Doboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            leptetheto = d;
             return true;
         }
         boolean success = leptetheto.Utkozik(i, j);
+        if (success) {
+            leptetheto = d;
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }

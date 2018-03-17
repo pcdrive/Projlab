@@ -48,7 +48,7 @@ public class Palya {
         Printer.PrintTabIn("Palya" + '\t' + "Leptet()");
 
         for (Jatekos j : jatekosok) {
-            if (j.getNev() == nev) {
+            if (j.getNev().equals(nev)) {
                 j.Lepes(i);
             }
         }
@@ -98,7 +98,7 @@ public class Palya {
 
         for (Doboz d : dobozok) {
             boolean mozgathato = d.Vege();
-            if (mozgathato == true) {
+            if (mozgathato) {
                 Printer.PrintTabOut("Return");
                 return;
             }
