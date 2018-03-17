@@ -24,19 +24,12 @@ public class Printer {
         }
     }
 
-<<<<<<< HEAD
-    public static void EnablePrint(){
-        printEnabled = true;
-    }
 
-    private static void DisablePrint(){
-=======
     public static void EnablePrint() {
         printEnabled = true;
     }
 
     public static void DisablePrint() {
->>>>>>> dev_Mocsi
         printEnabled = false;
     }
 
