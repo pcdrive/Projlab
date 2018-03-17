@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 import java.util.ArrayList;
 
 @SuppressWarnings("unused")
@@ -43,13 +45,14 @@ public class Palya {
      * @param nev A jatekos neve, azonositoja, akit leptetni akarunk.
      */
     public void Leptet(Irany i, String nev) {
-        System.out.println("Palya" + '\t' + "Leptet()");
+        Printer.PrintTabIn("Palya" + '\t' + "Leptet()");
 
         for (Jatekos j : jatekosok) {
             if (j.getNev() == nev) {
                 j.Lepes(i);
             }
         }
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -58,9 +61,10 @@ public class Palya {
      * @param j A jatekos akinek meg kell halnia.
      */
     public void Halal(Jatekos j) {
-        System.out.println("Palya" + '\t' + "Halal(Jatekos)");
+        Printer.PrintTabIn("Palya" + '\t' + "Halal(Jatekos)");
 
         jatekosok.remove(j);
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -69,8 +73,9 @@ public class Palya {
      * @param d A doboz akinek meg kell halnia.
      */
     public void Halal(Doboz d) {
-        System.out.println("Palya" + '\t' + "Halal(Doboz)");
+        Printer.PrintTabIn("Palya" + '\t' + "Halal(Doboz)");
         dobozok.remove(d);
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -80,24 +85,27 @@ public class Palya {
      * @param j A jatekos aki a pontot kapja.
      */
     public void PontotKap(Jatekos j) {
-        System.out.println("Palya" + '\t' + "PontotKap(Jatekos)");
+        Printer.PrintTabIn("Palya" + '\t' + "PontotKap(Jatekos)");
         pontok.PontotKap(j.getNev());
+        Printer.PrintTabOut("Return");
     }
 
     /**
      * Vegignezi a dobozokat, es ellenorzi a jatek veget.
      */
     public void Vegellenorzes() {
-        System.out.println("Palya" + '\t' + "Vegellenorzes()");
+        Printer.PrintTabIn("Palya" + '\t' + "Vegellenorzes()");
 
         for (Doboz d : dobozok) {
             boolean mozgathato = d.Vege();
             if (mozgathato == true) {
+                Printer.PrintTabOut("Return");
                 return;
             }
         }
 
         jatek.EndGame();
+        Printer.PrintTabOut("Return");
         return;
     }
 

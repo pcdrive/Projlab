@@ -13,6 +13,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Celhely extends UresMezo {
 
     private boolean jel;
@@ -38,7 +40,7 @@ public class Celhely extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        System.out.println("Celhely" + '\t' + "Fogad(JeloltDoboz,Jatekos)");
+        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(JeloltDoboz,Jatekos)");
         boolean success = super.Fogad(i, jd, j);
         if (jel == false || jd.getJel() == false) {
             return success;
@@ -48,7 +50,7 @@ public class Celhely extends UresMezo {
             jd.JeletTorol();
             j.PontotKap();
         }
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 
@@ -65,9 +67,9 @@ public class Celhely extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        System.out.println("Celhely" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Jatekos)");
         boolean success = super.Fogad(i, aktj, j);
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 
@@ -84,9 +86,9 @@ public class Celhely extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        System.out.println("Celhely" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Doboz,Jatekos)");
         boolean success = super.Fogad(i, d, j);
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 

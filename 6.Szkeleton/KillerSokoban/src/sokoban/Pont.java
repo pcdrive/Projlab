@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Pont {
 
     private final String nev;
@@ -34,8 +36,8 @@ public class Pont {
      * @return String A nev erteke.
      */
     public String getNev() {
-        System.out.println("Pont" + '\t' + "getNev()");
-        System.out.println(nev);
+        Printer.PrintTabIn("Pont" + '\t' + "getNev()");
+        Printer.PrintTabOut("Return: " + nev);
         return nev;
     }
 
@@ -45,8 +47,8 @@ public class Pont {
      * @return String A pontok erteke.
      */
     public int getPont() {
-        System.out.println("Pont" + '\t' + "getPont()");
-        System.out.println(pont);
+        Printer.PrintTabIn("Pont" + '\t' + "getPont()");
+        Printer.PrintTabOut("Return: " + pont);
         return pont;
     }
 
@@ -54,7 +56,9 @@ public class Pont {
      * Pontot ad a jatekosnak.
      */
     public void PontotAd() {
+        Printer.PrintTabIn("Pont" + '\t' + "PontotAd()");
         pont++;
+        Printer.PrintTabOut("Return");
     }
 
 }

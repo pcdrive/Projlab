@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 import java.util.ArrayList;
 
 public class Kapcsolo extends UresMezo {
@@ -40,7 +42,7 @@ public class Kapcsolo extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        System.out.println("Kapcsolo" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Jatekos)");
         boolean success = super.Fogad(i, aktj, j);
 
         if (success) {
@@ -49,7 +51,7 @@ public class Kapcsolo extends UresMezo {
             }
         }
 
-        System.out.println(success);
+        Printer.PrintTabOut("Return " + Boolean.toString(success));
         return success;
     }
 
@@ -66,7 +68,7 @@ public class Kapcsolo extends UresMezo {
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
 
-        System.out.println("Kapcsolo" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Doboz,Jatekos)");
         boolean success = super.Fogad(i, d, j);
 
         if (success == true) {
@@ -75,7 +77,7 @@ public class Kapcsolo extends UresMezo {
             }
         }
 
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 
@@ -85,7 +87,9 @@ public class Kapcsolo extends UresMezo {
      * @param c A kapcsolohoz adni kivant csapda.
      */
     public void AddCsapda(Csapdaajto c) {
+        Printer.PrintTabIn("Kapcsolo" + '\t' + "AddCsapda(Csapdaajto)");
         csapdak.add(c);
+        Printer.PrintTabOut("Return");
     }
 
 }

@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Lyuk extends UresMezo {
 
     /**
@@ -36,9 +38,9 @@ public class Lyuk extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        System.out.println("Lyuk" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Jatekos)");
         j.Halal();
-        System.out.println(true);
+        Printer.PrintTabOut("Return: " + Boolean.toString(true));
         return true;
     }
 
@@ -55,9 +57,9 @@ public class Lyuk extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        System.out.println("Lyuk" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Doboz,Jatekos)");
         d.Halal();
-        System.out.println(true);
+        Printer.PrintTabOut("Return " + Boolean.toString(true));
         return true;
     }
 

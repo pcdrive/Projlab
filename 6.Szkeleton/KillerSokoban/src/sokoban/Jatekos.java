@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Jatekos extends Leptetheto {
     private final String nev;
 
@@ -37,8 +39,8 @@ public class Jatekos extends Leptetheto {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public String getNev() {
-        System.out.println("Jatekos" + '\t' + "getNev()");
-        System.out.println(nev);
+        Printer.PrintTabIn("Jatekos" + '\t' + "getNev()");
+        Printer.PrintTabOut("Return: " + nev);
         return nev;
     }
 
@@ -48,13 +50,14 @@ public class Jatekos extends Leptetheto {
      * @param i Irany amerre lepni akarunk
      */
     public void Lepes(Irany i) {
-        System.out.println("Jatekos" + '\t' + "Lepes(Irany)");
+        Printer.PrintTabIn("Jatekos" + '\t' + "Lepes(Irany)");
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, this);
 
         if (success == true) {
             mezo.Enged();
         }
         palya.Vegellenorzes();
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -63,8 +66,9 @@ public class Jatekos extends Leptetheto {
      * metodusat.
      */
     public void PontotKap() {
-        System.out.println("Jatekos" + '\t' + "PontotKap()");
+        Printer.PrintTabIn("Jatekos" + '\t' + "PontotKap()");
         palya.PontotKap(this);
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -72,8 +76,9 @@ public class Jatekos extends Leptetheto {
      * ez pedig tovabbhivja a palya halal metodusat.
      */
     public void Halal() {
-        System.out.println("Jatekos" + '\t' + "Halal()");
+        Printer.PrintTabIn("Jatekos" + '\t' + "Halal()");
         palya.Halal(this);
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -86,18 +91,18 @@ public class Jatekos extends Leptetheto {
      */
     public boolean Utkozik(Irany i, Jatekos j) {
 
-        System.out.println("Jatekos" + '\t' + "Utkozik(Irany, Jatekos)");
+        Printer.PrintTabIn("Jatekos" + '\t' + "Utkozik(Irany, Jatekos)");
 
 
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
         if (success == true) {
             mezo.Enged();
-            System.out.println(true);
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;
         }
 
         Halal();
-        System.out.println(false);
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
     }
 
@@ -111,12 +116,12 @@ public class Jatekos extends Leptetheto {
      */
     public boolean Tol(Irany i, Jatekos j) {
 
-        System.out.println("Jatekos" + '\t' + "Tol(Irany, Jatekos)");
+        Printer.PrintTabIn("Jatekos" + '\t' + "Tol(Irany, Jatekos)");
 
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
         if (success == true)
             mezo.Enged();
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 

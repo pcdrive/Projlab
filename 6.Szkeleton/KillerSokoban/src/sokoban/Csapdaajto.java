@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Csapdaajto extends UresMezo {
 
     private boolean nyitva;
@@ -31,14 +33,16 @@ public class Csapdaajto extends UresMezo {
      * Kinyitja az ajt�t, az erre a c�lra fentartott boolean erteket valtoztatva
      */
     public void Nyit() {
-        System.out.println("Csapdaajto" + '\t' + "Nyit()");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Nyit()");
+        Printer.PrintTabOut("Return");
     }
 
     /**
      * Becsukja az ajt�t, az erre a c�lra fentartott boolean erteket valtoztatva
      */
     public void Csuk() {
-        System.out.println("Csapdaajto" + '\t' + "Csuk()");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Csuk()");
+        Printer.PrintTabOut("Return");
     }
 
 
@@ -55,14 +59,14 @@ public class Csapdaajto extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        System.out.println("Csapdaajto" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabOut("Csapdaajto" + '\t' + "Fogad(Jatekos)");
         if (nyitva == true) {
             aktj.Halal();
-            System.out.println(true);
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;
         } else {
             boolean success = super.Fogad(i, aktj, j);
-            System.out.println(success);
+            Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }
     }
@@ -80,14 +84,14 @@ public class Csapdaajto extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        System.out.println("Csapdaajto" + '\t' + "Fogad(Doboz, Jatekos)");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Doboz, Jatekos)");
         if (nyitva == true) {
             d.Halal();
-            System.out.println(true);
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;
         } else {
             boolean success = super.Fogad(i, d, j);
-            System.out.println(success);
+            Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }
     }

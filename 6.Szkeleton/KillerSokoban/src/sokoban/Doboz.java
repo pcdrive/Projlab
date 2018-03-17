@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Doboz extends Leptetheto {
 
     /**
@@ -32,8 +34,8 @@ public class Doboz extends Leptetheto {
      * @return boolean Annak az erteke, hogy mozgathato-e.
      */
     public boolean Vege() {
-        System.out.println("Doboz" + '\t' + "Vege()");
-        System.out.println(true);
+        Printer.PrintTabIn("Doboz" + '\t' + "Vege()");
+        Printer.PrintTabOut("Return: " + Boolean.toString(true));
         return true;
     }
 
@@ -41,8 +43,9 @@ public class Doboz extends Leptetheto {
      * megoli a dobozt, a palya megfelelo fuggvenyenek hivasaval.
      */
     public void Halal() {
-        System.out.println("Doboz" + '\t' + "Halal()");
+        Printer.PrintTabIn("Doboz" + '\t' + "Halal()");
         palya.Halal(this);
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -54,11 +57,11 @@ public class Doboz extends Leptetheto {
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     public boolean Utkozik(Irany i, Jatekos j) {
-        System.out.println("Doboz" + '\t' + "Utkozik(Irany, Jatekos)");
+        Printer.PrintTabIn("Doboz" + '\t' + "Utkozik(Irany, Jatekos)");
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
         if (success == true)
             mezo.Enged();
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 
@@ -71,11 +74,11 @@ public class Doboz extends Leptetheto {
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     public boolean Tol(Irany i, Jatekos j) {
-        System.out.println("Doboz" + '\t' + "Tol(Irany, Jatekos)");
+        Printer.PrintTabIn("Doboz" + '\t' + "Tol(Irany, Jatekos)");
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
         if (success == true)
             mezo.Enged();
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 

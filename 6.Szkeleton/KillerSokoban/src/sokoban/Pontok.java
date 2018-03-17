@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 import java.util.ArrayList;
 
 public class Pontok {
@@ -34,14 +36,14 @@ public class Pontok {
      * @param nev A jatekos neve, aki a pontot kapja.
      */
     public void PontotKap(String nev) {
-        System.out.println("Pontok" + '\t' + "PontotKap(Jatekos)");
+        Printer.PrintTabIn("Pontok" + '\t' + "PontotKap(Jatekos)");
 
         for (Pont p : pontok) {
             if (p.getNev() == nev) {
                 p.PontotAd();
             }
         }
-
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -53,13 +55,13 @@ public class Pontok {
      * @return int A pontok szama.
      */
     public int getPont(String nev) {
-
+        Printer.PrintTabIn("Pontok" + '\t' + "getPont(String)");
         for (Pont p : pontok) {
             if (p.getNev() == nev) {
                 return p.getPont();
             }
         }
-
+        Printer.PrintTabOut("Return: " + 0);
         return 0;
     }
 
@@ -69,8 +71,8 @@ public class Pontok {
      * @return int A lista hossza.
      */
     public int getHossz() {
-        System.out.println("Pontok" + '\t' + "getHossz()");
-        System.out.println(pontok.size());
+        Printer.PrintTabIn("Pontok" + '\t' + "getHossz()");
+        Printer.PrintTabOut("Return: " + pontok.size());
         return pontok.size();
     }
 

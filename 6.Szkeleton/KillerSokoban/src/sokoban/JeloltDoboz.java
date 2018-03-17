@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class JeloltDoboz extends Doboz {
     private boolean jel;
 
@@ -33,8 +35,9 @@ public class JeloltDoboz extends Doboz {
      * Torli a doboz jeloleset, a boolean ertek megveltoztatasaval.
      */
     public void JeletTorol() {
-        System.out.println("JeloltDoboz" + '\t' + "JeletTorol()");
+        Printer.PrintTabIn("JeloltDoboz" + '\t' + "JeletTorol()");
         jel = false;
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -43,8 +46,8 @@ public class JeloltDoboz extends Doboz {
      * @return boolean A jel erteke.
      */
     public boolean getJel() {
-        System.out.println("JeloltDoboz" + '\t' + "JeletTorol()");
-        System.out.println(jel);
+        Printer.PrintTabIn("JeloltDoboz" + '\t' + "JeletTorol()");
+        Printer.PrintTabOut("Return " + Boolean.toString(jel));
         return jel;
     }
 

@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Jatek {
 
     /**
@@ -27,14 +29,16 @@ public class Jatek {
      * Elkezdi a jatekot. Letrehozza a palyat, es annak tartalmat.
      */
     public void StartGame() {
-        System.out.println("Jatek" + '\t' + "StartGame()");
+        Printer.PrintTabIn("Jatek" + '\t' + "StartGame()");
+        Printer.PrintTabOut("Return");
     }
 
     /**
      * Befejezi a jatekot. Torli a palyat, es annak tartalmat.
      */
     public void EndGame() {
-        System.out.println("Jatek" + '\t' + "EndGame()");
+        Printer.PrintTabIn("Jatek" + '\t' + "EndGame()");
+        Printer.PrintTabOut("Return");
     }
 
 }

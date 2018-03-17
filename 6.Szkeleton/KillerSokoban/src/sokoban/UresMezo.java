@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class UresMezo {
 
     private UresMezo szomszed[];
@@ -56,12 +58,13 @@ public class UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        System.out.println("UresMezo" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Jatekos)");
         if (leptetheto == null) {
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;
         }
         boolean success = leptetheto.Tol(i, j);
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 
@@ -78,13 +81,13 @@ public class UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        System.out.println("UresMezo" + '\t' + "Fogad(Doboz, Jatekos)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Doboz, Jatekos)");
         if (leptetheto == null) {
-            System.out.println(true);
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
             return true;
         }
         boolean success = leptetheto.Utkozik(i, j);
-        System.out.println(success);
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
 
@@ -92,8 +95,9 @@ public class UresMezo {
      * Elengedi a leptethetot, amikor az ellep a mezorol.
      */
     public void Enged() {
-        System.out.println("UresMezo" + '\t' + "Enged(Leptetheto)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Enged(Leptetheto)");
         leptetheto = null;
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -104,7 +108,8 @@ public class UresMezo {
      * @return UresMezo A szomszedos mezo.
      */
     public UresMezo GetSzomszed(Irany i) {
-        System.out.println("UresMezo" + '\t' + "GetSzomszed(Irany)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "GetSzomszed(Irany)");
+        Printer.PrintTabOut("Return: " + szomszed[i.ordinal()]);
         return szomszed[i.ordinal()];
     }
 
@@ -115,8 +120,9 @@ public class UresMezo {
      * @param u A mezo amit beallitunk.
      */
     public void SetSzomszed(Irany i, UresMezo u) {
-        System.out.println("UresMezo" + '\t' + "SetSzomszed(Irany, UresMezo)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "SetSzomszed(Irany, UresMezo)");
         szomszed[i.ordinal()] = u;
+        Printer.PrintTabOut("Return");
     }
 
 }

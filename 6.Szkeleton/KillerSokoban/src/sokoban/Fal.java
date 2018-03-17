@@ -14,6 +14,8 @@
 
 package sokoban;
 
+import Tools.Printer;
+
 public class Fal extends UresMezo {
 
     /**
@@ -36,8 +38,8 @@ public class Fal extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        System.out.println("Fal" + '\t' + "Fogad(Jatekos)");
-        System.out.println(false);
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabOut(Boolean.toString(false));
         return false;
     }
 
@@ -54,8 +56,8 @@ public class Fal extends UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        System.out.println("Fal" + '\t' + "Fogad(Doboz,Jatekos)");
-        System.out.println(false);
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabOut(Boolean.toString(false));
         return false;
     }
 
