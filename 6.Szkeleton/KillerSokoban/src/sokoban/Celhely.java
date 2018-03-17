@@ -1,18 +1,46 @@
+/**
+* A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+* A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+*
+* @author  Horvath Gergo
+* @author  Mocsari Andras
+* @author  Zsiros Balint
+* @author  Bottlik Judit
+* @author  Holub Csongor
+*  
+* @version 1.0
+* @since   2018-02-09 
+*/
+
 package sokoban;
 
 public class Celhely extends UresMezo {
 	
 	private boolean jel;
 	
+	   /**
+	   * Az osztaly konstruktora. Beállítja a jelet.
+	   */
 	public Celhely(){
 		super();
 		jel=true;
 	}
 	
-	
-	public boolean Fogad(JeloltDoboz jd, Jatekos j) {
+	   /**
+	   * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a 
+	   * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
+	   * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
+	   * a pontot erte.
+	   * 
+	   * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
+	   * @param jd JeloltDoboz, ami a mezore kivan lepni
+	   * @param j  Jatekos, aki lepest tette.
+	   * 
+	   * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
+	   */
+	public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
 		System.out.println("Celhely"+'\t'+"Fogad(JeloltDoboz,Jatekos)");
-		boolean success=super.Fogad(jd, j);
+		boolean success=super.Fogad(i, jd, j);
 		if(jel==false || jd.getJel()==false) {
 			return success;
 		}
@@ -25,16 +53,40 @@ public class Celhely extends UresMezo {
 		return success;
 	}
 	
-	public boolean Fogad(Jatekos j) {
+	   /**
+	   * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a 
+	   * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
+	   * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
+	   * a pontot erte.
+	   * 
+	   * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
+	   * @param aktj Jatekos, ami a mezore kivan lepni
+	   * @param j  Jatekos, aki lepest tette.
+	   * 
+	   * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
+	   */
+	public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
 		System.out.println("Celhely"+ '\t'+ "Fogad(Jatekos)");
-		boolean success=super.Fogad(j);
+		boolean success=super.Fogad(i,aktj,j);
 		System.out.println(success);
 		return success;
 	}
 	
-	public boolean Fogad(Doboz d, Jatekos j) {
+	   /**
+	   * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a 
+	   * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
+	   * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
+	   * a pontot erte.
+	   * 
+	   * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
+	   * @param d Doboz, ami a mezore kivan lepni
+	   * @param j  Jatekos, aki lepest tette.
+	   * 
+	   * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
+	   */
+	public boolean Fogad(Irany i, Doboz d, Jatekos j) {
 		System.out.println("Celhely"+ '\t'+ "Fogad(Doboz,Jatekos)");
-		boolean success=super.Fogad(d,j);
+		boolean success=super.Fogad(i,d,j);
 		System.out.println(success);
 		return success;
 	}
