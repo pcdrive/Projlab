@@ -15,10 +15,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> UresMezo");
+        System.out.println("  UresMezo     UresMezo");
+        
         System.out.println("<======================== START OF TEST_3_2_1_1 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -35,10 +39,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Kapcsolo");
+        System.out.println("  UresMezo     UresMezo");
+        
         System.out.println("<======================== START OF TEST_3_2_1_2 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -54,10 +62,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Lyuk");
+        System.out.println("  UresMezo     UresMezo");
+        
         System.out.println("<======================== START OF TEST_3_2_1_3 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -73,10 +85,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Fal");
+        System.out.println("  UresMezo     UresMezo");
+        
         System.out.println("<======================== START OF TEST_3_2_1_4 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -93,10 +109,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> UresMezo");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<======================== START OF TEST_3_2_2_1 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -114,10 +134,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Kapcsolo");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<======================== START OF TEST_3_2_2_2 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -134,10 +158,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Lyuk");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<======================== START OF TEST_3_2_2_3 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -154,10 +182,14 @@ public class Test_3 {
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Jatek()), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Fal");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<======================== START OF TEST_3_2_2_4 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);

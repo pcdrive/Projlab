@@ -20,6 +20,10 @@ public class Test_2 {
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Jatekos -===> UresMezo");
+        System.out.println("  UresMezo      UresMezo");
+        
         System.out.println("<======================== START OF TEST_2_1_1_1 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -40,6 +44,10 @@ public class Test_2 {
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Jatekos -===> Kapcsolo");
+        System.out.println("  UresMezo      UresMezo");
+        
         System.out.println("<======================== START OF TEST_2_1_1_2 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -59,6 +67,10 @@ public class Test_2 {
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Jatekos -===> Lyuk");
+        System.out.println("  UresMezo      UresMezo");
+        
         System.out.println("<======================== START OF TEST_2_1_1_3 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -78,6 +90,10 @@ public class Test_2 {
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Jatekos -===> Fal");
+        System.out.println(" UresMezo      UresMezo");
+        
         System.out.println("<======================== START OF TEST_2_1_1_4 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -98,6 +114,10 @@ public class Test_2 {
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Jatekos -===> UresMezo");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<======================== START OF TEST_2_1_2_1 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -118,6 +138,10 @@ public class Test_2 {
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
+       
+        System.out.println("  Jatekos -===> Jatekos -===> Kapcsolo");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<============================= DESCRIPTION =============================>");
         System.out.println("<======================== START OF TEST_2_1_2_2 ========================>");
         Printer.EnablePrint();
@@ -139,6 +163,10 @@ public class Test_2 {
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+       
+        System.out.println("  Jatekos -===> Jatekos -===> Lyuk");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<======================== START OF TEST_2_1_2_3 ===(====================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -159,6 +187,10 @@ public class Test_2 {
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Jatekos -===> Fal");
+        System.out.println("  UresMezo     Kapcsolo");
+        
         System.out.println("<======================== START OF TEST_2_1_2_4 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
