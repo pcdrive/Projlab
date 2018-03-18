@@ -30,15 +30,16 @@ public class Test_8 {
         Doboz leptetheto3 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto3, null);
 
-        System.out.println("<===================== DESCRIPTION ======================>");
-        System.out.println("  Speciális eset: Lánctolás");
-        System.out.println("  Jatekos -> Jatekos  -> Doboz -> Fal \n");
-        System.out.println("\n<================== START OF TEST_8_1 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("  Speciï¿½lis eset: Lï¿½nctolï¿½s");
+        System.out.println("  Jatekos -===> Jatekos  -===> Doboz -===> Fal ");
+        System.out.println("<========================== START OF TEST_8_1 ==========================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
         
     }
 	
@@ -65,15 +66,16 @@ public class Test_8 {
         Jatekos leptetheto3 = new Jatekos("Jatekos_2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto3, null);
 
-        System.out.println("<===================== DESCRIPTION ======================>");
-        System.out.println("  Speciális eset: Lánctolás");
-        System.out.println("  Jatekos -> JeloltDoboz -> Doboz Celhelyen -> Fal \n>");
-        System.out.println("\n<================== START OF TEST_8_2 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("  Speciï¿½lis eset: Lï¿½nctolï¿½s");
+        System.out.println("  Jatekos -===> JeloltDoboz -===> Doboz Celhelyen -===> Fal ===>");
+        System.out.println("<========================== START OF TEST_8_2 ==========================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
         
     }
 	
@@ -105,15 +107,16 @@ public class Test_8 {
         Jatekos leptetheto3 = new Jatekos("Jatekos_3", new Palya(new Jatek()), celmezo3);
         celmezo3.Fogad(null, leptetheto3, null);
 
-        System.out.println("<===================== DESCRIPTION ======================>");
-        System.out.println("  Speciális eset: Lánctolás");
-        System.out.println("  Jatekos - Jatekos  - Doboz - Jatekos - Fal \n");
-        System.out.println("\n<================== START OF TEST_8_3 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("  Speciï¿½lis eset: Lï¿½nctolï¿½s");
+        System.out.println("  Jatekos - Jatekos  - Doboz - Jatekos - Fal ");
+        System.out.println("<========================== START OF TEST_8_3 ==========================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
         
     }
 	
@@ -145,15 +148,16 @@ public class Test_8 {
         Doboz leptetheto3 = new Doboz(new Palya(new Jatek()), celmezo3);
         celmezo3.Fogad(null, leptetheto3, null);
 
-        System.out.println("<===================== DESCRIPTION ======================>");
-        System.out.println("  Speciális eset: Lánctolás");
-        System.out.println("  Jatekos - Doboz  - Jatekos - Doboz - Fal \n");
-        System.out.println("\n<================== START OF TEST_8_4 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("  Speciï¿½lis eset: Lï¿½nctolï¿½s");
+        System.out.println("  Jatekos - Doboz  - Jatekos - Doboz - Fal ");
+        System.out.println("<========================== START OF TEST_8_4 ==========================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
         
     }
 	
@@ -185,15 +189,16 @@ public class Test_8 {
         Jatekos leptetheto3 = new Jatekos("Jatekos_3", new Palya(new Jatek()), celmezo3);
         celmezo3.Fogad(null, leptetheto3, null);
 
-        System.out.println("<===================== DESCRIPTION ======================>");
-        System.out.println("  Speciális eset: Lánctolás");
-        System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Fal \n");
-        System.out.println("\n<================== START OF TEST_8_5 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("  Speciï¿½lis eset: Lï¿½nctolï¿½s");
+        System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Fal ");
+        System.out.println("<========================== START OF TEST_8_5 ==========================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
         
     }
 
@@ -231,15 +236,16 @@ public class Test_8 {
         Doboz leptetheto4 = new Doboz(new Palya(new Jatek()), celmezo4);
         celmezo4.Fogad(null, leptetheto4, null);
 
-        System.out.println("<===================== DESCRIPTION ======================>");
-        System.out.println("  Speciális eset: Lánctolás");
-        System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Doboz - Fal \n");
-        System.out.println("\n<================== START OF TEST_8_6 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("  Speciï¿½lis eset: Lï¿½nctolï¿½s");
+        System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Doboz - Fal ");
+        System.out.println("<========================== START OF TEST_8_6 ==========================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
         
     }
 	
@@ -276,15 +282,16 @@ public class Test_8 {
         JeloltDoboz leptetheto4 = new JeloltDoboz(new Palya(new Jatek()), celmezo4);
         celmezo4.Fogad(null, leptetheto4, null);
 
-        System.out.println("<===================== DESCRIPTION ======================>");
-        System.out.println("  Speciális eset: Lánctolás");
-        System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - JeloltDoboz - Celhely \n");
-        System.out.println("\n<================== START OF TEST_8_7 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("  Speciï¿½lis eset: Lï¿½nctolï¿½s");
+        System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - JeloltDoboz - Celhely ");
+        System.out.println("<========================== START OF TEST_8_7 ==========================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
         
     }
 }

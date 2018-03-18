@@ -26,10 +26,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_1_1 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_1_1 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
@@ -52,10 +54,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_1_2 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_1_2 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
@@ -77,10 +81,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_1_3 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_1_3 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
@@ -102,10 +108,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_1_4 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_1_4 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
@@ -128,10 +136,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_2_1 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_2_1 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
@@ -155,10 +165,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_2_2 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_2_2 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
@@ -181,10 +193,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_2_3 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_2_3 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
@@ -207,10 +221,12 @@ public class Test_5 {
         celmezo1.Fogad(null, leptetheto1, null);
         Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
-        System.out.println("\n<================== START OF TEST_5_2_4 ==================>");
+        System.out.println("");
+        System.out.println("<============================= DESCRIPTION =============================>");
+        System.out.println("<========================= START OF TEST_5_2_4 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
-        System.out.println("<========================== END OF TEST ==========================>");
+        System.out.println("<============================= END OF TEST =============================>");
     }
     
     
