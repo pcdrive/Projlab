@@ -17,6 +17,8 @@ package sokoban;
 import Tools.Printer;
 
 public class Jatek {
+	
+	Jatek jatek;
 
     /**
      * Az osztaly konstruktora.

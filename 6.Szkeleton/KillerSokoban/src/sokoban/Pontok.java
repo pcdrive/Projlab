@@ -76,4 +76,14 @@ public class Pontok {
         return pontok.size();
     }
 
+    /**
+     * A pontok listajahoz ad elemet.
+     *
+     * @param nrv A lista uj eleme, a jatekos neve.
+     */
+    public void AddJatekos(String nev) 
+    {
+        Printer.PrintTabIn("Pontok" + '\t' + "AddJatekos()");    	
+    }
+
 }
