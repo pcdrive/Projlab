@@ -94,15 +94,13 @@ public class Jatekos extends Leptetheto {
 
 
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
-        if (success) {
-            mezo.Enged();
-            Printer.PrintTabOut("Return: " + Boolean.toString(true));
-            return true;
+        if (!success) {
+            Halal();
         }
 
-        Halal();
-        Printer.PrintTabOut("Return: " + Boolean.toString(false));
-        return false;
+        mezo.Enged();
+        Printer.PrintTabOut("Return: " + Boolean.toString(true));
+        return true;
     }
 
     /**
