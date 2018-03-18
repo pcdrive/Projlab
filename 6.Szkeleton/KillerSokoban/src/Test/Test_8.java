@@ -32,7 +32,7 @@ public class Test_8 {
 
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
-        System.out.println("  Speci�lis eset: L�nctol�s");
+        System.out.println("  Specialis eset: Lancolas");
         System.out.println("  Jatekos -===> Jatekos  -===> Doboz -===> Fal ");
         System.out.println("<========================== START OF TEST_8_1 ==========================>");
         
@@ -68,7 +68,7 @@ public class Test_8 {
 
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
-        System.out.println("  Speci�lis eset: L�nctol�s");
+        System.out.println("  Specialis eset: Lancolas");
         System.out.println("  Jatekos -===> JeloltDoboz -===> Doboz Celhelyen -===> Fal ===>");
         System.out.println("<========================== START OF TEST_8_2 ==========================>");
         
@@ -109,7 +109,7 @@ public class Test_8 {
 
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
-        System.out.println("  Speci�lis eset: L�nctol�s");
+        System.out.println("  Specialis eset: Lancolas");
         System.out.println("  Jatekos - Jatekos  - Doboz - Jatekos - Fal ");
         System.out.println("<========================== START OF TEST_8_3 ==========================>");
         
@@ -150,7 +150,7 @@ public class Test_8 {
 
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
-        System.out.println("  Speci�lis eset: L�nctol�s");
+        System.out.println("  Specialis eset: Lancolas");
         System.out.println("  Jatekos - Doboz  - Jatekos - Doboz - Fal ");
         System.out.println("<========================== START OF TEST_8_4 ==========================>");
         
@@ -191,7 +191,7 @@ public class Test_8 {
 
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
-        System.out.println("  Speci�lis eset: L�nctol�s");
+        System.out.println("  Specialis eset: Lancolas");
         System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Fal ");
         System.out.println("<========================== START OF TEST_8_5 ==========================>");
         
@@ -238,7 +238,7 @@ public class Test_8 {
 
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
-        System.out.println("  Speci�lis eset: L�nctol�s");
+        System.out.println("  Specialis eset: Lancolas");
         System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Doboz - Fal ");
         System.out.println("<========================== START OF TEST_8_6 ==========================>");
         
@@ -284,7 +284,7 @@ public class Test_8 {
 
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
-        System.out.println("  Speci�lis eset: L�nctol�s");
+        System.out.println("  Specialis eset: Lancolas");
         System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - JeloltDoboz - Celhely ");
         System.out.println("<========================== START OF TEST_8_7 ==========================>");
         
