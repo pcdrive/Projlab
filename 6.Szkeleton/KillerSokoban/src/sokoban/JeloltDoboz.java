@@ -46,7 +46,7 @@ public class JeloltDoboz extends Doboz {
      * @return boolean A jel erteke.
      */
     public boolean getJel() {
-        Printer.PrintTabIn("JeloltDoboz" + '\t' + "JeletTorol()");
+        Printer.PrintTabIn("JeloltDoboz" + '\t' + "getJel()");
         Printer.PrintTabOut("Return " + Boolean.toString(jel));
         return jel;
     }

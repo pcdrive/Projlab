@@ -39,7 +39,7 @@ public class Lyuk extends UresMezo {
     @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Jatekos)");
-        j.Halal();
+        aktj.Halal();
         Printer.PrintTabOut("Return: " + Boolean.toString(true));
         return true;
     }

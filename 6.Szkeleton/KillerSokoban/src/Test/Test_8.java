@@ -86,8 +86,8 @@ public class Test_8 {
         
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
-        UresMezo celmezo2 = new Celhely();
-        UresMezo celmezo3 = new Celhely();
+        UresMezo celmezo2 = new UresMezo();
+        UresMezo celmezo3 = new UresMezo();
         UresMezo celmezo4 = new Fal();
          
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
