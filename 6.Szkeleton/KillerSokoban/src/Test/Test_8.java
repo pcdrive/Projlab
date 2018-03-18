@@ -69,7 +69,7 @@ public class Test_8 {
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         System.out.println("  Specialis eset: Lancolas");
-        System.out.println("  Jatekos -===> JeloltDoboz -===> Doboz Celhelyen -===> Fal ===>");
+        System.out.println("  Jatekos -===> JeloltDoboz -===> Jatekos Celhelyen -===> Fal ===>");
         System.out.println("<========================== START OF TEST_8_2 ==========================>");
         
         Printer.EnablePrint();
