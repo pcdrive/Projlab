@@ -39,7 +39,7 @@ public class Jatekos extends Leptetheto {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public String getNev() {
-        Printer.PrintTabIn("Jatekos" + '\t' + "getNev()");
+        Printer.PrintTabIn( nev + '\t' + "getNev()");
         Printer.PrintTabOut("Return: " + nev);
         return nev;
     }
@@ -50,7 +50,7 @@ public class Jatekos extends Leptetheto {
      * @param i Irany amerre lepni akarunk
      */
     public void Lepes(Irany i) {
-        Printer.PrintTabIn("Jatekos" + '\t' + "Lepes(Irany)");
+        Printer.PrintTabIn( nev + '\t' + "Lepes(Irany)");
 
         Tol(i, this);
         palya.Vegellenorzes();
@@ -64,7 +64,7 @@ public class Jatekos extends Leptetheto {
      * metodusat.
      */
     public void PontotKap() {
-        Printer.PrintTabIn("Jatekos" + '\t' + "PontotKap()");
+        Printer.PrintTabIn( nev + '\t' + "PontotKap()");
         palya.PontotKap(this);
         Printer.PrintTabOut("Return");
     }
@@ -75,7 +75,7 @@ public class Jatekos extends Leptetheto {
      */
     @Override
     public void Halal() {
-        Printer.PrintTabIn("Jatekos" + '\t' + "Halal()");
+        Printer.PrintTabIn( nev + '\t' + "Halal()");
         palya.Halal(this);
         Printer.PrintTabOut("Return");
     }
@@ -90,7 +90,7 @@ public class Jatekos extends Leptetheto {
     @Override
     public boolean Utkozik(Irany i, Jatekos j) {
 
-        Printer.PrintTabIn("Jatekos" + '\t' + "Utkozik(Irany, Jatekos)");
+        Printer.PrintTabIn(nev + '\t' + "Utkozik(Irany, Jatekos)");
 
 
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
@@ -115,7 +115,7 @@ public class Jatekos extends Leptetheto {
     @Override
     public boolean Tol(Irany i, Jatekos j) {
 
-        Printer.PrintTabIn("Jatekos" + '\t' + "Tol(Irany, Jatekos)");
+        Printer.PrintTabIn(nev + '\t' + "Tol(Irany, Jatekos)");
 
         boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
         if (success)
