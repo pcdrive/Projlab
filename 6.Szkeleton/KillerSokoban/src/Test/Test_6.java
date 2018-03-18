@@ -24,10 +24,14 @@ public class Test_6 {
         kiindulomezo.Fogad(null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto1, null);
-        Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
+        Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> UresMezo");
+        System.out.println("  UresMezo    UresMezo     UresMezo");
+        
         System.out.println("<========================= START OF TEST_6_1_1 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -52,10 +56,14 @@ public class Test_6 {
         kiindulomezo.Fogad(null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto1, null);
-        Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
+        Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> Kapcsolo");
+        System.out.println("  UresMezo    UresMezo     UresMezo");
+        
         System.out.println("<========================= START OF TEST_6_1_2 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -79,10 +87,14 @@ public class Test_6 {
         kiindulomezo.Fogad(null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto1, null);
-        Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
+        Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> Lyuk");
+        System.out.println("  UresMezo    UresMezo     UresMezo");
+        
         System.out.println("<========================= START OF TEST_6_1_3 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -106,10 +118,14 @@ public class Test_6 {
         kiindulomezo.Fogad(null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto1, null);
-        Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
+        Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> Fal");
+        System.out.println("  UresMezo    UresMezo     UresMezo");
+        
         System.out.println("<========================= START OF TEST_6_1_4 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -134,10 +150,14 @@ public class Test_6 {
         kiindulomezo.Fogad(null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto1, null);
-        Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
+        Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> UresMezo");
+        System.out.println("  UresMezo    UresMezo     Kapcsolo");
+        
         System.out.println("<========================= START OF TEST_6_2_1 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -163,10 +183,14 @@ public class Test_6 {
         kiindulomezo.Fogad(null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto1, null);
-        Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
+        Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> Kapcsolo");
+        System.out.println("  UresMezo    UresMezo     Kapcsolo");
+        
         System.out.println("<========================= START OF TEST_6_2_2 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -191,10 +215,14 @@ public class Test_6 {
         kiindulomezo.Fogad(null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto1, null);
-        Jatekos leptetheto2 = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo2);
+        Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> Lyuk");
+        System.out.println("  UresMezo    UresMezo     Kapcsolo");
+        
         System.out.println("<========================= START OF TEST_6_2_3 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -223,6 +251,10 @@ public class Test_6 {
         celmezo2.Fogad(null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> Doboz -===> Doboz -===> Fal");
+        System.out.println("  UresMezo    UresMezo     Kapcsolo");
+        
         System.out.println("<========================= START OF TEST_6_2_4 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
