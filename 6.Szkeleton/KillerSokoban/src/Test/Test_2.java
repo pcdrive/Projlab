@@ -138,11 +138,11 @@ public class Test_2 {
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
         celmezo1.Fogad(null, leptetheto, null);
         System.out.println("");
-       
+        System.out.println("<============================= DESCRIPTION =============================>");
+
         System.out.println("  Jatekos -===> Jatekos -===> Kapcsolo");
         System.out.println("  UresMezo     Kapcsolo");
-        
-        System.out.println("<============================= DESCRIPTION =============================>");
+
         System.out.println("<======================== START OF TEST_2_1_2_2 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
