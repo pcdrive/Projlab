@@ -5,10 +5,10 @@ import org.junit.Test;
 import Tools.Printer;
 import sokoban.*;
 
-public class Test_10 {
+public class Test_8 {
 	
 	@Test
-    public void Test_10_1() {
+    public void TEST_8_1() {
 		
         Printer.DisablePrint();
         
@@ -33,7 +33,7 @@ public class Test_10 {
         System.out.println("<===================== DESCRIPTION ======================>");
         System.out.println("  Speciális eset: Lánctolás");
         System.out.println("  Jatekos -> Jatekos  -> Doboz -> Fal \n");
-        System.out.println("\n<================== START OF TEST_10_1 ==================>");
+        System.out.println("\n<================== START OF TEST_8_1 ==================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -43,7 +43,7 @@ public class Test_10 {
     }
 	
 	@Test
-    public void Test_10_2() {
+    public void TEST_8_2() {
 		
         Printer.DisablePrint();
         
@@ -68,7 +68,7 @@ public class Test_10 {
         System.out.println("<===================== DESCRIPTION ======================>");
         System.out.println("  Speciális eset: Lánctolás");
         System.out.println("  Jatekos -> JeloltDoboz -> Doboz Celhelyen -> Fal \n>");
-        System.out.println("\n<================== START OF TEST_10_2 ==================>");
+        System.out.println("\n<================== START OF TEST_8_2 ==================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -78,7 +78,7 @@ public class Test_10 {
     }
 	
 	@Test
-    public void Test_10_3() {
+    public void TEST_8_3() {
 		
         Printer.DisablePrint();
         
@@ -108,7 +108,7 @@ public class Test_10 {
         System.out.println("<===================== DESCRIPTION ======================>");
         System.out.println("  Speciális eset: Lánctolás");
         System.out.println("  Jatekos - Jatekos  - Doboz - Jatekos - Fal \n");
-        System.out.println("\n<================== START OF TEST_10_3 ==================>");
+        System.out.println("\n<================== START OF TEST_8_3 ==================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -118,7 +118,7 @@ public class Test_10 {
     }
 	
 	@Test
-    public void Test_10_4() {
+    public void TEST_8_4() {
 		
         Printer.DisablePrint();
         
@@ -148,7 +148,7 @@ public class Test_10 {
         System.out.println("<===================== DESCRIPTION ======================>");
         System.out.println("  Speciális eset: Lánctolás");
         System.out.println("  Jatekos - Doboz  - Jatekos - Doboz - Fal \n");
-        System.out.println("\n<================== START OF TEST_10_4 ==================>");
+        System.out.println("\n<================== START OF TEST_8_4 ==================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -158,7 +158,7 @@ public class Test_10 {
     }
 	
 	@Test
-    public void Test_10_5() {
+    public void TEST_8_5() {
 		
         Printer.DisablePrint();
         
@@ -188,7 +188,7 @@ public class Test_10 {
         System.out.println("<===================== DESCRIPTION ======================>");
         System.out.println("  Speciális eset: Lánctolás");
         System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Fal \n");
-        System.out.println("\n<================== START OF TEST_10_5 ==================>");
+        System.out.println("\n<================== START OF TEST_8_5 ==================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -199,7 +199,7 @@ public class Test_10 {
 
 	
 	@Test
-    public void Test_10_6() {
+    public void TEST_8_6() {
 		
         Printer.DisablePrint();
         
@@ -234,7 +234,7 @@ public class Test_10 {
         System.out.println("<===================== DESCRIPTION ======================>");
         System.out.println("  Speciális eset: Lánctolás");
         System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - Doboz - Fal \n");
-        System.out.println("\n<================== START OF TEST_10_6 ==================>");
+        System.out.println("\n<================== START OF TEST_8_6 ==================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
@@ -244,7 +244,7 @@ public class Test_10 {
     }
 	
 	@Test
-    public void Test_10_7() {
+    public void TEST_8_7() {
 		
         Printer.DisablePrint();
         
@@ -279,7 +279,7 @@ public class Test_10 {
         System.out.println("<===================== DESCRIPTION ======================>");
         System.out.println("  Speciális eset: Lánctolás");
         System.out.println("  Jatekos - Doboz  - Jatekos - Jatekos - JeloltDoboz - Celhely \n");
-        System.out.println("\n<================== START OF TEST_10_7 ==================>");
+        System.out.println("\n<================== START OF TEST_8_7 ==================>");
         
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
