@@ -14,6 +14,10 @@ public class Test_1 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
+        
+        System.out.println("  Jatekos -===> UresMezo ");
+        System.out.println("  UresMezo");
+        
         System.out.println("<========================== START OF TEST_1_1 ==========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
