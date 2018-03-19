@@ -108,7 +108,7 @@ public class UresMezo {
      * Elengedi a leptethetot, amikor az ellep a mezorol.
      */
     public void Enged() {
-        Printer.PrintTabIn("UresMezo" + '\t' + "Enged(Leptetheto)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Enged()");
         leptetheto = null;
         Printer.PrintTabOut("Return");
     }
