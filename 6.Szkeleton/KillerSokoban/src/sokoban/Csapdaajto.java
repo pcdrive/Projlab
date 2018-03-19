@@ -44,7 +44,31 @@ public class Csapdaajto extends UresMezo {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Csuk()");
         Printer.PrintTabOut("Return");
     }
-
+    
+    /**
+     * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a
+     * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
+     * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
+     * a pontot erte.
+     *
+     * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param jd JeloltDoboz, ami a mezore kivan lepni
+     * @param j  Jatekos, aki lepest tette.
+     * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
+     */
+    @Override
+    public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        if (nyitva) {
+            jd.Halal();
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            return true;
+        } else {
+            boolean success = super.Fogad(i, jd, j);
+            Printer.PrintTabOut("Return: " + Boolean.toString(success));
+            return success;
+        }
+    }
 
     /**
      * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a

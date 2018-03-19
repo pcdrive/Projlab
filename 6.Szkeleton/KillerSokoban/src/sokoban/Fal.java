@@ -31,6 +31,25 @@ public class Fal extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
+     * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param jd JeloltDoboz, ami a mezore kivan lepni
+     * @param j  Jatekos, aki lepest tette.
+     * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
+     */
+    @Override
+    public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
+        return false;
+    }
+
+
+    /**
+     * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a
+     * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
+     * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
+     * a pontot erte.
+     *
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
