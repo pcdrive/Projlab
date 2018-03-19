@@ -58,7 +58,7 @@ public class Csapdaajto extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
         if (nyitva) {
             jd.Halal();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
