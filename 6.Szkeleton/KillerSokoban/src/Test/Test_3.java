@@ -23,7 +23,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> UresMezo");
         System.out.println("  UresMezo     UresMezo");
         
-        System.out.println("<======================== START OF TEST_3_2_1_1 ========================>");
+        System.out.println("<======================== START OF TEST_3_1_1 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
@@ -47,7 +47,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> Kapcsolo");
         System.out.println("  UresMezo     UresMezo");
         
-        System.out.println("<======================== START OF TEST_3_2_1_2 ========================>");
+        System.out.println("<======================== START OF TEST_3_1_2 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
@@ -70,7 +70,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> Lyuk");
         System.out.println("  UresMezo     UresMezo");
         
-        System.out.println("<======================== START OF TEST_3_2_1_3 ========================>");
+        System.out.println("<======================== START OF TEST_3_1_3 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
@@ -93,7 +93,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> Fal");
         System.out.println("  UresMezo     UresMezo");
         
-        System.out.println("<======================== START OF TEST_3_2_1_4 ========================>");
+        System.out.println("<======================== START OF TEST_3_1_4 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
@@ -117,7 +117,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> UresMezo");
         System.out.println("  UresMezo     Kapcsolo");
         
-        System.out.println("<======================== START OF TEST_3_2_2_1 ========================>");
+        System.out.println("<======================== START OF TEST_3_2_1 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
@@ -142,7 +142,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> Kapcsolo");
         System.out.println("  UresMezo     Kapcsolo");
         
-        System.out.println("<======================== START OF TEST_3_2_2_2 ========================>");
+        System.out.println("<======================== START OF TEST_3_2_2 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
@@ -166,7 +166,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> Lyuk");
         System.out.println("  UresMezo     Kapcsolo");
         
-        System.out.println("<======================== START OF TEST_3_2_2_3 ========================>");
+        System.out.println("<======================== START OF TEST_3_2_3 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
@@ -190,7 +190,7 @@ public class Test_3 {
         System.out.println("  Jatekos -===> Doboz -===> Fal");
         System.out.println("  UresMezo     Kapcsolo");
         
-        System.out.println("<======================== START OF TEST_3_2_2_4 ========================>");
+        System.out.println("<======================== START OF TEST_3_2_4 ========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
