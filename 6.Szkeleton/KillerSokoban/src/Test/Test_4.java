@@ -7,7 +7,7 @@ import sokoban.*;
 
 public class Test_4 {
     @Test
-    public void Test_4_2_1_1() {
+    public void Test_4_1_1() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -30,7 +30,7 @@ public class Test_4 {
     }
 
     @Test
-    public void Test_4_2_1_2() {
+    public void Test_4_1_2() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -54,7 +54,7 @@ public class Test_4 {
     }
 
     @Test
-    public void Test_4_2_1_3() {
+    public void Test_4_1_3() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -77,7 +77,7 @@ public class Test_4 {
     }
 
     @Test
-    public void Test_4_2_1_4() {
+    public void Test_4_1_4() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -100,7 +100,7 @@ public class Test_4 {
     }
 
     @Test
-    public void Test_4_2_2_1() {
+    public void Test_4_2_1() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
@@ -124,7 +124,7 @@ public class Test_4 {
     }
 
     @Test
-    public void Test_4_2_2_2() {
+    public void Test_4_2_2() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
@@ -149,7 +149,7 @@ public class Test_4 {
     }
 
     @Test
-    public void Test_4_2_2_3() {
+    public void Test_4_2_3() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
@@ -173,7 +173,7 @@ public class Test_4 {
     }
 
     @Test
-    public void Test_4_2_2_4() {
+    public void Test_4_2_4() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
