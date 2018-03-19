@@ -42,6 +42,9 @@ public class Main {
 	        	case "help" : Main.help(); break;
 	        	case "all" : Main.testall(); break;
 	        	case "1.1" : Test_1 t1=new Test_1(); t1.Test_1_1(); break;
+	        	case "1.2" : t1=new Test_1(); t1.Test_1_2(); break;
+	        	case "1.3" : t1=new Test_1(); t1.Test_1_3(); break;
+	        	case "1.4" : t1=new Test_1(); t1.Test_1_4(); break;
 	        	case "2.1.1.1" : Test_2 t2=new Test_2(); t2.Test_2_1_1_1(); break;
 	        	case "2.1.1.2" : t2=new Test_2(); t2.Test_2_1_1_2(); break;
 	        	case "2.1.1.3" : t2=new Test_2(); t2.Test_2_1_1_3(); break;
@@ -121,6 +124,9 @@ public class Main {
 		System.out.println("all : minden teszt futtatása");
 		
 		System.out.println("1.1");
+		System.out.println("1.2");
+		System.out.println("1.3");
+		System.out.println("1.4");
 		System.out.println("2.1.1.1");
 		System.out.println("2.1.1.2");
 		System.out.println("2.1.1.3");
@@ -186,6 +192,9 @@ public class Main {
      */
 	public static void testall() {
         Test_1 t1=new Test_1(); t1.Test_1_1(); 
+        t1=new Test_1(); t1.Test_1_2();
+        t1=new Test_1(); t1.Test_1_3(); 
+        t1=new Test_1(); t1.Test_1_4(); 
         Test_2 t2=new Test_2(); t2.Test_2_1_1_1(); 
         t2=new Test_2(); t2.Test_2_1_1_2(); 
         t2=new Test_2(); t2.Test_2_1_1_3(); 
