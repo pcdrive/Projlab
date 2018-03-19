@@ -38,7 +38,7 @@ public class Fal extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
         Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
     }
