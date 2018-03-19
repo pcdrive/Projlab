@@ -58,7 +58,7 @@ public class Csapdaajto extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         if (nyitva) {
             jd.Halal();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
@@ -83,7 +83,7 @@ public class Csapdaajto extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         if (nyitva) {
             aktj.Halal();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
@@ -108,7 +108,7 @@ public class Csapdaajto extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Doboz, Jatekos)");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Irany, Doboz, Jatekos)");
         if (nyitva) {
             d.Halal();
             Printer.PrintTabOut("Return: " + Boolean.toString(true));

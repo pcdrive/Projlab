@@ -36,7 +36,7 @@ public class Pontok {
      * @param nev A jatekos neve, aki a pontot kapja.
      */
     public void PontotKap(String nev) {
-        Printer.PrintTabIn("Pontok" + '\t' + "PontotKap(Jatekos)");
+        Printer.PrintTabIn("Pontok" + '\t' + "PontotKap(String)");
 
         for (Pont p : pontok) {
             if (p.getNev() == nev) {
@@ -83,7 +83,7 @@ public class Pontok {
      */
     public void AddJatekos(String nev) 
     {
-        Printer.PrintTabIn("Pontok" + '\t' + "AddJatekos()");    	
+        Printer.PrintTabIn("Pontok" + '\t' + "AddJatekos(String)");    	
     }
 
 }

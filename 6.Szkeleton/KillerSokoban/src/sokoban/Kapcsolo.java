@@ -44,7 +44,7 @@ public class Kapcsolo extends UresMezo {
     @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
     	
-        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         boolean success = super.Fogad(i, jd, j);
 
         if (success) {
@@ -70,7 +70,7 @@ public class Kapcsolo extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Irany, Jatekos)");
         boolean success = super.Fogad(i, aktj, j);
 
         if (success) {
@@ -97,7 +97,7 @@ public class Kapcsolo extends UresMezo {
     @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
 
-        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabIn("Kapcsolo" + '\t' + "Fogad(Irany, Doboz,Jatekos)");
         boolean success = super.Fogad(i, d, j);
 
         if (success) {

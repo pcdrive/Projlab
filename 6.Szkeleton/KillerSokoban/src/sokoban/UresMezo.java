@@ -38,7 +38,7 @@ public class UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = jd;
@@ -64,7 +64,7 @@ public class UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = aktj;
@@ -90,7 +90,7 @@ public class UresMezo {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Doboz, Jatekos)");
+        Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, Doboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = d;
