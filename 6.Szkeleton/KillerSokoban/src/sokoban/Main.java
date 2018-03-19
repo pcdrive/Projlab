@@ -35,8 +35,8 @@ public class Main {
 
         try {
 	        while(!(line.equals("exit"))) {
-	        	System.out.println("Melyik tesztet szeretnï¿½d elï¿½rni?");
-	        	System.out.println("ï¿½rj \"help\"-et a lehetsï¿½ges parancsokï¿½rt ï¿½s tesztszï¿½mokï¿½rt, \"exit\"-et a kilï¿½pï¿½sï¿½rt ");
+	        	System.out.println("Melyik tesztet szeretnéd elérni?");
+	        	System.out.println("Írj \"help\"-et a lehetséges parancsokért és tesztszámokért, \"exit\"-et a kilépésért ");
 	        	line=br.readLine();
 	        	
 	        	switch(line) {
@@ -46,30 +46,30 @@ public class Main {
 	        	case "1.2" : t1=new Test_1(); t1.Test_1_2(); break;
 	        	case "1.3" : t1=new Test_1(); t1.Test_1_3(); break;
 	        	case "1.4" : t1=new Test_1(); t1.Test_1_4(); break;
-	        	case "2.1.1.1" : Test_2 t2=new Test_2(); t2.Test_2_1_1(); break;
-	        	case "2.1.1.2" : t2=new Test_2(); t2.Test_2_1_2(); break;
-	        	case "2.1.1.3" : t2=new Test_2(); t2.Test_2_1_3(); break;
-	        	case "2.1.1.4" : t2=new Test_2(); t2.Test_2_1_4(); break;
-	        	case "2.1.2.1" : t2=new Test_2(); t2.Test_2_2_1(); break;
-	        	case "2.1.2.2" : t2=new Test_2(); t2.Test_2_2_2(); break;
-	        	case "2.1.2.3" : t2=new Test_2(); t2.Test_2_2_3(); break;
-	        	case "2.1.2.4" : t2=new Test_2(); t2.Test_2_2_4(); break;
-	        	case "3.2.1.1" : Test_3 t3=new Test_3(); t3.Test_3_1_1(); break;
-	        	case "3.2.1.2" : t3=new Test_3(); t3.Test_3_1_2(); break;
-	        	case "3.2.1.3" : t3=new Test_3(); t3.Test_3_1_3(); break;
-	        	case "3.2.1.4" : t3=new Test_3(); t3.Test_3_1_4(); break;
-	        	case "3.2.2.1" : t3=new Test_3(); t3.Test_3_2_1(); break;
-	        	case "3.2.2.2" : t3=new Test_3(); t3.Test_3_2_2(); break;
-	        	case "3.2.2.3" : t3=new Test_3(); t3.Test_3_2_3(); break;
-	        	case "3.2.2.4" : t3=new Test_3(); t3.Test_3_2_4(); break;
-	        	case "4.2.1.1" : Test_4 t4=new Test_4(); t4.Test_4_1_1(); break;
-	        	case "4.2.1.2" : t4=new Test_4(); t4.Test_4_1_2(); break;
-	        	case "4.2.1.3" : t4=new Test_4(); t4.Test_4_1_3(); break;
-	        	case "4.2.1.4" : t4=new Test_4(); t4.Test_4_1_4(); break;
-	        	case "4.2.2.1" : t4=new Test_4(); t4.Test_4_2_1(); break;
-	        	case "4.2.2.2" : t4=new Test_4(); t4.Test_4_2_2(); break;
-	        	case "4.2.2.3" : t4=new Test_4(); t4.Test_4_2_3(); break;
-	        	case "4.2.2.4" : t4=new Test_4(); t4.Test_4_2_4(); break;
+	        	case "2.1.1" : Test_2 t2=new Test_2(); t2.Test_2_1_1(); break;
+	        	case "2.1.2" : t2=new Test_2(); t2.Test_2_1_2(); break;
+	        	case "2.1.3" : t2=new Test_2(); t2.Test_2_1_3(); break;
+	        	case "2.1.4" : t2=new Test_2(); t2.Test_2_1_4(); break;
+	        	case "2.2.1" : t2=new Test_2(); t2.Test_2_2_1(); break;
+	        	case "2.2.2" : t2=new Test_2(); t2.Test_2_2_2(); break;
+	        	case "2.2.3" : t2=new Test_2(); t2.Test_2_2_3(); break;
+	        	case "2.2.4" : t2=new Test_2(); t2.Test_2_2_4(); break;
+	        	case "3.1.1" : Test_3 t3=new Test_3(); t3.Test_3_1_1(); break;
+	        	case "3.1.2" : t3=new Test_3(); t3.Test_3_1_2(); break;
+	        	case "3.1.3" : t3=new Test_3(); t3.Test_3_1_3(); break;
+	        	case "3.1.4" : t3=new Test_3(); t3.Test_3_1_4(); break;
+	        	case "3.2.1" : t3=new Test_3(); t3.Test_3_2_1(); break;
+	        	case "3.2.2" : t3=new Test_3(); t3.Test_3_2_2(); break;
+	        	case "3.2.3" : t3=new Test_3(); t3.Test_3_2_3(); break;
+	        	case "3.2.4" : t3=new Test_3(); t3.Test_3_2_4(); break;
+	        	case "4.1.1" : Test_4 t4=new Test_4(); t4.Test_4_1_1(); break;
+	        	case "4.1.2" : t4=new Test_4(); t4.Test_4_1_2(); break;
+	        	case "4.1.3" : t4=new Test_4(); t4.Test_4_1_3(); break;
+	        	case "4.1.4" : t4=new Test_4(); t4.Test_4_1_4(); break;
+	        	case "4.2.1" : t4=new Test_4(); t4.Test_4_2_1(); break;
+	        	case "4.2.2" : t4=new Test_4(); t4.Test_4_2_2(); break;
+	        	case "4.2.3" : t4=new Test_4(); t4.Test_4_2_3(); break;
+	        	case "4.2.4" : t4=new Test_4(); t4.Test_4_2_4(); break;
 	        	case "5.1.1" : Test_5 t5=new Test_5(); t5.Test_5_1_1(); break;
 	        	case "5.1.2" : t5=new Test_5(); t5.Test_5_1_2(); break;
 	        	case "5.1.3" : t5=new Test_5(); t5.Test_5_1_3(); break;
@@ -118,40 +118,40 @@ public class Main {
     }
     
     /**
-     * Lehetsï¿½ges parancsok listï¿½zï¿½sa
+     * Lehetseges parancsok listazasa
      */
 	public static void help() {
-		System.out.println("exit : kilï¿½pï¿½s");
-		System.out.println("all : minden teszt futtatï¿½sa");
+		System.out.println("exit : kilépés");
+		System.out.println("all : minden teszt futtatasa");
 		
 		System.out.println("1.1");
 		System.out.println("1.2");
 		System.out.println("1.3");
 		System.out.println("1.4");
-		System.out.println("2.1.1.1");
-		System.out.println("2.1.1.2");
-		System.out.println("2.1.1.3");
-		System.out.println("2.1.1.4");
-		System.out.println("2.1.2.1");
-		System.out.println("2.1.2.2");
-		System.out.println("2.1.2.3");
-		System.out.println("2.1.2.4");
-		System.out.println("3.2.1.1");
-		System.out.println("3.2.1.2");
-		System.out.println("3.2.1.3");
-		System.out.println("3.2.1.4");
-		System.out.println("3.2.2.1");
-		System.out.println("3.2.2.2");
-		System.out.println("3.2.2.3");
-		System.out.println("3.2.2.4");
-		System.out.println("4.2.1.1");
-		System.out.println("4.2.1.2");
-		System.out.println("4.2.1.3");
-		System.out.println("4.2.1.4");
-		System.out.println("4.2.2.1");
-		System.out.println("4.2.2.2");
-		System.out.println("4.2.2.3");
-		System.out.println("4.2.2.4");
+		System.out.println("2.1.1");
+		System.out.println("2.1.2");
+		System.out.println("2.1.3");
+		System.out.println("2.1.4");
+		System.out.println("2.2.1");
+		System.out.println("2.2.2");
+		System.out.println("2.2.3");
+		System.out.println("2.2.4");
+		System.out.println("3.1.1");
+		System.out.println("3.1.2");
+		System.out.println("3.1.3");
+		System.out.println("3.1.4");
+		System.out.println("3.2.1");
+		System.out.println("3.2.2");
+		System.out.println("3.2.3");
+		System.out.println("3.2.4");
+		System.out.println("4.1.1");
+		System.out.println("4.1.2");
+		System.out.println("4.1.3");
+		System.out.println("4.1.4");
+		System.out.println("4.2.1");
+		System.out.println("4.2.2");
+		System.out.println("4.2.3");
+		System.out.println("4.2.4");
 		System.out.println("5.1.1");
 		System.out.println("5.1.2");
 		System.out.println("5.1.3");
@@ -184,12 +184,12 @@ public class Main {
 		System.out.println("8.6");
 		System.out.println("8.7");
 		
-		System.out.println("exit : kilï¿½pï¿½s");
-		System.out.println("all : minden teszt futtatï¿½sa");
+		System.out.println("exit : kilépés");
+		System.out.println("all : minden teszt futtatása");
 	}
 	
     /**
-     * Minden teszt meghï¿½vï¿½sa
+     * Minden teszt meghivasa
      */
 	public static void testall() {
         Test_1 t1=new Test_1(); t1.Test_1_1(); 
