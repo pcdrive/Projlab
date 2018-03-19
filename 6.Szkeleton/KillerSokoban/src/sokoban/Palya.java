@@ -45,7 +45,7 @@ public class Palya {
      * @param nev A jatekos neve, azonositoja, akit leptetni akarunk.
      */
     public void Leptet(Irany i, String nev) {
-        Printer.PrintTabIn("Palya" + '\t' + "Leptet()");
+        Printer.PrintTabIn("Palya" + '\t' + "Leptet(Irany, String)");
 
         for (Jatekos j : jatekosok) {
             if (j.getNev().equals(nev)) {

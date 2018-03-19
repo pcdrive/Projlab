@@ -40,7 +40,7 @@ public class Celhely extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(JeloltDoboz,Jatekos)");
+        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany,JeloltDoboz,Jatekos)");
         boolean success = super.Fogad(i, jd, j);
         if (!jel || !jd.getJel()) {
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
@@ -68,7 +68,7 @@ public class Celhely extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         boolean success = super.Fogad(i, aktj, j);
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
@@ -87,7 +87,7 @@ public class Celhely extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany,Doboz,Jatekos)");
         boolean success = super.Fogad(i, d, j);
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;

@@ -38,7 +38,7 @@ public class Fal extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("Fal" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
     }
@@ -57,7 +57,7 @@ public class Fal extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
     }
@@ -75,7 +75,7 @@ public class Fal extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, Doboz,Jatekos)");
         Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
     }

@@ -38,7 +38,7 @@ public class Lyuk extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(JeloltDoboz, Jatekos)");
+        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         jd.Halal();
         Printer.PrintTabOut("Return: " + Boolean.toString(true));
         return true;
@@ -57,7 +57,7 @@ public class Lyuk extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Jatekos)");
+        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         aktj.Halal();
         Printer.PrintTabOut("Return: " + Boolean.toString(true));
         return true;
@@ -76,7 +76,7 @@ public class Lyuk extends UresMezo {
      */
     @Override
     public boolean Fogad(Irany i, Doboz d, Jatekos j) {
-        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Doboz,Jatekos)");
+        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Irany, Doboz,Jatekos)");
         d.Halal();
         Printer.PrintTabOut("Return " + Boolean.toString(true));
         return true;
