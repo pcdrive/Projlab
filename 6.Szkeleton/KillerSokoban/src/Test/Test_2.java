@@ -8,7 +8,7 @@ import sokoban.*;
 public class Test_2 {
 
     @Test
-    public void Test_2_1_1_1() {
+    public void Test_2_1_1() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -24,14 +24,14 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> UresMezo");
         System.out.println("  UresMezo      UresMezo");
         
-        System.out.println("<======================== START OF TEST_2_1_1_1 ========================>");
+        System.out.println("<========================= START OF TEST_2_1_1 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
-    public void Test_2_1_1_2() {
+    public void Test_2_1_2() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -48,14 +48,14 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> Kapcsolo");
         System.out.println("  UresMezo      UresMezo");
         
-        System.out.println("<======================== START OF TEST_2_1_1_2 ========================>");
+        System.out.println("<========================= START OF TEST_2_1_2 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
-    public void Test_2_1_1_3() {
+    public void Test_2_1_3() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -71,14 +71,14 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> Lyuk");
         System.out.println("  UresMezo      UresMezo");
         
-        System.out.println("<======================== START OF TEST_2_1_1_3 ========================>");
+        System.out.println("<========================= START OF TEST_2_1_3 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
-    public void Test_2_1_1_4() {
+    public void Test_2_1_4() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
@@ -94,14 +94,14 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> Fal");
         System.out.println(" UresMezo      UresMezo");
         
-        System.out.println("<======================== START OF TEST_2_1_1_4 ========================>");
+        System.out.println("<========================= START OF TEST_2_1_4 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
-    public void Test_2_1_2_1() {
+    public void Test_2_2_1() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
@@ -118,14 +118,14 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> UresMezo");
         System.out.println("  UresMezo     Kapcsolo");
         
-        System.out.println("<======================== START OF TEST_2_1_2_1 ========================>");
+        System.out.println("<========================= START OF TEST_2_2_1 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
-    public void Test_2_1_2_2() {
+    public void Test_2_2_2() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
@@ -143,14 +143,14 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> Kapcsolo");
         System.out.println("  UresMezo     Kapcsolo");
 
-        System.out.println("<======================== START OF TEST_2_1_2_2 ========================>");
+        System.out.println("<========================= START OF TEST_2_2_2 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
-    public void Test_2_1_2_3() {
+    public void Test_2_2_3() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
@@ -167,14 +167,14 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> Lyuk");
         System.out.println("  UresMezo     Kapcsolo");
         
-        System.out.println("<======================== START OF TEST_2_1_2_3 ===(====================>");
+        System.out.println("<========================= START OF TEST_2_2_3 ====(====================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
     }
 
     @Test
-    public void Test_2_1_2_4() {
+    public void Test_2_2_4() {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo1 = new Kapcsolo();
@@ -191,7 +191,7 @@ public class Test_2 {
         System.out.println("  Jatekos -===> Jatekos -===> Fal");
         System.out.println("  UresMezo     Kapcsolo");
         
-        System.out.println("<======================== START OF TEST_2_1_2_4 ========================>");
+        System.out.println("<========================= START OF TEST_2_2_4 =========================>");
         Printer.EnablePrint();
         jatekos1.Lepes(Irany.FEL);
         System.out.println("<============================= END OF TEST =============================>");
