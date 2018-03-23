@@ -67,7 +67,7 @@ public class Doboz extends Leptetheto {
         
     	if (ero>surl+tapadas*mezo.getSurl()) {
     		
-	        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl, i, this, j);
+	        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl+tapadas*mezo.getSurl(), i, this, j);
 	        
 	        if (success)
 	            mezo.Enged();
@@ -97,7 +97,7 @@ public class Doboz extends Leptetheto {
         
     	if (ero>surl+tapadas*mezo.getSurl()) {
 
-	        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl, i, this, j);
+	        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl+tapadas*mezo.getSurl(), i, this, j);
 	        if (success)
 	            mezo.Enged();
 	        Printer.PrintTabOut("Return: " + Boolean.toString(success));
