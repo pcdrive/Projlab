@@ -281,6 +281,10 @@ public class Main {
                         t8 = new Test_8();
                         t8.TEST_8_7();
                         break;
+                    case "8.8":
+                        t8 = new Test_8();
+                        t8.TEST_8_8();
+                        break;
 
                 }
 

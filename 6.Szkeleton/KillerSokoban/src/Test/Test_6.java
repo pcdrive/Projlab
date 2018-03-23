@@ -21,11 +21,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -53,11 +53,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -84,11 +84,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -115,11 +115,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -147,11 +147,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -180,11 +180,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -212,11 +212,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -244,11 +244,11 @@ public class Test_6 {
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
         celmezo3.SetSzomszed(Irany.LE, celmezo2);
         Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         Doboz leptetheto1 = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto1, null);
+        celmezo1.Fogad(10,0,null, leptetheto1, null);
         Doboz leptetheto2 = new Doboz(new Palya(new Jatek()), celmezo2);
-        celmezo2.Fogad(null, leptetheto2, null);
+        celmezo2.Fogad(10,0,null, leptetheto2, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         

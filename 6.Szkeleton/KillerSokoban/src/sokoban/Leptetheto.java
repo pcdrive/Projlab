@@ -37,7 +37,7 @@ public abstract class Leptetheto {
      * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
      */
-    public abstract boolean Utkozik(Irany i, Jatekos j);
+    public abstract boolean Utkozik(float ero, float surl, Irany i, Jatekos j);
 
     /**
      * Az objektumot egy doboz jatekos meg, �s az ezzel valo interakciot kezeli.
@@ -46,7 +46,7 @@ public abstract class Leptetheto {
      * @param j Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
      */
-    public abstract boolean Tol(Irany i, Jatekos j);
+    public abstract boolean Tol(float ero, float surl, Irany i, Jatekos j);
 
     /**
      * A jatekos halalat kezeli. Ezt hivja meg a mezo,

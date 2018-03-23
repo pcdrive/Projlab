@@ -16,7 +16,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -40,7 +40,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -63,7 +63,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -86,7 +86,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -110,7 +110,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -135,7 +135,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -159,7 +159,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -183,7 +183,7 @@ public class Test_3 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Doboz leptetheto = new Doboz(new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(null, leptetheto, null);
+        celmezo1.Fogad(10,0,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         

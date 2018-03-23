@@ -17,7 +17,10 @@ package sokoban;
 import Tools.Printer;
 
 public class Jatekos extends Leptetheto {
+	
+	
     private final String nev;
+    private float ero;
 
     /**
      * Az osztaly konstruktora. Beallitja a nevet, palyat és a mezot.
@@ -31,6 +34,7 @@ public class Jatekos extends Leptetheto {
         this.nev = nev;
         palya = p;
         mezo = m;
+        ero = 4;
     }
 
     /**
@@ -52,7 +56,7 @@ public class Jatekos extends Leptetheto {
     public void Lepes(Irany i) {
         Printer.PrintTabIn( nev + '\t' + "Lepes(Irany)");
 
-        Tol(i, this);
+        Tol(ero, 0, i, this);
         palya.Vegellenorzes();
 
         Printer.PrintTabOut("Return");
@@ -83,17 +87,19 @@ public class Jatekos extends Leptetheto {
     /**
      * Az objektumot egy doboz tolta meg, és az ezzel valo interakciot kezeli.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i Irany amerre a dobozt tolták
      * @param j Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     @Override
-    public boolean Utkozik(Irany i, Jatekos j) {
+    public boolean Utkozik(float ero, float surl, Irany i, Jatekos j) {
 
         Printer.PrintTabIn(nev + '\t' + "Utkozik(Irany, Jatekos)");
 
 
-        boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
+        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl, i, this, j);
         if (!success) {
             Halal();
         }
@@ -106,20 +112,30 @@ public class Jatekos extends Leptetheto {
     /**
      * Az objektumot egy jatekos tolta meg, és az ezzel valo interakciot kezeli.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i Irany amerre a dobozt tolták
      * @param j Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     @Override
-    public boolean Tol(Irany i, Jatekos j) {
+    public boolean Tol(float ero, float surl, Irany i, Jatekos j) {
 
         Printer.PrintTabIn(nev + '\t' + "Tol(Irany, Jatekos)");
 
-        boolean success = mezo.GetSzomszed(i).Fogad(i, this, j);
+        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl, i, this, j);
         if (success)
             mezo.Enged();
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
+
+
+    /**
+     * A jatekos erejet allitja be.
+     *
+     * @param f    az ero amivel a jatekos tolni tud.
+     */
+    public void setEro(float f) {ero=f;}
 
 }

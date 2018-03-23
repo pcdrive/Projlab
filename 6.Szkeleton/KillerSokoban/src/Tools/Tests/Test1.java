@@ -11,7 +11,7 @@ public class Test1 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo = new UresMezo();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -29,7 +29,7 @@ public class Test1 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo = new Celhely();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -48,7 +48,7 @@ public class Test1 {
         Csapdaajto celmezo = new Csapdaajto();
         celmezo.Nyit();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -66,7 +66,7 @@ public class Test1 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo = new Csapdaajto();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -85,7 +85,7 @@ public class Test1 {
         Kapcsolo celmezo = new Kapcsolo();
         celmezo.AddCsapda(new Csapdaajto());
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -103,7 +103,7 @@ public class Test1 {
         UresMezo kiindulomezo = new UresMezo();
         Lyuk celmezo = new Lyuk();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -121,7 +121,7 @@ public class Test1 {
         UresMezo kiindulomezo = new UresMezo();
         Fal celmezo = new Fal();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -139,7 +139,7 @@ public class Test1 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo = new UresMezo();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -157,7 +157,7 @@ public class Test1 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo = new Celhely();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -176,7 +176,7 @@ public class Test1 {
         Csapdaajto celmezo = new Csapdaajto();
         celmezo.Nyit();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -194,7 +194,7 @@ public class Test1 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo = new Csapdaajto();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -213,7 +213,7 @@ public class Test1 {
         Kapcsolo celmezo = new Kapcsolo();
         celmezo.AddCsapda(new Csapdaajto());
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -231,7 +231,7 @@ public class Test1 {
         Celhely kiindulomezo = new Celhely();
         Lyuk celmezo = new Lyuk();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -249,7 +249,7 @@ public class Test1 {
         Celhely kiindulomezo = new Celhely();
         Fal celmezo = new Fal();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -267,7 +267,7 @@ public class Test1 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo = new UresMezo();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -285,7 +285,7 @@ public class Test1 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo = new Celhely();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -304,7 +304,7 @@ public class Test1 {
         Csapdaajto celmezo = new Csapdaajto();
         celmezo.Nyit();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -322,7 +322,7 @@ public class Test1 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo = new Csapdaajto();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -341,7 +341,7 @@ public class Test1 {
         Kapcsolo celmezo = new Kapcsolo();
         celmezo.AddCsapda(new Csapdaajto());
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -359,7 +359,7 @@ public class Test1 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Lyuk celmezo = new Lyuk();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -377,7 +377,7 @@ public class Test1 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Fal celmezo = new Fal();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -398,7 +398,7 @@ public class Test1 {
         }
         UresMezo celmezo = new UresMezo();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -419,7 +419,7 @@ public class Test1 {
         }
         Celhely celmezo = new Celhely();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -441,7 +441,7 @@ public class Test1 {
         Csapdaajto celmezo = new Csapdaajto();
         celmezo.Nyit();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -462,7 +462,7 @@ public class Test1 {
         }
         Csapdaajto celmezo = new Csapdaajto();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -484,7 +484,7 @@ public class Test1 {
         Kapcsolo celmezo = new Kapcsolo();
         celmezo.AddCsapda(new Csapdaajto());
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -505,7 +505,7 @@ public class Test1 {
         }
         Lyuk celmezo = new Lyuk();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);
@@ -526,7 +526,7 @@ public class Test1 {
         }
         Fal celmezo = new Fal();
         Jatekos jatekos1 = new Jatekos(null, new Palya(new Jatek()), kiindulomezo);
-        kiindulomezo.Fogad(null, jatekos1, null);
+        kiindulomezo.Fogad(10,0,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
         kiindulomezo.SetSzomszed(Irany.JOBBRA, null);

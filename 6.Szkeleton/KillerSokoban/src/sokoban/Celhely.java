@@ -33,15 +33,17 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd JeloltDoboz, ami a mezore kivan lepni
      * @param j  Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
-    public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
+    public boolean Fogad(float ero, float surl, Irany i, JeloltDoboz jd, Jatekos j) {
         Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany,JeloltDoboz,Jatekos)");
-        boolean success = super.Fogad(i, jd, j);
+        boolean success = super.Fogad(ero, surl, i, jd, j);
         if (!jel || !jd.getJel()) {
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
@@ -61,15 +63,17 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
-    public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
+    public boolean Fogad(float ero, float surl, Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
-        boolean success = super.Fogad(i, aktj, j);
+        boolean success = super.Fogad(ero, surl, i, aktj, j);
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
@@ -80,15 +84,17 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d Doboz, ami a mezore kivan lepni
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
-    public boolean Fogad(Irany i, Doboz d, Jatekos j) {
+    public boolean Fogad(float ero, float surl, Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany,Doboz,Jatekos)");
-        boolean success = super.Fogad(i, d, j);
+        boolean success = super.Fogad(ero, surl, i, d, j);
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }

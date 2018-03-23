@@ -20,11 +20,20 @@ public class UresMezo {
 
     protected Leptetheto leptetheto;
     private UresMezo szomszed[];
+    
+    private float surlodas;
+    private boolean olaj;
+    private boolean mez;
 
+    /**
+     * Az osztaly konstruktora. beallítja az alapertekeket.
+     */
     public UresMezo() {
         szomszed = new UresMezo[4];
+        surlodas = 0.5f;
+        olaj = false;
+        mez = false;
     }
-
 
     /**
      * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a
@@ -32,19 +41,21 @@ public class UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd JeloltDoboz, ami a mezore kivan lepni
      * @param j  Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
-    public boolean Fogad(Irany i, JeloltDoboz jd, Jatekos j) {
+    public boolean Fogad(float ero, float surl, Irany i, JeloltDoboz jd, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = jd;
             return true;
         }
-        boolean success = leptetheto.Utkozik(i, j);
+        boolean success = leptetheto.Utkozik(ero, surl, i, j);
         if (success) {
             leptetheto = jd;
         }
@@ -58,19 +69,21 @@ public class UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
-    public boolean Fogad(Irany i, Jatekos aktj, Jatekos j) {
+    public boolean Fogad(float ero, float surl, Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = aktj;
             return true;
         }
-        boolean success = leptetheto.Tol(i, j);
+        boolean success = leptetheto.Tol(ero, surl, i, j);
         if (success) {
             leptetheto = aktj;
         }
@@ -84,19 +97,21 @@ public class UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
+     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param surl	A mezo surlodasa, amin all.
      * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d Doboz, ami a mezore kivan lepni
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
-    public boolean Fogad(Irany i, Doboz d, Jatekos j) {
+    public boolean Fogad(float ero, float surl, Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, Doboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = d;
             return true;
         }
-        boolean success = leptetheto.Utkozik(i, j);
+        boolean success = leptetheto.Utkozik(ero, surl, i, j);
         if (success) {
             leptetheto = d;
         }
@@ -136,5 +151,36 @@ public class UresMezo {
         szomszed[i.ordinal()] = u;
         Printer.PrintTabOut("Return");
     }
+
+    /**
+     * Olajositja a mezot. Jobban csuszik tole.
+     */
+    public void setOlaj() {olaj=true; surlodas*=0.8f;}
+    
+    /**
+     * Mezesiti a mezot. Jobban tapad tole.
+     */
+    public void setMez() {mez=true; surlodas*=1.2f;}
+
+    /**
+     * Olajosítva volt-e a mezo.
+     * 
+     * @return boolean Annak az erteke, hogy volt-e olaj a mezon.
+     */
+    public boolean getOlaj() {return olaj;}
+
+    /**
+     * Mezesitve volt-e a mezo.
+     * 
+     * @return boolean Annak az erteke, hogy volt-e mez a mezon.
+     */
+    public boolean getMez() {return mez;}
+
+    /**
+     * A mezo surlodasat adja vissza.
+     * 
+     * @return float Annak az erteke, hogy mekkora a mezo surlodasa.
+     */
+    public float getSurl() {return surlodas;}
 
 }
