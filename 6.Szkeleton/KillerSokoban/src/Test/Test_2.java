@@ -17,7 +17,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -41,7 +41,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -64,7 +64,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -87,7 +87,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -111,7 +111,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         
@@ -136,7 +136,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
 
@@ -160,7 +160,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
        
@@ -184,7 +184,7 @@ public class Test_2 {
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         celmezo1.SetSzomszed(Irany.FEL, celmezo2);
         Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Jatek()), celmezo1);
-        celmezo1.Fogad(10,0,null, leptetheto, null);
+        celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
         

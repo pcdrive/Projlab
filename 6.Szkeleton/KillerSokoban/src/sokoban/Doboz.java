@@ -65,9 +65,9 @@ public class Doboz extends Leptetheto {
     	
         Printer.PrintTabIn("Doboz" + '\t' + "Utkozik(float, float, Irany, Jatekos)");
         
-    	if (ero>surl+tapadas*mezo.getSurl()) {
+    	if (ero-tapadas*surl>0) {
     		
-	        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl+tapadas*mezo.getSurl(), i, this, j);
+	        boolean success = mezo.GetSzomszed(i).Fogad(ero-tapadas*surl, i, this, j);
 	        
 	        if (success)
 	            mezo.Enged();
@@ -95,9 +95,9 @@ public class Doboz extends Leptetheto {
 
         Printer.PrintTabIn("Doboz" + '\t' + "Tol(float, float, Irany, Jatekos)");
         
-    	if (ero>surl+tapadas*mezo.getSurl()) {
+    	if (ero-tapadas*surl > 0) {
 
-	        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl+tapadas*mezo.getSurl(), i, this, j);
+	        boolean success = mezo.GetSzomszed(i).Fogad(ero-tapadas*surl, i, this, j);
 	        if (success)
 	            mezo.Enged();
 	        Printer.PrintTabOut("Return: " + Boolean.toString(success));

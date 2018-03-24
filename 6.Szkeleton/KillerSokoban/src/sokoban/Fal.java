@@ -32,14 +32,13 @@ public class Fal extends UresMezo {
      * a pontot erte.
      *
      * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
      * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd JeloltDoboz, ami a mezore kivan lepni
      * @param j  Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
-    public boolean Fogad(float ero, float surl, Irany i, JeloltDoboz jd, Jatekos j) {
+    public boolean Fogad(float ero, Irany i, JeloltDoboz jd, Jatekos j) {
         Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
@@ -53,14 +52,13 @@ public class Fal extends UresMezo {
      * a pontot erte.
      *
      * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
-    public boolean Fogad(float ero, float surl, Irany i, Jatekos aktj, Jatekos j) {
+    public boolean Fogad(float ero, Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;
@@ -73,14 +71,13 @@ public class Fal extends UresMezo {
      * a pontot erte.
      *
      * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
      * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d Doboz, ami a mezore kivan lepni
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
-    public boolean Fogad(float ero, float surl, Irany i, Doboz d, Jatekos j) {
+    public boolean Fogad(float ero, Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, Doboz,Jatekos)");
         Printer.PrintTabOut("Return: " + Boolean.toString(false));
         return false;

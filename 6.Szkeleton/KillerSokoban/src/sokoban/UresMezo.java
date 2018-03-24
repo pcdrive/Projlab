@@ -21,7 +21,7 @@ public class UresMezo {
     protected Leptetheto leptetheto;
     private UresMezo szomszed[];
     
-    private float surlodas;
+    protected float surlodas;
     private boolean olaj;
     private boolean mez;
 
@@ -42,20 +42,19 @@ public class UresMezo {
      * a pontot erte.
      *
      * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
      * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd JeloltDoboz, ami a mezore kivan lepni
      * @param j  Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
-    public boolean Fogad(float ero, float surl, Irany i, JeloltDoboz jd, Jatekos j) {
+    public boolean Fogad(float ero, Irany i, JeloltDoboz jd, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = jd;
             return true;
         }
-        boolean success = leptetheto.Utkozik(ero, surl, i, j);
+        boolean success = leptetheto.Utkozik(ero, surlodas, i, j);
         if (success) {
             leptetheto = jd;
         }
@@ -70,20 +69,19 @@ public class UresMezo {
      * a pontot erte.
      *
      * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
-    public boolean Fogad(float ero, float surl, Irany i, Jatekos aktj, Jatekos j) {
+    public boolean Fogad(float ero, Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = aktj;
             return true;
         }
-        boolean success = leptetheto.Tol(ero, surl, i, j);
+        boolean success = leptetheto.Tol(ero, surlodas, i, j);
         if (success) {
             leptetheto = aktj;
         }
@@ -98,20 +96,19 @@ public class UresMezo {
      * a pontot erte.
      *
      * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
      * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d Doboz, ami a mezore kivan lepni
      * @param j Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
-    public boolean Fogad(float ero, float surl, Irany i, Doboz d, Jatekos j) {
+    public boolean Fogad(float ero, Irany i, Doboz d, Jatekos j) {
         Printer.PrintTabIn("UresMezo" + '\t' + "Fogad(Irany, Doboz, Jatekos)");
         if (leptetheto == null) {
             Printer.PrintTabOut("Return: " + Boolean.toString(true));
             leptetheto = d;
             return true;
         }
-        boolean success = leptetheto.Utkozik(ero, surl, i, j);
+        boolean success = leptetheto.Utkozik(ero, surlodas, i, j);
         if (success) {
             leptetheto = d;
         }

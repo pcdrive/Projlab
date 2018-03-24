@@ -65,9 +65,9 @@ public class JeloltDoboz extends Doboz {
     	
         Printer.PrintTabIn("JeloltDoboz" + '\t' + "Tol(float, float, Irany, Jatekos)");
         
-    	if (ero>surl+tapadas*mezo.getSurl()) {
+    	if (ero-surl*tapadas>0) {
         
-        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl+tapadas*mezo.getSurl(), i, this, j);
+        boolean success = mezo.GetSzomszed(i).Fogad(ero-surl*tapadas, i, this, j);
         if (success)
             mezo.Enged();
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
@@ -92,9 +92,9 @@ public class JeloltDoboz extends Doboz {
     	
         Printer.PrintTabIn("JeloltDoboz" + '\t' + "Utkozik(float, float, Irany, Jatekos)");
         
-    	if (ero>surl+tapadas*mezo.getSurl()) {    		
+    	if (ero-surl*tapadas>0) {    		
     	
-	        boolean success = mezo.GetSzomszed(i).Fogad(ero, surl+tapadas*mezo.getSurl(), i, this, j);
+	        boolean success = mezo.GetSzomszed(i).Fogad(ero-surl*tapadas, i, this, j);
 	        if (success)
 	            mezo.Enged();
 	        Printer.PrintTabOut("Return: " + Boolean.toString(success));
