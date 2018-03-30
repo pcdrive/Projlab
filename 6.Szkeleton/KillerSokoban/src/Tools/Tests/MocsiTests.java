@@ -4,8 +4,12 @@ package Tools.Tests;
 import data.Data;
 import org.junit.Test;
 import server.KliensAdat;
+import server.Szerver;
+import sokoban.Irany;
 import sokoban.Jatek;
-import sokoban.mezok.UresMezo;
+import sokoban.Palya;
+import sokoban.leptethetok.Jatekos;
+import sokoban.mezok.Csapdaajto;
 
 public class MocsiTests {
     @Test
@@ -22,7 +26,10 @@ public class MocsiTests {
 
     @Test
     public void MezoIdTest(){
-        UresMezo uresMezo = new UresMezo();
-//        uresMezo.Fogad(new Jatekos("jatekos1",new Palya(new Jatek()), uresMezo));
+        Csapdaajto uresMezo = new Csapdaajto();
+        uresMezo.Fogad(1, Irany.BALRA, new Jatekos("jatekos1",new Palya(new Szerver(new Jatek())), uresMezo), new Jatekos("jatekos1",new Palya(new Szerver(new Jatek())), uresMezo));
+        uresMezo.AddMez();
+        uresMezo.Csuk();
+        System.out.print(uresMezo.getID());
     }
 }

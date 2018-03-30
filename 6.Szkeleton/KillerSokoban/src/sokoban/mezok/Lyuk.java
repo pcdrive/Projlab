@@ -91,7 +91,7 @@ public class Lyuk extends UresMezo {
     }
 
     public int getID(){
-        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + mez * 10 + olaj;
+        return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + mez * 10 + olaj;
     }
 
 }

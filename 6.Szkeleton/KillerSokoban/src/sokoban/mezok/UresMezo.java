@@ -159,12 +159,12 @@ public class UresMezo {
     /**
      * Olajositja a mezot. Jobban csuszik tole.
      */
-    public void setOlaj() {olaj++; surlodas*=0.8f;}
+    public void AddOlaj() {olaj++; surlodas*=0.8f;}
     
     /**
      * Mezesiti a mezot. Jobban tapad tole.
      */
-    public void setMez() {mez++; surlodas*=1.2f;}
+    public void AddMez() {mez++; surlodas*=1.2f;}
 
     /**
      * A mezo surlodasat adja vissza.
@@ -174,7 +174,7 @@ public class UresMezo {
     public float getSurl() {return surlodas;}
 
     public int getID(){
-        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + mez * 10 + olaj;
+        return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + mez * 10 + olaj;
     }
 
 }
