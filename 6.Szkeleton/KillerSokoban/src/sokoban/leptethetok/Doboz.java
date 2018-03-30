@@ -20,8 +20,8 @@ import sokoban.Palya;
 import sokoban.mezok.UresMezo;
 
 public class Doboz extends Leptetheto {
-	
-	protected float tapadas=0.8f;
+
+    protected float tapadas = 0.8f;
 
     /**
      * Az osztaly konstruktora. Beallitja a mezot es a palyat.
@@ -67,59 +67,59 @@ public class Doboz extends Leptetheto {
     /**
      * Az objektumot egy doboz tolta meg, �s az ezzel valo interakciot kezeli.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
-     * @param i Irany amerre a dobozt tolt�k
-     * @param j Jatekos, aki tol�st kezdte
+     * @param ero  az ero amivel a jatekos a sort megtolta.
+     * @param surl A mezo surlodasa, amin all.
+     * @param i    Irany amerre a dobozt tolt�k
+     * @param j    Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override
     public boolean Utkozik(float ero, float surl, Irany i, Jatekos j) {
-    	
+
         Printer.PrintTabIn("Doboz" + '\t' + "Utkozik(float, float, Irany, Jatekos)");
-        
-    	if (ero-tapadas*surl>0) {
-    		
-	        boolean success = mezo.GetSzomszed(i).Fogad(ero-tapadas*surl, i, this, j);
-	        
-	        if (success)
-	            mezo.Enged();
-	        
-	        Printer.PrintTabOut("Return: " + Boolean.toString(success));
-	        return success;
-    	}
-    	
-    	Printer.PrintTabOut("Return: " + Boolean.toString(false));
-    	
-    	return false;
+
+        if (ero - tapadas * surl > 0) {
+
+            boolean success = mezo.GetSzomszed(i).Fogad(ero - tapadas * surl, i, this, j);
+
+            if (success)
+                mezo.Enged();
+
+            Printer.PrintTabOut("Return: " + Boolean.toString(success));
+            return success;
+        }
+
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
+
+        return false;
     }
 
     /**
      * Az objektumot egy jatekos tolta meg, �s az ezzel valo interakciot kezeli.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
-     * @param i Irany amerre a dobozt tolt�k
-     * @param j Jatekos, aki tol�st kezdte
+     * @param ero  az ero amivel a jatekos a sort megtolta.
+     * @param surl A mezo surlodasa, amin all.
+     * @param i    Irany amerre a dobozt tolt�k
+     * @param j    Jatekos, aki tol�st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override
     public boolean Tol(float ero, float surl, Irany i, Jatekos j) {
 
         Printer.PrintTabIn("Doboz" + '\t' + "Tol(float, float, Irany, Jatekos)");
-        
-    	if (ero-tapadas*surl > 0) {
 
-	        boolean success = mezo.GetSzomszed(i).Fogad(ero-tapadas*surl, i, this, j);
-	        if (success)
-	            mezo.Enged();
-	        Printer.PrintTabOut("Return: " + Boolean.toString(success));
-	        return success;
-		}
-		
-		Printer.PrintTabOut("Return: " + Boolean.toString(false));
-		
-		return false;
+        if (ero - tapadas * surl > 0) {
+
+            boolean success = mezo.GetSzomszed(i).Fogad(ero - tapadas * surl, i, this, j);
+            if (success)
+                mezo.Enged();
+            Printer.PrintTabOut("Return: " + Boolean.toString(success));
+            return success;
+        }
+
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
+
+        return false;
     }
 
 }

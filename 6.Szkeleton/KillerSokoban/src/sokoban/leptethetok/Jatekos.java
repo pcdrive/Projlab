@@ -20,11 +20,12 @@ import sokoban.Palya;
 import sokoban.mezok.UresMezo;
 
 public class Jatekos extends Leptetheto {
-	
-	
+
+
     private final String nev;
-    private final int status;
     private float ero;
+    private int status;
+    public static int jatekosSzam = 0;
 
     /**
      * Az osztaly konstruktora. Beallitja a nevet, palyat és a mezot.
@@ -32,13 +33,12 @@ public class Jatekos extends Leptetheto {
      * @param nev A jatekos neve.
      * @param p   A palya.
      * @param m   A mezo, amin all.
-     * @param status Kliensadat számára szükséges státusz.
      */
-    public Jatekos(String nev, Palya p, UresMezo m, int status) {
+    public Jatekos(String nev, Palya p, UresMezo m) {
         super(p, m);
         this.nev = nev;
         ero = 4;
-        this.status = status;
+        status = jatekosSzam++;
     }
 
     /**
@@ -47,7 +47,7 @@ public class Jatekos extends Leptetheto {
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     public String getNev() {
-        Printer.PrintTabIn( nev + '\t' + "getNev()");
+        Printer.PrintTabIn(nev + '\t' + "getNev()");
         Printer.PrintTabOut("Return: " + nev);
         return nev;
     }
@@ -58,7 +58,7 @@ public class Jatekos extends Leptetheto {
      * @param i Irany amerre lepni akarunk
      */
     public void Lepes(Irany i) {
-        Printer.PrintTabIn( nev + '\t' + "Lepes(Irany)");
+        Printer.PrintTabIn(nev + '\t' + "Lepes(Irany)");
 
         Tol(ero, 0, i, this);
         palya.Vegellenorzes();
@@ -72,7 +72,7 @@ public class Jatekos extends Leptetheto {
      * metodusat.
      */
     public void PontotKap() {
-        Printer.PrintTabIn( nev + '\t' + "PontotKap()");
+        Printer.PrintTabIn(nev + '\t' + "PontotKap()");
         palya.PontotKap(this);
         Printer.PrintTabOut("Return");
     }
@@ -83,7 +83,7 @@ public class Jatekos extends Leptetheto {
      */
     @Override
     public void Halal() {
-        Printer.PrintTabIn( nev + '\t' + "Halal()");
+        Printer.PrintTabIn(nev + '\t' + "Halal()");
         palya.Halal(this);
         Printer.PrintTabOut("Return");
     }
@@ -101,10 +101,10 @@ public class Jatekos extends Leptetheto {
     /**
      * Az objektumot egy doboz tolta meg, és az ezzel valo interakciot kezeli.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
-     * @param i Irany amerre a dobozt tolták
-     * @param j Jatekos, aki tolást kezdte
+     * @param ero  az ero amivel a jatekos a sort megtolta.
+     * @param surl A mezo surlodasa, amin all.
+     * @param i    Irany amerre a dobozt tolták
+     * @param j    Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     @Override
@@ -126,10 +126,10 @@ public class Jatekos extends Leptetheto {
     /**
      * Az objektumot egy jatekos tolta meg, és az ezzel valo interakciot kezeli.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param surl	A mezo surlodasa, amin all.
-     * @param i Irany amerre a dobozt tolták
-     * @param j Jatekos, aki tolást kezdte
+     * @param ero  az ero amivel a jatekos a sort megtolta.
+     * @param surl A mezo surlodasa, amin all.
+     * @param i    Irany amerre a dobozt tolták
+     * @param j    Jatekos, aki tolást kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     @Override
@@ -148,8 +148,9 @@ public class Jatekos extends Leptetheto {
     /**
      * A jatekos erejet allitja be.
      *
-     * @param f    az ero amivel a jatekos tolni tud.
+     * @param f az ero amivel a jatekos tolni tud.
      */
-    public void setEro(float f) {ero=f;}
-
+    public void setEro(float f) {
+        ero = f;
+    }
 }

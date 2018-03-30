@@ -81,9 +81,8 @@ public class Pontok {
      *
      * @param nrv A lista uj eleme, a jatekos neve.
      */
-    public void AddJatekos(String nev) 
-    {
-        Printer.PrintTabIn("Pontok" + '\t' + "AddJatekos(String)");    	
+    public void AddJatekos(String nev) {
+        Printer.PrintTabIn("Pontok" + '\t' + "AddJatekos(String)");
     }
 
 }

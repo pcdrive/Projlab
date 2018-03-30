@@ -15,12 +15,12 @@
 package sokoban;
 
 import Tools.Printer;
-import data.Consts;
+import data.Data;
 import server.KliensAdat;
 
 public class Jatek {
-	
-	Jatek jatek;
+
+    Jatek jatek;
 
     /**
      * Az osztaly konstruktora.
@@ -44,10 +44,10 @@ public class Jatek {
         Printer.PrintTabOut("Return");
     }
 
-    public void Print(KliensAdat kliensAdat){
-        for(int i = 0; i<Consts.PalyaY; i++){
-            for(int j = 0; j< Consts.PalyaX; j++){
-                System.out.print("\t" + kliensAdat.palya[i*Consts.PalyaX+j]);
+    public void Print(KliensAdat kliensAdat) {
+        for (int i = 0; i < Data.PalyaY; i++) {
+            for (int j = 0; j < Data.PalyaX; j++) {
+                System.out.print("\t" + kliensAdat.palya[i * Data.PalyaX + j]);
             }
             System.out.println();
         }
