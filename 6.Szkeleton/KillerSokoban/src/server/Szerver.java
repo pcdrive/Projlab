@@ -1,8 +1,8 @@
-/**
- * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
- * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
- *
- * @author Horvath Gergo
+/*
+  A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+  A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+
+  @author Horvath Gergo
  * @author Mocsari Andras
  * @author Zsiros Balint
  * @author Bottlik Judit
@@ -13,37 +13,41 @@
 
 package server;
 
+import sokoban.Irany;
+import sokoban.Jatek;
+import sokoban.Palya;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.net.InetSocketAddress;
+import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.LinkedList;
 
 //import Tools.Printer;
-import sokoban.*;
-
-import java.io.IOException;
-import java.net.*;
 
 public class Szerver {
 	
-	Jatek jatek;
-	LinkedList<Kapcsolat> kapcsolatok;
-	Palya palya;
+	private Jatek jatek;
+	private LinkedList<Kapcsolat> kapcsolatok;
+	private Palya palya;
 	
 
-	ServerSocket socket;
-	String ip;
-	Szerver This=this;
-	int port;	
-	int number;	
-	Thread lobby;
-	KliensAdat startadat;
+	private ServerSocket socket;
+	private String ip;
+	private Szerver This=this;
+	private int port;
+	private Thread lobby;
+	private PalyaAdat startadat;
 	
-	boolean run=true;
+	private boolean run=true;
 
 
     /**
      * Az osztaly konstruktora.
      * 
-     * @param j A jatek osztály referenciaja.
+     * @param j A jatek osztï¿½ly referenciaja.
      */
 	public Szerver(Jatek j, String p) 
 	{
@@ -74,7 +78,7 @@ public class Szerver {
      * @param i   Irany amerre a jatekost leptetni kell
      * @param nev  A jatekos neve.
      */
-	public void Leptet(Irany i, String nev) 
+	void Leptet(Irany i, String nev)
 	{
 		palya.Leptet(i, nev);
 	}
@@ -84,18 +88,15 @@ public class Szerver {
      *
      * @param k	Jatekadatok, amiket tovabbitani kell.
      */
-	public void sendAdat(KliensAdat k) 
+	public void SendAdat(KliensAdat k)
 	{
 		jatek.Print(k);
-		for (int i=0;i<kapcsolatok.size();i++)
-			kapcsolatok.get(i).sendAdat(k);
+		for (Kapcsolat aKapcsolatok : kapcsolatok) aKapcsolatok.sendAdat(k);
 	}
 
     /**
      * A szerver jatekinditasert felelos fuggvenye. bezarja a lobbit, es elinditja a jatekot a
      * kivalasztott terkepfajl alapjan.
-     *
-     * @param file	File amibol az adatokat be kell tolteni.
      */
 	public void Start() 
 	{
@@ -104,37 +105,48 @@ public class Szerver {
 	}
 
     /**
-     * A szerver lobbiert felelos fuggvenye. Elindítja a lobbit, ami alatt
+     * A szerver lobbiert felelos fuggvenye. Elindï¿½tja a lobbit, ami alatt
      * a kliensek csatlakozni tudnak.
+	 *
+	 * @param file	File amibol az adatokat be kell tolteni.
      */
 	public void Fut(String file) 
 	{
-		
-	      startadat = cucc;//things... TODO: ide kéne az beolvasásos cuccos...
-		
-	      lobby = new Thread(){
-	    	  public void run() {
-	    		  
-	    		  lobby.start();
-	    		  
-	    		  while (run) 
-				  {
-	    			  if(kapcsolatok.size()<= startadat.jsz)
-					  try {
-						  Socket connection = socket.accept();
-						
-					  	  Kapcsolat c = new Kapcsolat(This, connection);
-						
-						  kapcsolatok.add(c);
-						
-					  } catch (IOException e) {
-						  // TODO Auto-generated catch block
-					  }
-					  
-				  }
-	          }
-	      };
-	      if (run=false) {lobby=null;}
+
+		FileInputStream fileInputStream = null;
+		try {
+			fileInputStream = new FileInputStream("/../data/palyak/" + file + ".mocsi");
+			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+
+			startadat = (PalyaAdat) objectInputStream.readObject();//things... TODO: ide kï¿½ne az beolvasï¿½sos cuccos...
+
+			lobby = new Thread(){
+				public void run() {
+
+					lobby.start();
+
+					while (run)
+					{
+//	    			  if(kapcsolatok.size()<= startadat.jsz)
+						try {
+							Socket connection = socket.accept();
+
+							Kapcsolat c = new Kapcsolat(This, connection);
+
+							kapcsolatok.add(c);
+
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+						}
+
+					}
+				}
+			};
+			if (!run) {lobby=null;}
+		} catch (IOException | ClassNotFoundException e) {
+			e.printStackTrace();
+		}
 	}
 
     /**
@@ -146,7 +158,7 @@ public class Szerver {
     /**
      * A kliensek kapcsolatanak megszakadasakor eltavolitja oket a listabol.
      */
-	public void remKapcs(Kapcsolat k) 
+	public void RemKapcs(Kapcsolat k)
 	{
 		kapcsolatok.remove(k);
 	}

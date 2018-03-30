@@ -30,7 +30,7 @@ public class Kapcsolat {
     /**
      * Az osztaly konstruktora.
      * 
-     * @param sz A szerver osztály referenciaja.
+     * @param sz A szerver osztï¿½ly referenciaja.
      * @param sock A socket, amin a  kapcsolat letrejott.
      */
 	public Kapcsolat(Szerver sz, Socket sock) 
@@ -77,7 +77,7 @@ public class Kapcsolat {
 			// TODO Auto-generated catch block
 			System.out.println("[SERVER]: Client disconnected!");
 			rdr.Kill();
-			szerver.remKapcs(this);
+			szerver.RemKapcs(this);
 		}
 	}
 
@@ -86,6 +86,6 @@ public class Kapcsolat {
      */
 	public void remKapcs() 
 	{
-		szerver.remKapcs(this);
+		szerver.RemKapcs(this);
 	}
 }
