@@ -169,12 +169,7 @@ public class Jatek {
 			} catch (Exception e) {}
 		}
     }
-
-    /**
-     * Elküldi a parancsokat a szervernek.
-     * 
-     * @param i	Irany amerre lepni akarunk.
-     */
+    
     public void sendParancs(Irany i) throws IOException 
     {
     	out.writeObject(new ParancsAdat(i, name));;

@@ -310,24 +310,21 @@ public class Main {
 	public static void main(String[] args) 
 	{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String line="";
-        
-        while (!line.toUpperCase().equals("Q")) {
-	        System.out.print("\nOpciók: \n 1, Start szerver <S>\n 2, Kapcsolodas <K>\n 3, Quit <Q>\n");
-	    	try {
-				 line = br.readLine();
-				
-				switch (String.valueOf(line.toUpperCase())) 
-				{
-				case "S": {j = new Jatek(); j.SzerverMod();} break;
-				case "K": {j = new Jatek(); j.KliensMod();} break;
-				}
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-				return;
+
+        System.out.print("\nOpciók: \n 1, Start szerver <S>\n 2, Kapcsolodas <K>\n");
+    	try {
+			String line = br.readLine();
+			
+			switch (String.valueOf(line.toUpperCase())) 
+			{
+			case "S": {j = new Jatek(); j.SzerverMod();} break;
+			case "K": {j = new Jatek(); j.KliensMod();} break;
 			}
-        }
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return;
+		}
 	}
 
     /**
