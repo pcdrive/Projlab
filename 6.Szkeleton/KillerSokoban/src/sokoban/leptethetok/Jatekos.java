@@ -25,7 +25,7 @@ public class Jatekos extends Leptetheto {
     private final String nev;
     private float ero;
     private int status;
-    public static int jatekosSzam = 0;
+    private static int jatekosSzam = 0;
 
     /**
      * Az osztaly konstruktora. Beallitja a nevet, palyat és a mezot.

@@ -13,12 +13,8 @@
 
 package server;
 
-import java.io.Serializable;
-
-import sokoban.Pontok;
-
 @SuppressWarnings("serial")
-public class PalyaAdat extends KliensAdat implements Serializable {
+public class PalyaAdat extends BaseAdat {
 	
 	public final int jsz;
     public final int csapdak[];
@@ -27,15 +23,14 @@ public class PalyaAdat extends KliensAdat implements Serializable {
     /**
      * Az osztaly konstruktora. Beallitja az attributumokat, amik az
      * informaciot hordozzak.
-     * 
+     *
+     * @param j 	Palya játékosainak száma.
      * @param pa	Palya adatok (int ID-k).
      * @param cs	kapcsolo-csapda osszerendeles.
-     * @param ID	jatekos azonositok.
-     * @param po	A jatekosok pontjai.
      */
-    public PalyaAdat(int j, int[] pa, int[] cs, String[] ID, Pontok po) 
+    public PalyaAdat(int j, int[] pa, int[] cs)
     {
-    	super(pa,ID,po);
+    	super(pa);
     	jsz=j;
     	csapdak=cs;
     }
