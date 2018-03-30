@@ -12,9 +12,13 @@
  */
 
 
-package sokoban;
+package sokoban.mezok;
 
 import Tools.Printer;
+import sokoban.leptethetok.Doboz;
+import sokoban.Irany;
+import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
 
 import java.util.ArrayList;
 

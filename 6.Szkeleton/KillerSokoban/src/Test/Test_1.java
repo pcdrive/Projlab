@@ -3,6 +3,8 @@ package Test;
 import Tools.Printer;
 import org.junit.*;
 import sokoban.*;
+import sokoban.leptethetok.Jatekos;
+import sokoban.mezok.*;
 
 public class Test_1 {
     @Test

@@ -12,9 +12,14 @@
  */
 
 
-package sokoban;
+package sokoban.mezok;
 
 import Tools.Printer;
+import sokoban.*;
+import sokoban.leptethetok.Doboz;
+import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
+import sokoban.leptethetok.Leptetheto;
 
 public class UresMezo {
 
@@ -22,17 +27,19 @@ public class UresMezo {
     private UresMezo szomszed[];
     
     protected float surlodas;
-    private boolean olaj;
-    private boolean mez;
+    protected int olaj;
+    protected int mez;
+    protected int mezoStatusz;
+    protected int mezoTipus;
 
     /**
-     * Az osztaly konstruktora. beallítja az alapertekeket.
+     * Az osztaly konstruktora. beallï¿½tja az alapertekeket.
      */
     public UresMezo() {
         szomszed = new UresMezo[4];
         surlodas = 0.5f;
-        olaj = false;
-        mez = false;
+//        olaj = false;
+//        mez = false;
     }
 
     /**
@@ -152,26 +159,12 @@ public class UresMezo {
     /**
      * Olajositja a mezot. Jobban csuszik tole.
      */
-    public void setOlaj() {olaj=true; surlodas*=0.8f;}
+//    public void setOlaj() {olaj=true; surlodas*=0.8f;}
     
     /**
      * Mezesiti a mezot. Jobban tapad tole.
      */
-    public void setMez() {mez=true; surlodas*=1.2f;}
-
-    /**
-     * Olajosítva volt-e a mezo.
-     * 
-     * @return boolean Annak az erteke, hogy volt-e olaj a mezon.
-     */
-    public boolean getOlaj() {return olaj;}
-
-    /**
-     * Mezesitve volt-e a mezo.
-     * 
-     * @return boolean Annak az erteke, hogy volt-e mez a mezon.
-     */
-    public boolean getMez() {return mez;}
+//    public void setMez() {mez=true; surlodas*=1.2f;}
 
     /**
      * A mezo surlodasat adja vissza.
@@ -179,5 +172,9 @@ public class UresMezo {
      * @return float Annak az erteke, hogy mekkora a mezo surlodasa.
      */
     public float getSurl() {return surlodas;}
+
+//    public int getID(){
+////        int ID = mezoTipus*
+//    }
 
 }

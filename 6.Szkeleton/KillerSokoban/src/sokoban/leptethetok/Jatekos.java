@@ -12,14 +12,18 @@
  */
 
 
-package sokoban;
+package sokoban.leptethetok;
 
 import Tools.Printer;
+import sokoban.Irany;
+import sokoban.Palya;
+import sokoban.mezok.UresMezo;
 
 public class Jatekos extends Leptetheto {
 	
 	
     private final String nev;
+    private final int status;
     private float ero;
 
     /**
@@ -28,13 +32,13 @@ public class Jatekos extends Leptetheto {
      * @param nev A jatekos neve.
      * @param p   A palya.
      * @param m   A mezo, amin all.
+     * @param status Kliensadat számára szükséges státusz.
      */
-    public Jatekos(String nev, Palya p, UresMezo m) {
+    public Jatekos(String nev, Palya p, UresMezo m, int status) {
         super(p, m);
         this.nev = nev;
-        palya = p;
-        mezo = m;
         ero = 4;
+        this.status = status;
     }
 
     /**
@@ -82,6 +86,16 @@ public class Jatekos extends Leptetheto {
         Printer.PrintTabIn( nev + '\t' + "Halal()");
         palya.Halal(this);
         Printer.PrintTabOut("Return");
+    }
+
+    @Override
+    public int getTipus() {
+        return 1;
+    }
+
+    @Override
+    public int getStatus() {
+        return status;
     }
 
     /**

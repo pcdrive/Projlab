@@ -12,16 +12,20 @@
  */
 
 
-package sokoban;
+package sokoban.mezok;
 
 import Tools.Printer;
+import sokoban.leptethetok.Doboz;
+import sokoban.Irany;
+import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
 
-public class Lyuk extends UresMezo {
+public class Fal extends UresMezo {
 
     /**
      * Az osztaly konstruktora.
      */
-    public Lyuk() {
+    public Fal() {
         super();
     }
 
@@ -39,11 +43,11 @@ public class Lyuk extends UresMezo {
      */
     @Override
     public boolean Fogad(float ero, Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
-        jd.Halal();
-        Printer.PrintTabOut("Return: " + Boolean.toString(true));
-        return true;
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
+        return false;
     }
+
 
     /**
      * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a
@@ -59,10 +63,9 @@ public class Lyuk extends UresMezo {
      */
     @Override
     public boolean Fogad(float ero, Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
-        aktj.Halal();
-        Printer.PrintTabOut("Return: " + Boolean.toString(true));
-        return true;
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
+        return false;
     }
 
     /**
@@ -79,10 +82,9 @@ public class Lyuk extends UresMezo {
      */
     @Override
     public boolean Fogad(float ero, Irany i, Doboz d, Jatekos j) {
-        Printer.PrintTabIn("Lyuk" + '\t' + "Fogad(Irany, Doboz,Jatekos)");
-        d.Halal();
-        Printer.PrintTabOut("Return " + Boolean.toString(true));
-        return true;
+        Printer.PrintTabIn("Fal" + '\t' + "Fogad(Irany, Doboz,Jatekos)");
+        Printer.PrintTabOut("Return: " + Boolean.toString(false));
+        return false;
     }
 
 }

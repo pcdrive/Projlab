@@ -12,9 +12,12 @@
  */
 
 
-package sokoban;
+package sokoban.leptethetok;
 
 import Tools.Printer;
+import sokoban.Irany;
+import sokoban.Palya;
+import sokoban.mezok.UresMezo;
 
 public class Doboz extends Leptetheto {
 	
@@ -49,6 +52,16 @@ public class Doboz extends Leptetheto {
         Printer.PrintTabIn("Doboz" + '\t' + "Halal()");
         palya.Halal(this);
         Printer.PrintTabOut("Return");
+    }
+
+    @Override
+    public int getTipus() {
+        return 2;
+    }
+
+    @Override
+    public int getStatus() {
+        return 0;
     }
 
     /**

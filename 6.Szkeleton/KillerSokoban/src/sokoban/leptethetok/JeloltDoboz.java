@@ -12,9 +12,12 @@
  */
 
 
-package sokoban;
+package sokoban.leptethetok;
 
 import Tools.Printer;
+import sokoban.Irany;
+import sokoban.Palya;
+import sokoban.mezok.UresMezo;
 
 public class JeloltDoboz extends Doboz {
     private boolean jel;

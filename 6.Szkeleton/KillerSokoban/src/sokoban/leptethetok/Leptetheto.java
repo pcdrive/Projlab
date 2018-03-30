@@ -12,7 +12,11 @@
  */
 
 
-package sokoban;
+package sokoban.leptethetok;
+
+import sokoban.Irany;
+import sokoban.Palya;
+import sokoban.mezok.UresMezo;
 
 public abstract class Leptetheto {
 
@@ -53,5 +57,8 @@ public abstract class Leptetheto {
      * ez pedig tovabbhivja a palya halal metodusat.
      */
     public abstract void Halal();
+
+    public abstract int getTipus();
+    public abstract int getStatus();
 
 }

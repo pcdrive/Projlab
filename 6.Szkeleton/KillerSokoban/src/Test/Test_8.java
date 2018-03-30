@@ -4,6 +4,12 @@ import org.junit.Test;
 
 import Tools.Printer;
 import sokoban.*;
+import sokoban.leptethetok.Doboz;
+import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
+import sokoban.mezok.Celhely;
+import sokoban.mezok.Fal;
+import sokoban.mezok.UresMezo;
 
 public class Test_8 {
 	

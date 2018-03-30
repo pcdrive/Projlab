@@ -3,6 +3,9 @@ package Test;
 import Tools.Printer;
 import org.junit.Test;
 import sokoban.*;
+import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
+import sokoban.mezok.*;
 
 
 public class Test_4 {

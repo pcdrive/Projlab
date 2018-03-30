@@ -15,6 +15,9 @@
 package sokoban;
 
 import Tools.Printer;
+import sokoban.leptethetok.Doboz;
+import sokoban.leptethetok.Jatekos;
+import sokoban.mezok.UresMezo;
 
 import java.util.ArrayList;
 
