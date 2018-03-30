@@ -101,7 +101,7 @@ public class Szerver {
 	public void Start() 
 	{
 		run = false;
-		palya = new Palya(this, startadat);
+		palya = new Palya(this, startadat, null);
 	}
 
     /**

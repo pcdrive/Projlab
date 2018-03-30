@@ -14,8 +14,6 @@
 
 package sokoban;
 
-import Test.*;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -23,7 +21,7 @@ import java.io.InputStreamReader;
 public class Main {
 
 	static Jatek j;
-	
+
     /**
      * Main fuggveny, ami a jatekot futtatja.
      */
@@ -306,18 +304,18 @@ public class Main {
     /**
      * Lehetseges parancsok listazasa
      */
-    
-	public static void main(String[] args) 
+
+	public static void main(String[] args)
 	{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line="";
-        
+
         while (!line.toUpperCase().equals("Q")) {
-	        System.out.print("\nOpciók: \n 1, Start szerver <S>\n 2, Kapcsolodas <K>\n 3, Quit <Q>\n");
+	        System.out.print("\nOpciï¿½k: \n 1, Start szerver <S>\n 2, Kapcsolodas <K>\n 3, Quit <Q>\n");
 	    	try {
 				 line = br.readLine();
-				
-				switch (String.valueOf(line.toUpperCase())) 
+
+				switch (String.valueOf(line.toUpperCase()))
 				{
 				case "S": {j = new Jatek(); j.SzerverMod();} break;
 				case "K": {j = new Jatek(); j.KliensMod();} break;
@@ -331,7 +329,7 @@ public class Main {
 	}
 
     /**
-     * A help parancs szövege
+     * A help parancs szï¿½vege
      */
 	public static void help() {
         System.out.println("exit : kilï¿½pï¿½s");
@@ -404,125 +402,125 @@ public class Main {
     /**
      * Minden teszt meghivasa
      */
-    public static void testall() {
-        Test_1 t1 = new Test_1();
-        t1.Test_1_1();
-        t1 = new Test_1();
-        t1.Test_1_2();
-        t1 = new Test_1();
-        t1.Test_1_3();
-        t1 = new Test_1();
-        t1.Test_1_4();
-        Test_2 t2 = new Test_2();
-        t2.Test_2_1_1();
-        t2 = new Test_2();
-        t2.Test_2_1_2();
-        t2 = new Test_2();
-        t2.Test_2_1_3();
-        t2 = new Test_2();
-        t2.Test_2_1_4();
-        t2 = new Test_2();
-        t2.Test_2_2_1();
-        t2 = new Test_2();
-        t2.Test_2_2_2();
-        t2 = new Test_2();
-        t2.Test_2_2_3();
-        t2 = new Test_2();
-        t2.Test_2_2_4();
-        Test_3 t3 = new Test_3();
-        t3.Test_3_1_1();
-        t3 = new Test_3();
-        t3.Test_3_1_2();
-        t3 = new Test_3();
-        t3.Test_3_1_3();
-        t3 = new Test_3();
-        t3.Test_3_1_4();
-        t3 = new Test_3();
-        t3.Test_3_2_1();
-        t3 = new Test_3();
-        t3.Test_3_2_2();
-        t3 = new Test_3();
-        t3.Test_3_2_3();
-        t3 = new Test_3();
-        t3.Test_3_2_4();
-        Test_4 t4 = new Test_4();
-        t4.Test_4_1_1();
-        t4 = new Test_4();
-        t4.Test_4_1_2();
-        t4 = new Test_4();
-        t4.Test_4_1_3();
-        t4 = new Test_4();
-        t4.Test_4_1_4();
-        t4 = new Test_4();
-        t4.Test_4_2_1();
-        t4 = new Test_4();
-        t4.Test_4_2_2();
-        t4 = new Test_4();
-        t4.Test_4_2_3();
-        t4 = new Test_4();
-        t4.Test_4_2_4();
-        Test_5 t5 = new Test_5();
-        t5.Test_5_1_1();
-        t5 = new Test_5();
-        t5.Test_5_1_2();
-        t5 = new Test_5();
-        t5.Test_5_1_3();
-        t5 = new Test_5();
-        t5.Test_5_1_4();
-        t5 = new Test_5();
-        t5.Test_5_2_1();
-        t5 = new Test_5();
-        t5.Test_5_2_2();
-        t5 = new Test_5();
-        t5.Test_5_2_3();
-        t5 = new Test_5();
-        t5.Test_5_2_4();
-        Test_6 t6 = new Test_6();
-        t6.Test_6_1_1();
-        t6 = new Test_6();
-        t6.Test_6_1_2();
-        t6 = new Test_6();
-        t6.Test_6_1_3();
-        t6 = new Test_6();
-        t6.Test_6_1_4();
-        t6 = new Test_6();
-        t6.Test_6_2_1();
-        t6 = new Test_6();
-        t6.Test_6_2_2();
-        t6 = new Test_6();
-        t6.Test_6_2_3();
-        t6 = new Test_6();
-        t6.Test_6_2_4();
-        Test_7 t7 = new Test_7();
-        t7.Test_7_1_1();
-        t7 = new Test_7();
-        t7.Test_7_1_2();
-        t7 = new Test_7();
-        t7.Test_7_1_3();
-        t7 = new Test_7();
-        t7.Test_7_1_4();
-        t7 = new Test_7();
-        t7.Test_7_2_1();
-        t7 = new Test_7();
-        t7.Test_7_2_2();
-        t7 = new Test_7();
-        t7.Test_7_2_3();
-        t7 = new Test_7();
-        t7.Test_7_2_4();
-        Test_8 t8 = new Test_8();
-        t8.TEST_8_1();
-        t8 = new Test_8();
-        t8.TEST_8_2();
-        t8 = new Test_8();
-        t8.TEST_8_3();
-        t8 = new Test_8();
-        t8.TEST_8_4();
-        t8 = new Test_8();
-        t8.TEST_8_5();
-        t8 = new Test_8();
-        t8.TEST_8_6();
-        t8 = new Test_8();
-        t8.TEST_8_7();
-    }
+//    public static void testall() {
+//        Test_1 t1 = new Test_1();
+//        t1.Test_1_1();
+//        t1 = new Test_1();
+//        t1.Test_1_2();
+//        t1 = new Test_1();
+//        t1.Test_1_3();
+//        t1 = new Test_1();
+//        t1.Test_1_4();
+//        Test_2 t2 = new Test_2();
+//        t2.Test_2_1_1();
+//        t2 = new Test_2();
+//        t2.Test_2_1_2();
+//        t2 = new Test_2();
+//        t2.Test_2_1_3();
+//        t2 = new Test_2();
+//        t2.Test_2_1_4();
+//        t2 = new Test_2();
+//        t2.Test_2_2_1();
+//        t2 = new Test_2();
+//        t2.Test_2_2_2();
+//        t2 = new Test_2();
+//        t2.Test_2_2_3();
+//        t2 = new Test_2();
+//        t2.Test_2_2_4();
+//        Test_3 t3 = new Test_3();
+//        t3.Test_3_1_1();
+//        t3 = new Test_3();
+//        t3.Test_3_1_2();
+//        t3 = new Test_3();
+//        t3.Test_3_1_3();
+//        t3 = new Test_3();
+//        t3.Test_3_1_4();
+//        t3 = new Test_3();
+//        t3.Test_3_2_1();
+//        t3 = new Test_3();
+//        t3.Test_3_2_2();
+//        t3 = new Test_3();
+//        t3.Test_3_2_3();
+//        t3 = new Test_3();
+//        t3.Test_3_2_4();
+//        Test_4 t4 = new Test_4();
+//        t4.Test_4_1_1();
+//        t4 = new Test_4();
+//        t4.Test_4_1_2();
+//        t4 = new Test_4();
+//        t4.Test_4_1_3();
+//        t4 = new Test_4();
+//        t4.Test_4_1_4();
+//        t4 = new Test_4();
+//        t4.Test_4_2_1();
+//        t4 = new Test_4();
+//        t4.Test_4_2_2();
+//        t4 = new Test_4();
+//        t4.Test_4_2_3();
+//        t4 = new Test_4();
+//        t4.Test_4_2_4();
+//        Test_5 t5 = new Test_5();
+//        t5.Test_5_1_1();
+//        t5 = new Test_5();
+//        t5.Test_5_1_2();
+//        t5 = new Test_5();
+//        t5.Test_5_1_3();
+//        t5 = new Test_5();
+//        t5.Test_5_1_4();
+//        t5 = new Test_5();
+//        t5.Test_5_2_1();
+//        t5 = new Test_5();
+//        t5.Test_5_2_2();
+//        t5 = new Test_5();
+//        t5.Test_5_2_3();
+//        t5 = new Test_5();
+//        t5.Test_5_2_4();
+//        Test_6 t6 = new Test_6();
+//        t6.Test_6_1_1();
+//        t6 = new Test_6();
+//        t6.Test_6_1_2();
+//        t6 = new Test_6();
+//        t6.Test_6_1_3();
+//        t6 = new Test_6();
+//        t6.Test_6_1_4();
+//        t6 = new Test_6();
+//        t6.Test_6_2_1();
+//        t6 = new Test_6();
+//        t6.Test_6_2_2();
+//        t6 = new Test_6();
+//        t6.Test_6_2_3();
+//        t6 = new Test_6();
+//        t6.Test_6_2_4();
+//        Test_7 t7 = new Test_7();
+//        t7.Test_7_1_1();
+//        t7 = new Test_7();
+//        t7.Test_7_1_2();
+//        t7 = new Test_7();
+//        t7.Test_7_1_3();
+//        t7 = new Test_7();
+//        t7.Test_7_1_4();
+//        t7 = new Test_7();
+//        t7.Test_7_2_1();
+//        t7 = new Test_7();
+//        t7.Test_7_2_2();
+//        t7 = new Test_7();
+//        t7.Test_7_2_3();
+//        t7 = new Test_7();
+//        t7.Test_7_2_4();
+//        Test_8 t8 = new Test_8();
+//        t8.TEST_8_1();
+//        t8 = new Test_8();
+//        t8.TEST_8_2();
+//        t8 = new Test_8();
+//        t8.TEST_8_3();
+//        t8 = new Test_8();
+//        t8.TEST_8_4();
+//        t8 = new Test_8();
+//        t8.TEST_8_5();
+//        t8 = new Test_8();
+//        t8.TEST_8_6();
+//        t8 = new Test_8();
+//        t8.TEST_8_7();
+//    }
 
 }
