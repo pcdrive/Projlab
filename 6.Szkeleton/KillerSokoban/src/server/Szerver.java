@@ -115,7 +115,7 @@ public class Szerver {
 
 		FileInputStream fileInputStream = null;
 		try {
-			fileInputStream = new FileInputStream("/../data/palyak/" + file + ".mocsi");
+			fileInputStream = new FileInputStream(file + ".mocsi");
 			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
 
