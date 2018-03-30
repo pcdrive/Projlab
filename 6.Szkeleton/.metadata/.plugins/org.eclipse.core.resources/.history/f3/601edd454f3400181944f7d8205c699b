@@ -13,12 +13,9 @@
 
 package server;
 
-import java.io.Serializable;
-
 import sokoban.Pontok;
 
-@SuppressWarnings("serial")
-public class KliensAdat implements Serializable {
+public class KliensAdat {
 	
     public final int palya[];
     public final Pontok pontok;

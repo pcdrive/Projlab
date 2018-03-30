@@ -13,9 +13,12 @@
 
 package server;
 
+import java.io.Serializable;
+
 import sokoban.Irany;
 
-public class ParancsAdat {
+@SuppressWarnings("serial")
+public class ParancsAdat implements Serializable {
 	
 	public final Irany i;
 	

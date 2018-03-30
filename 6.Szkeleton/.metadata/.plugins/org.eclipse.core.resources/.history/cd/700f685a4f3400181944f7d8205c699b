@@ -13,27 +13,25 @@
 
 package server;
 
-import java.io.Serializable;
+import sokoban.Irany;
 
-import sokoban.Pontok;
-
-@SuppressWarnings("serial")
-public class KliensAdat implements Serializable {
+public class ParancsAdat {
 	
-    public final int palya[];
-    public final Pontok pontok;
-    
+	public final Irany i;
+	
+	public final String nev;
 
     /**
      * Az osztaly konstruktora. Beallitja az attributumokat, amik az
      * informaciot hordozzak.
      * 
-     * @param pa	Palya adatok (int ID-k).
-     * @param po	A jatekosok pontjai.
+     * @param i	Az irany amibe a jatekos lepni szeretne.
+     * @param nev	A jatekos neve amibol azonosithato.
      */
-    public KliensAdat(int[] pa, Pontok po) 
-    {
-    	palya=pa;
-    	pontok=po;
-    }
+	public ParancsAdat(Irany i, String nev) 
+	{
+		this.i=i;
+		this.nev=nev;
+	}
+
 }
