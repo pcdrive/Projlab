@@ -16,11 +16,9 @@ package sokoban;
 
 import Tools.Printer;
 
-import java.io.Serializable;
 import java.util.LinkedList;
 
-@SuppressWarnings("serial")
-public class Pontok implements Serializable{
+public class Pontok {
 
     private LinkedList<Pont> pontok;
 

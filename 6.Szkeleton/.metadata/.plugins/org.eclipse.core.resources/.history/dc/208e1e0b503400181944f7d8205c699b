@@ -14,12 +14,9 @@
 
 package sokoban;
 
-import java.io.Serializable;
-
 import Tools.Printer;
 
-@SuppressWarnings("serial")
-public class Pont implements Serializable {
+public class Pont {
 
     private final String nev;
     private int pont;
