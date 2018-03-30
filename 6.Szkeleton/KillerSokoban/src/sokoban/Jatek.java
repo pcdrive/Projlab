@@ -15,6 +15,7 @@
 package sokoban;
 
 import Tools.Printer;
+import server.KliensAdat;
 
 public class Jatek {
 	
@@ -24,7 +25,6 @@ public class Jatek {
      * Az osztaly konstruktora.
      */
     public Jatek() {
-
     }
 
     /**
@@ -43,4 +43,10 @@ public class Jatek {
         Printer.PrintTabOut("Return");
     }
 
+    public void Print(KliensAdat kliensAdat){
+        int palya[] = kliensAdat.getPalya();
+        for(int i = 0; i<palya.length; i++){
+//            System.out.print
+        }
+    }
 }
