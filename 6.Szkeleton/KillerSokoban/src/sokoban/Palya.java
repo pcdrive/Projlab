@@ -45,7 +45,7 @@ public class Palya {
         
         for (int i=0; i<mezok.length;i++) 
         {
-        	switch (((int)(k.palya[i]/100))%100) 
+        	switch (((int)(k.palya[i]/1000))%100)
         	{
         		case 0: mezok[i] = new UresMezo(); break;
         		case 1: mezok[i] = new Fal(); break;
