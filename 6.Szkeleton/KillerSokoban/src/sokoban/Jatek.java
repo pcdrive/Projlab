@@ -16,11 +16,13 @@ package sokoban;
 
 import Tools.Printer;
 import data.Data;
-import server.KliensAdat;
+import server.*;
+// import sokoban.*;
 
 public class Jatek {
-
-    Jatek jatek;
+	
+	Szerver szerver;
+	KliensOlvaso kOlvaso;
 
     /**
      * Az osztaly konstruktora.
@@ -52,4 +54,5 @@ public class Jatek {
             System.out.println();
         }
     }
+    
 }
