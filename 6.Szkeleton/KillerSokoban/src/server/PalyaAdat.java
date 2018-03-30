@@ -18,11 +18,10 @@ import java.io.Serializable;
 import sokoban.Pontok;
 
 @SuppressWarnings("serial")
-public class KliensAdat implements Serializable {
+public class PalyaAdat extends KliensAdat implements Serializable {
 	
-    public final int palya[];
-    public final String IDk[];
-    public final Pontok pontok;
+	public final int jsz;
+    public final int csapdak[];
     
 
     /**
@@ -30,13 +29,14 @@ public class KliensAdat implements Serializable {
      * informaciot hordozzak.
      * 
      * @param pa	Palya adatok (int ID-k).
+     * @param cs	kapcsolo-csapda osszerendeles.
      * @param ID	jatekos azonositok.
      * @param po	A jatekosok pontjai.
      */
-    public KliensAdat(int[] pa, String[] ID, Pontok po) 
+    public PalyaAdat(int j, int[] pa, int[] cs, String[] ID, Pontok po) 
     {
-    	palya=pa;
-    	IDk=ID;
-    	pontok=po;
+    	super(pa,ID,po);
+    	jsz=j;
+    	csapdak=cs;
     }
 }

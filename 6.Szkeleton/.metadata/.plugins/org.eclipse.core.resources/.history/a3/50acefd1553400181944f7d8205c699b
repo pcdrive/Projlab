@@ -20,7 +20,9 @@ import sokoban.Pontok;
 @SuppressWarnings("serial")
 public class KliensAdat implements Serializable {
 	
+	public final int jsz;
     public final int palya[];
+    public final int csapdak[];
     public final String IDk[];
     public final Pontok pontok;
     
@@ -30,12 +32,15 @@ public class KliensAdat implements Serializable {
      * informaciot hordozzak.
      * 
      * @param pa	Palya adatok (int ID-k).
+     * @param cs	kapcsolo-csapda osszerendeles.
      * @param ID	jatekos azonositok.
      * @param po	A jatekosok pontjai.
      */
-    public KliensAdat(int[] pa, String[] ID, Pontok po) 
+    public KliensAdat(int j, int[] pa, int[] cs, String[] ID, Pontok po) 
     {
+    	jsz=j;
     	palya=pa;
+    	csapdak=cs;
     	IDk=ID;
     	pontok=po;
     }
