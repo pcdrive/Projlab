@@ -15,9 +15,10 @@
 package sokoban;
 
 import Tools.Printer;
-import data.Data;
-import server.*;
-import sokoban.leptethetok.*;
+import server.PalyaAdat;
+import server.Szerver;
+import sokoban.leptethetok.Doboz;
+import sokoban.leptethetok.Jatekos;
 import sokoban.mezok.*;
 
 import java.util.LinkedList;
@@ -34,18 +35,15 @@ public class Palya {
     /**
      * Az osztaly konstruktora. Letrehozza a pontok osztalyt, �s beallitja a jatekot.
      */
-    public Palya(Szerver s, PalyaAdat k, String[] nevek) {
+    public Palya(Szerver s, PalyaAdat k) {
         szerver = s;
         pontok = new Pontok();
         dobozok = new LinkedList<Doboz>();
         jatekosok = new LinkedList<Jatekos>();
         mezok = new UresMezo[k.palya.length];
-        
-        int num=0;
-        
         for (int i=0; i<mezok.length;i++) 
         {
-        	switch (((int)(k.palya[i]/100))%100) 
+        	switch ((k.palya[i]/100)%100) 
         	{
         		case 0: mezok[i] = new UresMezo(); break;
         		case 1: mezok[i] = new Fal(); break;
@@ -58,32 +56,7 @@ public class Palya {
         	if (i>1) 
         	{
         		mezok[i-1].SetSzomszed(Irany.JOBBRA, mezok[i]);
-        		mezok[i].SetSzomszed(Irany.BALRA, mezok[i-1]);
-        	}
-        	if (i>Data.PalyaY) 
-        	{
-        		mezok[i-Data.PalyaY].SetSzomszed(Irany.LE, mezok[i]);
-        		mezok[i].SetSzomszed(Irany.FEL, mezok[i-Data.PalyaY]);        		
-        	}
-
-        	switch ((int)(k.palya[i]/10000000)) 
-        	{
-        		case 1: 
-	        		{
-	        			Jatekos jatekos = new Jatekos();
-	        		} break;
-        		case 2: 
-        			{
-        				Doboz doboz = new Doboz(this,  mezok[i]);
-        				mezok[i].Fogad(0, null, doboz, null); 
-        				dobozok.add(doboz);
-        			} break;
-        		case 3:
-	    			{
-	    				JeloltDoboz doboz = new JeloltDoboz(this,  mezok[i]);
-	    				mezok[i].Fogad(0, null, doboz, null); 
-	    				dobozok.add(doboz);
-	    			} break;
+        		mezok[i-1].SetSzomszed(Irany.JOBBRA, mezok[i]);
         	}
         }
     }

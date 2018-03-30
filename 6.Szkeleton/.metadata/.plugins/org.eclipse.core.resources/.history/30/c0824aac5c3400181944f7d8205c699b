@@ -41,7 +41,7 @@ public class Palya {
         jatekosok = new LinkedList<Jatekos>();
         mezok = new UresMezo[k.palya.length];
         
-        int num=0;
+        int num;
         
         for (int i=0; i<mezok.length;i++) 
         {
