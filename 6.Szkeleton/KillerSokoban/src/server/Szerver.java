@@ -13,6 +13,7 @@
 
 package server;
 
+import data.Data;
 import sokoban.Irany;
 import sokoban.Jatek;
 import sokoban.Palya;
@@ -102,6 +103,10 @@ public class Szerver {
 	{
 		run = false;
 		palya = new Palya(this, startadat, null);
+		Data.PalyaY = startadat.y;
+		Data.PalyaX = startadat.x;
+//		KliensAdat kliensAdat = new KliensAdat(startadat.palya, null, null);
+//		jatek.Print(kliensAdat);
 	}
 
     /**

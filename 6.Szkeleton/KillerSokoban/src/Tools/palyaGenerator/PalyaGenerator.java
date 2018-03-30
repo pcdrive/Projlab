@@ -1,6 +1,5 @@
 package Tools.palyaGenerator;
 
-import data.Data;
 import server.PalyaAdat;
 import sokoban.mezok.*;
 
@@ -29,18 +28,20 @@ public class PalyaGenerator {
 
     public static void main(String[] args){
         try {
+            int x = 5;
+            int y = 5;
             FileOutputStream fileOutputStream = new FileOutputStream("palya.mocsi");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
-            int[] palya = new int[Data.PalyaX*Data.PalyaY];
-            for(int i = 0; i<Data.PalyaY; i++){
-                for(int j = 0; j<Data.PalyaX; j++){
-                    palya[i* Data.PalyaX + j] = fal.getID();
-                }
-            }
+            int[] palya = new int[x*y];
+//            for(int i = 0; i<x; i++){
+//                for(int j = 0; j<y; j++){
+//                    palya[i* Data.PalyaX + j] = fal.getID();
+//                }
+//            }
 
 
 
-            PalyaAdat kliensAdat = new PalyaAdat(0,palya, null);
+            PalyaAdat kliensAdat = new PalyaAdat(0,palya, null, x, y);
             objectOutputStream.writeObject(kliensAdat);
 
             objectOutputStream.close();

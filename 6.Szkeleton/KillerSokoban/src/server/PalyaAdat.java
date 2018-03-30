@@ -18,6 +18,8 @@ public class PalyaAdat extends BaseAdat {
 	
 	public final int jsz;
     public final int csapdak[];
+    public final int x;
+    public final int y;
     
 
     /**
@@ -28,10 +30,12 @@ public class PalyaAdat extends BaseAdat {
      * @param pa	Palya adatok (int ID-k).
      * @param cs	kapcsolo-csapda osszerendeles.
      */
-    public PalyaAdat(int j, int[] pa, int[] cs)
+    public PalyaAdat(int j, int[] pa, int[] cs, int x, int y)
     {
     	super(pa);
     	jsz=j;
     	csapdak=cs;
+    	this.x = x;
+    	this.y = y;
     }
 }

@@ -14,16 +14,16 @@
 
 package sokoban;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import Tools.Printer;
+import data.Data;
+import server.KliensAdat;
+import server.KliensOlvaso;
+import server.ParancsAdat;
+import server.Szerver;
+
 import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-
-import Tools.Printer;
-import data.Data;
-import server.*;
 // import sokoban.*;
 
 public class Jatek {
@@ -70,7 +70,7 @@ public class Jatek {
     public void Print(KliensAdat kliensAdat) {
         for (int i = 0; i < Data.PalyaY; i++) {
             for (int j = 0; j < Data.PalyaX; j++) {
-                System.out.print("\t" + kliensAdat.palya[i * Data.PalyaX + j]);
+                System.out.print(" " + String.format("%08d",kliensAdat.palya[i * Data.PalyaX + j]));
             }
             System.out.println();
         }
@@ -78,7 +78,7 @@ public class Jatek {
 
     /**
      * A jatekot szervermodba teszi. Azaz elinditja a jatekot
-     * szerverkent. Letrehozza a lobbit, felkészül a csatlakozo 
+     * szerverkent. Letrehozza a lobbit, felkï¿½szï¿½l a csatlakozo 
      * kliensekre.
      */
     public void SzerverMod() throws IOException 
@@ -106,7 +106,7 @@ public class Jatek {
     }
 
     /**
-     * A jatekot kliensmodba teszi. Felkeszül, es csatlakozik a szerverre.
+     * A jatekot kliensmodba teszi. Felkeszï¿½l, es csatlakozik a szerverre.
      * @throws IOException 
      */
     public void KliensMod() 
@@ -172,7 +172,7 @@ public class Jatek {
     }
 
     /**
-     * Elküldi a parancsokat a szervernek.
+     * Elkï¿½ldi a parancsokat a szervernek.
      * 
      * @param i	Irany amerre lepni akarunk.
      */
