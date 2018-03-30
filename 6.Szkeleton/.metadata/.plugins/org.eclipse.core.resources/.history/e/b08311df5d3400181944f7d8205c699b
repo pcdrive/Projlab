@@ -70,9 +70,7 @@ public class Palya {
         	{
         		case 1: 
 	        		{
-	        			Jatekos jatekos = new Jatekos(nevek[num++],this,mezok[i]);
-        				mezok[i].Fogad(0, null, jatekos, null); 
-        				jatekosok.add(jatekos);
+	        			Jatekos jatekos = new Jatekos();
 	        		} break;
         		case 2: 
         			{
