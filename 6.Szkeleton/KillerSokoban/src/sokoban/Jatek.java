@@ -15,6 +15,7 @@
 package sokoban;
 
 import Tools.Printer;
+import data.Consts;
 import server.KliensAdat;
 
 public class Jatek {
@@ -44,9 +45,11 @@ public class Jatek {
     }
 
     public void Print(KliensAdat kliensAdat){
-        int palya[] = kliensAdat.getPalya();
-        for(int i = 0; i<palya.length; i++){
-//            System.out.print
+        for(int i = 0; i<Consts.PalyaY; i++){
+            for(int j = 0; j< Consts.PalyaX; j++){
+                System.out.print("\t" + kliensAdat.palya[i*Consts.PalyaX+j]);
+            }
+            System.out.println();
         }
     }
 }
