@@ -27,6 +27,7 @@ public class Lyuk extends UresMezo {
      */
     public Lyuk() {
         super();
+        mezoTipus = 2;
     }
 
     /**
@@ -87,6 +88,10 @@ public class Lyuk extends UresMezo {
         d.Halal();
         Printer.PrintTabOut("Return " + Boolean.toString(true));
         return true;
+    }
+
+    public int getID(){
+        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + mez * 10 + olaj;
     }
 
 }

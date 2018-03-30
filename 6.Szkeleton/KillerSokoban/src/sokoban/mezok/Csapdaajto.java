@@ -15,8 +15,8 @@
 package sokoban.mezok;
 
 import Tools.Printer;
-import sokoban.leptethetok.Doboz;
 import sokoban.Irany;
+import sokoban.leptethetok.Doboz;
 import sokoban.leptethetok.Jatekos;
 import sokoban.leptethetok.JeloltDoboz;
 
@@ -30,6 +30,7 @@ public class Csapdaajto extends UresMezo {
     public Csapdaajto() {
         super();
         nyitva = false;
+        mezoTipus = 4;
     }
 
 
@@ -48,17 +49,17 @@ public class Csapdaajto extends UresMezo {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Csuk()");
         Printer.PrintTabOut("Return");
     }
-    
+
     /**
      * A fogad fuggveny kezeli a leptetheto objektumok mezore lepeset, es a
      * mar mezon levo dolgok utkozeset. A jelen lepest vegzo jatekos nevet
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
-     * @param jd JeloltDoboz, ami a mezore kivan lepni
-     * @param j  Jatekos, aki lepest tette.
+     * @param ero az ero amivel a jatekos a sort megtolta.
+     * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param jd  JeloltDoboz, ami a mezore kivan lepni
+     * @param j   Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -81,7 +82,7 @@ public class Csapdaajto extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
@@ -107,10 +108,10 @@ public class Csapdaajto extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
-     * @param d Doboz, ami a mezore kivan lepni
-     * @param j Jatekos, aki lepest tette.
+     * @param ero az ero amivel a jatekos a sort megtolta.
+     * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param d   Doboz, ami a mezore kivan lepni
+     * @param j   Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -127,5 +128,7 @@ public class Csapdaajto extends UresMezo {
         }
     }
 
-
+    public int getID() {
+        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + (nyitva ? 1 : 0) * 100 + mez * 10 + olaj;
+    }
 }

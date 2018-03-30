@@ -14,8 +14,8 @@
 package sokoban.mezok;
 
 import Tools.Printer;
-import sokoban.leptethetok.Doboz;
 import sokoban.Irany;
+import sokoban.leptethetok.Doboz;
 import sokoban.leptethetok.Jatekos;
 import sokoban.leptethetok.JeloltDoboz;
 
@@ -29,6 +29,7 @@ public class Celhely extends UresMezo {
     public Celhely() {
         super();
         jel = true;
+        mezoTipus = 3;
     }
 
     /**
@@ -37,10 +38,10 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
-     * @param jd JeloltDoboz, ami a mezore kivan lepni
-     * @param j  Jatekos, aki lepest tette.
+     * @param ero az ero amivel a jatekos a sort megtolta.
+     * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param jd  JeloltDoboz, ami a mezore kivan lepni
+     * @param j   Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -66,7 +67,7 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
+     * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
@@ -86,10 +87,10 @@ public class Celhely extends UresMezo {
      * tovabbitjuk a megtolt objektum fele, hogy a megfelelo jatekos kaphassa
      * a pontot erte.
      *
-     * @param ero    az ero amivel a jatekos a sort megtolta.
-     * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
-     * @param d Doboz, ami a mezore kivan lepni
-     * @param j Jatekos, aki lepest tette.
+     * @param ero az ero amivel a jatekos a sort megtolta.
+     * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
+     * @param d   Doboz, ami a mezore kivan lepni
+     * @param j   Jatekos, aki lepest tette.
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -100,4 +101,8 @@ public class Celhely extends UresMezo {
         return success;
     }
 
+    @Override
+    public int getID() {
+        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + (jel ? 1 : 0) * 100 + mez * 10 + olaj;
+    }
 }

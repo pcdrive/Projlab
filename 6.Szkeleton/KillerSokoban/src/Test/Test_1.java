@@ -1,8 +1,11 @@
 package Test;
 
 import Tools.Printer;
-import org.junit.*;
-import sokoban.*;
+import org.junit.Test;
+import server.Szerver;
+import sokoban.Irany;
+import sokoban.Jatek;
+import sokoban.Palya;
 import sokoban.leptethetok.Jatekos;
 import sokoban.mezok.*;
 
@@ -12,7 +15,7 @@ public class Test_1 {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo = new UresMezo();
-        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek())), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
@@ -31,7 +34,7 @@ public class Test_1 {
         UresMezo kiindulomezo = new UresMezo();
         Kapcsolo celmezo = new Kapcsolo();
         celmezo.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek())), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
@@ -50,7 +53,7 @@ public class Test_1 {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Lyuk celmezo = new Lyuk();
-        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek())), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");
@@ -69,7 +72,7 @@ public class Test_1 {
         Printer.DisablePrint();
         UresMezo kiindulomezo = new UresMezo();
         Fal celmezo = new Fal();
-        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Jatek()), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek())), kiindulomezo);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo);
         System.out.println("");
         System.out.println("<============================= DESCRIPTION =============================>");

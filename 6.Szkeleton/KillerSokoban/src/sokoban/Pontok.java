@@ -17,16 +17,17 @@ package sokoban;
 import Tools.Printer;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Pontok {
 
-    private ArrayList<Pont> pontok;
+    private LinkedList<Pont> pontok;
 
     /**
      * Az osztaly konstruktora. Letrehozza a pontok listajat.
      */
     public Pontok() {
-        pontok = new ArrayList<Pont>();
+        pontok = new LinkedList<Pont>();
     }
 
     /**

@@ -27,6 +27,7 @@ public class Fal extends UresMezo {
      */
     public Fal() {
         super();
+        mezoTipus = 1;
     }
 
     /**
@@ -87,4 +88,7 @@ public class Fal extends UresMezo {
         return false;
     }
 
+    public int getID(){
+        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + mez * 10 + olaj;
+    }
 }

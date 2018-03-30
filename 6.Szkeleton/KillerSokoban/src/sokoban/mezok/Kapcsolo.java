@@ -15,23 +15,24 @@
 package sokoban.mezok;
 
 import Tools.Printer;
-import sokoban.leptethetok.Doboz;
 import sokoban.Irany;
+import sokoban.leptethetok.Doboz;
 import sokoban.leptethetok.Jatekos;
 import sokoban.leptethetok.JeloltDoboz;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Kapcsolo extends UresMezo {
 
-    private ArrayList<Csapdaajto> csapdak;
+    private LinkedList<Csapdaajto> csapdak;
 
     /**
      * Az osztaly konstruktora. Letrehozza a tombbot amiben a szomszedokat taroljuk.
      */
     public Kapcsolo() {
         super();
-        csapdak = new ArrayList<Csapdaajto>();
+        csapdak = new LinkedList<Csapdaajto>();
+        mezoTipus = 5;
     }
 
     /**
@@ -128,4 +129,7 @@ public class Kapcsolo extends UresMezo {
         Printer.PrintTabOut("Return");
     }
 
+    public int getID(){
+        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + mez * 10 + olaj;
+    }
 }

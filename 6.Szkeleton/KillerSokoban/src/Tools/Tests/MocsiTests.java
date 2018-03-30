@@ -5,6 +5,7 @@ import data.Data;
 import org.junit.Test;
 import server.KliensAdat;
 import sokoban.Jatek;
+import sokoban.mezok.UresMezo;
 
 public class MocsiTests {
     @Test
@@ -16,5 +17,12 @@ public class MocsiTests {
                 kliensAdat.palya[i * Data.PalyaX + j] = i;
         Jatek jatek = new Jatek();
         jatek.Print(kliensAdat);
+    }
+
+
+    @Test
+    public void MezoIdTest(){
+        UresMezo uresMezo = new UresMezo();
+//        uresMezo.Fogad(new Jatekos("jatekos1",new Palya(new Jatek()), uresMezo));
     }
 }

@@ -29,7 +29,6 @@ public class UresMezo {
     protected float surlodas;
     protected int olaj;
     protected int mez;
-    protected int mezoStatusz;
     protected int mezoTipus;
 
     /**
@@ -38,8 +37,9 @@ public class UresMezo {
     public UresMezo() {
         szomszed = new UresMezo[4];
         surlodas = 0.5f;
-//        olaj = false;
-//        mez = false;
+        olaj = 0;
+        mez = 0;
+        mezoTipus = 0;
     }
 
     /**
@@ -159,12 +159,12 @@ public class UresMezo {
     /**
      * Olajositja a mezot. Jobban csuszik tole.
      */
-//    public void setOlaj() {olaj=true; surlodas*=0.8f;}
+    public void setOlaj() {olaj++; surlodas*=0.8f;}
     
     /**
      * Mezesiti a mezot. Jobban tapad tole.
      */
-//    public void setMez() {mez=true; surlodas*=1.2f;}
+    public void setMez() {mez++; surlodas*=1.2f;}
 
     /**
      * A mezo surlodasat adja vissza.
@@ -173,8 +173,8 @@ public class UresMezo {
      */
     public float getSurl() {return surlodas;}
 
-//    public int getID(){
-////        int ID = mezoTipus*
-//    }
+    public int getID(){
+        return leptetheto.getTipus() * 10000000 + leptetheto.getStatus() * 100000 + mezoTipus * 1000 + mez * 10 + olaj;
+    }
 
 }

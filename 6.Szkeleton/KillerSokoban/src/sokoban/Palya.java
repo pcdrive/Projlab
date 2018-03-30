@@ -15,29 +15,30 @@
 package sokoban;
 
 import Tools.Printer;
+import server.Szerver;
 import sokoban.leptethetok.Doboz;
 import sokoban.leptethetok.Jatekos;
 import sokoban.mezok.UresMezo;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 @SuppressWarnings("unused")
 
 public class Palya {
-    private Jatek jatek;
+    private Szerver szerver;
     private UresMezo mezok[];
     private Pontok pontok;
-    private ArrayList<Doboz> dobozok;
-    private ArrayList<Jatekos> jatekosok;
+    private LinkedList<Doboz> dobozok;
+    private LinkedList<Jatekos> jatekosok;
 
     /**
      * Az osztaly konstruktora. Letrehozza a pontok osztalyt, �s beallitja a jatekot.
      */
-    public Palya(Jatek j) {
-        jatek = j;
+    public Palya(Szerver s) {
+        szerver = s;
         pontok = new Pontok();
-        dobozok = new ArrayList<Doboz>();
-        jatekosok = new ArrayList<Jatekos>();
+        dobozok = new LinkedList<Doboz>();
+        jatekosok = new LinkedList<Jatekos>();
     }
 
 
@@ -107,7 +108,7 @@ public class Palya {
             }
         }
 
-        jatek.EndGame();
+//        jatek.EndGame();
         Printer.PrintTabOut("Return");
         return;
     }
