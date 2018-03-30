@@ -18,7 +18,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -29,7 +29,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
         Printer.EnablePrint();
@@ -43,7 +43,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -54,7 +54,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
         Printer.EnablePrint();
@@ -69,7 +69,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -80,7 +80,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
         Printer.EnablePrint();
@@ -94,7 +94,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -105,7 +105,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
         Printer.EnablePrint();
@@ -120,7 +120,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -131,7 +131,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
         Printer.EnablePrint();
@@ -145,7 +145,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -156,7 +156,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
         Printer.EnablePrint();
@@ -170,7 +170,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -181,7 +181,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
         Printer.EnablePrint();
@@ -195,7 +195,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -206,7 +206,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
         Printer.EnablePrint();
@@ -220,7 +220,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -231,7 +231,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
         Printer.EnablePrint();
@@ -246,7 +246,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -257,7 +257,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
         Printer.EnablePrint();
@@ -271,7 +271,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -282,7 +282,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
         Printer.EnablePrint();
@@ -297,7 +297,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -308,7 +308,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
         Printer.EnablePrint();
@@ -322,7 +322,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -333,7 +333,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
         Printer.EnablePrint();
@@ -347,7 +347,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -358,7 +358,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
         Printer.EnablePrint();
@@ -372,7 +372,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -383,7 +383,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
         Printer.EnablePrint();
@@ -397,7 +397,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -408,7 +408,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
         Printer.EnablePrint();
@@ -423,7 +423,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -434,7 +434,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
         Printer.EnablePrint();
@@ -448,7 +448,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -459,7 +459,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
         Printer.EnablePrint();
@@ -474,7 +474,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -485,7 +485,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
         Printer.EnablePrint();
@@ -499,7 +499,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -510,7 +510,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
         Printer.EnablePrint();
@@ -524,7 +524,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -535,7 +535,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
         Printer.EnablePrint();
@@ -550,7 +550,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -561,7 +561,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_1 =====================>");
         Printer.EnablePrint();
@@ -576,7 +576,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -587,7 +587,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_2 =====================>");
         Printer.EnablePrint();
@@ -603,7 +603,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -614,7 +614,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_3 =====================>");
         Printer.EnablePrint();
@@ -629,7 +629,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -640,7 +640,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_4 =====================>");
         Printer.EnablePrint();
@@ -656,7 +656,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -667,7 +667,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_5 =====================>");
         Printer.EnablePrint();
@@ -682,7 +682,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -693,7 +693,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_6 =====================>");
         Printer.EnablePrint();
@@ -708,7 +708,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -719,7 +719,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_1_7 =====================>");
         Printer.EnablePrint();
@@ -733,7 +733,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -744,7 +744,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
         Printer.EnablePrint();
@@ -758,7 +758,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -769,7 +769,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
         Printer.EnablePrint();
@@ -784,7 +784,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -795,7 +795,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
         Printer.EnablePrint();
@@ -809,7 +809,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -820,7 +820,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
         Printer.EnablePrint();
@@ -835,7 +835,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -846,7 +846,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
         Printer.EnablePrint();
@@ -860,7 +860,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -871,7 +871,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
         Printer.EnablePrint();
@@ -885,7 +885,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -896,7 +896,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
         Printer.EnablePrint();
@@ -910,7 +910,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -921,7 +921,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
         Printer.EnablePrint();
@@ -935,7 +935,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -946,7 +946,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
         Printer.EnablePrint();
@@ -961,7 +961,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -972,7 +972,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
         Printer.EnablePrint();
@@ -986,7 +986,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -997,7 +997,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
         Printer.EnablePrint();
@@ -1012,7 +1012,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1023,7 +1023,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
         Printer.EnablePrint();
@@ -1037,7 +1037,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1048,7 +1048,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
         Printer.EnablePrint();
@@ -1062,7 +1062,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1073,7 +1073,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
         Printer.EnablePrint();
@@ -1087,7 +1087,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1098,7 +1098,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
         Printer.EnablePrint();
@@ -1112,7 +1112,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1123,7 +1123,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
         Printer.EnablePrint();
@@ -1138,7 +1138,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1149,7 +1149,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
         Printer.EnablePrint();
@@ -1163,7 +1163,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1174,7 +1174,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
         Printer.EnablePrint();
@@ -1189,7 +1189,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1200,7 +1200,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
         Printer.EnablePrint();
@@ -1214,7 +1214,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1225,7 +1225,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
         Printer.EnablePrint();
@@ -1239,7 +1239,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1250,7 +1250,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
         Printer.EnablePrint();
@@ -1265,7 +1265,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1276,7 +1276,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_1 =====================>");
         Printer.EnablePrint();
@@ -1291,7 +1291,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1302,7 +1302,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_2 =====================>");
         Printer.EnablePrint();
@@ -1318,7 +1318,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1329,7 +1329,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_3 =====================>");
         Printer.EnablePrint();
@@ -1344,7 +1344,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1355,7 +1355,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_4 =====================>");
         Printer.EnablePrint();
@@ -1371,7 +1371,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1382,7 +1382,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_5 =====================>");
         Printer.EnablePrint();
@@ -1397,7 +1397,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1408,7 +1408,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_6 =====================>");
         Printer.EnablePrint();
@@ -1423,7 +1423,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1434,7 +1434,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_2_7 =====================>");
         Printer.EnablePrint();
@@ -1448,7 +1448,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1459,7 +1459,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
         Printer.EnablePrint();
@@ -1473,7 +1473,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1484,7 +1484,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
         Printer.EnablePrint();
@@ -1499,7 +1499,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1510,7 +1510,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
         Printer.EnablePrint();
@@ -1524,7 +1524,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1535,7 +1535,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
         Printer.EnablePrint();
@@ -1550,7 +1550,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1561,7 +1561,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
         Printer.EnablePrint();
@@ -1575,7 +1575,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1586,7 +1586,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
         Printer.EnablePrint();
@@ -1600,7 +1600,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1611,7 +1611,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
         Printer.EnablePrint();
@@ -1625,7 +1625,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1636,7 +1636,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
         Printer.EnablePrint();
@@ -1650,7 +1650,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1661,7 +1661,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
         Printer.EnablePrint();
@@ -1676,7 +1676,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1687,7 +1687,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
         Printer.EnablePrint();
@@ -1701,7 +1701,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1712,7 +1712,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
         Printer.EnablePrint();
@@ -1727,7 +1727,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1738,7 +1738,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
         Printer.EnablePrint();
@@ -1752,7 +1752,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1763,7 +1763,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
         Printer.EnablePrint();
@@ -1777,7 +1777,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1788,7 +1788,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
         Printer.EnablePrint();
@@ -1802,7 +1802,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1813,7 +1813,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
         Printer.EnablePrint();
@@ -1827,7 +1827,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1838,7 +1838,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
         Printer.EnablePrint();
@@ -1853,7 +1853,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1864,7 +1864,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
         Printer.EnablePrint();
@@ -1878,7 +1878,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1889,7 +1889,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
         Printer.EnablePrint();
@@ -1904,7 +1904,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1915,7 +1915,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
         Printer.EnablePrint();
@@ -1929,7 +1929,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1940,7 +1940,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
         Printer.EnablePrint();
@@ -1954,7 +1954,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1965,7 +1965,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
         Printer.EnablePrint();
@@ -1980,7 +1980,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -1991,7 +1991,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_1 =====================>");
         Printer.EnablePrint();
@@ -2006,7 +2006,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2017,7 +2017,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_2 =====================>");
         Printer.EnablePrint();
@@ -2033,7 +2033,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2044,7 +2044,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_3 =====================>");
         Printer.EnablePrint();
@@ -2059,7 +2059,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2070,7 +2070,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_4 =====================>");
         Printer.EnablePrint();
@@ -2086,7 +2086,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2097,7 +2097,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_5 =====================>");
         Printer.EnablePrint();
@@ -2112,7 +2112,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2123,7 +2123,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_6 =====================>");
         Printer.EnablePrint();
@@ -2138,7 +2138,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2149,7 +2149,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_3_7 =====================>");
         Printer.EnablePrint();
@@ -2164,7 +2164,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2175,7 +2175,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
         Printer.EnablePrint();
@@ -2190,7 +2190,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2201,7 +2201,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
         Printer.EnablePrint();
@@ -2217,7 +2217,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2228,7 +2228,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
         Printer.EnablePrint();
@@ -2243,7 +2243,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2254,7 +2254,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
         Printer.EnablePrint();
@@ -2270,7 +2270,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2281,7 +2281,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
         Printer.EnablePrint();
@@ -2296,7 +2296,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2307,7 +2307,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
         Printer.EnablePrint();
@@ -2322,7 +2322,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2333,7 +2333,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
         Printer.EnablePrint();
@@ -2348,7 +2348,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2359,7 +2359,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
         Printer.EnablePrint();
@@ -2374,7 +2374,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2385,7 +2385,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
         Printer.EnablePrint();
@@ -2401,7 +2401,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2412,7 +2412,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
         Printer.EnablePrint();
@@ -2427,7 +2427,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2438,7 +2438,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
         Printer.EnablePrint();
@@ -2454,7 +2454,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2465,7 +2465,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
         Printer.EnablePrint();
@@ -2480,7 +2480,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2491,7 +2491,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
         Printer.EnablePrint();
@@ -2506,7 +2506,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2517,7 +2517,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
         Printer.EnablePrint();
@@ -2532,7 +2532,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2543,7 +2543,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
         Printer.EnablePrint();
@@ -2558,7 +2558,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2569,7 +2569,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
         Printer.EnablePrint();
@@ -2585,7 +2585,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2596,7 +2596,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
         Printer.EnablePrint();
@@ -2611,7 +2611,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2622,7 +2622,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
         Printer.EnablePrint();
@@ -2638,7 +2638,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2649,7 +2649,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
         Printer.EnablePrint();
@@ -2664,7 +2664,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2675,7 +2675,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
         Printer.EnablePrint();
@@ -2690,7 +2690,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2701,7 +2701,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
         Printer.EnablePrint();
@@ -2717,7 +2717,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2728,7 +2728,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_1 =====================>");
         Printer.EnablePrint();
@@ -2744,7 +2744,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2755,7 +2755,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_2 =====================>");
         Printer.EnablePrint();
@@ -2772,7 +2772,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2783,7 +2783,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_3 =====================>");
         Printer.EnablePrint();
@@ -2799,7 +2799,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2810,7 +2810,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_4 =====================>");
         Printer.EnablePrint();
@@ -2827,7 +2827,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2838,7 +2838,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_5 =====================>");
         Printer.EnablePrint();
@@ -2854,7 +2854,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2865,7 +2865,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_6 =====================>");
         Printer.EnablePrint();
@@ -2881,7 +2881,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2892,7 +2892,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Jatekos leptetheto = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_1_4_7 =====================>");
         Printer.EnablePrint();
@@ -2906,7 +2906,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2917,7 +2917,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
         Printer.EnablePrint();
@@ -2931,7 +2931,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2942,7 +2942,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
         Printer.EnablePrint();
@@ -2957,7 +2957,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2968,7 +2968,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
         Printer.EnablePrint();
@@ -2982,7 +2982,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -2993,7 +2993,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
         Printer.EnablePrint();
@@ -3008,7 +3008,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3019,7 +3019,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
         Printer.EnablePrint();
@@ -3033,7 +3033,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3044,7 +3044,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
         Printer.EnablePrint();
@@ -3058,7 +3058,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3069,7 +3069,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
         Printer.EnablePrint();
@@ -3083,7 +3083,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3094,7 +3094,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
         Printer.EnablePrint();
@@ -3108,7 +3108,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3119,7 +3119,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
         Printer.EnablePrint();
@@ -3134,7 +3134,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3145,7 +3145,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
         Printer.EnablePrint();
@@ -3159,7 +3159,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3170,7 +3170,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
         Printer.EnablePrint();
@@ -3185,7 +3185,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3196,7 +3196,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
         Printer.EnablePrint();
@@ -3210,7 +3210,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3221,7 +3221,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
         Printer.EnablePrint();
@@ -3235,7 +3235,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3246,7 +3246,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
         Printer.EnablePrint();
@@ -3260,7 +3260,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3271,7 +3271,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
         Printer.EnablePrint();
@@ -3285,7 +3285,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3296,7 +3296,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
         Printer.EnablePrint();
@@ -3311,7 +3311,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3322,7 +3322,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
         Printer.EnablePrint();
@@ -3336,7 +3336,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3347,7 +3347,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
         Printer.EnablePrint();
@@ -3362,7 +3362,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3373,7 +3373,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
         Printer.EnablePrint();
@@ -3387,7 +3387,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3398,7 +3398,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
         Printer.EnablePrint();
@@ -3412,7 +3412,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3423,7 +3423,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
         Printer.EnablePrint();
@@ -3438,7 +3438,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3449,7 +3449,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_1 =====================>");
         Printer.EnablePrint();
@@ -3464,7 +3464,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3475,7 +3475,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_2 =====================>");
         Printer.EnablePrint();
@@ -3491,7 +3491,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3502,7 +3502,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_3 =====================>");
         Printer.EnablePrint();
@@ -3517,7 +3517,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3528,7 +3528,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_4 =====================>");
         Printer.EnablePrint();
@@ -3544,7 +3544,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3555,7 +3555,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_5 =====================>");
         Printer.EnablePrint();
@@ -3570,7 +3570,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3581,7 +3581,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_6 =====================>");
         Printer.EnablePrint();
@@ -3596,7 +3596,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3607,7 +3607,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_1_7 =====================>");
         Printer.EnablePrint();
@@ -3621,7 +3621,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3632,7 +3632,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
         Printer.EnablePrint();
@@ -3646,7 +3646,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3657,7 +3657,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
         Printer.EnablePrint();
@@ -3672,7 +3672,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3683,7 +3683,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
         Printer.EnablePrint();
@@ -3697,7 +3697,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3708,7 +3708,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
         Printer.EnablePrint();
@@ -3723,7 +3723,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3734,7 +3734,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
         Printer.EnablePrint();
@@ -3748,7 +3748,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3759,7 +3759,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
         Printer.EnablePrint();
@@ -3773,7 +3773,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3784,7 +3784,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
         Printer.EnablePrint();
@@ -3798,7 +3798,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3809,7 +3809,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
         Printer.EnablePrint();
@@ -3823,7 +3823,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3834,7 +3834,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
         Printer.EnablePrint();
@@ -3849,7 +3849,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3860,7 +3860,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
         Printer.EnablePrint();
@@ -3874,7 +3874,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3885,7 +3885,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
         Printer.EnablePrint();
@@ -3900,7 +3900,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3911,7 +3911,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
         Printer.EnablePrint();
@@ -3925,7 +3925,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3936,7 +3936,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
         Printer.EnablePrint();
@@ -3950,7 +3950,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3961,7 +3961,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
         Printer.EnablePrint();
@@ -3975,7 +3975,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -3986,7 +3986,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
         Printer.EnablePrint();
@@ -4000,7 +4000,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4011,7 +4011,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
         Printer.EnablePrint();
@@ -4026,7 +4026,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4037,7 +4037,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
         Printer.EnablePrint();
@@ -4051,7 +4051,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4062,7 +4062,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
         Printer.EnablePrint();
@@ -4077,7 +4077,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4088,7 +4088,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
         Printer.EnablePrint();
@@ -4102,7 +4102,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4113,7 +4113,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
         Printer.EnablePrint();
@@ -4127,7 +4127,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4138,7 +4138,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
         Printer.EnablePrint();
@@ -4153,7 +4153,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4164,7 +4164,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_1 =====================>");
         Printer.EnablePrint();
@@ -4179,7 +4179,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4190,7 +4190,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_2 =====================>");
         Printer.EnablePrint();
@@ -4206,7 +4206,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4217,7 +4217,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_3 =====================>");
         Printer.EnablePrint();
@@ -4232,7 +4232,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4243,7 +4243,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_4 =====================>");
         Printer.EnablePrint();
@@ -4259,7 +4259,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4270,7 +4270,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_5 =====================>");
         Printer.EnablePrint();
@@ -4285,7 +4285,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4296,7 +4296,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_6 =====================>");
         Printer.EnablePrint();
@@ -4311,7 +4311,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4322,7 +4322,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_2_7 =====================>");
         Printer.EnablePrint();
@@ -4336,7 +4336,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4347,7 +4347,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
         Printer.EnablePrint();
@@ -4361,7 +4361,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4372,7 +4372,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
         Printer.EnablePrint();
@@ -4387,7 +4387,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4398,7 +4398,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
         Printer.EnablePrint();
@@ -4412,7 +4412,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4423,7 +4423,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
         Printer.EnablePrint();
@@ -4438,7 +4438,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4449,7 +4449,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
         Printer.EnablePrint();
@@ -4463,7 +4463,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4474,7 +4474,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
         Printer.EnablePrint();
@@ -4488,7 +4488,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4499,7 +4499,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
         Printer.EnablePrint();
@@ -4513,7 +4513,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4524,7 +4524,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
         Printer.EnablePrint();
@@ -4538,7 +4538,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4549,7 +4549,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
         Printer.EnablePrint();
@@ -4564,7 +4564,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4575,7 +4575,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
         Printer.EnablePrint();
@@ -4589,7 +4589,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4600,7 +4600,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
         Printer.EnablePrint();
@@ -4615,7 +4615,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4626,7 +4626,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
         Printer.EnablePrint();
@@ -4640,7 +4640,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4651,7 +4651,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
         Printer.EnablePrint();
@@ -4665,7 +4665,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4676,7 +4676,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
         Printer.EnablePrint();
@@ -4690,7 +4690,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4701,7 +4701,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
         Printer.EnablePrint();
@@ -4715,7 +4715,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4726,7 +4726,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
         Printer.EnablePrint();
@@ -4741,7 +4741,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4752,7 +4752,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
         Printer.EnablePrint();
@@ -4766,7 +4766,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4777,7 +4777,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
         Printer.EnablePrint();
@@ -4792,7 +4792,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4803,7 +4803,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
         Printer.EnablePrint();
@@ -4817,7 +4817,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4828,7 +4828,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
         Printer.EnablePrint();
@@ -4842,7 +4842,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4853,7 +4853,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
         Printer.EnablePrint();
@@ -4868,7 +4868,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4879,7 +4879,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_1 =====================>");
         Printer.EnablePrint();
@@ -4894,7 +4894,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4905,7 +4905,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_2 =====================>");
         Printer.EnablePrint();
@@ -4921,7 +4921,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4932,7 +4932,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_3 =====================>");
         Printer.EnablePrint();
@@ -4947,7 +4947,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4958,7 +4958,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_4 =====================>");
         Printer.EnablePrint();
@@ -4974,7 +4974,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -4985,7 +4985,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_5 =====================>");
         Printer.EnablePrint();
@@ -5000,7 +5000,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5011,7 +5011,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_6 =====================>");
         Printer.EnablePrint();
@@ -5026,7 +5026,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5037,7 +5037,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_3_7 =====================>");
         Printer.EnablePrint();
@@ -5052,7 +5052,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5063,7 +5063,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
         Printer.EnablePrint();
@@ -5078,7 +5078,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5089,7 +5089,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
         Printer.EnablePrint();
@@ -5105,7 +5105,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5116,7 +5116,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
         Printer.EnablePrint();
@@ -5131,7 +5131,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5142,7 +5142,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
         Printer.EnablePrint();
@@ -5158,7 +5158,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5169,7 +5169,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
         Printer.EnablePrint();
@@ -5184,7 +5184,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5195,7 +5195,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
         Printer.EnablePrint();
@@ -5210,7 +5210,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5221,7 +5221,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
         Printer.EnablePrint();
@@ -5236,7 +5236,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5247,7 +5247,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
         Printer.EnablePrint();
@@ -5262,7 +5262,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5273,7 +5273,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
         Printer.EnablePrint();
@@ -5289,7 +5289,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5300,7 +5300,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
         Printer.EnablePrint();
@@ -5315,7 +5315,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5326,7 +5326,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
         Printer.EnablePrint();
@@ -5342,7 +5342,7 @@ public class Test2 {
         Celhely celmezo1 = new Celhely();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5353,7 +5353,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
         Printer.EnablePrint();
@@ -5368,7 +5368,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5379,7 +5379,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
         Printer.EnablePrint();
@@ -5394,7 +5394,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Celhely celmezo1 = new Celhely();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5405,7 +5405,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
         Printer.EnablePrint();
@@ -5420,7 +5420,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5431,7 +5431,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
         Printer.EnablePrint();
@@ -5446,7 +5446,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5457,7 +5457,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
         Printer.EnablePrint();
@@ -5473,7 +5473,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5484,7 +5484,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
         Printer.EnablePrint();
@@ -5499,7 +5499,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5510,7 +5510,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
         Printer.EnablePrint();
@@ -5526,7 +5526,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5537,7 +5537,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
         Printer.EnablePrint();
@@ -5552,7 +5552,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5563,7 +5563,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
         Printer.EnablePrint();
@@ -5578,7 +5578,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5589,7 +5589,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
         Printer.EnablePrint();
@@ -5605,7 +5605,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5616,7 +5616,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_1 =====================>");
         Printer.EnablePrint();
@@ -5632,7 +5632,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5643,7 +5643,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_2 =====================>");
         Printer.EnablePrint();
@@ -5660,7 +5660,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5671,7 +5671,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_3 =====================>");
         Printer.EnablePrint();
@@ -5687,7 +5687,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5698,7 +5698,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_4 =====================>");
         Printer.EnablePrint();
@@ -5715,7 +5715,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5726,7 +5726,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_5 =====================>");
         Printer.EnablePrint();
@@ -5742,7 +5742,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5753,7 +5753,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_6 =====================>");
         Printer.EnablePrint();
@@ -5769,7 +5769,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5780,7 +5780,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_2_4_7 =====================>");
         Printer.EnablePrint();
@@ -5794,7 +5794,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5805,7 +5805,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_1 =====================>");
         Printer.EnablePrint();
@@ -5819,7 +5819,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5830,7 +5830,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_2 =====================>");
         Printer.EnablePrint();
@@ -5845,7 +5845,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5856,7 +5856,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_3 =====================>");
         Printer.EnablePrint();
@@ -5870,7 +5870,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5881,7 +5881,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_4 =====================>");
         Printer.EnablePrint();
@@ -5896,7 +5896,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5907,7 +5907,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_5 =====================>");
         Printer.EnablePrint();
@@ -5921,7 +5921,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5932,7 +5932,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_6 =====================>");
         Printer.EnablePrint();
@@ -5946,7 +5946,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -5957,7 +5957,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_7 =====================>");
         Printer.EnablePrint();
@@ -6006,7 +6006,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6017,7 +6017,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_1 =====================>");
         Printer.EnablePrint();
@@ -6031,7 +6031,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6042,7 +6042,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_2 =====================>");
         Printer.EnablePrint();
@@ -6057,7 +6057,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6068,7 +6068,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_3 =====================>");
         Printer.EnablePrint();
@@ -6082,7 +6082,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6093,7 +6093,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_4 =====================>");
         Printer.EnablePrint();
@@ -6108,7 +6108,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6119,7 +6119,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_5 =====================>");
         Printer.EnablePrint();
@@ -6133,7 +6133,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6144,7 +6144,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_6 =====================>");
         Printer.EnablePrint();
@@ -6158,7 +6158,7 @@ public class Test2 {
         UresMezo kiindulomezo = new UresMezo();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6169,7 +6169,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_7 =====================>");
         Printer.EnablePrint();
@@ -6184,7 +6184,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6195,7 +6195,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_1 =====================>");
         Printer.EnablePrint();
@@ -6210,7 +6210,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6221,7 +6221,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_2 =====================>");
         Printer.EnablePrint();
@@ -6237,7 +6237,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6248,7 +6248,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_3 =====================>");
         Printer.EnablePrint();
@@ -6263,7 +6263,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6274,7 +6274,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_4 =====================>");
         Printer.EnablePrint();
@@ -6290,7 +6290,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6301,7 +6301,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_5 =====================>");
         Printer.EnablePrint();
@@ -6316,7 +6316,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6327,7 +6327,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_6 =====================>");
         Printer.EnablePrint();
@@ -6342,7 +6342,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6353,7 +6353,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_1_7 =====================>");
         Printer.EnablePrint();
@@ -6367,7 +6367,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6378,7 +6378,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_1 =====================>");
         Printer.EnablePrint();
@@ -6392,7 +6392,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6403,7 +6403,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_2 =====================>");
         Printer.EnablePrint();
@@ -6418,7 +6418,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6429,7 +6429,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_3 =====================>");
         Printer.EnablePrint();
@@ -6443,7 +6443,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6454,7 +6454,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_4 =====================>");
         Printer.EnablePrint();
@@ -6469,7 +6469,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6480,7 +6480,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_5 =====================>");
         Printer.EnablePrint();
@@ -6494,7 +6494,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6505,7 +6505,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_6 =====================>");
         Printer.EnablePrint();
@@ -6519,7 +6519,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6530,7 +6530,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_7 =====================>");
         Printer.EnablePrint();
@@ -6579,7 +6579,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6590,7 +6590,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_1 =====================>");
         Printer.EnablePrint();
@@ -6604,7 +6604,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6615,7 +6615,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_2 =====================>");
         Printer.EnablePrint();
@@ -6630,7 +6630,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6641,7 +6641,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_3 =====================>");
         Printer.EnablePrint();
@@ -6655,7 +6655,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6666,7 +6666,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_4 =====================>");
         Printer.EnablePrint();
@@ -6681,7 +6681,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6692,7 +6692,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_5 =====================>");
         Printer.EnablePrint();
@@ -6706,7 +6706,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6717,7 +6717,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_6 =====================>");
         Printer.EnablePrint();
@@ -6731,7 +6731,7 @@ public class Test2 {
         Celhely kiindulomezo = new Celhely();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6742,7 +6742,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_7 =====================>");
         Printer.EnablePrint();
@@ -6757,7 +6757,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6768,7 +6768,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_1 =====================>");
         Printer.EnablePrint();
@@ -6783,7 +6783,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6794,7 +6794,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_2 =====================>");
         Printer.EnablePrint();
@@ -6810,7 +6810,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6821,7 +6821,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_3 =====================>");
         Printer.EnablePrint();
@@ -6836,7 +6836,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6847,7 +6847,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_4 =====================>");
         Printer.EnablePrint();
@@ -6863,7 +6863,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6874,7 +6874,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_5 =====================>");
         Printer.EnablePrint();
@@ -6889,7 +6889,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6900,7 +6900,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_6 =====================>");
         Printer.EnablePrint();
@@ -6915,7 +6915,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6926,7 +6926,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_2_7 =====================>");
         Printer.EnablePrint();
@@ -6940,7 +6940,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6951,7 +6951,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_1 =====================>");
         Printer.EnablePrint();
@@ -6965,7 +6965,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -6976,7 +6976,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_2 =====================>");
         Printer.EnablePrint();
@@ -6991,7 +6991,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7002,7 +7002,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_3 =====================>");
         Printer.EnablePrint();
@@ -7016,7 +7016,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7027,7 +7027,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_4 =====================>");
         Printer.EnablePrint();
@@ -7042,7 +7042,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7053,7 +7053,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_5 =====================>");
         Printer.EnablePrint();
@@ -7067,7 +7067,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7078,7 +7078,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_6 =====================>");
         Printer.EnablePrint();
@@ -7092,7 +7092,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7103,7 +7103,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_7 =====================>");
         Printer.EnablePrint();
@@ -7152,7 +7152,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7163,7 +7163,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_1 =====================>");
         Printer.EnablePrint();
@@ -7177,7 +7177,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7188,7 +7188,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_2 =====================>");
         Printer.EnablePrint();
@@ -7203,7 +7203,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7214,7 +7214,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_3 =====================>");
         Printer.EnablePrint();
@@ -7228,7 +7228,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7239,7 +7239,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_4 =====================>");
         Printer.EnablePrint();
@@ -7254,7 +7254,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7265,7 +7265,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_5 =====================>");
         Printer.EnablePrint();
@@ -7279,7 +7279,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7290,7 +7290,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_6 =====================>");
         Printer.EnablePrint();
@@ -7304,7 +7304,7 @@ public class Test2 {
         Csapdaajto kiindulomezo = new Csapdaajto();
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7315,7 +7315,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_7 =====================>");
         Printer.EnablePrint();
@@ -7330,7 +7330,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7341,7 +7341,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_1 =====================>");
         Printer.EnablePrint();
@@ -7356,7 +7356,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7367,7 +7367,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_2 =====================>");
         Printer.EnablePrint();
@@ -7383,7 +7383,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7394,7 +7394,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_3 =====================>");
         Printer.EnablePrint();
@@ -7409,7 +7409,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7420,7 +7420,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_4 =====================>");
         Printer.EnablePrint();
@@ -7436,7 +7436,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7447,7 +7447,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_5 =====================>");
         Printer.EnablePrint();
@@ -7462,7 +7462,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7473,7 +7473,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_6 =====================>");
         Printer.EnablePrint();
@@ -7488,7 +7488,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7499,7 +7499,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_3_7 =====================>");
         Printer.EnablePrint();
@@ -7514,7 +7514,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7525,7 +7525,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_1 =====================>");
         Printer.EnablePrint();
@@ -7540,7 +7540,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7551,7 +7551,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_2 =====================>");
         Printer.EnablePrint();
@@ -7567,7 +7567,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7578,7 +7578,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_3 =====================>");
         Printer.EnablePrint();
@@ -7593,7 +7593,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7604,7 +7604,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_4 =====================>");
         Printer.EnablePrint();
@@ -7620,7 +7620,7 @@ public class Test2 {
         UresMezo celmezo1 = new UresMezo();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7631,7 +7631,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_5 =====================>");
         Printer.EnablePrint();
@@ -7646,7 +7646,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7657,7 +7657,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_6 =====================>");
         Printer.EnablePrint();
@@ -7672,7 +7672,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         UresMezo celmezo1 = new UresMezo();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7683,7 +7683,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_7 =====================>");
         Printer.EnablePrint();
@@ -7733,7 +7733,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7744,7 +7744,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_1 =====================>");
         Printer.EnablePrint();
@@ -7759,7 +7759,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7770,7 +7770,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_2 =====================>");
         Printer.EnablePrint();
@@ -7786,7 +7786,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7797,7 +7797,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_3 =====================>");
         Printer.EnablePrint();
@@ -7812,7 +7812,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7823,7 +7823,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_4 =====================>");
         Printer.EnablePrint();
@@ -7839,7 +7839,7 @@ public class Test2 {
         Csapdaajto celmezo1 = new Csapdaajto();
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7850,7 +7850,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_5 =====================>");
         Printer.EnablePrint();
@@ -7865,7 +7865,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7876,7 +7876,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_6 =====================>");
         Printer.EnablePrint();
@@ -7891,7 +7891,7 @@ public class Test2 {
         kiindulomezo.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo1 = new Csapdaajto();
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7902,7 +7902,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_7 =====================>");
         Printer.EnablePrint();
@@ -7918,7 +7918,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         UresMezo celmezo2 = new UresMezo();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7929,7 +7929,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_1 =====================>");
         Printer.EnablePrint();
@@ -7945,7 +7945,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Celhely celmezo2 = new Celhely();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7956,7 +7956,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_2 =====================>");
         Printer.EnablePrint();
@@ -7973,7 +7973,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
         celmezo2.Nyit();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -7984,7 +7984,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_3 =====================>");
         Printer.EnablePrint();
@@ -8000,7 +8000,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Csapdaajto celmezo2 = new Csapdaajto();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -8011,7 +8011,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_4 =====================>");
         Printer.EnablePrint();
@@ -8028,7 +8028,7 @@ public class Test2 {
         celmezo1.AddCsapda(new Csapdaajto());
         Kapcsolo celmezo2 = new Kapcsolo();
         celmezo2.AddCsapda(new Csapdaajto());
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -8039,7 +8039,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_5 =====================>");
         Printer.EnablePrint();
@@ -8055,7 +8055,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Lyuk celmezo2 = new Lyuk();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -8066,7 +8066,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_6 =====================>");
         Printer.EnablePrint();
@@ -8082,7 +8082,7 @@ public class Test2 {
         Kapcsolo celmezo1 = new Kapcsolo();
         celmezo1.AddCsapda(new Csapdaajto());
         Fal celmezo2 = new Fal();
-        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek()), null), kiindulomezo);
+        Jatekos jatekos1 = new Jatekos(null, new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
         kiindulomezo.Fogad(10,null, jatekos1, null);
         kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
         kiindulomezo.SetSzomszed(Irany.BALRA, null);
@@ -8093,7 +8093,7 @@ public class Test2 {
         celmezo1.SetSzomszed(Irany.JOBBRA, null);
         celmezo1.SetSzomszed(Irany.LE, kiindulomezo);
         celmezo2.SetSzomszed(Irany.LE, celmezo1);
-        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek()), null), celmezo1);
+        JeloltDoboz leptetheto = new JeloltDoboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
         celmezo1.Fogad(10,null, leptetheto, null);
         System.out.println("\n<===================== START OF TEST_2_3_4_7 =====================>");
         Printer.EnablePrint();

@@ -22,10 +22,12 @@ import java.io.InputStreamReader;
 
 public class Main {
 
-
+	static Jatek j;
+	
     /**
      * Main fuggveny, ami a jatekot futtatja.
      */
+	/*
     public static void main(String[] args) {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -304,7 +306,28 @@ public class Main {
     /**
      * Lehetseges parancsok listazasa
      */
-    public static void help() {
+    
+	public static void main(String[] args) 
+	{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("\nOpciók: \n 1, Start szerver <S>\n 2, Kapcsolodas <K>\n");
+    	try {
+			String line = br.readLine();
+			
+			switch (String.valueOf(line.toUpperCase())) 
+			{
+			case "S": {j = new Jatek(); j.SzerverMod();} break;
+			case "K": {j = new Jatek(); j.KliensMod();} break;
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return;
+		}
+	}
+	
+	public static void help() {
         System.out.println("exit : kilï¿½pï¿½s");
         System.out.println("all : minden teszt futtatasa");
 

@@ -17,7 +17,7 @@ import java.io.ObjectInputStream;
 
 import sokoban.Jatek;
 
-public class KliensOlvaso {
+public class KliensOlvaso extends Thread {
 	
 	Jatek j;
 	

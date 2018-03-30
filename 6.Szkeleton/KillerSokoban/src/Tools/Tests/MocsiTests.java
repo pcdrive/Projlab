@@ -27,7 +27,7 @@ public class MocsiTests {
     @Test
     public void MezoIdTest(){
         Csapdaajto uresMezo = new Csapdaajto();
-        uresMezo.Fogad(1, Irany.BALRA, new Jatekos("jatekos1",new Palya(new Szerver(new Jatek()), null), uresMezo), new Jatekos("jatekos1",new Palya(new Szerver(new Jatek()), null), uresMezo));
+        uresMezo.Fogad(1, Irany.BALRA, new Jatekos("jatekos1",new Palya(new Szerver(new Jatek(), null), null), uresMezo), new Jatekos("jatekos1",new Palya(new Szerver(new Jatek(), null), null), uresMezo));
         uresMezo.AddMez();
         uresMezo.Csuk();
         System.out.print(uresMezo.getID());

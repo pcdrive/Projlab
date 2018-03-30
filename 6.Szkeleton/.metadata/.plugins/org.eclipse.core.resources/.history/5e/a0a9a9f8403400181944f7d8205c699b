@@ -1,0 +1,122 @@
+/**
+ * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+ * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+ *
+ * @author Horvath Gergo
+ * @author Mocsari Andras
+ * @author Zsiros Balint
+ * @author Bottlik Judit
+ * @author Holub Csongor
+ * @version 1.0
+ * @since 2018-02-09
+ */
+
+
+package sokoban;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.*;
+import java.net.InetSocketAddress;
+import java.net.Socket;
+
+import Tools.Printer;
+import data.Data;
+import server.*;
+// import sokoban.*;
+
+public class Jatek {
+	
+	//szervermod atts
+	Szerver szerver;
+	KliensOlvaso kOlvaso;
+	
+	//kliensmod atts
+	Socket socket;
+	ObjectOutputStream out;
+	ObjectInputStream in;
+	int maxConnTime;
+	boolean alive;
+
+    /**
+     * Az osztaly konstruktora.
+     */
+    public Jatek() {
+    }
+
+    /**
+     * Elkezdi a jatekot. Letrehozza a palyat, es annak tartalmat.
+     */
+    public void StartGame() {
+        Printer.PrintTabIn("Jatek" + '\t' + "StartGame()");
+        Printer.PrintTabOut("Return");
+    }
+
+    /**
+     * Befejezi a jatekot. Torli a palyat, es annak tartalmat.
+     */
+    public void EndGame() {
+        Printer.PrintTabIn("Jatek" + '\t' + "EndGame()");
+        Printer.PrintTabOut("Return");
+    }
+
+    public void Print(KliensAdat kliensAdat) {
+        for (int i = 0; i < Data.PalyaY; i++) {
+            for (int j = 0; j < Data.PalyaX; j++) {
+                System.out.print("\t" + kliensAdat.palya[i * Data.PalyaX + j]);
+            }
+            System.out.println();
+        }
+    }
+    
+    public void SzerverMod() throws IOException 
+    {
+    	szerver = new Szerver(this);
+    	szerver.Fut();
+    	
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        System.out.print("\nFile path: ");
+        String line1 = br.readLine();
+        System.out.print("\nAny input to start the game: ");
+        String line2 = br.readLine();
+        
+        szerver.Start(line1);
+    }
+    
+    public void KliensMod() 
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        System.out.print("\nHost IP (3 digit numbers in n:n:n:n format): ");
+        String line1 = br.readLine();
+        
+        System.out.print("\nPort (4 digit number): ");
+        String line2 = br.readLine();
+        
+		alive = true;
+		String ip = line1;
+		try
+		{
+			int port = Integer.parseInt(line2);
+		} catch (Exception e) {e.printStackTrace();}
+		maxConnTime = max;
+		
+
+		try {
+			socket = new Socket();
+			socket.connect(new InetSocketAddress(ip,port),maxConnTime);
+			
+			System.out.println("[Client]: Connecting to server...");
+			out = new ObjectOutputStream(socket.getOutputStream());
+			in = new ObjectInputStream(socket.getInputStream());
+			System.out.println("[Client]: Connected to server!");
+
+			kOlvaso = new KliensOlvaso(in, this);
+			kOlvaso.start();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+    }
+    
+}

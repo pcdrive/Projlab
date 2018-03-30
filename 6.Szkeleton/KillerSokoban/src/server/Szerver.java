@@ -44,10 +44,26 @@ public class Szerver {
      * 
      * @param j A jatek osztály referenciaja.
      */
-	public Szerver(Jatek j) 
+	public Szerver(Jatek j, String p) 
 	{
 		jatek=j;
 		kapcsolatok = new LinkedList<Kapcsolat>();
+		
+
+		this.ip="127.0.0.1";
+		try {
+			this.port=Integer.parseInt(p);
+		} catch (Exception e) {}
+
+		try {
+			
+			socket = new ServerSocket();
+			socket.bind(new InetSocketAddress(ip,port));
+
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
     /**
