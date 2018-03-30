@@ -110,8 +110,6 @@ public class Szerver {
 	public void Fut(String file) 
 	{
 		
-	      startadat = cucc;//things... TODO: ide kéne az beolvasásos cuccos...
-		
 	      lobby = new Thread(){
 	    	  public void run() {
 	    		  
@@ -119,7 +117,6 @@ public class Szerver {
 	    		  
 	    		  while (run) 
 				  {
-	    			  if(kapcsolatok.size()<= startadat.jsz)
 					  try {
 						  Socket connection = socket.accept();
 						
@@ -130,11 +127,12 @@ public class Szerver {
 					  } catch (IOException e) {
 						  // TODO Auto-generated catch block
 					  }
-					  
 				  }
 	          }
 	      };
 	      if (run=false) {lobby=null;}
+		
+	      startadat = ;//things...
 	}
 
     /**

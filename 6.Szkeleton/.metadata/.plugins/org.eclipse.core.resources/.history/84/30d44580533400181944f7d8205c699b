@@ -92,17 +92,16 @@ public class Jatek {
 	        System.out.print("\nPort (4 digit number): ");
 	        port = br.readLine();
         } catch (Exception e) {}
+        
+    	szerver = new Szerver(this, port);
+    	szerver.Fut();
     	
         System.out.print("\nFile path: ");
         String line1 = br.readLine();
-        
-    	szerver = new Szerver(this, port);
-    	szerver.Fut(line1);
-    	
         System.out.print("\nAny input to start the game: ");
         br.readLine();
         
-        szerver.Start();
+        szerver.Start(line1);
     }
 
     /**

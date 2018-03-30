@@ -119,7 +119,7 @@ public class Szerver {
 	    		  
 	    		  while (run) 
 				  {
-	    			  if(kapcsolatok.size()<= startadat.jsz)
+	    			  if(kapcsolatok.size()<= /*szám*/)
 					  try {
 						  Socket connection = socket.accept();
 						

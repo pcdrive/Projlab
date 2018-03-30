@@ -110,16 +110,16 @@ public class Szerver {
 	public void Fut(String file) 
 	{
 		
-	      startadat = cucc;//things... TODO: ide kéne az beolvasásos cuccos...
-		
 	      lobby = new Thread(){
 	    	  public void run() {
+	    			
+	    	      startadat = ;//things... TODO: ide kéne az beolvasásos cuccos...
 	    		  
 	    		  lobby.start();
 	    		  
 	    		  while (run) 
 				  {
-	    			  if(kapcsolatok.size()<= startadat.jsz)
+	    			  if(kapcsolatok.size()<= /*szám*/)
 					  try {
 						  Socket connection = socket.accept();
 						

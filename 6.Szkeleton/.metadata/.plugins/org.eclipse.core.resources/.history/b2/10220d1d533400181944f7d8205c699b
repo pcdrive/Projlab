@@ -35,7 +35,6 @@ public class Szerver {
 	int port;	
 	int number;	
 	Thread lobby;
-	KliensAdat startadat;
 	
 	boolean run=true;
 
@@ -97,20 +96,18 @@ public class Szerver {
      *
      * @param file	File amibol az adatokat be kell tolteni.
      */
-	public void Start() 
+	public void Start(String file) 
 	{
 		run = false;
-		palya = new Palya(this, startadat);
+		palya = new Palya(this, file);
 	}
 
     /**
      * A szerver lobbiert felelos fuggvenye. Elindítja a lobbit, ami alatt
      * a kliensek csatlakozni tudnak.
      */
-	public void Fut(String file) 
+	public void Fut() 
 	{
-		
-	      startadat = cucc;//things... TODO: ide kéne az beolvasásos cuccos...
 		
 	      lobby = new Thread(){
 	    	  public void run() {
@@ -119,7 +116,6 @@ public class Szerver {
 	    		  
 	    		  while (run) 
 				  {
-	    			  if(kapcsolatok.size()<= startadat.jsz)
 					  try {
 						  Socket connection = socket.accept();
 						
@@ -130,11 +126,11 @@ public class Szerver {
 					  } catch (IOException e) {
 						  // TODO Auto-generated catch block
 					  }
-					  
 				  }
 	          }
 	      };
 	      if (run=false) {lobby=null;}
+		
 	}
 
     /**
