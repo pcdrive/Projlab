@@ -41,7 +41,6 @@ public class PalyaGenerator {
 
 
             PalyaAdat kliensAdat = new PalyaAdat(0,palya, null);
-            objectOutputStream.write(6);
             objectOutputStream.writeObject(kliensAdat);
 
             objectOutputStream.close();
