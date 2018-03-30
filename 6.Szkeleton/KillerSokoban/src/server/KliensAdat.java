@@ -18,7 +18,6 @@ import sokoban.Pontok;
 @SuppressWarnings("serial")
 public class KliensAdat extends BaseAdat {
 
-    public final String IDk[];
     public final Pontok pontok;
     
 
@@ -30,10 +29,9 @@ public class KliensAdat extends BaseAdat {
      * @param ID	jatekos azonositok.
      * @param po	A jatekosok pontjai.
      */
-    public KliensAdat(int[] pa, String[] ID, Pontok po) 
+    public KliensAdat(int[] pa, Pontok po) 
     {
     	super(pa);
-    	IDk=ID;
     	pontok=po;
     }
 }

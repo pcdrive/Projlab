@@ -16,6 +16,8 @@ public class FIFO {
 	
 	public void push(Irany i, String nev) {commands.add(new Pair<Irany, String>(i,nev));}
 	
-	public Pair<Irany, String> pull(Irany i, String nev) {return commands.removeFirst();}
+	public Pair<Irany, String> pull() {return commands.removeFirst();}
+	
+	public boolean isEmpty() {return commands.size()==0;}
 
 }

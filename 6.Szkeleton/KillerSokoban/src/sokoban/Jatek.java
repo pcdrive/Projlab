@@ -98,7 +98,7 @@ public class Jatek {
         
     	szerver = new Szerver(this, port);
     	szerver.Fut(line1);
-    	
+
         System.out.print("\nAny input to start the game: ");
         br.readLine();
         

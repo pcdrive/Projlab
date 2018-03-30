@@ -73,6 +73,7 @@ public class Palya {
 	        			Jatekos jatekos = new Jatekos(nevek[num++],this,mezok[i]);
         				mezok[i].Fogad(0, null, jatekos, null); 
         				jatekosok.add(jatekos);
+        				pontok.AddJatekos(jatekos.getNev());
 	        		} break;
         		case 2: 
         			{
@@ -86,8 +87,10 @@ public class Palya {
 	    				mezok[i].Fogad(0, null, doboz, null); 
 	    				dobozok.add(doboz);
 	    			} break;
-        	}
+        	}        	
         }
+    	
+    	szerver.SendAdat(new KliensAdat(k.palya, pontok));
     }
 
 

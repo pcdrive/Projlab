@@ -41,6 +41,7 @@ public class Kapcsolat {
 		try {
 			System.out.println("[SERVER]: Client connecting...");
 			out = new ObjectOutputStream(socket.getOutputStream());
+			out.writeObject(0);
 			in = new ObjectInputStream(socket.getInputStream());
 			rdr = new SzerverOlvaso(in,this);
 			rdr.start();

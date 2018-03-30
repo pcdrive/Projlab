@@ -43,6 +43,14 @@ public class KliensOlvaso extends Thread {
      */
 	public void run() 
 	{
+		try {
+			in.readObject();
+			j.sendParancs(null);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
 		while(fut) {
 			try {
 				Object n = in.readObject();		

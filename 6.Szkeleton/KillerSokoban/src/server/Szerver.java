@@ -14,9 +14,8 @@
 package server;
 
 import data.Data;
-import sokoban.Irany;
-import sokoban.Jatek;
-import sokoban.Palya;
+import javafx.util.Pair;
+import sokoban.*;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -24,6 +23,7 @@ import java.io.ObjectInputStream;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 //import Tools.Printer;
@@ -39,10 +39,12 @@ public class Szerver {
 	private String ip;
 	private Szerver This=this;
 	private int port;
-	private Thread lobby;
+	public Thread lobby;
 	private PalyaAdat startadat;
 	
 	private boolean run=true;
+	
+	private FIFO fifo;
 
 
     /**
@@ -52,6 +54,8 @@ public class Szerver {
      */
 	public Szerver(Jatek j, String p) 
 	{
+		fifo = new FIFO();
+		
 		jatek=j;
 		kapcsolatok = new LinkedList<Kapcsolat>();
 		
@@ -81,7 +85,7 @@ public class Szerver {
      */
 	void Leptet(Irany i, String nev)
 	{
-		palya.Leptet(i, nev);
+		fifo.push(i, nev);
 	}
 
     /**
@@ -101,12 +105,36 @@ public class Szerver {
      */
 	public void Start() 
 	{
+		ArrayList<String> nevek = new ArrayList<String>();
+		for (int i=0;i<kapcsolatok.size();i++) 
+		{
+			kapcsolatok.get(i).sendAdat(new KliensAdat(null, null));
+
+			System.out.println( " --- " + fifo.isEmpty());
+			while (fifo.isEmpty()) 
+			{
+				System.out.println( " -- " + nevek.size() + " -- " + kapcsolatok.size());
+			}
+			nevek.add(fifo.pull().getValue());
+		}
+		
+		System.out.println( " -- " + nevek.size());
+		
 		run = false;
-		palya = new Palya(this, startadat, null);
+		palya = new Palya(this, startadat, nevek.toArray(new String[0]));
 		Data.PalyaY = startadat.y;
 		Data.PalyaX = startadat.x;
 //		KliensAdat kliensAdat = new KliensAdat(startadat.palya, null, null);
-//		jatek.Print(kliensAdat);
+//		jatek.Print(kliensAdat);	
+
+			while (!run)
+			{
+				if (!fifo.isEmpty()) 
+				{
+					Pair<Irany, String> pair = fifo.pull();
+					palya.Leptet(pair.getKey(), pair.getValue());
+				}
+			}
 	}
 
     /**
@@ -117,30 +145,29 @@ public class Szerver {
      */
 	public void Fut(String file) 
 	{
-
-		FileInputStream fileInputStream = null;
 		try {
+			FileInputStream fileInputStream = null;
+			
 			fileInputStream = new FileInputStream(file + ".mocsi");
 			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
+			startadat = (PalyaAdat) objectInputStream.readObject();
 
-			startadat = (PalyaAdat) objectInputStream.readObject();//things... TODO: ide k�ne az beolvas�sos cuccos...
+			objectInputStream.close();
+			fileInputStream.close();
 
 			lobby = new Thread(){
 				public void run() {
-
-					lobby.start();
-
 					while (run)
 					{
-//	    			  if(kapcsolatok.size()<= startadat.jsz)
+	    			  if(kapcsolatok.size()<= startadat.jsz)
 						try {
 							Socket connection = socket.accept();
 
 							Kapcsolat c = new Kapcsolat(This, connection);
 
 							kapcsolatok.add(c);
-
+							
 						} catch (IOException e) {
 							// TODO Auto-generated catch block
 						}
@@ -148,6 +175,7 @@ public class Szerver {
 					}
 				}
 			};
+			lobby.start();
 			if (!run) {lobby=null;}
 		} catch (IOException | ClassNotFoundException e) {
 			e.printStackTrace();
@@ -158,7 +186,7 @@ public class Szerver {
      * A jatek vegen az informaciot a palyatol a jatek fele tovabbitja, igy
      * zarva le a jatekot.
      */
-	public void End() {jatek.EndGame();}
+	public void End() {run=true; jatek.EndGame();}
 
     /**
      * A kliensek kapcsolatanak megszakadasakor eltavolitja oket a listabol.

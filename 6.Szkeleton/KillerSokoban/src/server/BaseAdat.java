@@ -14,6 +14,7 @@ import java.io.Serializable;
  * @version 1.0
  * @since 2018.03.30.
  */
+@SuppressWarnings("serial")
 public class BaseAdat implements Serializable {
     public final int palya[];
     /**
