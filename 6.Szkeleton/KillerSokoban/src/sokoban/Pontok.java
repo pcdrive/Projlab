@@ -16,7 +16,6 @@ package sokoban;
 
 import Tools.Printer;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Pontok {

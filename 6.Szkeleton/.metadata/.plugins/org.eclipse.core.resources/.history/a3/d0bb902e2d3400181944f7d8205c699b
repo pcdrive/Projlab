@@ -1,0 +1,37 @@
+package server;
+
+import java.io.ObjectInputStream;
+
+public class SzerverOlvaso {
+
+	ObjectInputStream in;
+	Kapcsolat c;
+	boolean alive;
+	int id=0;
+	Szerver server;
+	
+	public SzerverOlvaso(ObjectInputStream ois, Kapcsolat c, Szerver server) 
+	{
+		alive=true;
+		in = ois;
+		this.c=c;
+		this.server=server;		
+	}
+	
+	//@SuppressWarnings("static-access")
+	public void run() 
+	{
+		while(alive) {
+			try {
+				Object i = in.readObject();		
+				if (i!=null) 
+				{
+					int n = (int)i;
+				} 
+	
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+			}		
+		}
+	}
+}

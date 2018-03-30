@@ -1,0 +1,17 @@
+package server;
+import sokoban.Irany;
+
+public class Kapcsolat {
+	
+	Szerver szerver;
+	
+	public Kapcsolat(Szerver sz) 
+	{
+		szerver = sz;
+	}
+	
+	public void Leptet(Irany i, String nev) 
+	{
+		
+	}
+}

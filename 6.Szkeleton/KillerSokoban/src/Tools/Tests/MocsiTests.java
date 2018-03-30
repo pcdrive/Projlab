@@ -14,11 +14,11 @@ import sokoban.mezok.Csapdaajto;
 public class MocsiTests {
     @Test
     public void PrintTest() {
-        KliensAdat kliensAdat = new KliensAdat();
-        kliensAdat.palya = new int[Data.PalyaX * Data.PalyaY];
+        int[] palya = new int[Data.PalyaX * Data.PalyaY];
         for (int i = 0; i < Data.PalyaY; i++)
             for (int j = 0; j < Data.PalyaX; j++)
-                kliensAdat.palya[i * Data.PalyaX + j] = i;
+                palya[i * Data.PalyaX + j] = i;
+        KliensAdat kliensAdat = new KliensAdat(palya, null);        
         Jatek jatek = new Jatek();
         jatek.Print(kliensAdat);
     }
@@ -27,7 +27,7 @@ public class MocsiTests {
     @Test
     public void MezoIdTest(){
         Csapdaajto uresMezo = new Csapdaajto();
-        uresMezo.Fogad(1, Irany.BALRA, new Jatekos("jatekos1",new Palya(new Szerver(new Jatek())), uresMezo), new Jatekos("jatekos1",new Palya(new Szerver(new Jatek())), uresMezo));
+        uresMezo.Fogad(1, Irany.BALRA, new Jatekos("jatekos1",new Palya(new Szerver(new Jatek()), null), uresMezo), new Jatekos("jatekos1",new Palya(new Szerver(new Jatek()), null), uresMezo));
         uresMezo.AddMez();
         uresMezo.Csuk();
         System.out.print(uresMezo.getID());

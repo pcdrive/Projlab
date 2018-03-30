@@ -1,0 +1,45 @@
+package server;
+import sokoban.Irany;
+import java.io.*;
+import java.net.Socket;
+
+public class Kapcsolat {
+	
+	Szerver szerver;
+
+	Socket socket;
+	
+	ObjectOutputStream out;
+	ObjectInputStream in;
+	boolean alive=true;
+	int id;
+	Reader rdr;
+	
+	public Kapcsolat(Szerver sz, Socket sock) 
+	{
+		szerver = sz;
+		socket = sock;
+		
+		try {
+			System.out.println("[SERVER]: Client connecting...");
+			out = new ObjectOutputStream(socket.getOutputStream());
+			in = new ObjectInputStream(socket.getInputStream());
+			rdr = new SzerverOlvaso(in,this, szerver);
+			rdr.start();
+			System.out.println("[SERVER]: Client connected!");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void Leptet(Irany i, String nev) 
+	{
+		szerver.Leptet(i, nev);
+	}
+	
+	public void sendAdat(KliensAdat k) 
+	{
+		//TODO
+	}
+}

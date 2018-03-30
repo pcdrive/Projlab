@@ -1,0 +1,91 @@
+/**
+ * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
+ * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+ *
+ * @author Horvath Gergo
+ * @author Mocsari Andras
+ * @author Zsiros Balint
+ * @author Bottlik Judit
+ * @author Holub Csongor
+ * @version 1.0
+ * @since 2018-02-09
+ */
+
+
+package server;
+
+import java.net.Socket;
+import java.util.LinkedList;
+
+import Tools.Printer;
+import sokoban.*;
+
+import java.io.IOException;
+import java.net.*;
+
+public class Szerver {
+	
+	Jatek jatek;
+	LinkedList<Kapcsolat> kapcsolatok;
+	Palya palya;
+	
+
+	ServerSocket socket;
+	String ip;
+	Szerver This=this;
+	int port;	
+	int number;	
+	
+	boolean run=true;
+	
+	public Szerver(Jatek j) 
+	{
+		jatek=j;
+		kapcsolatok = new LinkedList<Kapcsolat>();
+	}
+	
+	public void Leptet(Irany i, String nev) 
+	{
+		palya.Leptet(i, nev);
+	}
+	
+	public void sendAdat(KliensAdat k) 
+	{
+		for (int i=0;i<kapcsolatok.size();i++)
+			kapcsolatok.get(i).sendAdat(k);
+	}
+	
+	public void Start(String file) 
+	{
+		run = false;
+		palya = new Palya(this, file);
+	}
+	
+	public void Fut() 
+	{
+		
+	      Thread lobby = new Thread(){
+	    	  public void run() {
+	    		  
+	    		  this.start();
+	    		  
+	    		  while (run) 
+				  {
+					  try {
+						  Socket connection = socket.accept();
+						
+					  	  Kapcsolat c = new Kapcsolat(This, connection);
+						
+						  kapcsolatok.add(c);
+						
+					  } catch (IOException e) {
+						  // TODO Auto-generated catch block
+					  }
+				  }
+	          }
+	      };
+	      if (run=false) {lobby=null;}
+		
+	}
+
+}

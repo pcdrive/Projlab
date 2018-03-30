@@ -1,0 +1,37 @@
+package server;
+
+import java.io.ObjectInputStream;
+
+public class SzerverOlvaso extends Thread {
+	
+	Kapcsolat c;
+	
+	boolean fut;
+	ObjectInputStream in;
+	
+	public SzerverOlvaso(ObjectInputStream ois, Kapcsolat c) 
+	{
+		fut=true;
+		in = ois;
+		this.c=c;	
+	}
+	
+	//@SuppressWarnings("static-access")
+	public void run() 
+	{
+		while(fut) {
+			try {
+				Object n = in.readObject();		
+				if (n!=null) 
+				{
+					c.Leptet(((ParancsAdat)n).i, ((ParancsAdat)n).nev);
+				} 
+	
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+			}		
+		}
+	}
+	
+	public void Kill() {fut = false;}
+}

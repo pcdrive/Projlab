@@ -1,0 +1,15 @@
+package server;
+
+import sokoban.Pontok;
+
+public class KliensAdat {
+	
+    public final int palya[];
+    public final Pontok pontok;
+    
+    public KliensAdat(int[] pa, Pontok po) 
+    {
+    	palya=pa;
+    	pontok=po;
+    }
+}

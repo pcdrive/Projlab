@@ -34,7 +34,7 @@ public class Palya {
     /**
      * Az osztaly konstruktora. Letrehozza a pontok osztalyt, �s beallitja a jatekot.
      */
-    public Palya(Szerver s) {
+    public Palya(Szerver s, String file) {
         szerver = s;
         pontok = new Pontok();
         dobozok = new LinkedList<Doboz>();
