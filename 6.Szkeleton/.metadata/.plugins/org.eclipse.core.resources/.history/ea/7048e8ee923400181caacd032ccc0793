@@ -1,17 +1,3 @@
-package Tools.palyaGenerator;
-
-import server.PalyaAdat;
-import sokoban.Irany;
-import sokoban.leptethetok.Doboz;
-import sokoban.leptethetok.Jatekos;
-import sokoban.leptethetok.JeloltDoboz;
-import sokoban.mezok.*;
-
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.util.Random;
-
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
  * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
@@ -24,6 +10,18 @@ import java.util.Random;
  * @version 1.0
  * @since 2018.03.30.
  */
+package Tools.palyaGenerator;
+
+import server.PalyaAdat;
+import sokoban.Irany;
+import sokoban.leptethetok.*;
+import sokoban.mezok.*;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.Random;
+
 public class PalyaGenerator {
 
     private static Fal fal = new Fal();
@@ -32,9 +30,10 @@ public class PalyaGenerator {
     private static Kapcsolo kapcsolo = new Kapcsolo();
     private static Csapdaajto csapdaajto = new Csapdaajto();
     private static Celhely celhely = new Celhely();
-
+    
     public static void main(String[] args){
         try {
+        	int jatekosok=0;
             int x = 10;
             int y = 10;
             FileOutputStream fileOutputStream = new FileOutputStream("palya.mocsi");
@@ -57,9 +56,11 @@ public class PalyaGenerator {
                     Random random = new Random();
                     switch (random.nextInt(10)){
                         default:
-                            switch (random.nextInt(5)){
-                                case 1:
+                            switch (random.nextInt(3)){
+                                case 1:{
                                     uresMezo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     uresMezo.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -79,9 +80,11 @@ public class PalyaGenerator {
                             palya[i] = lyuk.getID();
                             break;
                         case 3:
-                            switch (random.nextInt(5)){
-                                case 1:
+                            switch (random.nextInt(3)){
+                                case 1:{
                                     celhely.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     celhely.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -92,9 +95,11 @@ public class PalyaGenerator {
                             palya[i] = celhely.getID();
                             break;
                         case 4:
-                            switch (random.nextInt(5)){
-                                case 1:
+                            switch (random.nextInt(3)){
+                                case 1:{
                                     csapdaajto.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     csapdaajto.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -108,9 +113,11 @@ public class PalyaGenerator {
                             palya[i] = csapdaajto.getID();
                             break;
                         case 5:
-                            switch (random.nextInt(5)){
-                                case 1:
+                            switch (random.nextInt(3)){
+                                case 1:{
                                     kapcsolo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     kapcsolo.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -129,12 +136,10 @@ public class PalyaGenerator {
                     fal.Enged();
                     csapdaajto.Enged();
                     lyuk.Enged();
-                    celhely.Enged();
-                    //END_OF_CREATION
                 }
             }
 
-            PalyaAdat palyaAdat = new PalyaAdat(0,palya, null, x, y);
+            PalyaAdat palyaAdat = new PalyaAdat(jatekosok, palya, null, x, y);
             objectOutputStream.writeObject(palyaAdat);
 
             objectOutputStream.close();
