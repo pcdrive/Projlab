@@ -58,8 +58,8 @@ public abstract class Leptetheto {
      */
     public abstract void Halal();
 
-    public abstract int getTipus();
+    public int getTipus() {return 0;}
 
-    public abstract int getStatus();
+    public int getStatus() {return 0;}
 
 }

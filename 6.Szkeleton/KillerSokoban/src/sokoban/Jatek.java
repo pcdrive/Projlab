@@ -75,7 +75,7 @@ public class Jatek {
             System.out.println();
         }
     }
-
+    
     /**
      * A jatekot szervermodba teszi. Azaz elinditja a jatekot
      * szerverkent. Letrehozza a lobbit, felk�sz�l a csatlakozo 
@@ -84,8 +84,13 @@ public class Jatek {
     public void SzerverMod() throws IOException 
     {
 
+    	fut = true;
+    	
         System.out.print("\n SZERVER MOD ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.print("\nJatekos neve: ");
+        name = br.readLine();
         
     	String port = "";
         try {	        
@@ -102,7 +107,23 @@ public class Jatek {
         System.out.print("\nAny input to start the game: ");
         br.readLine();
         
-        szerver.Start();
+        szerver.Start(name);
+	
+		while (fut) 
+		{
+			try {
+				String com = br.readLine();
+				switch (com) 
+				{
+					case "w" : szerver.Leptet(Irany.FEL, name);  break;
+					case "a" : szerver.Leptet(Irany.BALRA, name);  break;
+					case "s" : szerver.Leptet(Irany.LE, name);  break;
+					case "d" : szerver.Leptet(Irany.JOBBRA, name);  break;
+					case "exit" : szerver.End(); break;
+				}
+			} catch (Exception e) {}
+		}
+	
     }
 
     /**
@@ -165,7 +186,7 @@ public class Jatek {
 					case "a" : sendParancs(Irany.BALRA); break;
 					case "s" : sendParancs(Irany.LE); break;
 					case "d" : sendParancs(Irany.JOBBRA); break;
-					case "exit" : break;
+					case "exit" : {kOlvaso.Kill(); fut=false;} break;
 				}
 			} catch (Exception e) {}
 		}
@@ -178,6 +199,6 @@ public class Jatek {
      */
     public void sendParancs(Irany i) throws IOException 
     {
-    	out.writeObject(new ParancsAdat(i, name));;
+    	out.writeObject(new ParancsAdat(i, name));
     }
 }

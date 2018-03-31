@@ -70,10 +70,13 @@ public class Palya {
         	{
         		case 1: 
 	        		{
-	        			Jatekos jatekos = new Jatekos(nevek[num++],this,mezok[i]);
-        				mezok[i].Fogad(0, null, jatekos, null); 
-        				jatekosok.add(jatekos);
-        				pontok.AddJatekos(jatekos.getNev());
+	        			if (nevek.length!=num) 
+	        			{
+		        			Jatekos jatekos = new Jatekos(nevek[num++],this,mezok[i]);
+	        				mezok[i].Fogad(0, null, jatekos, null); 
+	        				jatekosok.add(jatekos);
+	        				pontok.AddJatekos(jatekos.getNev());
+        				} 
 	        		} break;
         		case 2: 
         			{
@@ -89,10 +92,20 @@ public class Palya {
 	    			} break;
         	}        	
         }
-    	
-    	szerver.SendAdat(new KliensAdat(k.palya, pontok));
+
+		Printer.EnablePrint();
+    	szerver.SendAdat(new KliensAdat(getInts(), pontok));
     }
 
+    private int[] getInts() 
+    {
+    	int[] res = new int[mezok.length];
+    	for (int i=0;i<Data.PalyaX*Data.PalyaY;i++) 
+    	{
+    		res[i] = mezok[i].getID();
+    	}
+    	return res;
+    }
 
     /**
      * A jatekos lepeset inditja el.
@@ -109,6 +122,8 @@ public class Palya {
             }
         }
         Printer.PrintTabOut("Return");
+
+    	szerver.SendAdat(new KliensAdat(getInts(), pontok));
     }
 
     /**

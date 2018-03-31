@@ -39,7 +39,7 @@ public class Szerver {
 	private String ip;
 	private Szerver This=this;
 	private int port;
-	public Thread lobby;
+	private Thread lobby;
 	private PalyaAdat startadat;
 	
 	private boolean run=true;
@@ -83,7 +83,7 @@ public class Szerver {
      * @param i   Irany amerre a jatekost leptetni kell
      * @param nev  A jatekos neve.
      */
-	void Leptet(Irany i, String nev)
+	public void Leptet(Irany i, String nev)
 	{
 		fifo.push(i, nev);
 	}
@@ -103,38 +103,49 @@ public class Szerver {
      * A szerver jatekinditasert felelos fuggvenye. bezarja a lobbit, es elinditja a jatekot a
      * kivalasztott terkepfajl alapjan.
      */
-	public void Start() 
+	public void Start(String name) 
 	{
 		ArrayList<String> nevek = new ArrayList<String>();
+		
+		nevek.add(name);
+		
 		for (int i=0;i<kapcsolatok.size();i++) 
 		{
 			kapcsolatok.get(i).sendAdat(new KliensAdat(null, null));
-
-			System.out.println( " --- " + fifo.isEmpty());
+			
 			while (fifo.isEmpty()) 
 			{
-				System.out.println( " -- " + nevek.size() + " -- " + kapcsolatok.size());
 			}
 			nevek.add(fifo.pull().getValue());
 		}
-		
-		System.out.println( " -- " + nevek.size());
 		
 		run = false;
 		palya = new Palya(this, startadat, nevek.toArray(new String[0]));
 		Data.PalyaY = startadat.y;
 		Data.PalyaX = startadat.x;
-//		KliensAdat kliensAdat = new KliensAdat(startadat.palya, null, null);
-//		jatek.Print(kliensAdat);	
 
-			while (!run)
-			{
-				if (!fifo.isEmpty()) 
+
+		lobby = new Thread(){
+			public void run() {	
+				while (!run)
 				{
-					Pair<Irany, String> pair = fifo.pull();
-					palya.Leptet(pair.getKey(), pair.getValue());
+					if (!fifo.isEmpty()) 
+					{
+						Pair<Irany, String> pair = fifo.pull();
+						palya.Leptet(pair.getKey(), pair.getValue());
+					}
+					
+					try {
+						sleep(100);
+					} catch (InterruptedException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
 				}
 			}
+		};
+		
+		lobby.start();
 	}
 
     /**

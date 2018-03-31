@@ -112,13 +112,14 @@ public class Jatekos extends Leptetheto {
 
         Printer.PrintTabIn(nev + '\t' + "Utkozik(Irany, Jatekos)");
 
-
-        boolean success = mezo.GetSzomszed(i).Fogad(ero, i, this, j);
+        UresMezo szom = mezo.GetSzomszed(i);
+        boolean success = szom.Fogad(ero, i, this, j);
         if (!success) {
             Halal();
         }
 
         mezo.Enged();
+        mezo=szom;
         Printer.PrintTabOut("Return: " + Boolean.toString(true));
         return true;
     }
@@ -137,9 +138,13 @@ public class Jatekos extends Leptetheto {
 
         Printer.PrintTabIn(nev + '\t' + "Tol(Irany, Jatekos)");
 
-        boolean success = mezo.GetSzomszed(i).Fogad(ero, i, this, j);
-        if (success)
+        UresMezo szom = mezo.GetSzomszed(i);
+        boolean success = szom.Fogad(ero, i, this, j);
+        if (success) 
+        {
             mezo.Enged();
+            mezo=szom;
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }

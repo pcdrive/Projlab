@@ -70,9 +70,14 @@ public class JeloltDoboz extends Doboz {
 
         if (ero - surl * tapadas > 0) {
 
-            boolean success = mezo.GetSzomszed(i).Fogad(ero - surl * tapadas, i, this, j);
+
+            UresMezo szom = mezo.GetSzomszed(i);
+            boolean success = szom.Fogad(ero - surl * tapadas, i, this, j);
             if (success)
+            {
                 mezo.Enged();
+                mezo=szom;
+            }
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }
@@ -97,9 +102,14 @@ public class JeloltDoboz extends Doboz {
 
         if (ero - surl * tapadas > 0) {
 
-            boolean success = mezo.GetSzomszed(i).Fogad(ero - surl * tapadas, i, this, j);
+
+            UresMezo szom = mezo.GetSzomszed(i);
+            boolean success = szom.Fogad(ero - surl * tapadas, i, this, j);
             if (success)
+            {
                 mezo.Enged();
+                mezo=szom;
+            }
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }

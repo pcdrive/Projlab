@@ -80,10 +80,14 @@ public class Doboz extends Leptetheto {
 
         if (ero - tapadas * surl > 0) {
 
-            boolean success = mezo.GetSzomszed(i).Fogad(ero - tapadas * surl, i, this, j);
+            UresMezo szom = mezo.GetSzomszed(i);
+            boolean success = szom.Fogad(ero - tapadas * surl, i, this, j);
 
-            if (success)
+            if (success) 
+            {
                 mezo.Enged();
+                mezo=szom;
+            }
 
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
@@ -110,9 +114,14 @@ public class Doboz extends Leptetheto {
 
         if (ero - tapadas * surl > 0) {
 
-            boolean success = mezo.GetSzomszed(i).Fogad(ero - tapadas * surl, i, this, j);
-            if (success)
+
+            UresMezo szom = mezo.GetSzomszed(i);
+            boolean success = szom.Fogad(ero - tapadas * surl, i, this, j);
+            if (success) 
+            {
                 mezo.Enged();
+                mezo=szom;
+            }
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }

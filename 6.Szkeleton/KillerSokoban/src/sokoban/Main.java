@@ -18,6 +18,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import Tools.Printer;
+
 public class Main {
 
 	static Jatek j;
@@ -307,6 +309,7 @@ public class Main {
 
 	public static void main(String[] args)
 	{
+		Printer.DisablePrint();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line="";
 

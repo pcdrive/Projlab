@@ -17,7 +17,7 @@ import java.io.ObjectInputStream;
 
 public class SzerverOlvaso extends Thread {
 	
-	Kapcsolat c;
+	Kapcsolat kapcsolat;
 	
 	boolean fut;
 	ObjectInputStream in;
@@ -28,11 +28,11 @@ public class SzerverOlvaso extends Thread {
      * @param ois A klienstol bejovo objektum folyam (ObjectInputStream).
      * @param c A kapcsolat referenciaja, amihez a folyam tartozik.
      */
-	public SzerverOlvaso(ObjectInputStream ois, Kapcsolat c) 
+	public SzerverOlvaso(ObjectInputStream ois, Kapcsolat k) 
 	{
-		fut=true;
+		fut = true;
 		in = ois;
-		this.c=c;	
+		this.kapcsolat = k;	
 	}
 	
     /**
@@ -45,14 +45,15 @@ public class SzerverOlvaso extends Thread {
 	{
 		while(fut) {
 			try {
-				Object n = in.readObject();		
+				Object n = in.readObject();	
 				if (n!=null) 
 				{
-					c.Leptet(((ParancsAdat)n).i, ((ParancsAdat)n).nev);
+					kapcsolat.Leptet(((ParancsAdat)n).i, ((ParancsAdat)n).nev);
 				} 
 	
 			} catch (Exception e) {
-				c.remKapcs();
+				kapcsolat.remKapcs();
+				fut=false;
 			}		
 		}
 	}
