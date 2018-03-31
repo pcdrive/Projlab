@@ -8,8 +8,6 @@
 	<item value="500" key="CallHierarchyViewPart.ratio3"/>
 	<list key="SearchScopeActionGroup.working_set">
 	</list>
-	<section name="CallHierarchySearchScope">
-	</section>
 	<section name="SearchInDialog">
 		<item value="true" key="SearchInProjects"/>
 		<item value="true" key="SearchInAppLibs"/>
@@ -40,6 +38,24 @@
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item value="true" key="org.eclipse.jdt.ui.typecomment.deprecated"/>
+	</section>
+	<section name="CallHierarchySearchScope">
+	</section>
+	<section name="FatJarPackageWizard">
+		<item value="C:\Users\Nova\Desktop\Projlab\Projlab\6.Szkeleton" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
+		<item value="Sokoban - KillerSokoban" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="C:\Users\Nova\Desktop\Projlab\Projlab\JARs\KillerSokoban.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
+		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Nova\Desktop\Projlab\Projlab\JARs\KillerSokoban.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="C:\Users\Nova\Desktop\Projlab\Projlab\6.Szkeleton"/>
+			<item value=".xml"/>
+		</list>
+	</section>
+	<section name="RenameInformationPopup">
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
