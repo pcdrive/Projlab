@@ -56,14 +56,17 @@ public class PalyaGenerator {
                     //START_OF_CREATION
 
                     Random random = new Random();
+<<<<<<< HEAD
                     switch (random.nextInt(10)){
                         default:
                             switch (random.nextInt(5)){
                                 case 1:{
+=======
                     switch (random.nextInt(5)){
                         case 0:
                             switch (random.nextInt(5)){
                                 case 1:
+>>>>>>> parent of 882aa5b... Merge branch 'master' of https://github.com/pcdrive/Projlab
                                     uresMezo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
                                     jatekosok++;
                                 }
