@@ -39,7 +39,6 @@ public class Kapcsolat {
 		socket = sock;
 		
 		try {
-			System.out.println("[SERVER]: Client connecting...");
 			out = new ObjectOutputStream(socket.getOutputStream());
 			out.writeObject(0);
 			in = new ObjectInputStream(socket.getInputStream());
@@ -87,6 +86,7 @@ public class Kapcsolat {
      */
 	public void remKapcs() 
 	{
+		rdr.Kill();
 		szerver.RemKapcs(this);
 	}
 }

@@ -94,7 +94,7 @@ public class Palya {
         }
 
 		Printer.EnablePrint();
-    	szerver.SendAdat(new KliensAdat(getInts(), pontok));
+    	szerver.SendAdat(new KliensAdat(getInts(), pontok, Data.PalyaX, Data.PalyaY));
     }
 
     private int[] getInts() 
@@ -123,7 +123,7 @@ public class Palya {
         }
         Printer.PrintTabOut("Return");
 
-    	szerver.SendAdat(new KliensAdat(getInts(), pontok));
+    	szerver.SendAdat(new KliensAdat(getInts(), pontok, Data.PalyaX, Data.PalyaY));
     }
 
     /**

@@ -13,8 +13,10 @@
 
 package server;
 
+import java.io.IOException;
 import java.io.ObjectInputStream;
 
+import data.Data;
 import sokoban.Jatek;
 
 public class KliensOlvaso extends Thread {
@@ -56,7 +58,10 @@ public class KliensOlvaso extends Thread {
 				Object n = in.readObject();		
 				if (n!=null) 
 				{
-					j.Print(((KliensAdat)n));
+					if (((KliensAdat)n).x!=0 && ((KliensAdat)n).y!=0)
+					Data.PalyaX = ((KliensAdat)n).x;
+					Data.PalyaY = ((KliensAdat)n).y;
+					j.Print((KliensAdat)n);
 				} 
 	
 			} catch (Exception e) {
@@ -68,6 +73,13 @@ public class KliensOlvaso extends Thread {
     /**
      * Az osztaly futasat allitja le, ezzel veget vetve a szalnak.
      */
-	public void Kill() {fut = false;}
+	public void Kill() {
+		fut = false; 
+		try {
+		in.close();
+		} catch (IOException e) {
+		} 
+		this. interrupt();
+	}
 	
 }

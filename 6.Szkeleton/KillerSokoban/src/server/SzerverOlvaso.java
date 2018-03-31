@@ -61,5 +61,5 @@ public class SzerverOlvaso extends Thread {
     /**
      * Az osztaly futasat allitja le, ezzel veget vetve a szalnak.
      */
-	public void Kill() {fut = false;}
+	public void Kill() {fut = false; this.interrupt();}
 }

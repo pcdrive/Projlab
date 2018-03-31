@@ -29,9 +29,9 @@ public class KliensAdat extends BaseAdat {
      * @param ID	jatekos azonositok.
      * @param po	A jatekosok pontjai.
      */
-    public KliensAdat(int[] pa, Pontok po) 
+    public KliensAdat(int[] pa, Pontok po, int x, int y) 
     {
-    	super(pa);
+    	super(pa,x,y);
     	pontok=po;
     }
 }

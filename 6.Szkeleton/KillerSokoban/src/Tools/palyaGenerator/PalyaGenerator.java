@@ -35,8 +35,9 @@ public class PalyaGenerator {
 
     public static void main(String[] args){
         try {
-            int x = 5;
-            int y = 5;
+        	int jatekosok=0;
+            int x = 10;
+            int y = 10;
             FileOutputStream fileOutputStream = new FileOutputStream("palya.mocsi");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             int[] palya = new int[x*y];
@@ -55,11 +56,13 @@ public class PalyaGenerator {
                     //START_OF_CREATION
 
                     Random random = new Random();
-                    switch (random.nextInt(5)){
-                        case 0:
-                            switch (random.nextInt(3)){
-                                case 1:
+                    switch (random.nextInt(10)){
+                        default:
+                            switch (random.nextInt(5)){
+                                case 1:{
                                     uresMezo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     uresMezo.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -80,8 +83,10 @@ public class PalyaGenerator {
                             break;
                         case 3:
                             switch (random.nextInt(3)){
-                                case 1:
+                                case 1:{
                                     celhely.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     celhely.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -93,8 +98,10 @@ public class PalyaGenerator {
                             break;
                         case 4:
                             switch (random.nextInt(3)){
-                                case 1:
+                                case 1:{
                                     csapdaajto.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     csapdaajto.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -109,8 +116,10 @@ public class PalyaGenerator {
                             break;
                         case 5:
                             switch (random.nextInt(3)){
-                                case 1:
+                                case 1:{
                                     kapcsolo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    jatekosok++;
+                                }
                                     break;
                                 case 2:
                                     kapcsolo.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
@@ -134,7 +143,7 @@ public class PalyaGenerator {
                 }
             }
 
-            PalyaAdat palyaAdat = new PalyaAdat(0,palya, null, x, y);
+            PalyaAdat palyaAdat = new PalyaAdat(jatekosok, palya, null, x, y);
             objectOutputStream.writeObject(palyaAdat);
 
             objectOutputStream.close();

@@ -17,14 +17,18 @@ import java.io.Serializable;
 @SuppressWarnings("serial")
 public class BaseAdat implements Serializable {
     public final int palya[];
+    public final int x;
+    public final int y;
     /**
      * Az osztaly konstruktora. Beallitja az attributumokat, amik az
      * informaciot hordozzak.
      *
      * @param pa	Palya adatok (int ID-k).
      */
-    public BaseAdat(int[] pa)
+    public BaseAdat(int[] pa, int x, int y)
     {
         palya=pa;
+        this.x=x;
+        this.y=y;
     }
 }

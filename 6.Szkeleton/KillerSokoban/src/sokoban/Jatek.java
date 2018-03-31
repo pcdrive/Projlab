@@ -60,6 +60,8 @@ public class Jatek {
     public void EndGame() {
         Printer.PrintTabIn("Jatek" + '\t' + "EndGame()");
         Printer.PrintTabOut("Return");
+        szerver = null;
+        kOlvaso = null;
     }
 
     /**
@@ -86,25 +88,25 @@ public class Jatek {
 
     	fut = true;
     	
-        System.out.print("\n SZERVER MOD ");
+        System.out.print("[SERVER]: \n[SERVER]:  SZERVER MOD ");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.print("\nJatekos neve: ");
+        System.out.print("[SERVER]: \n[SERVER]: Jatekos neve: ");
         name = br.readLine();
         
     	String port = "";
         try {	        
-	        System.out.print("\nPort (4 digit number): ");
+	        System.out.print("[SERVER]: \n[SERVER]: Port (4 digit number): ");
 	        port = br.readLine();
         } catch (Exception e) {}
     	
-        System.out.print("\nFile path: ");
+        System.out.print("[SERVER]: \n[SERVER]: File path: ");
         String line1 = br.readLine();
         
     	szerver = new Szerver(this, port);
     	szerver.Fut(line1);
 
-        System.out.print("\nAny input to start the game: ");
+        System.out.print("[SERVER]: \n[SERVER]: Any input to start the game: ");
         br.readLine();
         
         szerver.Start(name);
@@ -115,17 +117,17 @@ public class Jatek {
 				String com = br.readLine();
 				switch (com) 
 				{
-					case "w" : szerver.Leptet(Irany.FEL, name);  break;
-					case "a" : szerver.Leptet(Irany.BALRA, name);  break;
-					case "s" : szerver.Leptet(Irany.LE, name);  break;
-					case "d" : szerver.Leptet(Irany.JOBBRA, name);  break;
-					case "exit" : szerver.End(); break;
+					case "w" : { szerver.Leptet(Irany.FEL, name);} break;
+					case "a" : { szerver.Leptet(Irany.BALRA, name); }  break;
+					case "s" : { szerver.Leptet(Irany.LE, name); }  break;
+					case "d" : { szerver.Leptet(Irany.JOBBRA, name); }  break;
+					case "exit" : {fut= false; szerver.End();} break;
 				}
 			} catch (Exception e) {}
 		}
 	
     }
-
+    
     /**
      * A jatekot kliensmodba teszi. Felkesz�l, es csatlakozik a szerverre.
      * @throws IOException 
@@ -140,14 +142,14 @@ public class Jatek {
         String line2="";
         
         try {
-	        System.out.print("\n KLIENS MOD ");
-	        System.out.print("\nJatekos neve: ");
+	        System.out.print("[Client]: \n[Client]:  KLIENS MOD ");
+	        System.out.print("[Client]: \n[Client]: Jatekos neve: ");
 	        name = br.readLine();
 	        
-	        System.out.print("\nHost IP (3 digit numbers in n:n:n:n format): ");
+	        System.out.print("[Client]: \n[Client]: Host IP (3 digit numbers in n:n:n:n format): ");
 	        line1 = br.readLine();
 	        
-	        System.out.print("\nPort (4 digit number): ");
+	        System.out.print("[Client]: \n[Client]: Port (4 digit number): ");
 	        line2 = br.readLine();
         } catch (Exception e) {}
 		
@@ -182,11 +184,11 @@ public class Jatek {
 				
 				switch (com) 
 				{
-					case "w" : sendParancs(Irany.FEL);  break;
-					case "a" : sendParancs(Irany.BALRA); break;
-					case "s" : sendParancs(Irany.LE); break;
-					case "d" : sendParancs(Irany.JOBBRA); break;
-					case "exit" : {kOlvaso.Kill(); fut=false;} break;
+					case "w" : { sendParancs(Irany.FEL);}  break;
+					case "a" : { sendParancs(Irany.BALRA);} break;
+					case "s" : { sendParancs(Irany.LE);} break;
+					case "d" : { sendParancs(Irany.JOBBRA);} break;
+					case "exit" : {kOlvaso.Kill(); fut=false; EndGame(); out.close();} break;
 				}
 			} catch (Exception e) {}
 		}

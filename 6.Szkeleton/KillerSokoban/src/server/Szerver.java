@@ -102,16 +102,20 @@ public class Szerver {
     /**
      * A szerver jatekinditasert felelos fuggvenye. bezarja a lobbit, es elinditja a jatekot a
      * kivalasztott terkepfajl alapjan.
+     * 
+     * @param name A szerver játékosának neve.
      */
 	public void Start(String name) 
 	{
 		ArrayList<String> nevek = new ArrayList<String>();
 		
-		nevek.add(name);
-		
+		if(startadat.jsz != 0)
+		{			
+			nevek.add(name);
+		}
 		for (int i=0;i<kapcsolatok.size();i++) 
 		{
-			kapcsolatok.get(i).sendAdat(new KliensAdat(null, null));
+			kapcsolatok.get(i).sendAdat(new KliensAdat(null, null, Data.PalyaX, Data.PalyaY));
 			
 			while (fifo.isEmpty()) 
 			{
@@ -166,12 +170,15 @@ public class Szerver {
 
 			objectInputStream.close();
 			fileInputStream.close();
-
+			
+			Data.PalyaX = startadat.x;
+			Data.PalyaY = startadat.y;
+			System.out.println("[SERVER]: Lehetséges játékésok száma: " + startadat.jsz);
 			lobby = new Thread(){
 				public void run() {
 					while (run)
 					{
-	    			  if(kapcsolatok.size()<= startadat.jsz)
+	    			  if(kapcsolatok.size()< startadat.jsz)
 						try {
 							Socket connection = socket.accept();
 
@@ -197,7 +204,15 @@ public class Szerver {
      * A jatek vegen az informaciot a palyatol a jatek fele tovabbitja, igy
      * zarva le a jatekot.
      */
-	public void End() {run=true; jatek.EndGame();}
+	public void End() {
+		run=true; 
+		lobby=null;
+		for (Kapcsolat kapcs : kapcsolatok)
+		{
+			kapcs.remKapcs();
+		}
+		jatek.EndGame();
+	}
 
     /**
      * A kliensek kapcsolatanak megszakadasakor eltavolitja oket a listabol.

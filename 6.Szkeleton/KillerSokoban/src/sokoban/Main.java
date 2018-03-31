@@ -314,7 +314,7 @@ public class Main {
         String line="";
 
         while (!line.toUpperCase().equals("Q")) {
-	        System.out.print("\nOpci�k: \n 1, Start szerver <S>\n 2, Kapcsolodas <K>\n 3, Quit <Q>\n");
+	        System.out.print("[MENU]: Opciok: \n[MENU]:  1, Start szerver <S>\n[MENU]:  2, Kapcsolodas <K>\n[MENU]:  3, Quit <Q>\n[MENU]: ");
 	    	try {
 				 line = br.readLine();
 
@@ -322,6 +322,7 @@ public class Main {
 				{
 				case "S": {j = new Jatek(); j.SzerverMod();} break;
 				case "K": {j = new Jatek(); j.KliensMod();} break;
+				case "Q": System.exit(0); break;
 				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
