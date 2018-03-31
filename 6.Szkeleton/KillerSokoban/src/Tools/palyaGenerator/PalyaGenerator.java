@@ -57,7 +57,7 @@ public class PalyaGenerator {
                     Random random = new Random();
                     switch (random.nextInt(5)){
                         case 0:
-                            switch (random.nextInt(5)){
+                            switch (random.nextInt(3)){
                                 case 1:
                                     uresMezo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
                                     break;
@@ -79,7 +79,7 @@ public class PalyaGenerator {
                             palya[i] = lyuk.getID();
                             break;
                         case 3:
-                            switch (random.nextInt(5)){
+                            switch (random.nextInt(3)){
                                 case 1:
                                     celhely.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
                                     break;
@@ -92,7 +92,7 @@ public class PalyaGenerator {
                             palya[i] = celhely.getID();
                             break;
                         case 4:
-                            switch (random.nextInt(5)){
+                            switch (random.nextInt(3)){
                                 case 1:
                                     csapdaajto.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
                                     break;
@@ -108,7 +108,7 @@ public class PalyaGenerator {
                             palya[i] = csapdaajto.getID();
                             break;
                         case 5:
-                            switch (random.nextInt(5)){
+                            switch (random.nextInt(3)){
                                 case 1:
                                     kapcsolo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
                                     break;
@@ -129,6 +129,7 @@ public class PalyaGenerator {
                     fal.Enged();
                     csapdaajto.Enged();
                     lyuk.Enged();
+                    celhely.Enged();
                     //END_OF_CREATION
                 }
             }
