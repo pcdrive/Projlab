@@ -1,9 +1,16 @@
 package Tools.palyaGenerator;
 
 import server.PalyaAdat;
+import sokoban.Irany;
+import sokoban.leptethetok.Doboz;
+import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
 import sokoban.mezok.*;
 
-import java.io.*;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.Random;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -33,24 +40,105 @@ public class PalyaGenerator {
             FileOutputStream fileOutputStream = new FileOutputStream("palya.mocsi");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             int[] palya = new int[x*y];
-//            for(int i = 0; i<x; i++){
-//                for(int j = 0; j<y; j++){
-//                    palya[i* Data.PalyaX + j] = fal.getID();
-//                }
-//            }
 
+            for(int i = 0; i<x; i++){
+                palya[i] = fal.getID();
+                palya[24-i] = fal.getID();
+            }
+            for(int i = 0; i<y; i++){
+                palya[i*x] = fal.getID();
+                palya[(i+1)*x-1] = fal.getID();
+            }
 
+            for(int i = 0; i<palya.length; i++){
+                if(palya[i] != fal.getID()){
+                    //START_OF_CREATION
 
-            PalyaAdat kliensAdat = new PalyaAdat(0,palya, null, x, y);
-            objectOutputStream.writeObject(kliensAdat);
+                    Random random = new Random();
+                    switch (random.nextInt(5)){
+                        case 0:
+                            switch (random.nextInt(5)){
+                                case 1:
+                                    uresMezo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    break;
+                                case 2:
+                                    uresMezo.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
+                                    break;
+                                case 3:
+                                    uresMezo.Fogad(1, Irany.BALRA, new JeloltDoboz(null, null), null);
+                                    break;
+                                default:
+                                        break;
+                            }
+                            palya[i] = uresMezo.getID();
+                            break;
+                        case 1:
+                            palya[i] = fal.getID();
+                            break;
+                        case 2:
+                            palya[i] = lyuk.getID();
+                            break;
+                        case 3:
+                            switch (random.nextInt(5)){
+                                case 1:
+                                    celhely.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    break;
+                                case 2:
+                                    celhely.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
+                                    break;
+                                default:
+                                    break;
+                            }
+                            palya[i] = celhely.getID();
+                            break;
+                        case 4:
+                            switch (random.nextInt(5)){
+                                case 1:
+                                    csapdaajto.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    break;
+                                case 2:
+                                    csapdaajto.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
+                                    break;
+                                case 3:
+                                    csapdaajto.Fogad(1, Irany.BALRA, new JeloltDoboz(null, null), null);
+                                    break;
+                                default:
+                                    break;
+                            }
+                            palya[i] = csapdaajto.getID();
+                            break;
+                        case 5:
+                            switch (random.nextInt(5)){
+                                case 1:
+                                    kapcsolo.Fogad(1, Irany.BALRA, new Jatekos(null, null, null), null);
+                                    break;
+                                case 2:
+                                    kapcsolo.Fogad(1, Irany.BALRA, new Doboz(null, null), null);
+                                    break;
+                                case 3:
+                                    kapcsolo.Fogad(1, Irany.BALRA, new JeloltDoboz(null, null), null);
+                                    break;
+                                default:
+                                    break;
+                            }
+                            palya[i] = kapcsolo.getID();
+                            break;
+                    }
+                    uresMezo.Enged();
+                    kapcsolo.Enged();
+                    fal.Enged();
+                    csapdaajto.Enged();
+                    lyuk.Enged();
+                    //END_OF_CREATION
+                }
+            }
+
+            PalyaAdat palyaAdat = new PalyaAdat(0,palya, null, x, y);
+            objectOutputStream.writeObject(palyaAdat);
 
             objectOutputStream.close();
             fileOutputStream.close();
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
