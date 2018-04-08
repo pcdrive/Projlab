@@ -21,5 +21,7 @@ public enum Irany {
     FEL,
     LE,
     JOBBRA,
-    BALRA
+    BALRA,
+    MEZ,
+    OLAJ
 }

@@ -159,12 +159,24 @@ public class UresMezo {
     /**
      * Olajositja a mezot. Jobban csuszik tole.
      */
-    public void AddOlaj() {olaj++; surlodas*=0.8f;}
+    public void AddOlaj() 
+    {
+        Printer.PrintTabIn("AddOlaj()");
+    	olaj++;
+    	surlodas*=0.8f;
+        Printer.PrintTabIn("return");    	
+    }
     
     /**
      * Mezesiti a mezot. Jobban tapad tole.
      */
-    public void AddMez() {mez++; surlodas*=1.2f;}
+    public void AddMez() 
+    {
+        Printer.PrintTabIn("AddMez()");
+    	mez++;
+    	surlodas*=1.2f;
+        Printer.PrintTabIn("return");        	
+    }
 
     /**
      * A mezo surlodasat adja vissza.
