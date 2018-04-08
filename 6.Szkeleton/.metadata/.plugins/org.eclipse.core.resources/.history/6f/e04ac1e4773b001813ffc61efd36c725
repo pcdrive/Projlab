@@ -60,7 +60,7 @@ public class Palya {
         		mezok[i-1].SetSzomszed(Irany.JOBBRA, mezok[i]);
         		mezok[i].SetSzomszed(Irany.BALRA, mezok[i-1]);
         	}
-        	if (i>Data.PalyaX) 
+        	if (i>Data.PalyaY) 
         	{
         		mezok[i-Data.PalyaX].SetSzomszed(Irany.LE, mezok[i]);
         		mezok[i].SetSzomszed(Irany.FEL, mezok[i-Data.PalyaX]);        		
