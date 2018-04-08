@@ -76,6 +76,7 @@ public class Jatek {
             }
             System.out.println();
         }
+		System.out.println();
     }
     
     /**
