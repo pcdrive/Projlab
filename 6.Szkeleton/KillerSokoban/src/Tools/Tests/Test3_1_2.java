@@ -1,3 +1,5 @@
+package Tools.Tests;
+public class Test3_1_2 {}
 //package Tools.Tests;
 //
 //import Tools.Printer;

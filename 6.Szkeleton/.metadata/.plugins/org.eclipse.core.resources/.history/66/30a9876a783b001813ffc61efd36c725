@@ -1,5 +1,3 @@
-package Test;
-public class Test_2 {}
 //package Test;
 //
 //import Tools.Printer;
@@ -8,14 +6,14 @@ public class Test_2 {}
 //import sokoban.Irany;
 //import sokoban.Jatek;
 //import sokoban.Palya;
+//import sokoban.leptethetok.Doboz;
 //import sokoban.leptethetok.Jatekos;
 //import sokoban.mezok.*;
 //
 //
-//public class Test_2 {
-//
+//public class Test_3 {
 //    @Test
-//    public void Test_2_1_1() {
+//    public void Test_3_1_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        UresMezo celmezo1 = new UresMezo();
@@ -23,22 +21,22 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
 //        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> UresMezo");
-//        System.out.println("  UresMezo      UresMezo");
+//        System.out.println("  Jatekos -===> Doboz -===> UresMezo");
+//        System.out.println("  UresMezo     UresMezo");
 //
-//        System.out.println("<========================= START OF TEST_2_1_1 =========================>");
+//        System.out.println("<======================== START OF TEST_3_1_1 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
 //    @Test
-//    public void Test_2_1_2() {
+//    public void Test_3_1_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        UresMezo celmezo1 = new UresMezo();
@@ -47,22 +45,22 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
 //        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> Kapcsolo");
-//        System.out.println("  UresMezo      UresMezo");
+//        System.out.println("  Jatekos -===> Doboz -===> Kapcsolo");
+//        System.out.println("  UresMezo     UresMezo");
 //
-//        System.out.println("<========================= START OF TEST_2_1_2 =========================>");
+//        System.out.println("<======================== START OF TEST_3_1_2 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
 //    @Test
-//    public void Test_2_1_3() {
+//    public void Test_3_1_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        UresMezo celmezo1 = new UresMezo();
@@ -70,22 +68,22 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
 //        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> Lyuk");
-//        System.out.println("  UresMezo      UresMezo");
+//        System.out.println("  Jatekos -===> Doboz -===> Lyuk");
+//        System.out.println("  UresMezo     UresMezo");
 //
-//        System.out.println("<========================= START OF TEST_2_1_3 =========================>");
+//        System.out.println("<======================== START OF TEST_3_1_3 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
 //    @Test
-//    public void Test_2_1_4() {
+//    public void Test_3_1_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        UresMezo celmezo1 = new UresMezo();
@@ -93,22 +91,22 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
 //        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> Fal");
-//        System.out.println(" UresMezo      UresMezo");
+//        System.out.println("  Jatekos -===> Doboz -===> Fal");
+//        System.out.println("  UresMezo     UresMezo");
 //
-//        System.out.println("<========================= START OF TEST_2_1_4 =========================>");
+//        System.out.println("<======================== START OF TEST_3_1_4 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
 //    @Test
-//    public void Test_2_2_1() {
+//    public void Test_3_2_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        Kapcsolo celmezo1 = new Kapcsolo();
@@ -117,22 +115,22 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
 //        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> UresMezo");
+//        System.out.println("  Jatekos -===> Doboz -===> UresMezo");
 //        System.out.println("  UresMezo     Kapcsolo");
 //
-//        System.out.println("<========================= START OF TEST_2_2_1 =========================>");
+//        System.out.println("<======================== START OF TEST_3_2_1 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
 //    @Test
-//    public void Test_2_2_2() {
+//    public void Test_3_2_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        Kapcsolo celmezo1 = new Kapcsolo();
@@ -142,22 +140,22 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
 //        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> Kapcsolo");
+//        System.out.println("  Jatekos -===> Doboz -===> Kapcsolo");
 //        System.out.println("  UresMezo     Kapcsolo");
 //
-//        System.out.println("<========================= START OF TEST_2_2_2 =========================>");
+//        System.out.println("<======================== START OF TEST_3_2_2 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
 //    @Test
-//    public void Test_2_2_3() {
+//    public void Test_3_2_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        Kapcsolo celmezo1 = new Kapcsolo();
@@ -166,22 +164,22 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
 //        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> Lyuk");
+//        System.out.println("  Jatekos -===> Doboz -===> Lyuk");
 //        System.out.println("  UresMezo     Kapcsolo");
 //
-//        System.out.println("<========================= START OF TEST_2_2_3 ====(====================>");
+//        System.out.println("<======================== START OF TEST_3_2_3 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
 //    @Test
-//    public void Test_2_2_4() {
+//    public void Test_3_2_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
 //        Kapcsolo celmezo1 = new Kapcsolo();
@@ -190,15 +188,14 @@ public class Test_2 {}
 //        Jatekos jatekos1 = new Jatekos("jatekos1", new Palya(new Szerver(new Jatek(), null), null), kiindulomezo);
 //        kiindulomezo.SetSzomszed(Irany.FEL, celmezo1);
 //        celmezo1.SetSzomszed(Irany.FEL, celmezo2);
-//        Jatekos leptetheto = new Jatekos("jatekos2", new Palya(new Szerver(new Jatek(), null), null), celmezo1);
+//        Doboz leptetheto = new Doboz(new Palya(new Szerver(new Jatek(), null), null), celmezo1);
 //        celmezo1.Fogad(10,null, leptetheto, null);
 //        System.out.println("");
-//        System.out.println("<============================= DESCRIPTION =============================>");
 //
-//        System.out.println("  Jatekos -===> Jatekos -===> Fal");
+//        System.out.println("  Jatekos -===> Doboz -===> Fal");
 //        System.out.println("  UresMezo     Kapcsolo");
 //
-//        System.out.println("<========================= START OF TEST_2_2_4 =========================>");
+//        System.out.println("<======================== START OF TEST_3_2_4 ========================>");
 //        Printer.EnablePrint();
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
