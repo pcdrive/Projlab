@@ -107,9 +107,10 @@ public class Jatek {
     	szerver = new Szerver(this, port);
     	szerver.Fut(line1);
 
-        System.out.print("[SERVER]: \n[SERVER]: Any input to start the game: ");
-        br.readLine();
-        
+		do {
+			System.out.print("[SERVER]: \n[SERVER]: Type \"start\" to start the game: ");
+		}while(!br.readLine().equals("start"));
+
         szerver.Start(name);
 	
 		while (fut) 
