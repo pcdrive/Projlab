@@ -37,7 +37,7 @@ public class Jatekos extends Leptetheto {
     public Jatekos(String nev, Palya p, UresMezo m) {
         super(p, m);
         this.nev = nev;
-        ero = 4;
+        ero = 1;
         status = jatekosSzam++;
     }
 
