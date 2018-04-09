@@ -164,7 +164,7 @@ public class UresMezo {
         Printer.PrintTabIn("AddOlaj()");
     	olaj++;
     	surlodas*=0.8f;
-        Printer.PrintTabIn("return");    	
+        Printer.PrintTabOut("return");
     }
     
     /**
@@ -175,7 +175,7 @@ public class UresMezo {
         Printer.PrintTabIn("AddMez()");
     	mez++;
     	surlodas*=1.2f;
-        Printer.PrintTabIn("return");        	
+        Printer.PrintTabOut("return");
     }
 
     /**
