@@ -103,7 +103,9 @@ public class Palya {
             }
         }
 
-        System.out.print("Kapcsolo, csapdaajto összerendelések");
+        if (pa.csapdak.length > 0) {
+            System.out.print("Kapcsolo, csapdaajto összerendelések");
+        }
         Kapcsolo kapcsolo = null;
         for (int i = 0; i < pa.csapdak.length; i++) {
             int y = pa.csapdak[i] / Data.PalyaX;
