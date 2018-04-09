@@ -150,7 +150,7 @@ public class Jatek {
 	        System.out.print("[Client]: \n[Client]: Jatekos neve: ");
 	        name = br.readLine();
 	        
-	        System.out.print("[Client]: \n[Client]: Host IP (3 digit numbers in n:n:n:n format): ");
+	        System.out.print("[Client]: \n[Client]: Host IP: ");
 	        line1 = br.readLine();
 	        
 	        System.out.print("[Client]: \n[Client]: Port: ");
