@@ -77,6 +77,11 @@ public class Jatek {
             System.out.println();
         }
 		System.out.println();
+        for(int i = 0; i<kliensAdat.pontok.getHossz(); i++){
+        	Pont pont = kliensAdat.pontok.getPont(i);
+        	System.out.print(pont.getNev() + ": " + pont.getPont() + "\t");
+		}
+		System.out.println();
     }
     
     /**

@@ -1,0 +1,706 @@
+
+C:\Users\Dragon\Documents\GitHub\Projlab\JARs>java -jar KillerSokoban.jar 
+[MENU]: Opciok: 
+[MENU]:  1, Start szerver <S>
+[MENU]:  2, Kapcsolodas <K>
+[MENU]:  3, Quit <Q>
+[MENU]: [SERVER]: 
+[SERVER]:  SZERVER MOD [SERVER]: 
+[SERVER]: Jatekos neve: [SERVER]: 
+[SERVER]: Port: [SERVER]: 
+[SERVER]: File path: [SERVER]: Lehetséges játékésok száma: 2
+[SERVER]: 
+[SERVER]: Type "start" to start the game: 
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 10000000 20000000 00000000 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@df9c2c
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 10000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 00000000 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1869c7
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 10000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 00000000 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@27f75c
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 10000000 00000000 00001000
+ 00001000 00000000 20000000 00000000 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@12563fc
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000000 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000010 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000020 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000030 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000040 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000050 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000060 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000070 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000080 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		AddMez()
+		 return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 10000090 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@27f75c
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 10000000 00000000 00001000
+ 00001000 00000000 20000000 00000090 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1869c7
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 10000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 00000090 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@df9c2c
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 10000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 20000000 00000090 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1bbb348
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 10000000 20000000 00000090 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@fcb2a9
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+					Doboz	Tol(float, float, Irany, Jatekos)
+						UresMezo	GetSzomszed(Irany)
+						 Return: sokoban.mezok.UresMezo@12563fc
+						UresMezo	Fogad(Irany, Doboz, Jatekos)
+						 Return: true
+						UresMezo	Enged()
+						 Return
+					 Return: true
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 10000000 20000090 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@12563fc
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+					Doboz	Tol(float, float, Irany, Jatekos)
+					 Return: false
+				 Return: false
+			 Return: false
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 10000000 20000090 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+
+C:\Users\Dragon\Documents\GitHub\Projlab\JARs>java -jar KillerSokoban.jar 
+[MENU]: Opciok: 
+[MENU]:  1, Start szerver <S>
+[MENU]:  2, Kapcsolodas <K>
+[MENU]:  3, Quit <Q>
+[MENU]: [SERVER]: 
+[SERVER]:  SZERVER MOD [SERVER]: 
+[SERVER]: Jatekos neve: [SERVER]: 
+[SERVER]: Port: [SERVER]: 
+[SERVER]: File path: [SERVER]: Lehetséges játékésok száma: 2
+[SERVER]: 
+[SERVER]: Type "start" to start the game: 
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 10000000 30100000 00003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1b81237
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+					JeloltDoboz	Tol(float, float, Irany, Jatekos)
+						UresMezo	GetSzomszed(Irany)
+						 Return: sokoban.mezok.Celhely@17ffe30
+						Celhely	Fogad(Irany,JeloltDoboz,Jatekos)
+							UresMezo	Fogad(Irany, JeloltDoboz, Jatekos)
+							 Return: true
+							JeloltDoboz	getJel()
+							 Return true
+							JeloltDoboz	JeletTorol()
+							 Return
+							Nova	PontotKap()
+								Palya	PontotKap(Jatekos)
+									Nova	getNev()
+									 Return: Nova
+									Pontok	PontotKap(String)
+									 Return
+								 Return
+							 Return
+						 Return: true
+						UresMezo	Enged()
+						 Return
+					 Return: true
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 10000000 30003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1407947
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 10000000 00000000 00000000 00001000
+ 00001000 00000000 00000000 30003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@42f40b
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 10000000 00000000 00001000
+ 00001000 00000000 00000000 30003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1387c1e
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 10000000 00001000
+ 00001000 00000000 00000000 30003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1548db7
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 00000000 30003100 10000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.Celhely@17ffe30
+				Celhely	Fogad(Irany, Jatekos, Jatekos)
+					UresMezo	Fogad(Irany, Jatekos, Jatekos)
+						JeloltDoboz	Tol(float, float, Irany, Jatekos)
+							UresMezo	GetSzomszed(Irany)
+							 Return: sokoban.mezok.UresMezo@1b81237
+							UresMezo	Fogad(Irany, JeloltDoboz, Jatekos)
+							 Return: true
+							UresMezo	Enged()
+							 Return
+						 Return: true
+					 Return: true
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 30000000 10003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@42f40b
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 10000000 00000000 00001000
+ 00001000 00000000 30000000 00003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1407947
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 10000000 00000000 00000000 00001000
+ 00001000 00000000 30000000 00003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1c45b1b
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 10000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 30000000 00003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@6d0b44
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 10000000 30000000 00003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+
+	Palya	Leptet(Irany, String)
+		Nova	getNev()
+		 Return: Nova
+		Nova	Lepes(Irany)
+			Nova	Tol(Irany, Jatekos)
+				UresMezo	GetSzomszed(Irany)
+				 Return: sokoban.mezok.UresMezo@1b81237
+				UresMezo	Fogad(Irany, Jatekos, Jatekos)
+					JeloltDoboz	Tol(float, float, Irany, Jatekos)
+						UresMezo	GetSzomszed(Irany)
+						 Return: sokoban.mezok.Celhely@17ffe30
+						Celhely	Fogad(Irany,JeloltDoboz,Jatekos)
+							UresMezo	Fogad(Irany, JeloltDoboz, Jatekos)
+							 Return: true
+							JeloltDoboz	getJel()
+							 Return false
+						 Return: true
+						UresMezo	Enged()
+						 Return
+					 Return: true
+				 Return: true
+				UresMezo	Enged()
+				 Return
+			 Return: true
+			Palya	Vegellenorzes()
+				Doboz	Vege()
+				 Return: true
+			 Return
+		 Return
+	 Return
+ 00001000 00001000 00001000 00001000 00001000 00001000
+ 00001000 00000000 00000000 00000000 00000000 00001000
+ 00001000 00000000 10000000 30003100 00000000 00001000
+ 00001000 00001000 00001000 00001000 00001000 00001000
+
+	Pontok	getHossz()
+	 Return: 0
+

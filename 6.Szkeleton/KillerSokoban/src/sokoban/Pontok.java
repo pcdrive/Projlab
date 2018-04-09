@@ -67,6 +67,12 @@ public class Pontok implements Serializable{
         return 0;
     }
 
+    public Pont getPont(int idx) {
+        Printer.PrintTabIn("Pontok" + '\t' + "getPont(int)");
+        Printer.PrintTabOut("Return: pontok.get(" + idx + ")");
+        return pontok.get(idx);
+    }
+
     /**
      * A pontok listajanak hossza.
      *
@@ -81,9 +87,10 @@ public class Pontok implements Serializable{
     /**
      * A pontok listajahoz ad elemet.
      *
-     * @param nrv A lista uj eleme, a jatekos neve.
+     * @param nev A lista uj eleme, a jatekos neve.
      */
     public void AddJatekos(String nev) {
+        pontok.add(new Pont(nev));
         Printer.PrintTabIn("Pontok" + '\t' + "AddJatekos(String)");
     }
 
