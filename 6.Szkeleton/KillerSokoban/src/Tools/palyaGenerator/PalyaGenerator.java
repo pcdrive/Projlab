@@ -33,7 +33,7 @@ public class PalyaGenerator {
     public static void main(String[] args) {
         try {
             int x = 5;
-            int y = 3;
+            int y = 5;
             int csapdaajtok[] = new int[2];
             FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\Dragon\\Documents\\GitHub\\Projlab\\JARs\\palya.mocsi");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
@@ -55,11 +55,10 @@ public class PalyaGenerator {
             }
 
             uresMezo.Fogad(0, null, new Jatekos(null, null, null), null);
-            palya[6] = uresMezo.getID();
+            palya[11] = palya[13] = uresMezo.getID();
             uresMezo.Enged();
             uresMezo.Fogad(0, null, new Doboz(null,null), null);
-            palya[7] = uresMezo.getID();
-            palya[8] = lyuk.getID();
+            palya[12] = uresMezo.getID();
 
 //
 //            for (int i = 0; i < palya.length; i++) {
