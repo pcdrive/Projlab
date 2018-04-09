@@ -103,17 +103,19 @@ public class Palya {
             }
         }
 
-        System.out.print("Kapcsolo, csapdaajto összerendelések");
-        Kapcsolo kapcsolo = null;
-        for (int i = 0; i < pa.csapdak.length; i++) {
-            int y = pa.csapdak[i] / Data.PalyaX;
-            if (mezok[pa.csapdak[i]].getID() / 1000 % 100 == 5) {
-                kapcsolo = (Kapcsolo) mezok[pa.csapdak[i]];
-                System.out.println();
-                System.out.print("[" + (pa.csapdak[i] + 1 - y * Data.PalyaX) + ";" + (y + 1) + "]: ");
-            } else if (mezok[pa.csapdak[i]].getID() / 1000 % 100 == 4) {
-                kapcsolo.AddCsapda((Csapdaajto) mezok[pa.csapdak[i]]);
-                System.out.print("[" + (pa.csapdak[i] + 1 - y * Data.PalyaX) + ";" + (y + 1) + "];");
+        if (pa.csapdak != null) {
+            System.out.print("Kapcsolo, csapdaajto összerendelések");
+            Kapcsolo kapcsolo = null;
+            for (int i = 0; i < pa.csapdak.length; i++) {
+                int y = pa.csapdak[i] / Data.PalyaX;
+                if (mezok[pa.csapdak[i]].getID() / 1000 % 100 == 5) {
+                    kapcsolo = (Kapcsolo) mezok[pa.csapdak[i]];
+                    System.out.println();
+                    System.out.print("[" + (pa.csapdak[i] + 1 - y * Data.PalyaX) + ";" + (y + 1) + "]: ");
+                } else if (mezok[pa.csapdak[i]].getID() / 1000 % 100 == 4) {
+                    kapcsolo.AddCsapda((Csapdaajto) mezok[pa.csapdak[i]]);
+                    System.out.print("[" + (pa.csapdak[i] + 1 - y * Data.PalyaX) + ";" + (y + 1) + "];");
+                }
             }
         }
         System.out.println();
