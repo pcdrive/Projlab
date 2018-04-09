@@ -109,7 +109,7 @@ public class Jatek {
 
 		do {
 			System.out.print("[SERVER]: \n[SERVER]: Type \"start\" to start the game: ");
-		}while(!br.readLine().equals("start"));
+		}while(!br.readLine().toLowerCase().equals("start"));
 
         szerver.Start(name);
 	
