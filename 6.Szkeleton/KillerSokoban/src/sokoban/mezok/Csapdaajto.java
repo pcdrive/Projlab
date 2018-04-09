@@ -39,6 +39,7 @@ public class Csapdaajto extends UresMezo {
      */
     public void Nyit() {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Nyit()");
+        nyitva = true;
         leptetheto.Halal();
         Enged();
         Printer.PrintTabOut("Return");
@@ -93,15 +94,13 @@ public class Csapdaajto extends UresMezo {
     @Override
     public boolean Fogad(float ero, Irany i, Jatekos aktj, Jatekos j) {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
+        boolean success = super.Fogad(ero, i, aktj, j);
         if (nyitva) {
             aktj.Halal();
-            Printer.PrintTabOut("Return: " + Boolean.toString(true));
-            return true;
-        } else {
-            boolean success = super.Fogad(ero, i, aktj, j);
-            Printer.PrintTabOut("Return: " + Boolean.toString(success));
-            return success;
+            Enged();
         }
+        Printer.PrintTabOut("Return: " + Boolean.toString(success));
+        return success;
     }
 
     /**
