@@ -116,14 +116,12 @@ public class Jatek {
 		{
 			try {
 				String com = br.readLine();
-				switch (com.toLowerCase()) 
+				switch (com) 
 				{
 					case "w" : { szerver.Leptet(Irany.FEL, name);} break;
 					case "a" : { szerver.Leptet(Irany.BALRA, name); }  break;
 					case "s" : { szerver.Leptet(Irany.LE, name); }  break;
 					case "d" : { szerver.Leptet(Irany.JOBBRA, name); }  break;
-					case "m" : { szerver.Leptet(Irany.MEZ, name); }  break;
-					case "o" : { szerver.Leptet(Irany.OLAJ, name); }  break;
 					case "exit" : {fut= false; szerver.End();} break;
 				}
 			} catch (Exception e) {}
@@ -185,14 +183,12 @@ public class Jatek {
 			try {
 				String com = br.readLine();
 				
-				switch (com.toLowerCase()) 
+				switch (com) 
 				{
 					case "w" : { sendParancs(Irany.FEL);}  break;
 					case "a" : { sendParancs(Irany.BALRA);} break;
 					case "s" : { sendParancs(Irany.LE);} break;
 					case "d" : { sendParancs(Irany.JOBBRA);} break;
-					case "m" : { sendParancs(Irany.MEZ);} break;
-					case "o" : { sendParancs(Irany.OLAJ);} break;
 					case "exit" : {kOlvaso.Kill(); fut=false; EndGame(); out.close();} break;
 				}
 			} catch (Exception e) {}

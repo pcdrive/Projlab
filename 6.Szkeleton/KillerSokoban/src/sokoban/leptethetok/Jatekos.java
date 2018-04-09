@@ -58,6 +58,18 @@ public class Jatekos extends Leptetheto {
      * @param i Irany amerre lepni akarunk
      */
     public void Lepes(Irany i) {
+    	
+    	if (i==Irany.MEZ) 
+    	{
+    		mezo.AddMez();
+    		return;
+    	}
+    	if (i==Irany.OLAJ) 
+    	{
+    		mezo.AddOlaj();
+    		return;
+    	}
+    	
         Printer.PrintTabIn(nev + '\t' + "Lepes(Irany)");
 
         Tol(ero, 0, i, this);
