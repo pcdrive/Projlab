@@ -16,8 +16,12 @@ package sokoban;
 
 import Tools.Printer;
 import data.Data;
-import server.*;
-import sokoban.leptethetok.*;
+import server.KliensAdat;
+import server.PalyaAdat;
+import server.Szerver;
+import sokoban.leptethetok.Doboz;
+import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
 import sokoban.mezok.*;
 
 import java.util.LinkedList;
@@ -34,77 +38,96 @@ public class Palya {
     /**
      * Az osztaly konstruktora. Letrehozza a pontok osztalyt, �s beallitja a jatekot.
      */
-    public Palya(Szerver s, PalyaAdat k, String[] nevek) {
+    public Palya(Szerver s, PalyaAdat pa, String[] nevek) {
         szerver = s;
         pontok = new Pontok();
         dobozok = new LinkedList<Doboz>();
         jatekosok = new LinkedList<Jatekos>();
-        mezok = new UresMezo[k.palya.length];
-        
-        int num=0;
-        
-        for (int i=0; i<mezok.length;i++) 
-        {
-        	switch (((int)(k.palya[i]/1000))%100)
-        	{
-        		case 0: mezok[i] = new UresMezo(); break;
-        		case 1: mezok[i] = new Fal(); break;
-        		case 2: mezok[i] = new Lyuk(); break;
-        		case 3: mezok[i] = new Celhely(); break;
-        		case 4: mezok[i] = new Csapdaajto(); break;
-        		case 5: mezok[i] = new Kapcsolo(); break;
-        	}
-        	
-        	if (i>1) 
-        	{
-        		mezok[i-1].SetSzomszed(Irany.JOBBRA, mezok[i]);
-        		mezok[i].SetSzomszed(Irany.BALRA, mezok[i-1]);
-        	}
-        	if (i>Data.PalyaX) 
-        	{
-        		mezok[i-Data.PalyaX].SetSzomszed(Irany.LE, mezok[i]);
-        		mezok[i].SetSzomszed(Irany.FEL, mezok[i-Data.PalyaX]);        		
-        	}
+        mezok = new UresMezo[pa.palya.length];
 
-        	switch ((int)(k.palya[i]/10000000)) 
-        	{
-        		case 1: 
-	        		{
-	        			if (nevek.length!=num) 
-	        			{
-		        			Jatekos jatekos = new Jatekos(nevek[num++],this,mezok[i]);
-	        				mezok[i].Fogad(0, null, jatekos, null); 
-	        				jatekosok.add(jatekos);
-	        				pontok.AddJatekos(jatekos.getNev());
-        				} 
-	        		} break;
-        		case 2: 
-        			{
-        				Doboz doboz = new Doboz(this,  mezok[i]);
-        				mezok[i].Fogad(0, null, doboz, null); 
-        				dobozok.add(doboz);
-        			} break;
-        		case 3:
-	    			{
-	    				JeloltDoboz doboz = new JeloltDoboz(this,  mezok[i]);
-	    				mezok[i].Fogad(0, null, doboz, null); 
-	    				dobozok.add(doboz);
-	    			} break;
-        	}        	
+        int num = 0;
+
+        for (int i = 0; i < mezok.length; i++) {
+            switch (pa.palya[i] / 1000 % 100) {
+                case 0:
+                    mezok[i] = new UresMezo();
+                    break;
+                case 1:
+                    mezok[i] = new Fal();
+                    break;
+                case 2:
+                    mezok[i] = new Lyuk();
+                    break;
+                case 3:
+                    mezok[i] = new Celhely();
+                    break;
+                case 4:
+                    mezok[i] = new Csapdaajto();
+                    break;
+                case 5:
+                    mezok[i] = new Kapcsolo();
+                    break;
+            }
+
+            if (i > 1) {
+                mezok[i - 1].SetSzomszed(Irany.JOBBRA, mezok[i]);
+                mezok[i].SetSzomszed(Irany.BALRA, mezok[i - 1]);
+            }
+            if (i > Data.PalyaX) {
+                mezok[i - Data.PalyaX].SetSzomszed(Irany.LE, mezok[i]);
+                mezok[i].SetSzomszed(Irany.FEL, mezok[i - Data.PalyaX]);
+            }
+
+            switch ((int) (pa.palya[i] / 10000000)) {
+                case 1: {
+                    if (nevek.length != num) {
+                        Jatekos jatekos = new Jatekos(nevek[num++], this, mezok[i]);
+                        mezok[i].Fogad(0, null, jatekos, null);
+                        jatekosok.add(jatekos);
+                        pontok.AddJatekos(jatekos.getNev());
+                    }
+                }
+                break;
+                case 2: {
+                    Doboz doboz = new Doboz(this, mezok[i]);
+                    mezok[i].Fogad(0, null, doboz, null);
+                    dobozok.add(doboz);
+                }
+                break;
+                case 3: {
+                    JeloltDoboz doboz = new JeloltDoboz(this, mezok[i]);
+                    mezok[i].Fogad(0, null, doboz, null);
+                    dobozok.add(doboz);
+                }
+                break;
+            }
         }
 
-		Printer.EnablePrint();
-    	szerver.SendAdat(new KliensAdat(getInts(), pontok, Data.PalyaX, Data.PalyaY));
+        System.out.print("Kapcsolo, csapdaajto összerendelések");
+        Kapcsolo kapcsolo = null;
+        for (int i = 0; i < pa.csapdak.length; i++) {
+            int y = pa.csapdak[i] / Data.PalyaX;
+            if (mezok[pa.csapdak[i]].getID() / 1000 % 100 == 5) {
+                kapcsolo = (Kapcsolo) mezok[pa.csapdak[i]];
+                System.out.println();
+                System.out.print("[" + (pa.csapdak[i] + 1 - y * Data.PalyaX) + ";" + (y + 1) + "]: ");
+            } else if (mezok[pa.csapdak[i]].getID() / 1000 % 100 == 4) {
+                kapcsolo.AddCsapda((Csapdaajto) mezok[pa.csapdak[i]]);
+                System.out.print("[" + (pa.csapdak[i] + 1 - y * Data.PalyaX) + ";" + (y + 1) + "];");
+            }
+        }
+        System.out.println();
+
+        Printer.EnablePrint();
+        szerver.SendAdat(new KliensAdat(getInts(), pontok, Data.PalyaX, Data.PalyaY));
     }
 
-    private int[] getInts() 
-    {
-    	int[] res = new int[mezok.length];
-    	for (int i=0;i<Data.PalyaX*Data.PalyaY;i++) 
-    	{
-    		res[i] = mezok[i].getID();
-    	}
-    	return res;
+    private int[] getInts() {
+        int[] res = new int[mezok.length];
+        for (int i = 0; i < Data.PalyaX * Data.PalyaY; i++) {
+            res[i] = mezok[i].getID();
+        }
+        return res;
     }
 
     /**
@@ -123,7 +146,7 @@ public class Palya {
         }
         Printer.PrintTabOut("Return");
 
-    	szerver.SendAdat(new KliensAdat(getInts(), pontok, Data.PalyaX, Data.PalyaY));
+        szerver.SendAdat(new KliensAdat(getInts(), pontok, Data.PalyaX, Data.PalyaY));
     }
 
     /**
