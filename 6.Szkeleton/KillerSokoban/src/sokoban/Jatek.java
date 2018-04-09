@@ -97,7 +97,7 @@ public class Jatek {
         
     	String port = "";
         try {	        
-	        System.out.print("[SERVER]: \n[SERVER]: Port (4 digit number): ");
+	        System.out.print("[SERVER]: \n[SERVER]: Port: ");
 	        port = br.readLine();
         } catch (Exception e) {}
     	
