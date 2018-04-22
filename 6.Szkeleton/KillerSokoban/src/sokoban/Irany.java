@@ -15,7 +15,7 @@
 package sokoban;
 
 /**
- * Enum ami az iranyokat tarolja.
+ * Enum ami a parancslehetoseget tarolja.
  */
 public enum Irany {
     FEL,

@@ -32,8 +32,7 @@ public class Pontok implements Serializable{
     }
 
     /**
-     * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaly pontot kap
-     * metodusat.
+     * A jatekos pontszerzeset kezeli.
      *
      * @param nev A jatekos neve, aki a pontot kapja.
      */
@@ -49,10 +48,10 @@ public class Pontok implements Serializable{
     }
 
     /**
-     * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaly pontot kap
-     * metodusat.
+     * A jatekos pontjait kerdezi le.
      *
      * @param nev A jatekos neve.
+     * 
      * @return int A pontok szama.
      */
     public int getPont(String nev) {
@@ -67,6 +66,13 @@ public class Pontok implements Serializable{
         return 0;
     }
 
+    /**
+     * A jatekos pontjait kerdezi le.
+     *
+     * @param idx A jatekos sorszama a listaban.
+     * 
+     * @return int A pontok szama.
+     */
     public Pont getPont(int idx) {
         Printer.PrintTabIn("Pontok" + '\t' + "getPont(int)");
         Printer.PrintTabOut("Return: pontok.get(" + idx + ")");

@@ -100,23 +100,33 @@ public class Jatekos extends Leptetheto {
         Printer.PrintTabOut("Return");
     }
 
+    /**
+     * lekerdezi a tipusat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Tipus szama.
+     */
     @Override
     public int getTipus() {
         return 1;
     }
 
+    /**
+     * lekerdezi a statuszat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Statusz szama.
+     */
     @Override
     public int getStatus() {
         return status;
     }
 
     /**
-     * Az objektumot egy doboz tolta meg, és az ezzel valo interakciot kezeli.
+     * Az objektumot egy doboz tolta meg, es az ezzel valo interakciot kezeli.
      *
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
-     * @param i    Irany amerre a dobozt tolták
-     * @param j    Jatekos, aki tolást kezdte
+     * @param i    Irany amerre a dobozt toltak
+     * @param j    Jatekos, aki tolast kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     @Override
@@ -137,12 +147,12 @@ public class Jatekos extends Leptetheto {
     }
 
     /**
-     * Az objektumot egy jatekos tolta meg, és az ezzel valo interakciot kezeli.
+     * Az objektumot egy jatekos tolta meg, es az ezzel valo interakciot kezeli.
      *
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
-     * @param i    Irany amerre a dobozt tolták
-     * @param j    Jatekos, aki tolást kezdte
+     * @param i    Irany amerre a dobozt toltak
+     * @param j    Jatekos, aki tolast kezdte
      * @return boolean Annak az erteke, hogy a jatekos tolhato-e.
      */
     @Override

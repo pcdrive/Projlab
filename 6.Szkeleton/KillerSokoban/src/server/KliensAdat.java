@@ -26,8 +26,9 @@ public class KliensAdat extends BaseAdat {
      * informaciot hordozzak.
      * 
      * @param pa	Palya adatok (int ID-k).
-     * @param ID	jatekos azonositok.
      * @param po	A jatekosok pontjai.
+     * @param x	A palya szelessege.
+     * @param y	A palya hossza.
      */
     public KliensAdat(int[] pa, Pontok po, int x, int y) 
     {

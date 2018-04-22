@@ -39,6 +39,7 @@ public abstract class Leptetheto {
      *
      * @param i Irany amerre a dobozt tolt�k
      * @param j Jatekos, aki tol�st kezdte
+     * 
      * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
      */
     public abstract boolean Utkozik(float ero, float surl, Irany i, Jatekos j);
@@ -48,6 +49,7 @@ public abstract class Leptetheto {
      *
      * @param i Irany amerre a dobozt tolt�k
      * @param j Jatekos, aki tol�st kezdte
+     * 
      * @return boolean Annak az erteke, hogy a Leptetheto tolhato-e.
      */
     public abstract boolean Tol(float ero, float surl, Irany i, Jatekos j);
@@ -58,8 +60,18 @@ public abstract class Leptetheto {
      */
     public abstract void Halal();
 
+    /**
+     * lekerdezi a tipusat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Tipus szama.
+     */
     public int getTipus() {return 0;}
 
+    /**
+     * lekerdezi a statuszat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Statusz szama.
+     */
     public int getStatus() {return 0;}
 
 }

@@ -35,7 +35,7 @@ public class Csapdaajto extends UresMezo {
 
 
     /**
-     * Kinyitja az ajt�t, az erre a c�lra fentartott boolean erteket valtoztatva
+     * Kinyitja az ajtot, az erre a celra fentartott boolean erteket valtoztatva
      */
     public void Nyit() {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Nyit()");
@@ -46,7 +46,7 @@ public class Csapdaajto extends UresMezo {
     }
 
     /**
-     * Becsukja az ajt�t, az erre a c�lra fentartott boolean erteket valtoztatva
+     * Becsukja az ajtot, az erre a celra fentartott boolean erteket valtoztatva
      */
     public void Csuk() {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Csuk()");
@@ -63,6 +63,7 @@ public class Csapdaajto extends UresMezo {
      * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd  JeloltDoboz, ami a mezore kivan lepni
      * @param j   Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -89,6 +90,7 @@ public class Csapdaajto extends UresMezo {
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -113,6 +115,7 @@ public class Csapdaajto extends UresMezo {
      * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d   Doboz, ami a mezore kivan lepni
      * @param j   Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -128,7 +131,12 @@ public class Csapdaajto extends UresMezo {
             return success;
         }
     }
-
+    
+    /**
+     * Visszaadja a mezo aktualis ID azonositojat.
+     * 
+     * @return int ID szama.
+     */
     public int getID() {
         return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + (nyitva ? 1 : 0) * 100 + mez * 10 + olaj;
     }

@@ -34,7 +34,7 @@ public class Doboz extends Leptetheto {
     }
 
     /**
-     * A doboz mozgathatosagat kerdezi le.
+     * A doboz vegallapotat kerdezi le.
      *
      * @return boolean Annak az erteke, hogy mozgathato-e.
      */
@@ -54,23 +54,33 @@ public class Doboz extends Leptetheto {
         Printer.PrintTabOut("Return");
     }
 
+    /**
+     * lekerdezi a tipusat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Tipus szama.
+     */
     @Override
     public int getTipus() {
         return 2;
     }
 
+    /**
+     * lekerdezi a statuszat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Statusz szama.
+     */
     @Override
     public int getStatus() {
         return 0;
     }
 
     /**
-     * Az objektumot egy doboz tolta meg, ï¿½s az ezzel valo interakciot kezeli.
+     * Az objektumot egy doboz tolta meg, es az ezzel valo interakciot kezeli.
      *
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
-     * @param i    Irany amerre a dobozt toltï¿½k
-     * @param j    Jatekos, aki tolï¿½st kezdte
+     * @param i    Irany amerre a dobozt toltak
+     * @param j    Jatekos, aki tolíst kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override
@@ -99,12 +109,12 @@ public class Doboz extends Leptetheto {
     }
 
     /**
-     * Az objektumot egy jatekos tolta meg, ï¿½s az ezzel valo interakciot kezeli.
+     * Az objektumot egy jatekos tolta meg, ís az ezzel valo interakciot kezeli.
      *
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
-     * @param i    Irany amerre a dobozt toltï¿½k
-     * @param j    Jatekos, aki tolï¿½st kezdte
+     * @param i    Irany amerre a dobozt toltak
+     * @param j    Jatekos, aki tolíst kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override

@@ -13,7 +13,6 @@
 
 package server;
 
-import java.io.IOException;
 import java.io.ObjectInputStream;
 
 import data.Data;
@@ -41,7 +40,8 @@ public class KliensOlvaso extends Thread {
 
     /**
      * Az osztaly futtatando resze. A szal folyamatosan olvas a bemeneten,
-     * az erkezo adatokat, pedig rogton tovabbitja a jatek fele.
+     * az erkezo adatokat, pedig rogton tovabbitja a jatek fele. Halozati
+     * problema eseten bezarja a kapcsolatot es leallitja az olvasot.
      */
 	public void run() 
 	{
@@ -49,8 +49,8 @@ public class KliensOlvaso extends Thread {
 			in.readObject();
 			j.sendParancs(null);
 		} catch (Exception e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			j.KliensDC();
+			fut=false;
 		}
 		
 		while(fut) {
@@ -65,7 +65,8 @@ public class KliensOlvaso extends Thread {
 				} 
 	
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
+				j.KliensDC();
+				fut=false;
 			}		
 		}
 	}
@@ -74,11 +75,7 @@ public class KliensOlvaso extends Thread {
      * Az osztaly futasat allitja le, ezzel veget vetve a szalnak.
      */
 	public void Kill() {
-		fut = false; 
-		try {
-		in.close();
-		} catch (IOException e) {
-		} 
+		fut = false;
 		this. interrupt();
 	}
 	

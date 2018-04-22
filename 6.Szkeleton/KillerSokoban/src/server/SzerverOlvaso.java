@@ -38,8 +38,7 @@ public class SzerverOlvaso extends Thread {
     /**
      * Az osztaly futtatando resze. A szal folyamatosan olvas a bemeneten,
      * az erkezo adatokat, pedig rogton tovabbitja a jatek fele.
-     * Csatlakozasi 
-     * problema eseten kiveteti a kapcsolatot a szerver listajabol.
+     * Csatlakozasi problema eseten kiveteti a kapcsolatot a szerver listajabol.
      */
 	public void run() 
 	{

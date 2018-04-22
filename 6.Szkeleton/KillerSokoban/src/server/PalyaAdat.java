@@ -24,9 +24,11 @@ public class PalyaAdat extends BaseAdat {
      * Az osztaly konstruktora. Beallitja az attributumokat, amik az
      * informaciot hordozzak.
      *
-     * @param j 	Palya játékosainak száma.
+     * @param j 	Palya jatekosainak szama.
      * @param pa	Palya adatok (int ID-k).
-     * @param cs	kapcsolo-csapda osszerendeles.
+     * @param cs	Kapcsolo-csapda osszerendeles.
+     * @param x	A palya szelessege.
+     * @param y	A palya hossza.
      */
     public PalyaAdat(int j, int[] pa, int[] cs, int x, int y)
     {

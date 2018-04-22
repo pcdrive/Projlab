@@ -48,9 +48,11 @@ public class Szerver {
 
 
     /**
-     * Az osztaly konstruktora.
+     * Az osztaly konstruktora. letrehozza a a fifo csatornat a kesobbi parancsoknak, 
+     * a kapcsolatok listajat, 
      * 
-     * @param j A jatek osztï¿½ly referenciaja.
+     * @param j A jatek osztaly referenciaja.
+     * @param p A port szama, amin a beerkezo kapcsolatokat varjuk.
      */
 	public Szerver(Jatek j, String p) 
 	{
@@ -63,7 +65,11 @@ public class Szerver {
 		this.ip="127.0.0.1";
 		try {
 			this.port=Integer.parseInt(p);
-		} catch (Exception e) {}
+		} catch (Exception e) 
+		{
+			//ha ilyen van az gaz, mert akkor hibas ip ment at az ellenorzesen. ( de nem fog =) )
+    		System.out.println("Az IP nem helyes!");
+		}
 
 		try {
 			
@@ -71,14 +77,14 @@ public class Szerver {
 			socket.bind(new InetSocketAddress(ip,port));
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			//elviekben elofordulhat, de ez nem a mi hibank. ( nem fog =) )
+    		System.out.println("A socketet nem lehet letrehozni!");
 		}
 	}
 
     /**
-     * A jatekos leptetesenek folyamataban jatszik szerepet. tovabbitja a jatekosok kereset,
-     * a kliensek es a szerver jatekosatol.
+     * A jatekos leptetesenek folyamataban jatszik szerepet. A jatekosok kereseit
+     * teszi be a parancsokat FIFO cstornababa.
      *
      * @param i   Irany amerre a jatekost leptetni kell
      * @param nev  A jatekos neve.
@@ -103,7 +109,7 @@ public class Szerver {
      * A szerver jatekinditasert felelos fuggvenye. bezarja a lobbit, es elinditja a jatekot a
      * kivalasztott terkepfajl alapjan.
      * 
-     * @param name A szerver játékosának neve.
+     * @param name A szerver jatekosanak neve.
      */
 	public void Start(String name) 
 	{
@@ -142,8 +148,7 @@ public class Szerver {
 					try {
 						sleep(100);
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
+						// Aludni tudni kell....
 					}
 				}
 			}
@@ -153,7 +158,7 @@ public class Szerver {
 	}
 
     /**
-     * A szerver lobbiert felelos fuggvenye. Elindï¿½tja a lobbit, ami alatt
+     * A szerver lobbiert felelos fuggvenye. Elinditja a lobbit, ami alatt
      * a kliensek csatlakozni tudnak.
 	 *
 	 * @param file	File amibol az adatokat be kell tolteni.
@@ -163,7 +168,7 @@ public class Szerver {
 		try {
 			FileInputStream fileInputStream = null;
 			
-			fileInputStream = new FileInputStream(file + ".mocsi");
+			fileInputStream = new FileInputStream(file);
 			ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 
 			startadat = (PalyaAdat) objectInputStream.readObject();
@@ -187,7 +192,7 @@ public class Szerver {
 							kapcsolatok.add(c);
 							
 						} catch (IOException e) {
-							// TODO Auto-generated catch block
+							System.out.println("[SERVER]: Egy uj kliens csatlakozasa sikertelen!");
 						}
 
 					}
@@ -196,7 +201,8 @@ public class Szerver {
 			lobby.start();
 			if (!run) {lobby=null;}
 		} catch (IOException | ClassNotFoundException e) {
-			e.printStackTrace();
+			//tobb hibalehetoseg is van. nem fordul majd elo.
+			System.out.println("[SERVER]: A szerver futtatasa sikertelen!");
 		}
 	}
 
@@ -216,6 +222,8 @@ public class Szerver {
 
     /**
      * A kliensek kapcsolatanak megszakadasakor eltavolitja oket a listabol.
+     * 
+     * @param k A kapcsolat amit ki kell torolni a listabol.
      */
 	public void RemKapcs(Kapcsolat k)
 	{

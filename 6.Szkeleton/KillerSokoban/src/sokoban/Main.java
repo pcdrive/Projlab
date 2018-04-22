@@ -26,6 +26,8 @@ public class Main {
 
     /**
      * Main fuggveny, ami a jatekot futtatja.
+     * 
+     * @param args	parancssori argumentumok
      */
 	/*
     public static void main(String[] args) {
@@ -333,7 +335,7 @@ public class Main {
 	}
 
     /**
-     * A help parancs sz�vege
+     * A help parancs szovege
      */
 	public static void help() {
         System.out.println("exit : kil�p�s");

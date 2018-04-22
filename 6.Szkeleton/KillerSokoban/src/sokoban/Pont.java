@@ -27,6 +27,8 @@ public class Pont implements Serializable {
     /**
      * Az osztaly konstruktora. Eltarolja a nevet, akinek a pontjait tartalmazzuk,
      * valamint a pontjainak szamat nullara allitja.
+     * 
+     * @param nev	A jatekos neve, akinek a pontjait tartalmazni fogja.
      */
     public Pont(String nev) {
         this.nev = nev;
@@ -47,7 +49,7 @@ public class Pont implements Serializable {
     /**
      * Lekeri a pontok erteket.
      *
-     * @return String A pontok erteke.
+     * @return int A pontok erteke.
      */
     public int getPont() {
         Printer.PrintTabIn("Pont" + '\t' + "getPont()");

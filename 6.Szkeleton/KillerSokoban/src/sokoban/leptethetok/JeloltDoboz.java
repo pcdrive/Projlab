@@ -55,12 +55,12 @@ public class JeloltDoboz extends Doboz {
     }
 
     /**
-     * Az objektumot egy jatekos tolta meg, �s az ezzel valo interakciot kezeli.
+     * Az objektumot egy jatekos tolta meg, es az ezzel valo interakciot kezeli.
      *
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
-     * @param i    Irany amerre a dobozt tolt�k
-     * @param j    Jatekos, aki tol�st kezdte
+     * @param i    Irany amerre a dobozt toltak
+     * @param j    Jatekos, aki tolast kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override
@@ -87,12 +87,12 @@ public class JeloltDoboz extends Doboz {
     }
 
     /**
-     * Az objektumot egy doboz tolta meg, �s az ezzel valo interakciot kezeli.
+     * Az objektumot egy doboz tolta meg, es az ezzel valo interakciot kezeli.
      *
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
-     * @param i    Irany amerre a dobozt tolt�k
-     * @param j    Jatekos, aki tol�st kezdte
+     * @param i    Irany amerre a dobozt toltak
+     * @param j    Jatekos, aki tolast kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override
@@ -118,11 +118,21 @@ public class JeloltDoboz extends Doboz {
         return false;
     }
 
+    /**
+     * lekerdezi a tipusat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Tipus szama.
+     */
     @Override
     public int getTipus() {
         return 3;
     }
 
+    /**
+     * lekerdezi a statuszat a mezo ID-jenek eloallitasakor.
+     * 
+     * @return int Statusz szama.
+     */
     @Override
     public int getStatus() {
         return jel ? 1 : 0;

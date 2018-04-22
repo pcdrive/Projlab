@@ -30,7 +30,7 @@ public class Kapcsolat {
     /**
      * Az osztaly konstruktora.
      * 
-     * @param sz A szerver osztï¿½ly referenciaja.
+     * @param sz A szerver osztaly referenciaja.
      * @param sock A socket, amin a  kapcsolat letrejott.
      */
 	public Kapcsolat(Szerver sz, Socket sock) 
@@ -44,17 +44,20 @@ public class Kapcsolat {
 			in = new ObjectInputStream(socket.getInputStream());
 			rdr = new SzerverOlvaso(in,this);
 			rdr.start();
-			System.out.println("[SERVER]: Client connected!");
+			System.out.println("[SERVER]: A kapcsolat a klienssel letrejott!");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			System.out.println("[SERVER]: A kapcsolatot nem sikerult letrehozni!");
+			if (rdr!=null)
+				rdr.Kill();
+			sz.RemKapcs(this);
 		}
 	}
 
     /**
-     * A jatekos leptetesenek folyamataban jatszik szerepet. tovabbitja a jatekosok kereset,
+     * A jatekos leptetesenek folyamataban jatszik szerepet. tovabbitja a jatekosok kereset, 
      * a kliensek jatekosaitol.
      *
-     * @param i   Irany amerre a jatekost leptetni kell
+     * @param i   Parancs amit a jatekos vegrehajtani szeretne.
      * @param nev  A jatekos neve.
      */
 	public void Leptet(Irany i, String nev) 
@@ -64,7 +67,8 @@ public class Kapcsolat {
 
     /**
      * Az adatokat tovabbitja a kliensek fele. Csatlakozasi 
-     * problema eseten kiveteti a kapcsolatot a szerver listajabol.
+     * problema eseten kiveteti a kapcsolatot a szerver listajabol, 
+     * és leallitja az olvasot..
      *
      * @param k	Jatekadatok, amiket tovabbitani kell.
      */
@@ -74,15 +78,16 @@ public class Kapcsolat {
 			out.writeObject(k);
 			out.flush();
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			System.out.println("[SERVER]: Client disconnected!");
-			rdr.Kill();
+			System.out.println("[SERVER]: Megszakadt a kapcsolat a klienssel!");
+			if (rdr!=null)
+				rdr.Kill();
 			szerver.RemKapcs(this);
 		}
 	}
 
     /**
-     * A kliensek kapcsolatanak megszakadasakor eltavolittatja oket a szerver listajabol.
+     * A kliensek kapcsolatanak megszakadasakor eltavolittatja oket a szerver listajabol, 
+     * es leallitja az olvasot.
      */
 	public void remKapcs() 
 	{

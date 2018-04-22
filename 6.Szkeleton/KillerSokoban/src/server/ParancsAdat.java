@@ -28,7 +28,7 @@ public class ParancsAdat implements Serializable {
      * Az osztaly konstruktora. Beallitja az attributumokat, amik az
      * informaciot hordozzak.
      * 
-     * @param i	Az irany amibe a jatekos lepni szeretne.
+     * @param i	A parancs amit a jatekos vegrehajtani szeretne.
      * @param nev	A jatekos neve amibol azonosithato.
      */
 	public ParancsAdat(Irany i, String nev) 

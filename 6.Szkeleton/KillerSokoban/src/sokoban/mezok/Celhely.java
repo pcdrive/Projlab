@@ -24,7 +24,7 @@ public class Celhely extends UresMezo {
     private boolean jel;
 
     /**
-     * Az osztaly konstruktora. Be�ll�tja a jelet.
+     * Az osztaly konstruktora. Beallitja a jelet.
      */
     public Celhely() {
         super();
@@ -42,6 +42,7 @@ public class Celhely extends UresMezo {
      * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd  JeloltDoboz, ami a mezore kivan lepni
      * @param j   Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -71,6 +72,7 @@ public class Celhely extends UresMezo {
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -91,6 +93,7 @@ public class Celhely extends UresMezo {
      * @param i   Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d   Doboz, ami a mezore kivan lepni
      * @param j   Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -101,6 +104,11 @@ public class Celhely extends UresMezo {
         return success;
     }
 
+    /**
+     * Visszaadja a mezo aktualis ID azonositojat.
+     * 
+     * @return int ID szama.
+     */
     @Override
     public int getID() {
         return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + (jel ? 1 : 0) * 100 + mez * 10 + olaj;

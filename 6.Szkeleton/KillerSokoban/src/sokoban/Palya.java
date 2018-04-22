@@ -29,6 +29,7 @@ import java.util.LinkedList;
 @SuppressWarnings("unused")
 
 public class Palya {
+	
     private Szerver szerver;
     private UresMezo mezok[];
     private Pontok pontok;
@@ -36,7 +37,11 @@ public class Palya {
     private LinkedList<Jatekos> jatekosok;
 
     /**
-     * Az osztaly konstruktora. Letrehozza a pontok osztalyt, �s beallitja a jatekot.
+     * Az osztaly konstruktora. Letrehozza a pontok osztalyt, es beallitja a jatekot.
+     * 
+     * @param s	Szerver referencaja.
+     * @param pa	PalyaAdat ami alapja a palyat fel kell epiteni.
+     * @param nevek	A jatekosok neveinek listaja.
      */
     public Palya(Szerver s, PalyaAdat pa, String[] nevek) {
         szerver = s;
@@ -104,7 +109,7 @@ public class Palya {
         }
 
         if (pa.csapdak != null) {
-            System.out.print("Kapcsolo, csapdaajto összerendelések");
+            System.out.print("Kapcsolo, csapdaajto osszerendelesek");
             Kapcsolo kapcsolo = null;
             for (int i = 0; i < pa.csapdak.length; i++) {
                 int y = pa.csapdak[i] / Data.PalyaX;
@@ -124,6 +129,11 @@ public class Palya {
         szerver.SendAdat(new KliensAdat(getInts(), pontok, Data.PalyaX, Data.PalyaY));
     }
 
+    /**
+     * Osszegyujti a palya mezoinek ID azonositoit egy tombbe.
+     * 
+     * @return int[]	Az azonositok tombje.
+     */
     private int[] getInts() {
         int[] res = new int[mezok.length];
         for (int i = 0; i < Data.PalyaX * Data.PalyaY; i++) {
@@ -133,10 +143,10 @@ public class Palya {
     }
 
     /**
-     * A jatekos lepeset inditja el.
+     * A jatekos lepeset inditja el. Majd elkuldeti a jatekosoknak a palyaadatokat.
      *
-     * @param i   Irany amerre lepni akarunk
-     * @param nev A jatekos neve, azonositoja, akit leptetni akarunk.
+     * @param i   Parancs amit vegre kell hajtani.
+     * @param nev A jatekos neve, azonositoja.
      */
     public void Leptet(Irany i, String nev) {
         Printer.PrintTabIn("Palya" + '\t' + "Leptet(Irany, String)");
@@ -175,7 +185,7 @@ public class Palya {
     }
 
     /**
-     * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaj pontot kap
+     * A jatekos pontszerzeset kezeli. Ez tovabbhivja pontok osztaly pontot kap
      * metodusat.
      *
      * @param j A jatekos aki a pontot kapja.

@@ -40,6 +40,7 @@ public class Lyuk extends UresMezo {
      * @param i  Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param jd JeloltDoboz, ami a mezore kivan lepni
      * @param j  Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -60,6 +61,7 @@ public class Lyuk extends UresMezo {
      * @param i    Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param aktj Jatekos, ami a mezore kivan lepni
      * @param j    Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -80,6 +82,7 @@ public class Lyuk extends UresMezo {
      * @param i Irany amerre az esetleges mezon levo dolgot tolni kell
      * @param d Doboz, ami a mezore kivan lepni
      * @param j Jatekos, aki lepest tette.
+     * 
      * @return boolean Annak az erteke, hogy a lepni kivano objektum elvegezheti-e a lepest
      */
     @Override
@@ -90,6 +93,11 @@ public class Lyuk extends UresMezo {
         return true;
     }
 
+    /**
+     * Visszaadja a mezo aktualis ID azonositojat.
+     * 
+     * @return int ID szama.
+     */
     public int getID(){
         return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + mez * 10 + olaj;
     }
