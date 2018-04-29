@@ -530,12 +530,7 @@ public class Jatek {
         File f = new File(str);
         return f.exists();
     }
-
-    /**
-     * Ellenorzi letezik-e a megadott file.
-     * 
-     * @return ArrayList<String> Fajlok listaja.
-     */
+    
     public ArrayList<String> getPalyaLista()
     {
     	ArrayList<String> list = new ArrayList<String>();

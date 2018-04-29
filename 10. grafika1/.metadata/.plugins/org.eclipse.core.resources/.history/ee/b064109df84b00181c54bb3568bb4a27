@@ -16,6 +16,7 @@ package sokoban;
 
 import tools.Printer;
 import data.Data;
+import javafx.util.Pair;
 import server.KliensAdat;
 import server.KliensOlvaso;
 import server.ParancsAdat;
@@ -530,28 +531,9 @@ public class Jatek {
         File f = new File(str);
         return f.exists();
     }
-
-    /**
-     * Ellenorzi letezik-e a megadott file.
-     * 
-     * @return ArrayList<String> Fajlok listaja.
-     */
-    public ArrayList<String> getPalyaLista()
+    
+    public ArrayList<Pair<Integer, Integer>> getPalyaLista()
     {
-    	ArrayList<String> list = new ArrayList<String>();
-    	
         File root = new File( System.getProperty("user.dir") );
-        
-        try 
-        {
-        	File[] files = root.listFiles();
-        	for (File file : files) 
-        	{
-        		if (file.getName().contains(".mocsi"))
-        			list.add(file.getName());
-        	}
-        } catch (Exception e) {}
-        
-        return list;
     }
 }
