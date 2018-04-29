@@ -14,20 +14,22 @@
 
 package sokoban;
 
-import tools.Printer;
 import data.Data;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import server.KliensAdat;
 import server.KliensOlvaso;
 import server.ParancsAdat;
 import server.Szerver;
+import tools.Printer;
 
 import java.io.*;
 import java.net.DatagramSocket;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+
 // import sokoban.*;
-import java.util.ArrayList;
 
 public class Jatek {
 	
@@ -358,7 +360,7 @@ public class Jatek {
 	/**
      * Ellenorzi, hogy a megadott port szabalyos, es foglalt-e;
      * 
-     * @param IP	A port amit ellenorizni szeretnenk.
+     * @param port	A port amit ellenorizni szeretnenk.
      * 
      * @return boolean	A port hasznalhato-e.
      */
@@ -457,7 +459,7 @@ public class Jatek {
     }
 
     /**
-     * Elindítja a szerver lobbijat.
+     * Elindï¿½tja a szerver lobbijat.
      * 
      * @param port	Port amire csatlakozokat varjuk.
      * @param FILE	A  palya fajl, amin jatszani szeretnenk.
@@ -469,7 +471,7 @@ public class Jatek {
     }
 
     /**
-     * Elindítja a szerver jatek modjat.
+     * Elindï¿½tja a szerver jatek modjat.
      * 
      * @param nev1	Elso jatekos neve.
      * @param nev2	Masodik jatekos neve.
@@ -536,10 +538,10 @@ public class Jatek {
      * 
      * @return ArrayList<String> Fajlok listaja.
      */
-    public ArrayList<String> getPalyaLista()
+    public ObservableList<String> getPalyaLista()
     {
-    	ArrayList<String> list = new ArrayList<String>();
-    	
+    	ObservableList<String> list = FXCollections.observableArrayList();
+
         File root = new File( System.getProperty("user.dir") );
         
         try 

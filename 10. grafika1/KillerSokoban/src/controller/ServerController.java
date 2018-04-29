@@ -1,5 +1,6 @@
 package controller;
 
+import data.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -37,7 +38,7 @@ public class ServerController {
     @FXML
     public Button button_start;
     @FXML
-    public ComboBox combobox_palyavalaszto;
+    public ComboBox<String> combobox_palyavalaszto;
     @FXML
     public GridPane gridpane_preview;
 
@@ -61,5 +62,10 @@ public class ServerController {
                 e.printStackTrace();
             }
         }
+    }
+
+    @FXML
+    public void initialize() {
+        combobox_palyavalaszto.setItems(Data.jatek.getPalyaLista());
     }
 }
