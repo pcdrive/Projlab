@@ -3,7 +3,6 @@ package sokoban;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
 import tools.Printer;
 
@@ -22,6 +21,7 @@ import tools.Printer;
 public class GrafMain extends Application {
 
     static Jatek j;
+    private static Stage stage;
 
     /**
      * ProtoMain fuggveny, ami a jatekot futtatja.
@@ -38,11 +38,14 @@ public class GrafMain extends Application {
         launch(args);
     }
 
+    public static Stage getStage() {
+        return stage;
+    }
+
     @Override
     public void start(Stage primaryStage) throws Exception {
+        Navigator.setMainStage(primaryStage);
         Parent root = FXMLLoader.load(getClass().getResource("/data/layout/MenuView.fxml"));
-        primaryStage.setTitle("Killer Sokoban");
-        primaryStage.setScene(new Scene(root));
-        primaryStage.show();
+        Navigator.navigate(root);
     }
 }
