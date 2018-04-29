@@ -1,5 +1,8 @@
 package view;
 
+import controller.GameController;
+import controller.IController;
+
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
  * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
@@ -12,5 +15,11 @@ package view;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class GameView {
+public class GameView implements IView {
+    private GameController gameController;
+
+    @Override
+    public void addController(IController controller) {
+        gameController = (GameController) controller;
+    }
 }

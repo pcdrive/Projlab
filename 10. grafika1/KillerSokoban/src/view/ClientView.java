@@ -1,5 +1,7 @@
 package view;
 
+import controller.ClientController;
+import controller.IController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,7 +25,7 @@ import java.io.IOException;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class ClientView {
+public class ClientView implements IView {
     @FXML
     public TextField textfield_jatekosnev;
     @FXML
@@ -34,6 +36,8 @@ public class ClientView {
     public Button button_megse;
     @FXML
     public Button button_start;
+
+    private ClientController clientController;
 
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
@@ -53,5 +57,10 @@ public class ClientView {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    public void addController(IController controller) {
+        clientController = (ClientController) controller;
     }
 }

@@ -1,7 +1,7 @@
-package view;
+package controller;
 
-import javafx.fxml.FXML;
-import javafx.scene.controller.*;
+import view.IView;
+import view.MenuView;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -15,12 +15,11 @@ import javafx.scene.controller.*;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class MenuView {
-	
-	@FXML public Button btn_Server; 
-	@FXML public Button btn_Exit; 
-	@FXML public Button btn_Client; 	
-	
-    public MenuView(){
+public class MenuController implements IController{
+    MenuView menuView;
+
+    @Override
+    public void addView(IView view) {
+        menuView = (MenuView) view;
     }
 }

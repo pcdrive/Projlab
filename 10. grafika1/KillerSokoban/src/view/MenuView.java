@@ -1,5 +1,7 @@
 package view;
 
+import controller.IController;
+import controller.MenuController;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -21,14 +23,15 @@ import java.io.IOException;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class MenuView {
-
+public class MenuView implements IView {
     @FXML
     public Button button_server;
     @FXML
     public Button button_exit;
     @FXML
     public Button button_client;
+
+    private MenuController menuController;
 
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_server) {
@@ -48,5 +51,10 @@ public class MenuView {
         } else if (actionEvent.getSource() == button_exit) {
             System.exit(0);
         }
+    }
+
+    @Override
+    public void addController(IController controller) {
+        menuController = (MenuController) controller;
     }
 }
