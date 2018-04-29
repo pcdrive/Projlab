@@ -110,14 +110,16 @@ public class Szerver {
      * kivalasztott terkepfajl alapjan.
      * 
      * @param name A szerver jatekosanak neve.
+     * @param name2 A szerver második jatekosanak neve.
      */
-	public void Start(String name) 
+	public void Start(String name, String name2) 
 	{
 		ArrayList<String> nevek = new ArrayList<String>();
 		
 		if(startadat.jsz != 0)
 		{			
 			nevek.add(name);
+			nevek.add(name2);
 		}
 		for (int i=0;i<kapcsolatok.size();i++) 
 		{
@@ -217,6 +219,13 @@ public class Szerver {
 		{
 			kapcs.remKapcs();
 		}
+		
+		try 
+		{
+			if (!socket.isClosed())
+				socket.close();
+		} catch (Exception e) {}
+		
 		jatek.EndGame();
 	}
 

@@ -36,6 +36,7 @@ public class Jatek {
 	
 	//kliensmod atts
 	String name="";
+	String name2="";
 	Socket socket;
 	ObjectOutputStream out;
 	ObjectInputStream in;
@@ -105,24 +106,27 @@ public class Jatek {
 	        System.out.print("[SZERVER]: \n[SZERVER]:  SZERVER MOD ");
 	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
-	        System.out.print("[SZERVER]: \n[SZERVER]: Jatekos neve: ");
+	        System.out.print("[SZERVER]: \n[SZERVER]: Jatekos1 neve: ");
 	        name = br.readLine();
+	
+	        System.out.print("[SZERVER]: \n[SZERVER]: Jatekos2 neve: ");
+	        name2 = br.readLine();
 	        
 	
 	    	// annak az ellenorzese hogy a port biztosan szam-e es hogy a port elerheto-e;
 	    	boolean b=false;
 	        do {
-		        System.out.print("[Kliens]: \n[Kliens]: Port: ");
+		        System.out.print("[SERVER]: \n[SERVER]: Port: ");
 			    port = br.readLine();
 	        	try {
 	        		int i = Integer.parseInt(port);
-	        		if (CheckPortAvailability(i))
+	        		if (CheckPortAvailability(i,"SZERVER"))
 	        			b=false;
 	        		else
 	            		b=true;
 	        	}catch(Exception e) 
 	        	{
-	    	        System.out.println("[Kliens]: Nem megfelelo port!");
+	    	        System.out.println("[SERVER]: Nem megfelelo port!");
 	        		b=true;
 	        		if (port.toLowerCase().equals("q"))
 	        			b=false;
@@ -158,7 +162,7 @@ public class Jatek {
 				System.out.print("[SZERVER]: \n[SZERVER]: A jatek inditasahoz ird be, hogy \"start\".");
 			}while(!br.readLine().toLowerCase().equals("start"));
 
-	        szerver.Start(name);
+	        szerver.Start(name, name2);
 		
 			while (fut) 
 			{
@@ -170,9 +174,15 @@ public class Jatek {
 						case "a" : { szerver.Leptet(Irany.BALRA, name); }  break;
 						case "s" : { szerver.Leptet(Irany.LE, name); }  break;
 						case "d" : { szerver.Leptet(Irany.JOBBRA, name); }  break;
-						case "m" : { szerver.Leptet(Irany.MEZ, name); }  break;
-						case "o" : { szerver.Leptet(Irany.OLAJ, name); }  break;
+						case "q" : { szerver.Leptet(Irany.MEZ, name); }  break;
+						case "e" : { szerver.Leptet(Irany.OLAJ, name); }  break;
 						case "exit" : {fut= false; szerver.End();} break;
+						case "i" : { szerver.Leptet(Irany.FEL, name2);} break;
+						case "j" : { szerver.Leptet(Irany.BALRA, name2); }  break;
+						case "k" : { szerver.Leptet(Irany.LE, name2); }  break;
+						case "l" : { szerver.Leptet(Irany.JOBBRA, name2); }  break;
+						case "u" : { szerver.Leptet(Irany.MEZ, name2); }  break;
+						case "o" : { szerver.Leptet(Irany.OLAJ, name2); }  break;
 					}
 				} catch (Exception e) {}
 			}
@@ -210,7 +220,7 @@ public class Jatek {
 	        do {
 		        System.out.print("[Kliens]: \n[Kliens]: Host IP: ");
 		        line1 = br.readLine();
-        		if (CheckIPAvailability(line1))
+        		if (CheckIPAvailability(line1,"Kliens"))
         			b=false;
         		else
             		b=true;
@@ -229,7 +239,7 @@ public class Jatek {
 	        	line2 = br.readLine();
 	        	try {
 	        		int i = Integer.parseInt(line2);
-	        		if (CheckPortAvailability(i))
+	        		if (CheckPortAvailability(i,"Kliens"))
 	        			b=false;
 	        		else
 	            		b=true;
@@ -314,7 +324,7 @@ public class Jatek {
      * 
      * @return boolean	Az IP hasznalhato-e.
      */
-    private boolean CheckIPAvailability(String IP) {
+    private boolean CheckIPAvailability(String IP, String str) {
         if (IP.equals("localhost")) {
             return true;
         }
@@ -329,18 +339,18 @@ public class Jatek {
         		{
         			if (Integer.parseInt(parts[i])>255 || Integer.parseInt(parts[i])<0) 
         			{
-        				System.out.println("[SZERVER]: Nem megfelelo IP.");
+        				System.out.println("[" + str + "]: Nem megfelelo IP.");
         				return false;
         			}
         		} catch (Exception e) 
         		{
-        			System.out.println("[SZERVER]: Azonosithatatlan IP.");
+        			System.out.println("[" + str + "]: Azonosithatatlan IP.");
         			return false;
         		}
         	}
         	return true;
         }
-        System.out.println("[SZERVER]: Nem megfelelo IP formatum.");
+        System.out.println("[" + str + "]: Nem megfelelo IP formatum.");
 		return false;
 	}
 
@@ -351,9 +361,9 @@ public class Jatek {
      * 
      * @return boolean	A port hasznalhato-e.
      */
-    private boolean CheckPortAvailability(int port) {
+    private boolean CheckPortAvailability(int port, String str) {
         if (port < 0 || port > 65535) {
-			System.out.println("[SZERVER]: Nem megfelelo portszam.");
+			System.out.println("[" + str + "]: Nem megfelelo portszam.");
             return false;
         }
 
@@ -365,7 +375,10 @@ public class Jatek {
             ds = new DatagramSocket(port);
             ds.setReuseAddress(true);
             return true;
-        } catch (IOException e) {
+        }
+        catch (IOException e) 
+        {
+			System.out.println("[" + str + "]: A port foglalt, vagy nem megfelelo.");
         } finally {
             if (ds != null) {
                 ds.close();
