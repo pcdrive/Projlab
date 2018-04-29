@@ -119,8 +119,7 @@ public class Szerver {
 		if(startadat.jsz != 0)
 		{			
 			nevek.add(name);
-			if (!name2.equals(""))
-				nevek.add(name2);
+			nevek.add(name2);
 		}
 		for (int i=0;i<kapcsolatok.size();i++) 
 		{
@@ -183,12 +182,12 @@ public class Szerver {
 			
 			Data.PalyaX = startadat.x;
 			Data.PalyaY = startadat.y;
-			System.out.println("[SZERVER]: Lehetseges jatekosok szama: " + startadat.jsz);
+			System.out.println("[SERVER]: Lehets�ges j�t�k�sok sz�ma: " + startadat.jsz);
 			lobby = new Thread(){
 				public void run() {
 					while (run)
 					{
-	    			  if(kapcsolatok.size()< startadat.jsz-jatek.jatekossz())
+	    			  if(kapcsolatok.size()< startadat.jsz-2)
 						try {
 							Socket connection = socket.accept();
 

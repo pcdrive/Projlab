@@ -507,11 +507,4 @@ public class Jatek {
 			} catch (Exception e) {}
     	}
 	}
-
-    /**
-     * Lekerdezi a szerver jatekosainak szamat.
-     * 
-     * @return int A jatekosok szama.
-     */
-    public int jatekossz() {if (name2.equals("")) return 1; return 2;}
 }
