@@ -1,5 +1,6 @@
 package view;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,34 +24,29 @@ import java.io.IOException;
 public class MenuView {
 
     @FXML
-    public Button btn_Server;
+    public Button button_server;
     @FXML
-    public Button btn_Exit;
+    public Button button_exit;
     @FXML
-    public Button btn_Client;
+    public Button button_client;
 
-    public void SzerverButtonDown() {
-//        if(actionEvent.getSource() != btn_Server){
-//            return;
-//        }
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));
-            Navigator.navigate(root);
-        } catch (IOException e) {
-            e.printStackTrace();
+    public void onButtonDownAction(ActionEvent actionEvent) {
+        if (actionEvent.getSource() == button_server) {
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));
+                Navigator.navigate(root);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else if (actionEvent.getSource() == button_client) {
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ClientView.fxml"));
+                Navigator.navigate(root);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else if (actionEvent.getSource() == button_exit) {
+            System.exit(0);
         }
-    }
-
-    public void KliensButtonDown() {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ClientView.fxml"));
-            Navigator.navigate(root);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void ExitButtonDown() {
-        System.exit(0);
     }
 }
