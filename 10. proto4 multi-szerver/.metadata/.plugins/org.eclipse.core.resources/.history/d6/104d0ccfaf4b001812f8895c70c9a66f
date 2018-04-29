@@ -136,9 +136,7 @@ public class Szerver {
 		Data.PalyaY = startadat.y;
 		Data.PalyaX = startadat.x;
 
-		if (lobby!=null)
-			lobby.interrupt();
-		
+
 		lobby = new Thread(){
 			public void run() {	
 				while (!run)
@@ -187,7 +185,7 @@ public class Szerver {
 				public void run() {
 					while (run)
 					{
-	    			  if(kapcsolatok.size()< startadat.jsz-2)
+	    			  if(kapcsolatok.size()< startadat.jsz)
 						try {
 							Socket connection = socket.accept();
 

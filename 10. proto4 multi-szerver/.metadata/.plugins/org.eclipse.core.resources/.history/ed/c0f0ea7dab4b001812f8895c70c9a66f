@@ -136,9 +136,7 @@ public class Szerver {
 		Data.PalyaY = startadat.y;
 		Data.PalyaX = startadat.x;
 
-		if (lobby!=null)
-			lobby.interrupt();
-		
+
 		lobby = new Thread(){
 			public void run() {	
 				while (!run)
@@ -187,7 +185,7 @@ public class Szerver {
 				public void run() {
 					while (run)
 					{
-	    			  if(kapcsolatok.size()< startadat.jsz-2)
+	    			  if(kapcsolatok.size()< startadat.jsz)
 						try {
 							Socket connection = socket.accept();
 
@@ -196,7 +194,7 @@ public class Szerver {
 							kapcsolatok.add(c);
 							
 						} catch (IOException e) {
-							//System.out.println("[SERVER]: Egy uj kliens csatlakozasa sikertelen!");
+							System.out.println("[SERVER]: Egy uj kliens csatlakozasa sikertelen!");
 						}
 
 					}
@@ -215,7 +213,7 @@ public class Szerver {
      * zarva le a jatekot.
      */
 	public void End() {
-		run=false; 
+		run=true; 
 		lobby=null;
 		for (Kapcsolat kapcs : kapcsolatok)
 		{

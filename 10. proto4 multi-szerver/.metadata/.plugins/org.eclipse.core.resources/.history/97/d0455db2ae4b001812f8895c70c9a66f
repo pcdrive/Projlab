@@ -239,10 +239,10 @@ public class Jatek {
 	        	line2 = br.readLine();
 	        	try {
 	        		int i = Integer.parseInt(line2);
-	        		//if (CheckPortAvailability(i,"Kliens"))
+	        		if (CheckPortAvailability(i,"Kliens"))
 	        			b=false;
-	        	/*	else
-	            		b=true;*/
+	        		else
+	            		b=true;
 	        	}catch(Exception e) 
 	        	{
 	    	        System.out.println("[Kliens]: Nem megfelelo port!");

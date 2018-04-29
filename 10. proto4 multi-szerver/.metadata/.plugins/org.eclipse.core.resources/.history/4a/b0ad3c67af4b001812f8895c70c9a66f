@@ -238,7 +238,7 @@ public class Jatek {
 		        System.out.print("[Kliens]: \n[Kliens]: Port: ");
 	        	line2 = br.readLine();
 	        	try {
-	        		int i = Integer.parseInt(line2);
+	        	//	int i = Integer.parseInt(line2);
 	        		//if (CheckPortAvailability(i,"Kliens"))
 	        			b=false;
 	        	/*	else

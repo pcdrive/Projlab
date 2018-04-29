@@ -103,20 +103,20 @@ public class Jatek {
         String line1 = "";
     	
     	try {
-	        System.out.print("[SZERVER]: \n[SZERVER]:  SZERVER MOD\n");
+	        System.out.print("[SZERVER]: \n[SZERVER]:  SZERVER MOD ");
 	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
-	        System.out.print("[SZERVER]: \n[SZERVER]: Jatekos1 neve: ");
+	        System.out.print("\n[SZERVER]: \n[SZERVER]: Jatekos1 neve: ");
 	        name = br.readLine();
 	
-	        System.out.print("[SZERVER]: \n[SZERVER]: Jatekos2 neve: ");
+	        System.out.print("\n[SZERVER]: \n[SZERVER]: Jatekos2 neve: ");
 	        name2 = br.readLine();
 	        
 	
 	    	// annak az ellenorzese hogy a port biztosan szam-e es hogy a port elerheto-e;
 	    	boolean b=false;
 	        do {
-		        System.out.print("[SZERVER]: \n[SZERVER]: Port: ");
+		        System.out.print("\n[SZERVER]: \n[SZERVER]: Port: ");
 			    port = br.readLine();
 	        	try {
 	        		int i = Integer.parseInt(port);
@@ -239,10 +239,10 @@ public class Jatek {
 	        	line2 = br.readLine();
 	        	try {
 	        		int i = Integer.parseInt(line2);
-	        		//if (CheckPortAvailability(i,"Kliens"))
+	        		if (CheckPortAvailability(i,"Kliens"))
 	        			b=false;
-	        	/*	else
-	            		b=true;*/
+	        		else
+	            		b=true;
 	        	}catch(Exception e) 
 	        	{
 	    	        System.out.println("[Kliens]: Nem megfelelo port!");
