@@ -1,7 +1,13 @@
 package controller;
 
-import view.IView;
-import view.MenuView;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.control.Button;
+import sokoban.Navigator;
+
+import java.io.IOException;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -15,11 +21,31 @@ import view.MenuView;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class MenuController implements IController{
-    MenuView menuView;
+public class MenuController {
+    @FXML
+    public Button button_server;
+    @FXML
+    public Button button_exit;
+    @FXML
+    public Button button_client;
 
-    @Override
-    public void addView(IView view) {
-        menuView = (MenuView) view;
+    public void onButtonDownAction(ActionEvent actionEvent) {
+        if (actionEvent.getSource() == button_server) {
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));
+                Navigator.navigate(root);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else if (actionEvent.getSource() == button_client) {
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ClientView.fxml"));
+                Navigator.navigate(root);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else if (actionEvent.getSource() == button_exit) {
+            System.exit(0);
+        }
     }
 }

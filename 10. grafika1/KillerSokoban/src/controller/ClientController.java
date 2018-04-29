@@ -1,7 +1,15 @@
 package controller;
 
-import view.ClientView;
-import view.IView;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import sokoban.Navigator;
+
+import java.io.IOException;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -15,11 +23,35 @@ import view.IView;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class ClientController implements IController {
-    ClientView clientView;
+public class ClientController {
+    @FXML
+    public TextField textfield_jatekosnev;
+    @FXML
+    public TextField textfield_host;
+    @FXML
+    public TextField textfield_port;
+    @FXML
+    public Button button_megse;
+    @FXML
+    public Button button_start;
 
-    @Override
-    public void addView(IView view) {
-        clientView = (ClientView) view;
+    public void onButtonDownAction(ActionEvent actionEvent) {
+        if (actionEvent.getSource() == button_start) {
+            if (textfield_jatekosnev.getText().isEmpty() || textfield_host.getText().isEmpty() || textfield_port.getText().isEmpty()) {
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Hiányos adatok!");
+                alert.setHeaderText(null);
+                alert.setContentText("Nem adott meg minden adatot!");
+                alert.show();
+                return;
+            }
+        } else if (actionEvent.getSource() == button_megse) {
+            try {
+                Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
+                Navigator.navigate(root);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
