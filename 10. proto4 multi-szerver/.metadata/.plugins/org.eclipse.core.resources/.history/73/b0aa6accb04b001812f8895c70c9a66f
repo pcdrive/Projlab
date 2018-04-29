@@ -370,13 +370,10 @@ public class Jatek {
         ServerSocket ss = null;
         DatagramSocket ds = null;
         try {
-        	if (str.equals("SZERVER")) 
-        	{
-	            ss = new ServerSocket(port);
-	            ss.setReuseAddress(true);
-	            ds = new DatagramSocket(port);
-	            ds.setReuseAddress(true);
-            }
+            ss = new ServerSocket(port);
+            ss.setReuseAddress(true);
+            ds = new DatagramSocket(port);
+            ds.setReuseAddress(true);
             return true;
         }
         catch (IOException e) 

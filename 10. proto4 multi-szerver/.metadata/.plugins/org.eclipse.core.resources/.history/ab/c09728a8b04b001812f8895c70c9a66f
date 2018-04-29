@@ -239,10 +239,10 @@ public class Jatek {
 	        	line2 = br.readLine();
 	        	try {
 	        		int i = Integer.parseInt(line2);
-	        		if (CheckPortAvailability(i,"Kliens"))
+	        		//if (CheckPortAvailability(i,"Kliens"))
 	        			b=false;
-	        		else
-	            		b=true;
+	        	/*	else
+	            		b=true;*/
 	        	}catch(Exception e) 
 	        	{
 	    	        System.out.println("[Kliens]: Nem megfelelo port!");
@@ -370,13 +370,10 @@ public class Jatek {
         ServerSocket ss = null;
         DatagramSocket ds = null;
         try {
-        	if (str.equals("SZERVER")) 
-        	{
-	            ss = new ServerSocket(port);
-	            ss.setReuseAddress(true);
-	            ds = new DatagramSocket(port);
-	            ds.setReuseAddress(true);
-            }
+            ss = new ServerSocket(port);
+            ss.setReuseAddress(true);
+            ds = new DatagramSocket(port);
+            ds.setReuseAddress(true);
             return true;
         }
         catch (IOException e) 
