@@ -14,7 +14,7 @@
 
 package sokoban;
 
-import Tools.Printer;
+import tools.Printer;
 
 import java.io.Serializable;
 import java.util.LinkedList;

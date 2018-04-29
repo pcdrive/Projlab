@@ -1,9 +1,9 @@
-package Test;
+package test;
 public class Test_3 {}
-//package Test;
+//package test;
 //
-//import Tools.Printer;
-//import org.junit.Test;
+//import tools.Printer;
+//import org.junit.test;
 //import server.Szerver;
 //import sokoban.Irany;
 //import sokoban.Jatek;
@@ -14,7 +14,7 @@ public class Test_3 {}
 //
 //
 //public class Test_3 {
-//    @Test
+//    @test
 //    public void Test_3_1_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -37,7 +37,7 @@ public class Test_3 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_1_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -61,7 +61,7 @@ public class Test_3 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_1_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -84,7 +84,7 @@ public class Test_3 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_1_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -107,7 +107,7 @@ public class Test_3 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_2_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -131,7 +131,7 @@ public class Test_3 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_2_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -156,7 +156,7 @@ public class Test_3 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_2_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -180,7 +180,7 @@ public class Test_3 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_2_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();

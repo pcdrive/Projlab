@@ -14,7 +14,7 @@
 
 package sokoban.leptethetok;
 
-import Tools.Printer;
+import tools.Printer;
 import sokoban.Irany;
 import sokoban.Palya;
 import sokoban.mezok.UresMezo;
@@ -28,7 +28,7 @@ public class Jatekos extends Leptetheto {
     private static int jatekosSzam = 0;
 
     /**
-     * Az osztaly konstruktora. Beallitja a nevet, palyat és a mezot.
+     * Az osztaly konstruktora. Beallitja a nevet, palyat ï¿½s a mezot.
      *
      * @param nev A jatekos neve.
      * @param p   A palya.

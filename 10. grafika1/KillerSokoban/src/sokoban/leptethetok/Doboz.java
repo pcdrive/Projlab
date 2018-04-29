@@ -14,7 +14,7 @@
 
 package sokoban.leptethetok;
 
-import Tools.Printer;
+import tools.Printer;
 import sokoban.Irany;
 import sokoban.Palya;
 import sokoban.mezok.UresMezo;
@@ -80,7 +80,7 @@ public class Doboz extends Leptetheto {
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
      * @param i    Irany amerre a dobozt toltak
-     * @param j    Jatekos, aki tolíst kezdte
+     * @param j    Jatekos, aki tolï¿½st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override
@@ -109,12 +109,12 @@ public class Doboz extends Leptetheto {
     }
 
     /**
-     * Az objektumot egy jatekos tolta meg, ís az ezzel valo interakciot kezeli.
+     * Az objektumot egy jatekos tolta meg, ï¿½s az ezzel valo interakciot kezeli.
      *
      * @param ero  az ero amivel a jatekos a sort megtolta.
      * @param surl A mezo surlodasa, amin all.
      * @param i    Irany amerre a dobozt toltak
-     * @param j    Jatekos, aki tolíst kezdte
+     * @param j    Jatekos, aki tolï¿½st kezdte
      * @return boolean Annak az erteke, hogy a doboz tolhato-e.
      */
     @Override

@@ -14,7 +14,7 @@
 
 package sokoban.mezok;
 
-import Tools.Printer;
+import tools.Printer;
 import sokoban.*;
 import sokoban.leptethetok.Doboz;
 import sokoban.leptethetok.Jatekos;

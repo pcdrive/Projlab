@@ -1,4 +1,4 @@
-package Tools.palyaGenerator;
+package tools.palyagenerator;
 
 import server.PalyaAdat;
 import sokoban.leptethetok.Doboz;
