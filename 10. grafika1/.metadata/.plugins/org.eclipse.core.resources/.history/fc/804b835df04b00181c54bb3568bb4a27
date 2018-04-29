@@ -5,7 +5,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import sokoban.Jatek;
 import sokoban.Navigator;
 
 import java.io.IOException;

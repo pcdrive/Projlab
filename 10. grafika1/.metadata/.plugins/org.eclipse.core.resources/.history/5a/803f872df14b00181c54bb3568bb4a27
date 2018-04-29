@@ -39,6 +39,7 @@ public class ClientController {
     
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
+        	boolean b=true;
         	
             if (textfield_jatekosnev.getText().isEmpty() || textfield_host.getText().isEmpty() || textfield_port.getText().isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -55,23 +56,14 @@ public class ClientController {
 
             		if (Data.jatek.CheckIPAvailability(textfield_host.getText(), "Kliens") && Data.jatek.CheckPortAvailability(port, "Kliens")) 
 	            	{
-	            		boolean success = Data.jatek.Kapcsol(textfield_jatekosnev.getText(), textfield_host.getText(),port);
-	            		if (success) {
-		                    Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
-		                    Navigator.navigate(root);
-	            		}
-	            		else 
-	            		{
-	                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-	                        alert.setTitle("Kapcsolodas sikertelen!");
-	                        alert.setHeaderText(null);
-	                        alert.setContentText("A kapcsolatot nem sikerult kiepiteni a szerverrel!");
-	                        alert.show();	            			
-	            		}
+	            		b=false;
+	            		Data.jatek.Kapcsol(textfield_jatekosnev.getText(), textfield_host.getText(),port);
+	                    Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
+	                    Navigator.navigate(root);
 	            	}
             	} catch (Exception e) 
             	{
-                    //Nem kell semmit sem tenni
+            		b=true;
             	}
             }
         } else if (actionEvent.getSource() == button_megse) {
@@ -79,7 +71,7 @@ public class ClientController {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
                 Navigator.navigate(root);
             } catch (IOException e) {
-                //Nem kell semmit sem tenni
+                e.printStackTrace();
             }
         }
     }

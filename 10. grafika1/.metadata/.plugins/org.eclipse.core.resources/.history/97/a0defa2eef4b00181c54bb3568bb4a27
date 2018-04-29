@@ -1,4 +1,3 @@
-/controller/
 /data/
 /junit.jar
 /prototest/
@@ -6,3 +5,4 @@
 /sokoban/
 /test/
 /tools/
+/view/

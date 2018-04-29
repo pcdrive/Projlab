@@ -5,12 +5,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import sokoban.Jatek;
 import sokoban.Navigator;
 
 import java.io.IOException;
-
-import data.Data;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -32,11 +29,7 @@ public class MenuController {
     @FXML
     public Button button_client;
 
-    
     public void onButtonDownAction(ActionEvent actionEvent) {
-    	
-    	Data.jatek = new Jatek();
-    	
         if (actionEvent.getSource() == button_server) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));

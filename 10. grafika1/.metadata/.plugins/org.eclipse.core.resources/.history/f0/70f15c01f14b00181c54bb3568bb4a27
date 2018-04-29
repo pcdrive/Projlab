@@ -449,7 +449,7 @@ public class Jatek {
 
 			kOlvaso = new KliensOlvaso(in, this);
 			kOlvaso.start();
-			return true;
+			return true
 		} catch (IOException e) {
 			//e.printStackTrace();
 			return false;

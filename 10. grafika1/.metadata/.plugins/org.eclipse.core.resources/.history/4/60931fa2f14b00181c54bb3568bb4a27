@@ -71,7 +71,6 @@ public class ClientController {
 	            	}
             	} catch (Exception e) 
             	{
-                    //Nem kell semmit sem tenni
             	}
             }
         } else if (actionEvent.getSource() == button_megse) {
@@ -79,7 +78,7 @@ public class ClientController {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
                 Navigator.navigate(root);
             } catch (IOException e) {
-                //Nem kell semmit sem tenni
+                e.printStackTrace();
             }
         }
     }

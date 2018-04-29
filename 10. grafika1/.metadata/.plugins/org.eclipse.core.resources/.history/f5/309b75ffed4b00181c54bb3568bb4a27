@@ -325,7 +325,7 @@ public class Jatek {
      * 
      * @return boolean	Az IP hasznalhato-e.
      */
-    public boolean CheckIPAvailability(String IP, String str) {
+    private boolean CheckIPAvailability(String IP, String str) {
         if (IP.equals("localhost")) {
             return true;
         }
@@ -362,7 +362,7 @@ public class Jatek {
      * 
      * @return boolean	A port hasznalhato-e.
      */
-    public boolean CheckPortAvailability(int port, String str) {
+    private boolean CheckPortAvailability(int port, String str) {
         if (port < 0 || port > 65535) {
 			System.out.println("[" + str + "]: Nem megfelelo portszam.");
             return false;
@@ -431,10 +431,8 @@ public class Jatek {
      * @param nev	A jatekos neve.
      * @param ip	IP amire csatlakozunk.
      * @param port	Port amire csatlakozunk a megadott ip cimen.
-     * 
-     * @return boolean A kapcsolat kiepitesenek sikeressege.
      */
-    public boolean Kapcsol(String nev, String ip, int port) 
+    public void Kapcsol(String nev, String ip, int port) 
     {
     	name=nev;
     	
@@ -449,10 +447,9 @@ public class Jatek {
 
 			kOlvaso = new KliensOlvaso(in, this);
 			kOlvaso.start();
-			return true;
 		} catch (IOException e) {
 			//e.printStackTrace();
-			return false;
+			return;
 		}
     }
 
