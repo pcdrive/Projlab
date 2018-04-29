@@ -1,6 +1,7 @@
 package data;
 
 import javafx.util.Pair;
+import server.PalyaAdat;
 import sokoban.Jatek;
 
 import java.util.ArrayList;
@@ -11,7 +12,8 @@ public class Data {
     public static int PalyaY = 5;
     public static Jatek jatek;
     public static boolean fullScreen = false;
-    public static final ArrayList<Pair<Integer, Integer>> resolutions = new ArrayList<Pair<Integer, Integer>>() {{
+    @SuppressWarnings("serial")
+	public static final ArrayList<Pair<Integer, Integer>> resolutions = new ArrayList<Pair<Integer, Integer>>() {{
         add(new Pair<>(1920, 1080));
         add(new Pair<>(1680, 1050));
         add(new Pair<>(1440, 900));
@@ -21,4 +23,5 @@ public class Data {
         add(new Pair<>(1024, 768));
     }};
     public static int resolution = 0;
+    public static PalyaAdat PA;
 }

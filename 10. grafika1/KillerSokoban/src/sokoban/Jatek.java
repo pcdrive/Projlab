@@ -19,6 +19,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import server.KliensAdat;
 import server.KliensOlvaso;
+import server.PalyaAdat;
 import server.ParancsAdat;
 import server.Szerver;
 import tools.Printer;
@@ -28,6 +29,7 @@ import java.net.DatagramSocket;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 
 // import sokoban.*;
 
@@ -555,5 +557,41 @@ public class Jatek {
         } catch (Exception e) {}
         
         return list;
+    }
+
+    /**
+     * Visszaadja a betoltott, mar a Data-ban levo palya mezoit.
+     * Ha parameterkent egy file eleresi utjat kapja, akkor azt tolti be a Databa.
+     * 
+     * @param file Opcionalis. Uj terkep esetere,
+     * 
+     * @return int[] A betoltott palya mezoi.
+     */
+    public int[] getIDLista(String file)
+    {
+    	
+    	if (file!=null)
+    	{
+    		try 
+    		{
+				FileInputStream fileInputStream = null;
+				
+				fileInputStream = new FileInputStream(file);
+				ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+	
+				Data.PA = (PalyaAdat) objectInputStream.readObject();
+	
+				objectInputStream.close();
+				fileInputStream.close();
+				
+				Data.PalyaX = Data.PA.x;
+				Data.PalyaY = Data.PA.y;
+    		} catch (Exception e)
+    		{
+    			
+    		}
+    	}
+    	
+    	return Data.PA.palya;
     }
 }
