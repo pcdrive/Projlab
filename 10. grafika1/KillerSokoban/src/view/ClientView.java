@@ -35,10 +35,6 @@ public class ClientView {
     @FXML
     public Button button_start;
 
-    public void onStartButtonPressedAction(ActionEvent actionEvent) {
-
-    }
-
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
             if (textfield_jatekosnev.getText().isEmpty() || textfield_host.getText().isEmpty() || textfield_port.getText().isEmpty()) {
@@ -51,7 +47,7 @@ public class ClientView {
             }
         } else if (actionEvent.getSource() == button_megse) {
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/data/layout/MenuView.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
                 Navigator.navigate(root);
             } catch (IOException e) {
                 e.printStackTrace();

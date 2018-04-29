@@ -34,7 +34,7 @@ public class MenuView {
 //            return;
 //        }
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/data/layout/ServerView.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));
             Navigator.navigate(root);
         } catch (IOException e) {
             e.printStackTrace();
@@ -43,7 +43,7 @@ public class MenuView {
 
     public void KliensButtonDown() {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/data/layout/ClientView.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ClientView.fxml"));
             Navigator.navigate(root);
         } catch (IOException e) {
             e.printStackTrace();
