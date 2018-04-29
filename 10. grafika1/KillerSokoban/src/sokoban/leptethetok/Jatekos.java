@@ -180,4 +180,19 @@ public class Jatekos extends Leptetheto {
     public void setEro(float f) {
         ero = f;
     }
+
+    /**
+     * A doboz vegallapotat kerdezi le. A doboz kepes e lepni egy adott iranyba vagy sem.
+     *
+     * @return boolean Annak az erteke, hogy mozgathato-e.
+     */
+    public boolean Vege(Irany i) {
+        Printer.PrintTabIn("Doboz" + '\t' + "Vege()");
+
+        boolean success = true;
+        
+        
+        Printer.PrintTabOut("Return: " + success);
+        return success;
+    }
 }

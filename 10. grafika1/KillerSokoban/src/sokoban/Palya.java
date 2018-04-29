@@ -203,15 +203,23 @@ public class Palya {
         Printer.PrintTabIn("Palya" + '\t' + "Vegellenorzes()");
 
         for (Doboz d : dobozok) {
-            boolean mozgathato = d.Vege();
-            if (mozgathato) {
-                Printer.PrintTabOut("Return");
+        	boolean[] iranyok = new boolean[4];
+            iranyok[0] = true;
+            iranyok[1] = true;
+            iranyok[2] = true;
+            iranyok[3] = true;
+            iranyok[0] = d.Vege(Irany.FEL);
+            iranyok[1] = d.Vege(Irany.JOBBRA);
+            iranyok[2] = d.Vege(Irany.LE);
+            iranyok[3] = d.Vege(Irany.BALRA);
+            if (!((iranyok[0]==false && iranyok[1]==false) || (iranyok[1]==false && iranyok[2]==false) || (iranyok[2]==false && iranyok[3]==false) || (iranyok[3]==false && iranyok[0]==false)) ) {
+                Printer.PrintTabOut("Return true");
                 return;
             }
         }
 
-//        jatek.EndGame();
-        Printer.PrintTabOut("Return");
+        szerver.End();
+        Printer.PrintTabOut("Return false");
         return;
     }
 

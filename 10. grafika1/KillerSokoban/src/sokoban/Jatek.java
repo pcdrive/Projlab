@@ -63,6 +63,7 @@ public class Jatek {
     public void EndGame() {
         Printer.PrintTabIn("Jatek" + '\t' + "EndGame()");
         Printer.PrintTabOut("Return");
+        fut=false;
         szerver = null;
         kOlvaso = null;
     }
@@ -176,7 +177,7 @@ public class Jatek {
 						case "d" : { szerver.Leptet(Irany.JOBBRA, name); }  break;
 						case "q" : { szerver.Leptet(Irany.MEZ, name); }  break;
 						case "e" : { szerver.Leptet(Irany.OLAJ, name); }  break;
-						case "exit" : {fut= false; szerver.End();} break;
+						case "exit" : {szerver.End();} break;
 						case "i" : { szerver.Leptet(Irany.FEL, name2);} break;
 						case "j" : { szerver.Leptet(Irany.BALRA, name2); }  break;
 						case "k" : { szerver.Leptet(Irany.LE, name2); }  break;
@@ -422,5 +423,5 @@ public class Jatek {
     		} catch (IOException e1) {
     		} 
     	}
-    }
+    }    
 }

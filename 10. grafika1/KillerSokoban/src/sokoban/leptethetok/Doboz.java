@@ -34,14 +34,19 @@ public class Doboz extends Leptetheto {
     }
 
     /**
-     * A doboz vegallapotat kerdezi le.
+     * A doboz vegallapotat kerdezi le. A doboz kepes e lepni egy adott iranyba vagy sem.
      *
      * @return boolean Annak az erteke, hogy mozgathato-e.
      */
-    public boolean Vege() {
+    public boolean Vege(Irany i) {
         Printer.PrintTabIn("Doboz" + '\t' + "Vege()");
-        Printer.PrintTabOut("Return: " + Boolean.toString(true));
-        return true;
+
+        UresMezo szom = mezo.GetSzomszed(i);
+        boolean success = szom.Vege(i);
+        
+        
+        Printer.PrintTabOut("Return: " + success);
+        return success;
     }
 
     /**

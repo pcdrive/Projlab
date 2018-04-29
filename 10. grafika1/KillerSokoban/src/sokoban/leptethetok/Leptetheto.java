@@ -74,4 +74,11 @@ public abstract class Leptetheto {
      */
     public int getStatus() {return 0;}
 
+    /**
+     * lekerdezi, hogy a leptetheto lephet-e az adott iranyba.
+     * 
+     * @return boolean Lephet, vagy sem.
+     */
+    public abstract boolean Vege(Irany i);
+
 }

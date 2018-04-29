@@ -99,4 +99,22 @@ public class Fal extends UresMezo {
     public int getID(){
         return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + mez * 10 + olaj;
     }
+
+    /**
+     * Lekerdezi, hogy az adott leptetheto lephet-e, az adott iranyba.
+     *
+     * @param i Az irany amit nezunk.
+     * @return boolean Igen, vagy nem
+     */
+    @Override
+    public boolean Vege(Irany i) 
+    {
+        Printer.PrintTabIn("Fal" + '\t' + "Vege()");
+		boolean success = false;
+
+        Printer.PrintTabOut("Return: " + success);
+        
+        return success;
+    	
+    }
 }

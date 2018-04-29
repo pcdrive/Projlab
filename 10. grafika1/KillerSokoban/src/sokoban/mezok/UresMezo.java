@@ -161,6 +161,30 @@ public class UresMezo {
     }
 
     /**
+     * Lekerdezi, hogy az adott leptetheto lephet-e, az adott iranyba.
+     *
+     * @param i Az irany amit nezunk.
+     * @return boolean Igen, vagy nem
+     */
+    public boolean Vege(Irany i) 
+    {
+        Printer.PrintTabIn("UresMezo" + '\t' + "Vege()");
+    	if (leptetheto == null) 
+    	{
+            Printer.PrintTabOut("Return: true");
+    		return true;
+    	} else
+    	{
+    		boolean success = leptetheto.Vege(i);
+
+            Printer.PrintTabOut("Return: " + success);
+            
+            return success;
+    	}
+    	
+    }
+
+    /**
      * Olajositja a mezot. Jobban csuszik tole.
      */
     public void AddOlaj() 
