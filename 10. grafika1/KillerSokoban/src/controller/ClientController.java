@@ -1,5 +1,6 @@
 package controller;
 
+import data.Data;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,8 +11,6 @@ import javafx.scene.control.TextField;
 import sokoban.Navigator;
 
 import java.io.IOException;
-
-import data.Data;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -36,10 +35,10 @@ public class ClientController {
     public Button button_megse;
     @FXML
     public Button button_start;
-    
+
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
-        	
+
             if (textfield_jatekosnev.getText().isEmpty() || textfield_host.getText().isEmpty() || textfield_port.getText().isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Hianyos adatok!");
@@ -47,32 +46,26 @@ public class ClientController {
                 alert.setContentText("Nem adott meg minden adatot!");
                 alert.show();
                 return;
-            }
-            else 
-            {
-            	try {
-            		int port = Integer.parseInt(textfield_port.getText());
+            } else {
+                try {
+                    int port = Integer.parseInt(textfield_port.getText());
 
-            		if (Data.jatek.CheckIPAvailability(textfield_host.getText(), "Kliens") && Data.jatek.CheckPortAvailability(port, "Kliens")) 
-	            	{
-	            		boolean success = Data.jatek.Kapcsol(textfield_jatekosnev.getText(), textfield_host.getText(),port);
-	            		if (success) {
-		                    Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
-		                    Navigator.navigate(root);
-	            		}
-	            		else 
-	            		{
-	                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-	                        alert.setTitle("Kapcsolodas sikertelen!");
-	                        alert.setHeaderText(null);
-	                        alert.setContentText("A kapcsolatot nem sikerult kiepiteni a szerverrel!");
-	                        alert.show();	            			
-	            		}
-	            	}
-            	} catch (Exception e) 
-            	{
+                    if (Data.jatek.CheckIPAvailability(textfield_host.getText(), "Kliens") && Data.jatek.CheckPortAvailability(port, "Kliens")) {
+                        boolean success = Data.jatek.Kapcsol(textfield_jatekosnev.getText(), textfield_host.getText(), port);
+                        if (success) {
+                            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
+                            Navigator.navigate(root);
+                        } else {
+                            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                            alert.setTitle("Kapcsolodas sikertelen!");
+                            alert.setHeaderText(null);
+                            alert.setContentText("A kapcsolatot nem sikerult kiepiteni a szerverrel!");
+                            alert.show();
+                        }
+                    }
+                } catch (Exception e) {
                     //Nem kell semmit sem tenni
-            	}
+                }
             }
         } else if (actionEvent.getSource() == button_megse) {
             try {

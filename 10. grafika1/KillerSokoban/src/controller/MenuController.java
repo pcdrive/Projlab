@@ -33,11 +33,11 @@ public class MenuController {
     @FXML
     public Button button_options;
 
-    
+
     public void onButtonDownAction(ActionEvent actionEvent) {
-    	
-    	Data.jatek = new Jatek();
-    	
+
+        Data.jatek = new Jatek();
+
         if (actionEvent.getSource() == button_server) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));
@@ -52,15 +52,14 @@ public class MenuController {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }else if(actionEvent.getSource() == button_options){
+        } else if (actionEvent.getSource() == button_options) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/OptionsView.fxml"));
                 Navigator.navigate(root);
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        else if (actionEvent.getSource() == button_exit) {
+        } else if (actionEvent.getSource() == button_exit) {
             System.exit(0);
         }
     }
