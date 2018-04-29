@@ -49,7 +49,29 @@ public class ServerController {
             }
             else 
             {
-            	//valamit csinaljon....
+            	try {
+            		int port = Integer.parseInt(textfield_port.getText());
+
+            		if (Data.jatek.CheckPortAvailability(port, "SZERVER") && Data.jatek.VanFile("")) 
+	            	{
+	            		/*boolean success = Data.jatek.Kapcsol(textfield_jatekosnev.getText(), textfield_host.getText(),port);
+	            		if (success) {
+		                    Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
+		                    Navigator.navigate(root);
+	            		}
+	            		else 
+	            		{
+	                        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+	                        alert.setTitle("Kapcsolodas sikertelen!");
+	                        alert.setHeaderText(null);
+	                        alert.setContentText("A kapcsolatot nem sikerult kiepiteni a szerverrel!");
+	                        alert.show();	            			
+	            		}*/
+	            	}
+            	} catch (Exception e) 
+            	{
+                    //Nem kell semmit sem tenni
+            	}            	
             }
         } else if (actionEvent.getSource() == button_megse) {
             try {

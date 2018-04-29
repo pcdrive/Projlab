@@ -11,8 +11,6 @@ import sokoban.Navigator;
 
 import java.io.IOException;
 
-import data.Data;
-
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
  * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
@@ -46,10 +44,6 @@ public class ServerController {
                 alert.setContentText("Nem adott meg minden adatot!");
                 alert.show();
                 return;
-            }
-            else 
-            {
-            	//valamit csinaljon....
             }
         } else if (actionEvent.getSource() == button_megse) {
             try {

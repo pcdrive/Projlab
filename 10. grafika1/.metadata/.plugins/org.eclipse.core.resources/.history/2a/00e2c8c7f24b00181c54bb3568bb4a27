@@ -146,7 +146,8 @@ public class Jatek {
 	        	else
 	        		System.out.print("[SZERVER]: File nem letezik. Adj meg letezo fajlt!  \n[SZERVER]: \n[SZERVER]: File eleresi utja: ");
 		        line1 = br.readLine() + ".mocsi";
-		        b = VanFile(line1);
+		        File f = new File(line1);
+		        b = f.exists();
 		        if (line1.toLowerCase().equals("q.mocsi"))
 		        	b=true;
 	        } while (!b);
@@ -524,9 +525,5 @@ public class Jatek {
      * 
      * @return boolean Letezik-e.
      */
-    public boolean VanFile(String str) 
-    {
-        File f = new File(str);
-        return f.exists();
-    }
+    public boolean VanFile(String str) {}
 }
