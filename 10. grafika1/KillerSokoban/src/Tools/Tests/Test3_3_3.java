@@ -1,9 +1,9 @@
-package Tools.Tests;
+package tools.tests;
 public class Test3_3_3 {}
-//package Tools.Tests;
+//package tools.tests;
 //
-//import Tools.Printer;
-//import org.junit.Test;
+//import tools.Printer;
+//import org.junit.test;
 //import server.Szerver;
 //import sokoban.Irany;
 //import sokoban.Jatek;
@@ -13,7 +13,7 @@ public class Test3_3_3 {}
 //import sokoban.mezok.*;
 //
 //public class Test3_3_3 {
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_1_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -45,7 +45,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_1_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -77,7 +77,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_1_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -110,7 +110,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_1_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -142,7 +142,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_1_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -175,7 +175,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_1_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -207,7 +207,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_1_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -239,42 +239,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_2_1() {
 //        System.out.println("Test_3_3_3_1_1_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_2_2() {
 //        System.out.println("Test_3_3_3_1_1_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_2_3() {
 //        System.out.println("Test_3_3_3_1_1_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_2_4() {
 //        System.out.println("Test_3_3_3_1_1_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_2_5() {
 //        System.out.println("Test_3_3_3_1_1_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_2_6() {
 //        System.out.println("Test_3_3_3_1_1_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_2_7() {
 //        System.out.println("Test_3_3_3_1_1_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_3_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -306,7 +306,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_3_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -338,7 +338,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_3_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -371,7 +371,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_3_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -403,7 +403,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_3_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -436,7 +436,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_3_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -468,7 +468,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_3_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -500,7 +500,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_4_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -533,7 +533,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_4_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -566,7 +566,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_4_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -600,7 +600,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_4_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -633,7 +633,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_4_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -667,7 +667,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_4_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -700,7 +700,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_1_4_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -733,147 +733,147 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_1_1() {
 //        System.out.println("Test_3_3_3_1_2_1_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_1_2() {
 //        System.out.println("Test_3_3_3_1_2_1_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_1_3() {
 //        System.out.println("Test_3_3_3_1_2_1_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_1_4() {
 //        System.out.println("Test_3_3_3_1_2_1_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_1_5() {
 //        System.out.println("Test_3_3_3_1_2_1_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_1_6() {
 //        System.out.println("Test_3_3_3_1_2_1_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_1_7() {
 //        System.out.println("Test_3_3_3_1_2_1_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_2_1() {
 //        System.out.println("Test_3_3_3_1_2_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_2_2() {
 //        System.out.println("Test_3_3_3_1_2_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_2_3() {
 //        System.out.println("Test_3_3_3_1_2_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_2_4() {
 //        System.out.println("Test_3_3_3_1_2_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_2_5() {
 //        System.out.println("Test_3_3_3_1_2_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_2_6() {
 //        System.out.println("Test_3_3_3_1_2_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_2_7() {
 //        System.out.println("Test_3_3_3_1_2_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_3_1() {
 //        System.out.println("Test_3_3_3_1_2_3_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_3_2() {
 //        System.out.println("Test_3_3_3_1_2_3_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_3_3() {
 //        System.out.println("Test_3_3_3_1_2_3_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_3_4() {
 //        System.out.println("Test_3_3_3_1_2_3_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_3_5() {
 //        System.out.println("Test_3_3_3_1_2_3_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_3_6() {
 //        System.out.println("Test_3_3_3_1_2_3_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_3_7() {
 //        System.out.println("Test_3_3_3_1_2_3_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_4_1() {
 //        System.out.println("Test_3_3_3_1_2_4_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_4_2() {
 //        System.out.println("Test_3_3_3_1_2_4_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_4_3() {
 //        System.out.println("Test_3_3_3_1_2_4_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_4_4() {
 //        System.out.println("Test_3_3_3_1_2_4_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_4_5() {
 //        System.out.println("Test_3_3_3_1_2_4_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_4_6() {
 //        System.out.println("Test_3_3_3_1_2_4_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_2_4_7() {
 //        System.out.println("Test_3_3_3_1_2_4_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_1_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -905,7 +905,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_1_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -937,7 +937,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_1_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -970,7 +970,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_1_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1002,7 +1002,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_1_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1035,7 +1035,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_1_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1067,7 +1067,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_1_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1099,42 +1099,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_2_1() {
 //        System.out.println("Test_3_3_3_1_3_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_2_2() {
 //        System.out.println("Test_3_3_3_1_3_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_2_3() {
 //        System.out.println("Test_3_3_3_1_3_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_2_4() {
 //        System.out.println("Test_3_3_3_1_3_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_2_5() {
 //        System.out.println("Test_3_3_3_1_3_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_2_6() {
 //        System.out.println("Test_3_3_3_1_3_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_2_7() {
 //        System.out.println("Test_3_3_3_1_3_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_3_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1166,7 +1166,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_3_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1198,7 +1198,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_3_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1231,7 +1231,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_3_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1263,7 +1263,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_3_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1296,7 +1296,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_3_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1328,7 +1328,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_3_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1360,7 +1360,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_4_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1393,7 +1393,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_4_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1426,7 +1426,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_4_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1460,7 +1460,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_4_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1493,7 +1493,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_4_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1527,7 +1527,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_4_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1560,7 +1560,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_3_4_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1593,7 +1593,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_1_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1626,7 +1626,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_1_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1659,7 +1659,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_1_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1693,7 +1693,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_1_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1726,7 +1726,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_1_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1760,7 +1760,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_1_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1793,7 +1793,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_1_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1826,42 +1826,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_2_1() {
 //        System.out.println("Test_3_3_3_1_4_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_2_2() {
 //        System.out.println("Test_3_3_3_1_4_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_2_3() {
 //        System.out.println("Test_3_3_3_1_4_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_2_4() {
 //        System.out.println("Test_3_3_3_1_4_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_2_5() {
 //        System.out.println("Test_3_3_3_1_4_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_2_6() {
 //        System.out.println("Test_3_3_3_1_4_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_2_7() {
 //        System.out.println("Test_3_3_3_1_4_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_3_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1894,7 +1894,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_3_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1927,7 +1927,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_3_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1961,7 +1961,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_3_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -1994,7 +1994,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_3_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2028,7 +2028,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_3_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2061,7 +2061,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_3_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2094,7 +2094,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_4_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2128,7 +2128,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_4_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2162,7 +2162,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_4_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2197,7 +2197,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_4_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2231,7 +2231,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_4_5() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2266,7 +2266,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_4_6() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2300,7 +2300,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_1_4_4_7() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -2334,7 +2334,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_1_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2366,7 +2366,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_1_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2398,7 +2398,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_1_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2431,7 +2431,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_1_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2463,7 +2463,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_1_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2496,7 +2496,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_1_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2528,7 +2528,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_1_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2560,42 +2560,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_2_1() {
 //        System.out.println("Test_3_3_3_2_1_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_2_2() {
 //        System.out.println("Test_3_3_3_2_1_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_2_3() {
 //        System.out.println("Test_3_3_3_2_1_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_2_4() {
 //        System.out.println("Test_3_3_3_2_1_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_2_5() {
 //        System.out.println("Test_3_3_3_2_1_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_2_6() {
 //        System.out.println("Test_3_3_3_2_1_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_2_7() {
 //        System.out.println("Test_3_3_3_2_1_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_3_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2627,7 +2627,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_3_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2659,7 +2659,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_3_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2692,7 +2692,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_3_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2724,7 +2724,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_3_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2757,7 +2757,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_3_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2789,7 +2789,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_3_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2821,7 +2821,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_4_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2854,7 +2854,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_4_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2887,7 +2887,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_4_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2921,7 +2921,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_4_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2954,7 +2954,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_4_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -2988,7 +2988,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_4_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3021,7 +3021,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_1_4_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3054,147 +3054,147 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_1_1() {
 //        System.out.println("Test_3_3_3_2_2_1_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_1_2() {
 //        System.out.println("Test_3_3_3_2_2_1_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_1_3() {
 //        System.out.println("Test_3_3_3_2_2_1_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_1_4() {
 //        System.out.println("Test_3_3_3_2_2_1_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_1_5() {
 //        System.out.println("Test_3_3_3_2_2_1_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_1_6() {
 //        System.out.println("Test_3_3_3_2_2_1_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_1_7() {
 //        System.out.println("Test_3_3_3_2_2_1_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_2_1() {
 //        System.out.println("Test_3_3_3_2_2_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_2_2() {
 //        System.out.println("Test_3_3_3_2_2_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_2_3() {
 //        System.out.println("Test_3_3_3_2_2_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_2_4() {
 //        System.out.println("Test_3_3_3_2_2_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_2_5() {
 //        System.out.println("Test_3_3_3_2_2_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_2_6() {
 //        System.out.println("Test_3_3_3_2_2_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_2_7() {
 //        System.out.println("Test_3_3_3_2_2_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_3_1() {
 //        System.out.println("Test_3_3_3_2_2_3_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_3_2() {
 //        System.out.println("Test_3_3_3_2_2_3_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_3_3() {
 //        System.out.println("Test_3_3_3_2_2_3_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_3_4() {
 //        System.out.println("Test_3_3_3_2_2_3_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_3_5() {
 //        System.out.println("Test_3_3_3_2_2_3_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_3_6() {
 //        System.out.println("Test_3_3_3_2_2_3_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_3_7() {
 //        System.out.println("Test_3_3_3_2_2_3_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_4_1() {
 //        System.out.println("Test_3_3_3_2_2_4_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_4_2() {
 //        System.out.println("Test_3_3_3_2_2_4_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_4_3() {
 //        System.out.println("Test_3_3_3_2_2_4_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_4_4() {
 //        System.out.println("Test_3_3_3_2_2_4_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_4_5() {
 //        System.out.println("Test_3_3_3_2_2_4_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_4_6() {
 //        System.out.println("Test_3_3_3_2_2_4_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_2_4_7() {
 //        System.out.println("Test_3_3_3_2_2_4_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_1_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3226,7 +3226,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_1_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3258,7 +3258,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_1_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3291,7 +3291,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_1_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3323,7 +3323,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_1_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3356,7 +3356,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_1_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3388,7 +3388,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_1_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3420,42 +3420,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_2_1() {
 //        System.out.println("Test_3_3_3_2_3_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_2_2() {
 //        System.out.println("Test_3_3_3_2_3_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_2_3() {
 //        System.out.println("Test_3_3_3_2_3_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_2_4() {
 //        System.out.println("Test_3_3_3_2_3_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_2_5() {
 //        System.out.println("Test_3_3_3_2_3_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_2_6() {
 //        System.out.println("Test_3_3_3_2_3_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_2_7() {
 //        System.out.println("Test_3_3_3_2_3_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_3_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3487,7 +3487,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_3_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3519,7 +3519,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_3_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3552,7 +3552,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_3_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3584,7 +3584,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_3_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3617,7 +3617,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_3_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3649,7 +3649,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_3_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3681,7 +3681,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_4_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3714,7 +3714,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_4_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3747,7 +3747,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_4_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3781,7 +3781,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_4_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3814,7 +3814,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_4_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3848,7 +3848,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_4_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3881,7 +3881,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_3_4_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3914,7 +3914,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_1_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3947,7 +3947,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_1_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -3980,7 +3980,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_1_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4014,7 +4014,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_1_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4047,7 +4047,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_1_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4081,7 +4081,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_1_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4114,7 +4114,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_1_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4147,42 +4147,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_2_1() {
 //        System.out.println("Test_3_3_3_2_4_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_2_2() {
 //        System.out.println("Test_3_3_3_2_4_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_2_3() {
 //        System.out.println("Test_3_3_3_2_4_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_2_4() {
 //        System.out.println("Test_3_3_3_2_4_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_2_5() {
 //        System.out.println("Test_3_3_3_2_4_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_2_6() {
 //        System.out.println("Test_3_3_3_2_4_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_2_7() {
 //        System.out.println("Test_3_3_3_2_4_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_3_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4215,7 +4215,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_3_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4248,7 +4248,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_3_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4282,7 +4282,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_3_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4315,7 +4315,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_3_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4349,7 +4349,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_3_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4382,7 +4382,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_3_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4415,7 +4415,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_4_1() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4449,7 +4449,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_4_2() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4483,7 +4483,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_4_3() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4518,7 +4518,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_4_4() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4552,7 +4552,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_4_5() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4587,7 +4587,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_4_6() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4621,7 +4621,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_2_4_4_7() {
 //        Printer.DisablePrint();
 //        Celhely kiindulomezo = new Celhely();
@@ -4655,7 +4655,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_1_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4687,7 +4687,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_1_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4719,7 +4719,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_1_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4752,7 +4752,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_1_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4784,7 +4784,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_1_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4817,7 +4817,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_1_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4849,7 +4849,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_1_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4881,42 +4881,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_2_1() {
 //        System.out.println("Test_3_3_3_3_1_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_2_2() {
 //        System.out.println("Test_3_3_3_3_1_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_2_3() {
 //        System.out.println("Test_3_3_3_3_1_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_2_4() {
 //        System.out.println("Test_3_3_3_3_1_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_2_5() {
 //        System.out.println("Test_3_3_3_3_1_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_2_6() {
 //        System.out.println("Test_3_3_3_3_1_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_2_7() {
 //        System.out.println("Test_3_3_3_3_1_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_3_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4948,7 +4948,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_3_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -4980,7 +4980,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_3_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5013,7 +5013,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_3_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5045,7 +5045,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_3_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5078,7 +5078,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_3_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5110,7 +5110,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_3_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5142,7 +5142,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_4_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5175,7 +5175,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_4_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5208,7 +5208,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_4_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5242,7 +5242,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_4_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5275,7 +5275,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_4_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5309,7 +5309,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_4_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5342,7 +5342,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_1_4_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5375,147 +5375,147 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_1_1() {
 //        System.out.println("Test_3_3_3_3_2_1_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_1_2() {
 //        System.out.println("Test_3_3_3_3_2_1_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_1_3() {
 //        System.out.println("Test_3_3_3_3_2_1_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_1_4() {
 //        System.out.println("Test_3_3_3_3_2_1_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_1_5() {
 //        System.out.println("Test_3_3_3_3_2_1_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_1_6() {
 //        System.out.println("Test_3_3_3_3_2_1_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_1_7() {
 //        System.out.println("Test_3_3_3_3_2_1_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_2_1() {
 //        System.out.println("Test_3_3_3_3_2_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_2_2() {
 //        System.out.println("Test_3_3_3_3_2_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_2_3() {
 //        System.out.println("Test_3_3_3_3_2_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_2_4() {
 //        System.out.println("Test_3_3_3_3_2_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_2_5() {
 //        System.out.println("Test_3_3_3_3_2_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_2_6() {
 //        System.out.println("Test_3_3_3_3_2_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_2_7() {
 //        System.out.println("Test_3_3_3_3_2_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_3_1() {
 //        System.out.println("Test_3_3_3_3_2_3_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_3_2() {
 //        System.out.println("Test_3_3_3_3_2_3_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_3_3() {
 //        System.out.println("Test_3_3_3_3_2_3_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_3_4() {
 //        System.out.println("Test_3_3_3_3_2_3_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_3_5() {
 //        System.out.println("Test_3_3_3_3_2_3_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_3_6() {
 //        System.out.println("Test_3_3_3_3_2_3_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_3_7() {
 //        System.out.println("Test_3_3_3_3_2_3_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_4_1() {
 //        System.out.println("Test_3_3_3_3_2_4_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_4_2() {
 //        System.out.println("Test_3_3_3_3_2_4_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_4_3() {
 //        System.out.println("Test_3_3_3_3_2_4_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_4_4() {
 //        System.out.println("Test_3_3_3_3_2_4_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_4_5() {
 //        System.out.println("Test_3_3_3_3_2_4_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_4_6() {
 //        System.out.println("Test_3_3_3_3_2_4_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_2_4_7() {
 //        System.out.println("Test_3_3_3_3_2_4_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_1_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5547,7 +5547,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_1_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5579,7 +5579,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_1_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5612,7 +5612,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_1_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5644,7 +5644,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_1_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5677,7 +5677,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_1_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5709,7 +5709,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_1_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5741,42 +5741,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_2_1() {
 //        System.out.println("Test_3_3_3_3_3_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_2_2() {
 //        System.out.println("Test_3_3_3_3_3_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_2_3() {
 //        System.out.println("Test_3_3_3_3_3_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_2_4() {
 //        System.out.println("Test_3_3_3_3_3_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_2_5() {
 //        System.out.println("Test_3_3_3_3_3_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_2_6() {
 //        System.out.println("Test_3_3_3_3_3_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_2_7() {
 //        System.out.println("Test_3_3_3_3_3_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_3_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5808,7 +5808,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_3_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5840,7 +5840,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_3_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5873,7 +5873,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_3_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5905,7 +5905,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_3_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5938,7 +5938,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_3_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -5970,7 +5970,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_3_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6002,7 +6002,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_4_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6035,7 +6035,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_4_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6068,7 +6068,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_4_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6102,7 +6102,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_4_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6135,7 +6135,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_4_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6169,7 +6169,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_4_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6202,7 +6202,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_3_4_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6235,7 +6235,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_1_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6268,7 +6268,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_1_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6301,7 +6301,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_1_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6335,7 +6335,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_1_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6368,7 +6368,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_1_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6402,7 +6402,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_1_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6435,7 +6435,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_1_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6468,42 +6468,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_2_1() {
 //        System.out.println("Test_3_3_3_3_4_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_2_2() {
 //        System.out.println("Test_3_3_3_3_4_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_2_3() {
 //        System.out.println("Test_3_3_3_3_4_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_2_4() {
 //        System.out.println("Test_3_3_3_3_4_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_2_5() {
 //        System.out.println("Test_3_3_3_3_4_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_2_6() {
 //        System.out.println("Test_3_3_3_3_4_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_2_7() {
 //        System.out.println("Test_3_3_3_3_4_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_3_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6536,7 +6536,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_3_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6569,7 +6569,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_3_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6603,7 +6603,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_3_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6636,7 +6636,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_3_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6670,7 +6670,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_3_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6703,7 +6703,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_3_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6736,7 +6736,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_4_1() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6770,7 +6770,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_4_2() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6804,7 +6804,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_4_3() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6839,7 +6839,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_4_4() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6873,7 +6873,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_4_5() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6908,7 +6908,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_4_6() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6942,7 +6942,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_3_4_4_7() {
 //        Printer.DisablePrint();
 //        Csapdaajto kiindulomezo = new Csapdaajto();
@@ -6976,7 +6976,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_1_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7009,7 +7009,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_1_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7042,7 +7042,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_1_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7076,7 +7076,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_1_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7109,7 +7109,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_1_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7143,7 +7143,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_1_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7176,7 +7176,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_1_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7209,42 +7209,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_2_1() {
 //        System.out.println("Test_3_3_3_4_1_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_2_2() {
 //        System.out.println("Test_3_3_3_4_1_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_2_3() {
 //        System.out.println("Test_3_3_3_4_1_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_2_4() {
 //        System.out.println("Test_3_3_3_4_1_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_2_5() {
 //        System.out.println("Test_3_3_3_4_1_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_2_6() {
 //        System.out.println("Test_3_3_3_4_1_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_2_7() {
 //        System.out.println("Test_3_3_3_4_1_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_3_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7277,7 +7277,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_3_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7310,7 +7310,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_3_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7344,7 +7344,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_3_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7377,7 +7377,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_3_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7411,7 +7411,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_3_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7444,7 +7444,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_3_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7477,7 +7477,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_4_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7511,7 +7511,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_4_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7545,7 +7545,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_4_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7580,7 +7580,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_4_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7614,7 +7614,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_4_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7649,7 +7649,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_4_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7683,7 +7683,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_1_4_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7717,147 +7717,147 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_1_1() {
 //        System.out.println("Test_3_3_3_4_2_1_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_1_2() {
 //        System.out.println("Test_3_3_3_4_2_1_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_1_3() {
 //        System.out.println("Test_3_3_3_4_2_1_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_1_4() {
 //        System.out.println("Test_3_3_3_4_2_1_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_1_5() {
 //        System.out.println("Test_3_3_3_4_2_1_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_1_6() {
 //        System.out.println("Test_3_3_3_4_2_1_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_1_7() {
 //        System.out.println("Test_3_3_3_4_2_1_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_2_1() {
 //        System.out.println("Test_3_3_3_4_2_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_2_2() {
 //        System.out.println("Test_3_3_3_4_2_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_2_3() {
 //        System.out.println("Test_3_3_3_4_2_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_2_4() {
 //        System.out.println("Test_3_3_3_4_2_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_2_5() {
 //        System.out.println("Test_3_3_3_4_2_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_2_6() {
 //        System.out.println("Test_3_3_3_4_2_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_2_7() {
 //        System.out.println("Test_3_3_3_4_2_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_3_1() {
 //        System.out.println("Test_3_3_3_4_2_3_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_3_2() {
 //        System.out.println("Test_3_3_3_4_2_3_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_3_3() {
 //        System.out.println("Test_3_3_3_4_2_3_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_3_4() {
 //        System.out.println("Test_3_3_3_4_2_3_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_3_5() {
 //        System.out.println("Test_3_3_3_4_2_3_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_3_6() {
 //        System.out.println("Test_3_3_3_4_2_3_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_3_7() {
 //        System.out.println("Test_3_3_3_4_2_3_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_4_1() {
 //        System.out.println("Test_3_3_3_4_2_4_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_4_2() {
 //        System.out.println("Test_3_3_3_4_2_4_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_4_3() {
 //        System.out.println("Test_3_3_3_4_2_4_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_4_4() {
 //        System.out.println("Test_3_3_3_4_2_4_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_4_5() {
 //        System.out.println("Test_3_3_3_4_2_4_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_4_6() {
 //        System.out.println("Test_3_3_3_4_2_4_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_2_4_7() {
 //        System.out.println("Test_3_3_3_4_2_4_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_1_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7890,7 +7890,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_1_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7923,7 +7923,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_1_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7957,7 +7957,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_1_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -7990,7 +7990,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_1_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8024,7 +8024,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_1_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8057,7 +8057,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_1_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8090,42 +8090,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_2_1() {
 //        System.out.println("Test_3_3_3_4_3_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_2_2() {
 //        System.out.println("Test_3_3_3_4_3_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_2_3() {
 //        System.out.println("Test_3_3_3_4_3_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_2_4() {
 //        System.out.println("Test_3_3_3_4_3_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_2_5() {
 //        System.out.println("Test_3_3_3_4_3_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_2_6() {
 //        System.out.println("Test_3_3_3_4_3_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_2_7() {
 //        System.out.println("Test_3_3_3_4_3_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_3_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8158,7 +8158,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_3_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8191,7 +8191,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_3_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8225,7 +8225,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_3_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8258,7 +8258,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_3_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8292,7 +8292,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_3_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8325,7 +8325,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_3_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8358,7 +8358,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_4_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8392,7 +8392,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_4_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8426,7 +8426,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_4_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8461,7 +8461,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_4_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8495,7 +8495,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_4_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8530,7 +8530,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_4_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8564,7 +8564,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_3_4_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8598,7 +8598,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_1_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8632,7 +8632,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_1_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8666,7 +8666,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_1_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8701,7 +8701,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_1_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8735,7 +8735,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_1_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8770,7 +8770,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_1_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8804,7 +8804,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_1_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8838,42 +8838,42 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_2_1() {
 //        System.out.println("Test_3_3_3_4_4_2_1 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_2_2() {
 //        System.out.println("Test_3_3_3_4_4_2_2 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_2_3() {
 //        System.out.println("Test_3_3_3_4_4_2_3 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_2_4() {
 //        System.out.println("Test_3_3_3_4_4_2_4 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_2_5() {
 //        System.out.println("Test_3_3_3_4_4_2_5 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_2_6() {
 //        System.out.println("Test_3_3_3_4_4_2_6 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_2_7() {
 //        System.out.println("Test_3_3_3_4_4_2_7 kihagyva, mert jelölt doboz nem kerülhet alapértelmezetten célhelyre");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_3_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8907,7 +8907,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_3_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8941,7 +8941,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_3_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -8976,7 +8976,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_3_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9010,7 +9010,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_3_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9045,7 +9045,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_3_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9079,7 +9079,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_3_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9113,7 +9113,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_4_1() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9148,7 +9148,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_4_2() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9183,7 +9183,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_4_3() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9219,7 +9219,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_4_4() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9254,7 +9254,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_4_5() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9290,7 +9290,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_4_6() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();
@@ -9325,7 +9325,7 @@ public class Test3_3_3 {}
 //        System.out.println("<========================== END OF TEST ==========================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_3_3_3_4_4_4_7() {
 //        Printer.DisablePrint();
 //        Kapcsolo kiindulomezo = new Kapcsolo();

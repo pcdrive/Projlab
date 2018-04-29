@@ -1410,7 +1410,7 @@
   </commands>
   <commands xmi:id="_b_JfUkY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.correction.convertLocalToField.assist" commandName="Quick Assist - Convert local variable to field" description="Invokes quick assist and selects 'Convert local variable to field'" category="_b_HDMEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfU0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.correction.addThrowsDecl" commandName="Quick Fix - Add throws declaration" description="Invokes quick assist and selects 'Add throws declaration'" category="_b_HDMEY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_JfVEY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.junitPluginShortcut.coverage" commandName="Coverage JUnit Plug-in Test" description="Coverage JUnit Plug-in Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_JfVEY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.junitPluginShortcut.coverage" commandName="Coverage JUnit Plug-in test" description="Coverage JUnit Plug-in test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfVUY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.deletePreviousWord" commandName="Delete Previous Word" description="Delete the previous word" category="_b_HDGUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfVkY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace" commandName="Declaration in Workspace" description="Search for declarations of the selected element in the workspace" category="_b_HDKEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfV0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.ui.commands.showElementInTypeHierarchyView" commandName="Show JavaScript Element Type Hierarchy" description="Show a JavaScript element in the Type Hierarchy view" category="_b_HDHUY7Eei7vYaEZgWykQ">
@@ -1426,7 +1426,7 @@
   <commands xmi:id="_b_JfX0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.ant.ui.toggleMarkOccurrences" commandName="Toggle Ant Mark Occurrences" description="Toggles mark occurrences in Ant editors" category="_b_HDMEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfYEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.navigate.addToWorkingSet" commandName="Add to Working Set" description="Adds the selected object to a working set." category="_b_HDEkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfYUY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.callhierarchy.view" commandName="JavaScript Call Hierarchy" description="Show the Call Hierarchy view" category="_b_HDEUY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_JfYkY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.debug" commandName="Debug JUnit Test" description="Debug JUnit Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_JfYkY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.debug" commandName="Debug JUnit test" description="Debug JUnit test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfY0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.wikitext.ui.editor.showCheatSheetCommand" commandName="Show Markup Cheat Sheet" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_JfZEY7Eei7vYaEZgWykQ" elementId="org.eclipse.team.ui.TeamSynchronizingPerspective" commandName="Team Synchronizing" description="Open the Team Synchronizing Perspective" category="_b_HDLUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_KGYEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ant.ui.open.declaration.command" commandName="Open Declaration" description="Opens the Ant editor on the referenced element" category="_b_HDMEY7Eei7vYaEZgWykQ"/>
@@ -1513,7 +1513,7 @@
   </commands>
   <commands xmi:id="_b_KtoEY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.add.unimplemented.constructors" commandName="Generate Constructors from Superclass" description="Evaluate and add constructors from superclass" category="_b_HDG0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_KtoUY7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.tasks.ui.command.showToolTip" commandName="Show Tooltip Description" category="_b_HDHEY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_KtokY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.junitShortcut.coverage" commandName="Coverage JUnit Test" description="Coverage JUnit Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_KtokY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.junitShortcut.coverage" commandName="Coverage JUnit test" description="Coverage JUnit test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Kto0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.context.ui.commands.task.copyContext" commandName="Copy Context" category="_b_HDGkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_KtpEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.window.showViewMenu" commandName="Show View Menu" description="Show the view menu" category="_b_HDJEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_KtpUY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.team.Commit" commandName="Commit..." category="_b_HDLEY7Eei7vYaEZgWykQ"/>
@@ -1641,7 +1641,7 @@
   <commands xmi:id="_b_Miw0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.quickdiff.toggle" commandName="Quick Diff Toggle" description="Toggles quick diff information display on the line number ruler" category="_b_HDEkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_MixEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.deleteNext" commandName="Delete Next" description="Delete the next character" category="_b_HDGUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_MixUY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.FetchGerritChange" commandName="Fetch From Gerrit" category="_b_HDLEY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_MixkY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.junitRAPShortcut.coverage" commandName="Coverage RAP JUnit Test" description="Coverage RAP JUnit Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_MixkY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.junitRAPShortcut.coverage" commandName="Coverage RAP JUnit test" description="Coverage RAP JUnit test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Mix0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.tasks.ui.command.SynchronizeAll" commandName="Synchronize Changed" category="_b_HDHEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_MiyEY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.debug.ui.commands.Watch" commandName="Watch" description="Create new watch expression" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_MiyUY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.history.Reword" commandName="Reword Commit" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
@@ -1682,7 +1682,7 @@
   <commands xmi:id="_b_NJwkY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.team.Discard" commandName="Replace with File in Index" category="_b_HDLEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_NJw0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.RepositoriesViewCreateBranch" commandName="Create Branch..." category="_b_HDLEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_NJxEY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.RepositoriesViewCopyPath" commandName="Copy Path to Clipboard" category="_b_HDLEY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_NJxUY7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.builds.ui.command.NewTaskFromTest" commandName="New Task From Test" category="_b_HDFkY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_NJxUY7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.builds.ui.command.NewTaskFromTest" commandName="New Task From test" category="_b_HDFkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_NJxkY7Eei7vYaEZgWykQ" elementId="org.eclipse.oomph.setup.editor.perform.startup" commandName="Perform Setup Tasks (Startup)" category="_b_HDGEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_NJx0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.ui.JavaPerspective" commandName="JavaScript" description="Show the JavaScript perspective" category="_b_HDLUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_NJyEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.showRulerAnnotationInformation" commandName="Show Ruler Annotation Tooltip" description="Displays annotation information for the caret line in a focused hover" category="_b_HDGUY7Eei7vYaEZgWykQ"/>
@@ -1747,7 +1747,7 @@
   <commands xmi:id="_b_NwzUY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.sse.ui.generate.xml" commandName="&amp;XML File..." category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_NwzkY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly" commandName="Show Selected Element Only" description="Show Selected Element Only" category="_b_HDJEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Nwz0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.ui.correction.addImport" commandName="Quick Fix - Add import" description="Invokes quick assist and selects 'Add import'" category="_b_HDG0Y7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_Nw0EY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.rerunFailedFirst" commandName="Rerun JUnit Test - Failures First" description="Rerun JUnit Test - Failures First" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_Nw0EY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.rerunFailedFirst" commandName="Rerun JUnit test - Failures First" description="Rerun JUnit test - Failures First" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Nw0UY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.file.export" commandName="Export" description="Export" category="_b_HDIkY7Eei7vYaEZgWykQ">
     <parameters xmi:id="_b_Nw0kY7Eei7vYaEZgWykQ" elementId="exportWizardId" name="Export Wizard"/>
   </commands>
@@ -1824,10 +1824,10 @@
   <commands xmi:id="_b_OX7EY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.team.SimplePush" commandName="Push to Upstream" category="_b_HDLEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_OX7UY7Eei7vYaEZgWykQ" elementId="org.eclipse.debug.ui.commands.addMemoryMonitor" commandName="Add Memory Block" description="Add memory block" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_OX7kY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.ui.navigate.gototype" commandName="Go to Type" description="Go to Type" category="_b_HDHUY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_OX70Y7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.run" commandName="Run JUnit Test" description="Run JUnit Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_OX70Y7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.run" commandName="Run JUnit test" description="Run JUnit test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_OX8EY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.PushHeadToGerrit" commandName="Push Current Head to Gerrit" category="_b_HDLEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_OX8UY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.selectAll" commandName="Select All" description="Select all" category="_b_HDEkY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_OX8kY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.swtBotJunitShortcut.coverage" commandName="Coverage SWTBot Test" description="Coverage SWTBot Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_OX8kY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.swtBotJunitShortcut.coverage" commandName="Coverage SWTBot test" description="Coverage SWTBot test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_OX80Y7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.show.outline" commandName="Quick Outline" description="Show the quick outline for the editor input" category="_b_HDHUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_OX9EY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.goto.next.member" commandName="Go to Next Member" description="Move the caret to the next member of the compilation unit" category="_b_HDHUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_OX9UY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.project.rebuildProject" commandName="Rebuild Project" description="Rebuild the selected projects" category="_b_HDJ0Y7Eei7vYaEZgWykQ"/>
@@ -1944,7 +1944,7 @@
   <commands xmi:id="_b_Pl-kY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.debug.ui.commands.AllInstances" commandName="All Instances" description="View all instances of the selected type loaded in the target VM" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Pl-0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.history.OpenInCommitViewerCommand" commandName="Open in Commit Viewer" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Pl_EY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.toggle.comment" commandName="Toggle Comment" description="Toggle comment the selected lines" category="_b_HDMEY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_Pl_UY7Eei7vYaEZgWykQ" elementId="org.eclipse.m2e.actions.LifeCycleTest.run" commandName="Run Maven Test" description="Run Maven Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_Pl_UY7Eei7vYaEZgWykQ" elementId="org.eclipse.m2e.actions.LifeCycleTest.run" commandName="Run Maven test" description="Run Maven test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Pl_kY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.window.savePerspective" commandName="Save Perspective As" description="Save the current perspective" category="_b_HDJEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_Pl_0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.use.supertype" commandName="Use Supertype Where Possible" description="Change occurrences of a type to use a supertype instead" category="_b_HDNEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_PmAEY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.correction.assignParamToField.assist" commandName="Quick Assist - Assign parameter to field" description="Invokes quick assist and selects 'Assign parameter to field'" category="_b_HDMEY7Eei7vYaEZgWykQ"/>
@@ -1953,7 +1953,7 @@
   <commands xmi:id="_b_PmA0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.navigate.linkWithEditor" commandName="Toggle Link with Editor" description="Toggles linking of a view's selection with the active editor's selection" category="_b_HDHUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_PmBEY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.sse.ui.open.file.from.source" commandName="Open Selection" description="Open an editor on the selected link" category="_b_HDEkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_PmBUY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.open.hierarchy" commandName="Quick Hierarchy" description="Show the quick hierarchy of the selected element" category="_b_HDHUY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_PmBkY7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.builds.ui.command.ShowTestResults" commandName="Show Test Results" category="_b_HDFkY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_PmBkY7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.builds.ui.command.ShowTestResults" commandName="Show test Results" category="_b_HDFkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_PmB0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.toggleBlockSelectionMode" commandName="Toggle Block Selection" description="Toggle block / column selection in the current text editor" category="_b_HDEkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_PmCEY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.sse.ui.goto.matching.bracket" commandName="Matching Character" description="Go to Matching Character" category="_b_HDHUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_PmCUY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu" commandName="Show Refactor Quick Menu" description="Shows the refactor quick menu" category="_b_HDJUY7Eei7vYaEZgWykQ"/>
@@ -2220,7 +2220,7 @@
   <commands xmi:id="_b_RbYUY7Eei7vYaEZgWykQ" elementId="org.eclipse.ltk.ui.refactoring.commands.deleteResources" commandName="Delete Resources" description="Delete the selected resources and notify LTK participants." category="_b_HDLkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_RbYkY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.file.print" commandName="Print" description="Print" category="_b_HDIkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_RbY0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.debug.ui.commands.AllReferences" commandName="All References" description="Inspect all references to the selected object" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_RbZEY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.rerunLast" commandName="Rerun JUnit Test" description="Rerun JUnit Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_RbZEY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.junit.junitShortcut.rerunLast" commandName="Rerun JUnit test" description="Rerun JUnit test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_RbZUY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.sse.ui.format.active.elements" commandName="Format Active Elements" description="Format active elements" category="_b_HDEkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_RbZkY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.showRulerContextMenu" commandName="Show Ruler Context Menu" description="Show the context menu for the ruler" category="_b_HDJEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_RbZ0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.search.references.in.working.set" commandName="References in Working Set" description="Search for references to the selected element in a working set" category="_b_HDKEY7Eei7vYaEZgWykQ"/>
@@ -2231,7 +2231,7 @@
   <commands xmi:id="_b_SCMEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.window.spy" commandName="Show Contributing Plug-in" description="Shows contribution information for the currently selected element" category="_b_HDJEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCMUY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.help.helpSearch" commandName="Help Search" description="Open the help search" category="_b_HDJkY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCMkY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.edit.text.java.infer.type.arguments" commandName="Infer Generic Type Arguments" description="Infer type arguments for references to generic classes and remove unnecessary casts" category="_b_HDJUY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_SCM0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.builds.ui.command.ShowTestResults.url" commandName="Show Test Results" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_SCM0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.builds.ui.command.ShowTestResults.url" commandName="Show test Results" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCNEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.goto.lineDown" commandName="Line Down" description="Go down one line of text" category="_b_HDGUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCNUY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.commit.Checkout" commandName="Check Out" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCNkY7Eei7vYaEZgWykQ" elementId="org.eclipse.m2e.actions.LifeCycleClean.run" commandName="Run Maven Clean" description="Run Maven Clean" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
@@ -2262,7 +2262,7 @@
   <commands xmi:id="_b_SCTkY7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.jsdt.ui.edit.text.java.extract.method" commandName="Extract Function" description="Extract a set of statements or an expression into a new function and use the new function" category="_b_HDNEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCT0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.wst.xml.ui.referencedFileErrors" commandName="Show Details..." description="Show Details..." category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCUEY7Eei7vYaEZgWykQ" elementId="org.eclipse.debug.ui.commands.RunLast" commandName="Run" description="Launch in run mode" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_SCUUY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.externalTools.commands.OpenExternalToolsConfigurations" commandName="External Tools..." description="Open external tools launch configuration dialog" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_SCUUY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.externalTools.commands.OpenExternalToolsConfigurations" commandName="External tools..." description="Open external tools launch configuration dialog" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCUkY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.debug.ui.command.OpenFromClipboard" commandName="Open from Clipboard" description="Opens a Java element or a Java stack trace from clipboard" category="_b_HDHUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCU0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.edit.text.deletePrevious" commandName="Delete Previous" description="Delete the previous character" category="_b_HDGUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCVEY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.team.CompareWithPrevious" commandName="Compare with Previous Revision" category="_b_HDLEY7Eei7vYaEZgWykQ"/>
@@ -2310,7 +2310,7 @@
   <commands xmi:id="_b_SCfEY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.ui.generate.javadoc" commandName="Generate Javadoc" description="Generates Javadoc for a selectable set of Java resources" category="_b_HDJ0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCfUY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.RepositoriesViewConfigureGerritRemote" commandName="Gerrit Configuration..." category="_b_HDLEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCfkY7Eei7vYaEZgWykQ" elementId="org.eclipse.jdt.debug.ui.commands.StepIntoSelection" commandName="Step Into Selection" description="Step into the current selected statement" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_b_SCf0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.buildship.ui.shortcut.test.run" commandName="Run Gradle Test" description="Run Gradle test based on the current selection" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_SCf0Y7Eei7vYaEZgWykQ" elementId="org.eclipse.buildship.ui.shortcut.test.run" commandName="Run Gradle test" description="Run Gradle test based on the current selection" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCgEY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.ide.configureColumns" commandName="Configure Columns..." description="Configure the columns in the markers view" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCgUY7Eei7vYaEZgWykQ" elementId="org.eclipse.egit.ui.team.ReplaceWithCommit" commandName="Replace with commit" category="_b_HDLEY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SCgkY7Eei7vYaEZgWykQ" elementId="org.eclipse.debug.ui.commands.DebugLast" commandName="Debug" description="Launch in debug mode" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
@@ -2354,7 +2354,7 @@
   <commands xmi:id="_b_SpWkY7Eei7vYaEZgWykQ" elementId="org.eclipse.mylyn.context.ui.commands.focus.view" commandName="Focus View" category="_b_HDM0Y7Eei7vYaEZgWykQ">
     <parameters xmi:id="_b_SpW0Y7Eei7vYaEZgWykQ" elementId="viewId" name="View ID to Focus" optional="false"/>
   </commands>
-  <commands xmi:id="_b_SpXEY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.testNgShortcut.coverage" commandName="Coverage TestNG Test" description="Coverage TestNG Test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_b_SpXEY7Eei7vYaEZgWykQ" elementId="org.eclipse.eclemma.ui.testNgShortcut.coverage" commandName="Coverage TestNG test" description="Coverage TestNG test" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SpXUY7Eei7vYaEZgWykQ" elementId="org.eclipse.debug.ui.commands.StepReturn" commandName="Step Return" description="Step return" category="_b_HDKUY7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_b_SpXkY7Eei7vYaEZgWykQ" elementId="org.eclipse.ui.browser.openBundleResource" commandName="Open Resource in Browser" description="Opens a bundle resource in the default web browser." category="_b_HDJEY7Eei7vYaEZgWykQ">
     <parameters xmi:id="_b_SpX0Y7Eei7vYaEZgWykQ" elementId="plugin" name="Plugin"/>
@@ -2449,7 +2449,7 @@
   <commands xmi:id="_cUYIcEY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.search.searchActionSet/org.eclipse.search.OpenSearchDialogPage" commandName="Search..." description="Search" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_cUYIcUY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.team.ui.actionSet/org.eclipse.team.ui.synchronizeAll" commandName="Synchronize..." description="Synchronize..." category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_cUYvgEY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.team.ui.actionSet/org.eclipse.team.ui.ConfigureProject" commandName="Share Project..." description="Share the project with others using a version and configuration management system." category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
-  <commands xmi:id="_cUZWkEY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.ui.externaltools.ExternalToolsSet/org.eclipse.ui.externaltools.ExternalToolMenuDelegateMenu" commandName="External Tools" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
+  <commands xmi:id="_cUZWkEY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.ui.externaltools.ExternalToolsSet/org.eclipse.ui.externaltools.ExternalToolMenuDelegateMenu" commandName="External tools" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_cUZ9oEY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.jst.j2ee.J2eeMainActionSet/org.eclipse.jst.j2ee.internal.actions.NewJavaEEArtifact" commandName="Servlet" description="Create a new Servlet" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_cUZ9oUY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.jst.j2ee.J2eeMainActionSet/org.eclipse.jst.j2ee.internal.actions.NewJavaEEProject" commandName="Dynamic Web Project" description="Create a Dynamic Web project" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>
   <commands xmi:id="_cUaksEY7Eei7vYaEZgWykQ" elementId="AUTOGEN:::org.eclipse.wst.jsdt.ui.JavaElementCreationActionSet/org.eclipse.wst.jsdt.ui.actions.OpenFileWizard" commandName="JavaScript Source File" description="New JavaScript file" category="_b_HDM0Y7Eei7vYaEZgWykQ"/>

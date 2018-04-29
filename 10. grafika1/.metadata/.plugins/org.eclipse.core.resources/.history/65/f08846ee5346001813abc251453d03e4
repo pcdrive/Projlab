@@ -14,7 +14,7 @@
 
 package sokoban;
 
-import Tools.Printer;
+import tools.Printer;
 import data.Data;
 import server.KliensAdat;
 import server.PalyaAdat;

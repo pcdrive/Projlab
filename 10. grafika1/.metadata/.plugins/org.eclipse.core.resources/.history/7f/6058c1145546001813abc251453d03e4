@@ -14,7 +14,7 @@
 
 package sokoban.leptethetok;
 
-import Tools.Printer;
+import tools.Printer;
 import sokoban.Irany;
 import sokoban.Palya;
 import sokoban.mezok.UresMezo;

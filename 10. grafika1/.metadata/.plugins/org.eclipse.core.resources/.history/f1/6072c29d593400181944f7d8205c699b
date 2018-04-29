@@ -14,7 +14,7 @@
 
 package sokoban;
 
-import Tools.Printer;
+import tools.Printer;
 import server.PalyaAdat;
 import server.Szerver;
 import sokoban.leptethetok.Doboz;

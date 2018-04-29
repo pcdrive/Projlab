@@ -1,9 +1,9 @@
-package Test;
+package test;
 public class Test_8 {}
-//package Test;
+//package test;
 //
-//import Tools.Printer;
-//import org.junit.Test;
+//import tools.Printer;
+//import org.junit.test;
 //import server.Szerver;
 //import sokoban.Irany;
 //import sokoban.Jatek;
@@ -17,7 +17,7 @@ public class Test_8 {}
 //
 //public class Test_8 {
 //
-//	@Test
+//	@test
 //    public void TEST_8_1() {
 //
 //        Printer.DisablePrint();
@@ -53,7 +53,7 @@ public class Test_8 {}
 //
 //    }
 //
-//	@Test
+//	@test
 //    public void TEST_8_2() {
 //
 //        Printer.DisablePrint();
@@ -89,7 +89,7 @@ public class Test_8 {}
 //
 //    }
 //
-//	@Test
+//	@test
 //    public void TEST_8_3() {
 //
 //        Printer.DisablePrint();
@@ -130,7 +130,7 @@ public class Test_8 {}
 //
 //    }
 //
-//	@Test
+//	@test
 //    public void TEST_8_4() {
 //
 //        Printer.DisablePrint();
@@ -171,7 +171,7 @@ public class Test_8 {}
 //
 //    }
 //
-//	@Test
+//	@test
 //    public void TEST_8_5() {
 //
 //        Printer.DisablePrint();
@@ -213,7 +213,7 @@ public class Test_8 {}
 //    }
 //
 //
-//	@Test
+//	@test
 //    public void TEST_8_6() {
 //
 //        Printer.DisablePrint();
@@ -259,7 +259,7 @@ public class Test_8 {}
 //
 //    }
 //
-//	@Test
+//	@test
 //    public void TEST_8_7() {
 //
 //        Printer.DisablePrint();
@@ -305,7 +305,7 @@ public class Test_8 {}
 //
 //    }
 //
-//	@Test
+//	@test
 //    public void TEST_8_8() {
 //
 //        Printer.DisablePrint();

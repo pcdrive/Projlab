@@ -26,7 +26,7 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-//import Tools.Printer;
+//import tools.Printer;
 
 public class Szerver {
 	
@@ -110,7 +110,7 @@ public class Szerver {
      * kivalasztott terkepfajl alapjan.
      * 
      * @param name A szerver jatekosanak neve.
-     * @param name2 A szerver második jatekosanak neve.
+     * @param name2 A szerver mï¿½sodik jatekosanak neve.
      */
 	public void Start(String name, String name2) 
 	{
@@ -182,7 +182,7 @@ public class Szerver {
 			
 			Data.PalyaX = startadat.x;
 			Data.PalyaY = startadat.y;
-			System.out.println("[SERVER]: Lehetséges játékésok száma: " + startadat.jsz);
+			System.out.println("[SERVER]: Lehetsï¿½ges jï¿½tï¿½kï¿½sok szï¿½ma: " + startadat.jsz);
 			lobby = new Thread(){
 				public void run() {
 					while (run)

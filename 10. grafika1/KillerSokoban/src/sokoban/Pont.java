@@ -16,7 +16,7 @@ package sokoban;
 
 import java.io.Serializable;
 
-import Tools.Printer;
+import tools.Printer;
 
 @SuppressWarnings("serial")
 public class Pont implements Serializable {

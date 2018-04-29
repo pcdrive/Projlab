@@ -116,7 +116,7 @@
     <item>
       <title><![CDATA[Eclipse Newsletter | Boot & Build Eclipse Projects]]></title>
       <link><![CDATA[https://www.eclipse.org/community/eclipse_newsletter/2018/february/]]></link>
-      <description><![CDATA[Featuring articles about Spring Tools, Gradle plugin (Buildship), Dirigible cloud platform, and EMF Parsley.]]></description>
+      <description><![CDATA[Featuring articles about Spring tools, Gradle plugin (Buildship), Dirigible cloud platform, and EMF Parsley.]]></description>
       <pubDate>Thu, 22 Feb 2018 3:51:00 EST</pubDate>
       <category>news</category>
       <pressrelease>0</pressrelease>
@@ -242,7 +242,7 @@
       <pressrelease>1</pressrelease>
     </item>
      <item>
-      <title><![CDATA[Eclipse Newsletter | Utility Belt: Projects and Tools]]></title>
+      <title><![CDATA[Eclipse Newsletter | Utility Belt: Projects and tools]]></title>
       <link><![CDATA[https://www.eclipse.org/community/eclipse_newsletter/2017/october/]]></link>
       <description><![CDATA[Learn about JUnit 5, e4 on JavaFX, scripting with EASE, embedded tools and Eclipse CDT, Ferret search tool, and software ethics.]]></description>
       <pubDate>Wed, 18 Oct 2017 05:02:00 EST</pubDate>

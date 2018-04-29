@@ -1,9 +1,9 @@
-package Test;
+package test;
 public class Test_1 {}
-//package Test;
+//package test;
 //
-//import Tools.Printer;
-//import org.junit.Test;
+//import tools.Printer;
+//import org.junit.test;
 //import server.Szerver;
 //import sokoban.Irany;
 //import sokoban.Jatek;
@@ -12,7 +12,7 @@ public class Test_1 {}
 //import sokoban.mezok.*;
 //
 //public class Test_1 {
-//    @Test
+//    @test
 //    public void Test_1_1() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -30,7 +30,7 @@ public class Test_1 {}
 //        jatekos1.Lepes(Irany.FEL);
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
-//    @Test
+//    @test
 //    public void Test_1_2() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -50,7 +50,7 @@ public class Test_1 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_1_3() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
@@ -69,7 +69,7 @@ public class Test_1 {}
 //        System.out.println("<============================= END OF TEST =============================>");
 //    }
 //
-//    @Test
+//    @test
 //    public void Test_1_4() {
 //        Printer.DisablePrint();
 //        UresMezo kiindulomezo = new UresMezo();
