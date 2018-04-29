@@ -6,7 +6,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import sokoban.Navigator;
 
 import java.io.IOException;
@@ -34,6 +36,10 @@ public class ServerController {
     public Button button_megse;
     @FXML
     public Button button_start;
+    @FXML
+    public ComboBox combobox_palyavalaszto;
+    @FXML
+    public GridPane gridpane_preview;
 
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
