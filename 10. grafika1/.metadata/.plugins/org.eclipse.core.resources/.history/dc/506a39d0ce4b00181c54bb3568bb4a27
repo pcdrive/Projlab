@@ -21,13 +21,6 @@ public class MenuView {
 	@FXML public Button btn_Exit; 
 	@FXML public Button btn_Client; 	
 	
-    public void SzerverButtonDown(){
-    }
-	
-    public void KliensButtonDown(){
-    }
-	
-    public void ExitButtonDown(){
-    	System.exit(0);
+    public MenuView(){
     }
 }
