@@ -1,7 +1,7 @@
-package view;
+package controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
+import javafx.scene.controller.*;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.

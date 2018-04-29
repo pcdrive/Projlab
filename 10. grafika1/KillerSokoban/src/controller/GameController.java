@@ -1,4 +1,4 @@
-package view;
+package controller;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -12,5 +12,5 @@ package view;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class GameView {
+public class GameController {
 }

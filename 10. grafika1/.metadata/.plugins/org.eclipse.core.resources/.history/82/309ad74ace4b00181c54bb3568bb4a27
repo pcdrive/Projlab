@@ -1,4 +1,4 @@
-package view;
+package controller;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.

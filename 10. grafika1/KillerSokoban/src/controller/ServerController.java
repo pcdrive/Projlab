@@ -1,4 +1,4 @@
-package view;
+package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,11 +23,11 @@ import java.io.IOException;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class ClientView {
+public class ServerController {
     @FXML
-    public TextField textfield_jatekosnev;
+    public TextField textfield_jatekos1nev;
     @FXML
-    public TextField textfield_host;
+    public TextField textfield_jatekos2nev;
     @FXML
     public TextField textfield_port;
     @FXML
@@ -37,7 +37,7 @@ public class ClientView {
 
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
-            if (textfield_jatekosnev.getText().isEmpty() || textfield_host.getText().isEmpty() || textfield_port.getText().isEmpty()) {
+            if (textfield_jatekos1nev.getText().isEmpty() || textfield_jatekos2nev.getText().isEmpty() || textfield_port.getText().isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Hiányos adatok!");
                 alert.setHeaderText(null);

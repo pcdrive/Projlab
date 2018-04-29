@@ -1,4 +1,4 @@
-package view;
+package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,8 +21,7 @@ import java.io.IOException;
  * @version 1.0
  * @since 2018.04.29.
  */
-public class MenuView {
-
+public class MenuController {
     @FXML
     public Button button_server;
     @FXML
