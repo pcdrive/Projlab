@@ -1,6 +1,8 @@
 package controller;
 
 import data.Data;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -67,5 +69,11 @@ public class ServerController {
     @FXML
     public void initialize() {
         combobox_palyavalaszto.setItems(Data.jatek.getPalyaLista());
+        combobox_palyavalaszto.valueProperty().addListener(new ChangeListener<String>() {
+            @Override
+            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+
+            }
+        });
     }
 }
