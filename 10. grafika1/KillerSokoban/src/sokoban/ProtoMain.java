@@ -14,18 +14,18 @@
 
 package sokoban;
 
+import tools.Printer;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import tools.Printer;
-
-public class Main {
+public class ProtoMain {
 
 	static Jatek j;
 
     /**
-     * Main fuggveny, ami a jatekot futtatja.
+     * ProtoMain fuggveny, ami a jatekot futtatja.
      * 
      * @param args	parancssori argumentumok
      */
@@ -57,6 +57,4 @@ public class Main {
 			}
         }
 	}
-
-
 }
