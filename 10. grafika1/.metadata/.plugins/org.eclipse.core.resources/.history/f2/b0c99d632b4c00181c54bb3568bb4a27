@@ -46,6 +46,9 @@ public class GameController {
     private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
     private ArrayList<Pair<Integer, Integer>> usedplayers = new ArrayList<Pair<Integer, Integer>>();
     
+    private Timer timer;
+    private GameController This=this;
+    
     public GameController() 
     {
         CelhelyImg = new Image("/data/resources/drawable/celhely.png");
@@ -59,19 +62,37 @@ public class GameController {
         OlajImg = new Image("/data/resources/drawable/olaj.png");
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
+        boolean b=true;
+        
+      /*  timer = new Timer();
+        timer.schedule(new TimerTask() {
+        	  @Override
+        	  public void run() {
+        	    if (Data.jatek.getData()!=null) 
+        	    {*/
+        while (b) {
+        	    	This.disposeGrid();
+        	    	
+        	    	int[] IDs = Data.PA.palya;
+        	    	
+        	    	This.setGrid();
+        	    	
+        	    	This.fillGrid();
+        }
+        	  /*  }
+        	  }
+        	}, 1000, 1000);*/
     }
     
     private void Tick() 
     {
-    	if (lowergridpane_preview!=null && uppergridpane_preview!=null) {
-	    	disposeGrid();
-	    	
-	    	int[] IDs = Data.PA.palya;
-	    	
-	    	setGrid();
-	    	
-	    	fillGrid();
-    	}
+    	disposeGrid();
+    	
+    	int[] IDs = Data.PA.palya;
+    	
+    	setGrid();
+    	
+    	fillGrid();
     }
 
     private void fillPlayerImages()

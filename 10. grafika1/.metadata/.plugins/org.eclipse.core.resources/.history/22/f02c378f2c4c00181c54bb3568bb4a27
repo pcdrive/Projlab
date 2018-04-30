@@ -59,18 +59,24 @@ public class GameController {
         OlajImg = new Image("/data/resources/drawable/olaj.png");
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
+        boolean b=true;
+        
+        while (b) 
+        {
+        	Tick();
+        }
     }
     
     private void Tick() 
     {
     	if (lowergridpane_preview!=null && uppergridpane_preview!=null) {
-	    	disposeGrid();
+	   /* 	disposeGrid();
 	    	
 	    	int[] IDs = Data.PA.palya;
 	    	
 	    	setGrid();
 	    	
-	    	fillGrid();
+	    	fillGrid();*/
     	}
     }
 
@@ -86,7 +92,7 @@ public class GameController {
     		PlayerImgs.add(new Image("/data/resources/drawable/jatekosok/jo"+i+".png"));
     	}
     }
-    
+    /*
     private void setGrid() 
     {
     	for (int i=0;i<Data.PalyaX;i++) 
@@ -171,5 +177,5 @@ public class GameController {
     	
     	usedplayers.add(new Pair<Integer, Integer>(PLID, res));
     	return res;
-    }
+    }*/
 }

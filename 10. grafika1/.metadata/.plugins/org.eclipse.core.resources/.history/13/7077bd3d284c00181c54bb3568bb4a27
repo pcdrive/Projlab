@@ -36,18 +36,18 @@ import java.util.ArrayList;
 public class Jatek {
 	
 	//szervermod atts
-	private Szerver szerver;
-	private KliensOlvaso kOlvaso;
+	Szerver szerver;
+	KliensOlvaso kOlvaso;
 	
 	//kliensmod atts
-	private String name="";
-	private String name2="";
-	private Socket socket;
-	private ObjectOutputStream out;
-	private ObjectInputStream in;
-	private int maxConnTime=5000;
-	private boolean fut;
-	private KliensAdat KA;
+	String name="";
+	String name2="";
+	Socket socket;
+	ObjectOutputStream out;
+	ObjectInputStream in;
+	int maxConnTime=5000;
+	boolean fut;
+	KliensAdat KA;
 
     /**
      * Az osztaly konstruktora.
@@ -594,15 +594,5 @@ public class Jatek {
     	}
     	
     	return Data.PA.palya;
-    }
-
-    /**
-     * Visszaadja az utoljara kapott jatekadatokat.
-     * 
-     * @return KliensAdat A jatekadatok.
-     */
-    public KliensAdat getData() 
-    {
-    	return KA;
     }
 }

@@ -58,10 +58,11 @@ public class GameController {
         MezOlajImg = new Image("/data/resources/drawable/mezolaj.png");
         OlajImg = new Image("/data/resources/drawable/olaj.png");
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
-        fillPlayerImages();
+     //   fillPlayerImages();
+        boolean b=true;
     }
     
-    private void Tick() 
+/*    private void Tick() 
     {
     	if (lowergridpane_preview!=null && uppergridpane_preview!=null) {
 	    	disposeGrid();
@@ -171,5 +172,5 @@ public class GameController {
     	
     	usedplayers.add(new Pair<Integer, Integer>(PLID, res));
     	return res;
-    }
+    }*/
 }

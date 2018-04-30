@@ -6,6 +6,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import data.Data;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -46,6 +48,8 @@ public class GameController {
     private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
     private ArrayList<Pair<Integer, Integer>> usedplayers = new ArrayList<Pair<Integer, Integer>>();
     
+    private Timer timer;
+    
     public GameController() 
     {
         CelhelyImg = new Image("/data/resources/drawable/celhely.png");
@@ -59,20 +63,15 @@ public class GameController {
         OlajImg = new Image("/data/resources/drawable/olaj.png");
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
+        
+        timer.scheduleAtFixedRate(new TimerTask() {
+        	  @Override
+        	  public void run() {
+        	    // Your database code here
+        	  }
+        	}, 500, 500);
     }
     
-    private void Tick() 
-    {
-    	if (lowergridpane_preview!=null && uppergridpane_preview!=null) {
-	    	disposeGrid();
-	    	
-	    	int[] IDs = Data.PA.palya;
-	    	
-	    	setGrid();
-	    	
-	    	fillGrid();
-    	}
-    }
 
     private void fillPlayerImages()
     {

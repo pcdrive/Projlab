@@ -595,14 +595,4 @@ public class Jatek {
     	
     	return Data.PA.palya;
     }
-
-    /**
-     * Visszaadja az utoljara kapott jatekadatokat.
-     * 
-     * @return KliensAdat A jatekadatok.
-     */
-    public KliensAdat getData() 
-    {
-    	return KA;
-    }
 }

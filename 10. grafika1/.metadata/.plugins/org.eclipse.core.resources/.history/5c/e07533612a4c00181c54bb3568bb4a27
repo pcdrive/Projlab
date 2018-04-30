@@ -6,6 +6,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import data.Data;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -13,6 +15,7 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.util.Pair;
+import server.KliensAdat;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -46,6 +49,8 @@ public class GameController {
     private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
     private ArrayList<Pair<Integer, Integer>> usedplayers = new ArrayList<Pair<Integer, Integer>>();
     
+    private Timer timer;
+    
     public GameController() 
     {
         CelhelyImg = new Image("/data/resources/drawable/celhely.png");
@@ -59,19 +64,28 @@ public class GameController {
         OlajImg = new Image("/data/resources/drawable/olaj.png");
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
+        
+        timer = new Timer();
+        timer.schedule(new TimerTask() {
+        	  @Override
+        	  public void run() {
+        	    if (Data.jatek.getData()!=null) 
+        	    {
+        	    	Tick();
+        	    }
+        	  }
+        	}, 1000, 1000);
     }
     
     private void Tick() 
     {
-    	if (lowergridpane_preview!=null && uppergridpane_preview!=null) {
-	    	disposeGrid();
-	    	
-	    	int[] IDs = Data.PA.palya;
-	    	
-	    	setGrid();
-	    	
-	    	fillGrid();
-    	}
+    	disposeGrid();
+    	
+    	int[] IDs = Data.PA.palya;
+    	
+    	setGrid();
+    	
+    	fillGrid();
     }
 
     private void fillPlayerImages()
