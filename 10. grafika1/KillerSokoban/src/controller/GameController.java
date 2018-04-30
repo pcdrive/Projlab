@@ -6,6 +6,11 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import data.Data;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.util.Duration;
 import javafx.fxml.FXML;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -45,6 +50,7 @@ public class GameController {
     private Image UresMezoImg;
     private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
     private ArrayList<Pair<Integer, Integer>> usedplayers = new ArrayList<Pair<Integer, Integer>>();
+    private Timeline interval;
     
     public GameController() 
     {
@@ -59,19 +65,19 @@ public class GameController {
         OlajImg = new Image("/data/resources/drawable/olaj.png");
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
-    }
-    
-    private void Tick() 
-    {
-    	if (lowergridpane_preview!=null && uppergridpane_preview!=null) {
-	    	disposeGrid();
-	    	
-	    	int[] IDs = Data.PA.palya;
-	    	
-	    	setGrid();
-	    	
-	    	fillGrid();
-    	}
+        
+        EventHandler<ActionEvent> EH = new EventHandler<ActionEvent>() { 
+            @Override
+            public void handle(ActionEvent event) {
+    	    	disposeGrid();
+    	    	
+    	    	setGrid();
+    	    	
+    	    	fillGrid();
+            }};
+        interval = new Timeline(new KeyFrame(Duration.millis(100), EH));
+        interval.setCycleCount(Timeline.INDEFINITE);
+        interval.play();
     }
 
     private void fillPlayerImages()

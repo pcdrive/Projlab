@@ -106,6 +106,8 @@ public class Palya {
                 }
                 break;
             }
+            
+           // Data.PA = new PalyaAdat(nevek.length, getInts(), pa.csapdak, Data.PalyaX, Data.PalyaY);
         }
 
         if (pa.csapdak != null) {

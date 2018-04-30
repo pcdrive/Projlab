@@ -53,7 +53,7 @@
 	</section>
 	<section name="FatJarPackageWizard">
 		<item value="C:\Users\Nova\Desktop\Projlab\Projlab\6.Szkeleton" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
-		<item value="Sokoban - KillerSokoban" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
+		<item value="ProtoMain - KillerSokoban" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
 		<item value="C:\Users\Nova\Desktop\Projlab\Projlab\JARs\KillerSokoban.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
