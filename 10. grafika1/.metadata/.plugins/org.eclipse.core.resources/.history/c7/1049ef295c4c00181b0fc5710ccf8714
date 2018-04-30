@@ -101,16 +101,17 @@ public class GameController {
     }
     
 
-	public void onVisszaButtonDownAction() {
-        try {
-        	
-        	interval.stop();
-        	
-            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-            Navigator.navigate(root);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+	public void onButtonDownAction(ActionEvent actionEvent) {
+	    if (actionEvent.getSource() == button_menu) {
+	    	System.out.println("vissza");
+	        try {
+	        	interval.stop();
+	            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
+	            Navigator.navigate(root);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    } 
 	}
     
     private void setGrid() 

@@ -73,7 +73,7 @@ public class GameController {
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
         
-        EventHandler<ActionEvent> EH = new EventHandler<ActionEvent>() { 
+     /*   EventHandler<ActionEvent> EH = new EventHandler<ActionEvent>() { 
             @Override
             public void handle(ActionEvent event) {
     	    	disposeGrid();
@@ -84,7 +84,7 @@ public class GameController {
             }};
         interval = new Timeline(new KeyFrame(Duration.millis(100), EH));
         interval.setCycleCount(Timeline.INDEFINITE);
-        interval.play();
+        interval.play();*/
     }
 
     private void fillPlayerImages()
@@ -101,16 +101,18 @@ public class GameController {
     }
     
 
-	public void onVisszaButtonDownAction() {
-        try {
-        	
-        	interval.stop();
-        	
-            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-            Navigator.navigate(root);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+	public void onButtonDownAction(ActionEvent actionEvent) {
+	    if (actionEvent.getSource() == button_menu) {
+	        try {
+	        	
+	        	interval.stop();
+	        	
+	            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
+	            Navigator.navigate(root);
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	    } 
 	}
     
     private void setGrid() 

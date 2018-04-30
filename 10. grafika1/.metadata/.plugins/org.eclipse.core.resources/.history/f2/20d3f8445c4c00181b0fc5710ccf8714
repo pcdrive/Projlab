@@ -36,26 +36,19 @@ public class MenuController {
 
     public void onButtonDownAction(ActionEvent actionEvent) {
 
+        Data.jatek = new Jatek();
 
         if (actionEvent.getSource() == button_server) {
             try {
-
-                Data.jatek = new Jatek();
-                
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));
                 Navigator.navigate(root);
-                
             } catch (IOException e) {
                 e.printStackTrace();
             }
         } else if (actionEvent.getSource() == button_client) {
             try {
-
-                Data.jatek = new Jatek();
-                
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ClientView.fxml"));
                 Navigator.navigate(root);
-                
             } catch (IOException e) {
                 e.printStackTrace();
             }

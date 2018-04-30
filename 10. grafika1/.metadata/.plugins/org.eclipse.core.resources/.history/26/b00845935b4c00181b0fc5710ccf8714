@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.GridPane?>
+
 
 <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
    <children>
@@ -10,6 +10,6 @@
       </GridPane>
       <GridPane fx:id="uppergridpane_preview" layoutX="25.0" layoutY="25.0" prefHeight="296.0" prefWidth="569.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
       </GridPane>
-      <Button fx:id="button_menu"  layoutX="466.0" layoutY="361.0" mnemonicParsing="false" text="Kilépés a menübe" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="74.0" onAction="#onVisszaButtonDownAction" />
+        <Button fx:id="button_megse" layoutX="171.0" layoutY="174.0" mnemonicParsing="false" onAction="#onButtonDownAction" text="M�gse" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="174.0" />
    </children>
 </AnchorPane>

@@ -10,6 +10,6 @@
       </GridPane>
       <GridPane fx:id="uppergridpane_preview" layoutX="25.0" layoutY="25.0" prefHeight="296.0" prefWidth="569.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
       </GridPane>
-      <Button fx:id="button_menu"  layoutX="466.0" layoutY="361.0" mnemonicParsing="false" text="Kilépés a menübe" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="74.0" onAction="#onVisszaButtonDownAction" />
+      <Button fx:id="button_menu"  layoutX="466.0" layoutY="361.0" mnemonicParsing="false" text="Kilépés a menübe" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="74.0" onClick="#onVisszaButtonDownAction" />
    </children>
 </AnchorPane>
