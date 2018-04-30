@@ -86,7 +86,6 @@ public class GameController {
     	    	setGrid();
     	    	
     	    	fillGrid();
-    	    	fillPontGrid();
             }};
         interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));
         interval.setCycleCount(Timeline.INDEFINITE);
@@ -109,7 +108,6 @@ public class GameController {
             case L: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, true); } break; 
             case U: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, true); } break; 
             case O: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, true);} break;
-            default: break;
         }
     }
     
@@ -168,6 +166,11 @@ public class GameController {
         		RowConstraints row = new RowConstraints();
         		gridpane_pontok.getRowConstraints().add(row);
         	}
+
+            ColumnConstraints col = new ColumnConstraints();
+            lowergridpane_preview.getColumnConstraints().add(col);
+            col = new ColumnConstraints();
+            lowergridpane_preview.getColumnConstraints().add(col);
     	}
     }
     
@@ -225,7 +228,7 @@ public class GameController {
     		Text pontsz = new Text(pont.getPont()+"");
     		gridpane_pontok.add(nev, 0, i);
     		gridpane_pontok.add(pontsz, 1, i);
-    	}    	
+    	}
     }
     
     private void disposeGrid() 

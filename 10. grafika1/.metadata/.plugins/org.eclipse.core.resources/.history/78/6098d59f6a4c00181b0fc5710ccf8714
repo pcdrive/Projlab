@@ -168,6 +168,11 @@ public class GameController {
         		RowConstraints row = new RowConstraints();
         		gridpane_pontok.getRowConstraints().add(row);
         	}
+
+            ColumnConstraints col = new ColumnConstraints();
+            lowergridpane_preview.getColumnConstraints().add(col);
+            col = new ColumnConstraints();
+            lowergridpane_preview.getColumnConstraints().add(col);
     	}
     }
     
@@ -225,7 +230,10 @@ public class GameController {
     		Text pontsz = new Text(pont.getPont()+"");
     		gridpane_pontok.add(nev, 0, i);
     		gridpane_pontok.add(pontsz, 1, i);
-    	}    	
+    	}
+    	
+    	gridpane_pontok.getColumnConstraints().get(0).setPercentWidth(70);
+    	gridpane_pontok.getColumnConstraints().get(0).setPercentWidth(30);
     }
     
     private void disposeGrid() 

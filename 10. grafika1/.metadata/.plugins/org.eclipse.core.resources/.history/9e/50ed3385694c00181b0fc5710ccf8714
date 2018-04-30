@@ -3,6 +3,8 @@ package controller;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import data.Data;
 import javafx.animation.KeyFrame;
@@ -14,13 +16,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
-import javafx.scene.text.Text;
 import javafx.util.Pair;
 import sokoban.Irany;
 import sokoban.Navigator;
@@ -86,7 +88,6 @@ public class GameController {
     	    	setGrid();
     	    	
     	    	fillGrid();
-    	    	fillPontGrid();
             }};
         interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));
         interval.setCycleCount(Timeline.INDEFINITE);
@@ -109,7 +110,6 @@ public class GameController {
             case L: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, true); } break; 
             case U: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, true); } break; 
             case O: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, true);} break;
-            default: break;
         }
     }
     
@@ -168,6 +168,11 @@ public class GameController {
         		RowConstraints row = new RowConstraints();
         		gridpane_pontok.getRowConstraints().add(row);
         	}
+
+            ColumnConstraints col = new ColumnConstraints();
+            lowergridpane_preview.getColumnConstraints().add(col);
+            col = new ColumnConstraints();
+            lowergridpane_preview.getColumnConstraints().add(col);
     	}
     }
     
@@ -221,11 +226,11 @@ public class GameController {
     	for (int i=0;i<ptk.getHossz();i++) 
     	{
     		Pont pont = ptk.getPont(i);
-    		Text nev = new Text(pont.getNev());
-    		Text pontsz = new Text(pont.getPont()+"");
+    		Label nev = new Label(pont.getNev());
+    		Label pontsz = new Label(pont.getPont()+"");
     		gridpane_pontok.add(nev, 0, i);
     		gridpane_pontok.add(pontsz, 1, i);
-    	}    	
+    	}
     }
     
     private void disposeGrid() 

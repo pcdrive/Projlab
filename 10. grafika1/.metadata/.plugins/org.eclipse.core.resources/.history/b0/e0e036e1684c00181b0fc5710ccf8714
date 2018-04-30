@@ -71,7 +71,7 @@ public class Pontok implements Serializable{
      *
      * @param idx A jatekos sorszama a listaban.
      * 
-     * @return Pont A pont.
+     * @return int A pontok szama.
      */
     public Pont getPont(int idx) {
         Printer.PrintTabIn("Pontok" + '\t' + "getPont(int)");

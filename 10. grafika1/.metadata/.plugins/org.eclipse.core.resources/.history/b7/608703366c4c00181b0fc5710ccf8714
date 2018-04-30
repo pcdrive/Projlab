@@ -18,6 +18,5 @@
             <ColumnConstraints minWidth="100.0" percentWidth="70.0" />
             <ColumnConstraints minWidth="30.0" percentWidth="30.0" />
          </columnConstraints>
-         </GridPane>
    </children>
 </AnchorPane>

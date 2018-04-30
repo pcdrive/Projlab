@@ -3,6 +3,8 @@ package controller;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import data.Data;
 import javafx.animation.KeyFrame;
@@ -20,12 +22,9 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
-import javafx.scene.text.Text;
 import javafx.util.Pair;
 import sokoban.Irany;
 import sokoban.Navigator;
-import sokoban.Pont;
-import sokoban.Pontok;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -86,7 +85,6 @@ public class GameController {
     	    	setGrid();
     	    	
     	    	fillGrid();
-    	    	fillPontGrid();
             }};
         interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));
         interval.setCycleCount(Timeline.INDEFINITE);
@@ -109,7 +107,6 @@ public class GameController {
             case L: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, true); } break; 
             case U: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, true); } break; 
             case O: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, true);} break;
-            default: break;
         }
     }
     
@@ -143,10 +140,10 @@ public class GameController {
     {
     	for (int i=0;i<Data.PalyaX;i++) 
     	{
-            ColumnConstraints col = new ColumnConstraints();
-            lowergridpane_preview.getColumnConstraints().add(col);
-            col = new ColumnConstraints();
-            uppergridpane_preview.getColumnConstraints().add(col);
+            ColumnConstraints row = new ColumnConstraints();
+            lowergridpane_preview.getColumnConstraints().add(row);
+            row = new ColumnConstraints();
+            uppergridpane_preview.getColumnConstraints().add(row);
     	}
 
     	for (int i=0;i<Data.PalyaY;i++) 
@@ -155,19 +152,6 @@ public class GameController {
             lowergridpane_preview.getRowConstraints().add(row);
     		row = new RowConstraints();
             uppergridpane_preview.getRowConstraints().add(row);
-    	}
-    	if (Data.jatek.getData()!=null) 
-    	{
-    		Pontok ptk = Data.jatek.getData().pontok;
-    		
-    		gridpane_pontok.setMinHeight(ptk.getHossz()*20);
-    		gridpane_pontok.setMaxHeight(ptk.getHossz()*20);
-    		
-        	for (int i=0;i<ptk.getHossz();i++) 
-        	{
-        		RowConstraints row = new RowConstraints();
-        		gridpane_pontok.getRowConstraints().add(row);
-        	}
     	}
     }
     
@@ -212,20 +196,6 @@ public class GameController {
 	        	}
 	    	}
 	    }
-    }
-    
-    private void fillPontGrid()
-    {
-    	Pontok ptk = Data.jatek.getData().pontok;
-    	
-    	for (int i=0;i<ptk.getHossz();i++) 
-    	{
-    		Pont pont = ptk.getPont(i);
-    		Text nev = new Text(pont.getNev());
-    		Text pontsz = new Text(pont.getPont()+"");
-    		gridpane_pontok.add(nev, 0, i);
-    		gridpane_pontok.add(pontsz, 1, i);
-    	}    	
     }
     
     private void disposeGrid() 

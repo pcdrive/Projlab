@@ -168,6 +168,13 @@ public class GameController {
         		RowConstraints row = new RowConstraints();
         		gridpane_pontok.getRowConstraints().add(row);
         	}
+
+            ColumnConstraints col = new ColumnConstraints();
+            col.prefWidthProperty().bind(lowergridpane_preview.widthProperty().multiply(0.7));
+            lowergridpane_preview.getColumnConstraints().add(col);
+            col = new ColumnConstraints();
+            col.prefWidthProperty().bind(lowergridpane_preview.widthProperty().multiply(0.3));
+            lowergridpane_preview.getColumnConstraints().add(col);
     	}
     }
     

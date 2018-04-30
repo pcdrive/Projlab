@@ -15,9 +15,11 @@
       <Button fx:id="button_menu" layoutX="466.0" layoutY="361.0" mnemonicParsing="false" onAction="#onVisszaButtonDownAction" text="Kilépés a menübe" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="74.0" />
       <GridPane fx:id="gridpane_pontok" alignment="CENTER" gridLinesVisible="true" layoutX="433.0" layoutY="35.0" prefHeight="296.0" prefWidth="141.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
          <columnConstraints>
-            <ColumnConstraints minWidth="100.0" percentWidth="70.0" />
-            <ColumnConstraints minWidth="30.0" percentWidth="30.0" />
+            <ColumnConstraints percentWidth="70.0" />
+            <ColumnConstraints minWidth="10.0" percentWidth="30.0" />
          </columnConstraints>
-         </GridPane>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+         </rowConstraints></GridPane>
    </children>
 </AnchorPane>
