@@ -48,4 +48,9 @@ public class GrafMain extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
         Navigator.navigate(root);
     }
+
+    @Override
+    public void stop(){
+        System.exit(0);
+    }
 }
