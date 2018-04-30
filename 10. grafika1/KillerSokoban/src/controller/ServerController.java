@@ -62,9 +62,9 @@ public class ServerController {
     private Image JeloltDImg;
     private Image KapcsoloImg;
     private Image LyukImg;
-    private Image MezImg;
+   /* private Image MezImg;
     private Image OlajImg;
-    private Image MezOlajImg;
+    private Image MezOlajImg;*/
     private Image UresMezoImg;
     private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
     private ArrayList<Integer> usedplayers = new ArrayList<Integer>();
@@ -77,16 +77,16 @@ public class ServerController {
         JeloltDImg = new Image("/data/resources/drawable/jeloltdoboz.png");
         KapcsoloImg = new Image("/data/resources/drawable/kapcsolo.png");
         LyukImg = new Image("/data/resources/drawable/lyuk.png");
-        MezImg = new Image("/data/resources/drawable/mez.png");
+     /*   MezImg = new Image("/data/resources/drawable/mez.png");
         MezOlajImg = new Image("/data/resources/drawable/mezolaj.png");
-        OlajImg = new Image("/data/resources/drawable/olaj.png");
+        OlajImg = new Image("/data/resources/drawable/olaj.png");*/
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
     }
     
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
-            if (textfield_jatekos1nev.getText().isEmpty() || textfield_jatekos2nev.getText().isEmpty() || textfield_port.getText().isEmpty()) {
+            if (textfield_jatekos1nev.getText().isEmpty() || textfield_jatekos2nev.getText().isEmpty() || textfield_port.getText().isEmpty() || combobox_palyavalaszto.getValue().isEmpty()) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Hiányos adatok!");
                 alert.setHeaderText(null);
@@ -94,7 +94,11 @@ public class ServerController {
                 alert.show();
                 return;
             } else {
-                //valamit csinaljon....
+                Data.jatek.FutSzerver(textfield_jatekos1nev.getText(), textfield_jatekos2nev.getText(), textfield_port.getText(), combobox_palyavalaszto.getValue());
+                try {
+                Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/LobbyView.fxml"));
+                Navigator.navigate(root);
+                } catch (Exception e) {}
             }
         } else if (actionEvent.getSource() == button_megse) {
             try {

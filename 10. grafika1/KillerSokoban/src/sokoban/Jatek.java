@@ -466,23 +466,20 @@ public class Jatek {
      * @param port	Port amire csatlakozokat varjuk.
      * @param FILE	A  palya fajl, amin jatszani szeretnenk.
      */
-    public void FutSzerver(String port, String FILE) 
+    public void FutSzerver(String nev1, String nev2, String port, String FILE) 
     {
+    	name=nev1;
+    	name2=nev2;
     	szerver = new Szerver(this, port);
     	szerver.Fut(FILE);
     }
 
     /**
      * Elind�tja a szerver jatek modjat.
-     * 
-     * @param nev1	Elso jatekos neve.
-     * @param nev2	Masodik jatekos neve.
      */
-    public void StartSzerver(String nev1, String nev2) 
+    public void StartSzerver() 
     {
-    	name=nev1;
-    	name2=nev2;
-    	szerver.Start(nev1,nev2);
+    	szerver.Start(name, name2);
     }
 
     /**

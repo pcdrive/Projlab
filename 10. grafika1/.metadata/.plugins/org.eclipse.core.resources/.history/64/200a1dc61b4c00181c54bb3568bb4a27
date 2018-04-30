@@ -1,0 +1,18 @@
+package controller;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+
+@FXML
+public ListView listview_players;
+@FXML
+public Button button_megse;
+@FXML
+public Button button_start;
+
+public class LobbyController {
+
+}
