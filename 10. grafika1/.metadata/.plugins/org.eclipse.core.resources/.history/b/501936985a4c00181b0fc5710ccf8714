@@ -74,6 +74,8 @@ public class Palya {
                     mezok[i] = new Kapcsolo();
                     break;
             }
+            
+            IDs[i] = pa.palya[i] / 1000 % 100;
 
             if (i > 1) {
                 mezok[i - 1].SetSzomszed(Irany.JOBBRA, mezok[i]);
@@ -91,7 +93,7 @@ public class Palya {
                         mezok[i].Fogad(0, null, jatekos, null);
                         jatekosok.add(jatekos);
                         pontok.AddJatekos(jatekos.getNev());
-                        IDs[i] += 10000000 + num*100000 ;
+                        IDs[i] += (((int)(pa.palya[i] / 10000000))*10000000) + num*100000 ;
                     }
                 }
                 break;
@@ -99,17 +101,17 @@ public class Palya {
                     Doboz doboz = new Doboz(this, mezok[i]);
                     mezok[i].Fogad(0, null, doboz, null);
                     dobozok.add(doboz);
-                    IDs[i] += 20000000 ;
                 }
                 break;
                 case 3: {
                     JeloltDoboz doboz = new JeloltDoboz(this, mezok[i]);
                     mezok[i].Fogad(0, null, doboz, null);
                     dobozok.add(doboz);
-                    IDs[i] += 30000000 ;
                 }
                 break;
             }
+            
+            Data.PA = new PalyaAdat(nevek.length, getInts(), pa.csapdak, Data.PalyaX, Data.PalyaY);
         }
 
         if (pa.csapdak != null) {

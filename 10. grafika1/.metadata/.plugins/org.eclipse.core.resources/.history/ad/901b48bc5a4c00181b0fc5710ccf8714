@@ -74,6 +74,8 @@ public class Palya {
                     mezok[i] = new Kapcsolo();
                     break;
             }
+            
+            IDs[i] = pa.palya[i] / 1000 % 100;
 
             if (i > 1) {
                 mezok[i - 1].SetSzomszed(Irany.JOBBRA, mezok[i]);
@@ -110,6 +112,8 @@ public class Palya {
                 }
                 break;
             }
+            
+            Data.PA = new PalyaAdat(nevek.length, IDs, pa.csapdak, Data.PalyaX, Data.PalyaY);
         }
 
         if (pa.csapdak != null) {

@@ -114,45 +114,43 @@ public class GameController {
     
     private void fillGrid() 
     {
-    	int[] IDs = Data.jatek.getData().palya;
-    	if (IDs!=null) 
+    	int[] IDs = Data.PA.palya;
+    	
+    	for (int x=0; x<Data.PalyaX;x++) 
     	{
-	    	for (int x=0; x<Data.PalyaX;x++) 
-	    	{
-	        	for (int y=0; y<Data.PalyaY;y++) 
-	        	{
-	        		ImageView New = new ImageView();
-	        		int CellWidth = lowergridpane_preview.widthProperty().intValue()/Data.PalyaX;
-	        		int ColumnHeight = lowergridpane_preview.heightProperty().intValue()/Data.PalyaY;
-	        		
-	        		switch ((int)(IDs[x+y*Data.PalyaX]%10000/1000)) 
-	        		{
-	        			case 0:{ New = new ImageView(UresMezoImg); }break;
-	        			case 1:{ New = new ImageView(FalImg); }break;
-	        			case 2:{ New = new ImageView(LyukImg); }break;
-	        			case 3:{ if ((int)(IDs[x+y*10]%100000/100)==0) {New = new ImageView(CelhelyImg);} else {New = new ImageView(UresMezoImg);} }break;
-	        			case 4:{ if ((int)(IDs[x+y*10]%100000/100)==0) {New = new ImageView(LyukImg);} else {New = new ImageView(UresMezoImg);} }break;
-	        			case 5:{ New = new ImageView(KapcsoloImg); }break;
-	        			default: { New = new ImageView(UresMezoImg); }break;
-	        		}
-	        		New.setFitWidth(CellWidth);
-	        		New.setFitHeight(ColumnHeight);
-	        		lowergridpane_preview.add(New, x, y);
-	
-	        		New = new ImageView();
-	        		switch ((int)(IDs[x+y*Data.PalyaX]/10000000)) 
-	        		{
-	        			case 0:{  }break;
-	        			case 1:{ New = new ImageView(PlayerImgs.get(getRandomPlayerImg(IDs[x+y*Data.PalyaX]))); }break;
-	        			case 2:{ New = new ImageView(DobozImg); }break;
-	        			case 3:{ New = new ImageView(JeloltDImg); }break;
-	        		}
-	        		New.setFitWidth(CellWidth);
-	        		New.setFitHeight(ColumnHeight);
-	        		uppergridpane_preview.add(New, x, y);
-	        	}
-	    	}
-	    }
+        	for (int y=0; y<Data.PalyaY;y++) 
+        	{
+        		ImageView New = new ImageView();
+        		int CellWidth = lowergridpane_preview.widthProperty().intValue()/Data.PalyaX;
+        		int ColumnHeight = lowergridpane_preview.heightProperty().intValue()/Data.PalyaY;
+        		
+        		switch ((int)(IDs[x+y*Data.PalyaX]%10000/1000)) 
+        		{
+        			case 0:{ New = new ImageView(UresMezoImg); }break;
+        			case 1:{ New = new ImageView(FalImg); }break;
+        			case 2:{ New = new ImageView(LyukImg); }break;
+        			case 3:{ if ((int)(IDs[x+y*10]%100000/100)==0) {New = new ImageView(CelhelyImg);} else {New = new ImageView(UresMezoImg);} }break;
+        			case 4:{ if ((int)(IDs[x+y*10]%100000/100)==0) {New = new ImageView(LyukImg);} else {New = new ImageView(UresMezoImg);} }break;
+        			case 5:{ New = new ImageView(KapcsoloImg); }break;
+        			default: { New = new ImageView(UresMezoImg); }break;
+        		}
+        		New.setFitWidth(CellWidth);
+        		New.setFitHeight(ColumnHeight);
+        		lowergridpane_preview.add(New, x, y);
+
+        		New = new ImageView();
+        		switch ((int)(IDs[x+y*Data.PalyaX]/10000000)) 
+        		{
+        			case 0:{  }break;
+        			case 1:{ New = new ImageView(PlayerImgs.get(getRandomPlayerImg(IDs[x+y*Data.PalyaX]))); }break;
+        			case 2:{ New = new ImageView(DobozImg); }break;
+        			case 3:{ New = new ImageView(JeloltDImg); }break;
+        		}
+        		New.setFitWidth(CellWidth);
+        		New.setFitHeight(ColumnHeight);
+        		uppergridpane_preview.add(New, x, y);
+        	}
+    	}
     }
     
     private void disposeGrid() 
