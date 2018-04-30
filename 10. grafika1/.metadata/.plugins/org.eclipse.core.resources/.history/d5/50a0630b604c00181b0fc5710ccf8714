@@ -492,12 +492,9 @@ public class Jatek {
      * @param i	Parancs.
      * @param nev	A jatekos azonositoja.
      */
-    public void SzerverSendParancs(Irany i, boolean b) 
+    public void SzerverSendParancs(Irany i, String nev) 
     {
-    	if (!b)
-    		szerver.Leptet(i, name);
-    	else
-        	szerver.Leptet(i, name2);
+    	szerver.Leptet(i, nev);
     }
 
 

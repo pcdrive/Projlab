@@ -90,7 +90,7 @@ public class GameController {
                 
     }
     
-    public void onKeyPressed(KeyEvent event) 
+    public void onKeyEvent(KeyEvent event) 
     {
         switch (event.getCode()) {
             case W: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.FEL, false); else Data.jatek.sendParancs(Irany.FEL);} break;

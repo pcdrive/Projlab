@@ -494,7 +494,7 @@ public class Jatek {
      */
     public void SzerverSendParancs(Irany i, boolean b) 
     {
-    	if (!b)
+    	if (b)
     		szerver.Leptet(i, name);
     	else
         	szerver.Leptet(i, name2);

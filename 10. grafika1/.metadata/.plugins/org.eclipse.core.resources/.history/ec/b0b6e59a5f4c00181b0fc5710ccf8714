@@ -35,11 +35,6 @@ public class ClientController {
     public Button button_megse;
     @FXML
     public Button button_start;
-    
-    public ClientController() 
-    {
-        Data.szerver=true;
-    }
 
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {

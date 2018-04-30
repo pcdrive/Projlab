@@ -34,11 +34,6 @@ public class MenuController {
     public Button button_options;
 
 
-    public MenuController() 
-    {
-        Data.szerver=true;
-    }
-    
     public void onButtonDownAction(ActionEvent actionEvent) {
 
 

@@ -82,8 +82,6 @@ public class ServerController {
         OlajImg = new Image("/data/resources/drawable/olaj.png");*/
         UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
         fillPlayerImages();
-        
-        Data.szerver=true;
     }
     
     public void onButtonDownAction(ActionEvent actionEvent) {
