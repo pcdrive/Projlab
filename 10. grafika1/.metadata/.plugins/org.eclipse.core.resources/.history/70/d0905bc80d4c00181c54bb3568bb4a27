@@ -66,8 +66,8 @@ public class ServerController {
     private Image OlajImg;
     private Image MezOlajImg;
     private Image UresMezoImg;
-    private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
-    private ArrayList<Integer> usedplayers = new ArrayList<Integer>();
+    private ArrayList<Image> PlayerImgs;
+    private ArrayList<Integer>	usedplayers;
     
     public ServerController() 
     {
@@ -112,7 +112,6 @@ public class ServerController {
         combobox_palyavalaszto.valueProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-            	usedplayers.clear();
             	disposeGrid();
             	
             	int[] IDs = Data.jatek.getIDLista(newValue);
@@ -165,35 +164,23 @@ public class ServerController {
     	{
         	for (int y=0; y<Data.PalyaY;y++) 
         	{
-        		ImageView New = new ImageView();
-        		int CellWidth = lowergridpane_preview.widthProperty().intValue()/Data.PalyaX;
-        		int ColumnHeight = lowergridpane_preview.heightProperty().intValue()/Data.PalyaY;
-        		
-        		switch ((int)(IDs[x+y*Data.PalyaX]%10000/1000)) 
+        		switch ((int)(IDs[x+y*Data.PalyaX]%1000/10000)) 
         		{
-        			case 0:{ New = new ImageView(UresMezoImg); }break;
-        			case 1:{ New = new ImageView(FalImg); }break;
-        			case 2:{ New = new ImageView(LyukImg); }break;
-        			case 3:{ if ((int)(IDs[x+y*10]%100000/100)==0) {New = new ImageView(CelhelyImg);} else {New = new ImageView(UresMezoImg);} }break;
-        			case 4:{ if ((int)(IDs[x+y*10]%100000/100)==0) {New = new ImageView(LyukImg);} else {New = new ImageView(UresMezoImg);} }break;
-        			case 5:{ New = new ImageView(KapcsoloImg); }break;
-        			default: { New = new ImageView(UresMezoImg); }break;
+        			case 0:{ lowergridpane_preview.add(new ImageView(UresMezoImg), x, y); }break;
+        			case 1:{ lowergridpane_preview.add(new ImageView(FalImg), x, y); }break;
+        			case 2:{ lowergridpane_preview.add(new ImageView(LyukImg), x, y); }break;
+        			case 3:{ if ((int)(IDs[x+y*10]%100000/100)==0) {lowergridpane_preview.add(new ImageView(UresMezoImg), x, y);} else {lowergridpane_preview.add(new ImageView(CelhelyImg), x, y);} }break;
+        			case 4:{ if ((int)(IDs[x+y*10]%100000/100)==0) {lowergridpane_preview.add(new ImageView(UresMezoImg), x, y);} else {lowergridpane_preview.add(new ImageView(LyukImg), x, y);} }break;
+        			case 5:{ lowergridpane_preview.add(new ImageView(KapcsoloImg), x, y); }break;
         		}
-        		New.setFitWidth(CellWidth);
-        		New.setFitHeight(ColumnHeight);
-        		lowergridpane_preview.add(New, x, y);
-
-        		New = new ImageView();
+        		
         		switch ((int)(IDs[x+y*Data.PalyaX]/10000000)) 
         		{
         			case 0:{  }break;
-        			case 1:{ New = new ImageView(PlayerImgs.get(getRandomPlayerImg())); }break;
-        			case 2:{ New = new ImageView(DobozImg); }break;
-        			case 3:{ New = new ImageView(JeloltDImg); }break;
+        			case 1:{ uppergridpane_preview.add(new ImageView(PlayerImgs.get(getRandomPlayerImg())), x, y); }break;
+        			case 2:{ uppergridpane_preview.add(new ImageView(DobozImg), x, y); }break;
+        			case 3:{ uppergridpane_preview.add(new ImageView(JeloltDImg), x, y); }break;
         		}
-        		New.setFitWidth(CellWidth);
-        		New.setFitHeight(ColumnHeight);
-        		uppergridpane_preview.add(New, x, y);
         	}
     	}
     }
@@ -202,15 +189,20 @@ public class ServerController {
     {
     	lowergridpane_preview.getChildren().clear();
     	uppergridpane_preview.getChildren().clear();
-    } 
+    }
     
     private int getRandomPlayerImg() 
-    {    	
+    {
+    	if (usedplayers==null)
+    		usedplayers = new ArrayList<Integer>();
+    	
     	Random rand = new Random();
-    	Integer res;
+    	int res=0;
+    	int i=0;
     	do {
     		res = rand.nextInt(21);
-    	} while (usedplayers.contains(res));
+    		i++;
+    	} while (!usedplayers.contains(res) || i>100);
     	
     	usedplayers.add(res);
     	return res;

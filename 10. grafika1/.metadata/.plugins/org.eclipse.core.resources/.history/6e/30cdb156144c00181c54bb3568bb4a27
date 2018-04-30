@@ -183,13 +183,13 @@ public class ServerController {
         		New.setFitHeight(ColumnHeight);
         		lowergridpane_preview.add(New, x, y);
 
-        		New = new ImageView();
+        		ImageView New = new ImageView();
         		switch ((int)(IDs[x+y*Data.PalyaX]/10000000)) 
         		{
-        			case 0:{  }break;
+        			/*case 0:{  }break;
         			case 1:{ New = new ImageView(PlayerImgs.get(getRandomPlayerImg())); }break;
         			case 2:{ New = new ImageView(DobozImg); }break;
-        			case 3:{ New = new ImageView(JeloltDImg); }break;
+        			case 3:{ New = new ImageView(JeloltDImg); }break;*/
         		}
         		New.setFitWidth(CellWidth);
         		New.setFitHeight(ColumnHeight);
