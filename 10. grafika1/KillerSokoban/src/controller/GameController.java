@@ -65,7 +65,8 @@ public class GameController {
     private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
     private ArrayList<Pair<Integer, Integer>> usedplayers = new ArrayList<Pair<Integer, Integer>>();
     private Timeline interval;
-    
+
+    int TimerTick=0;
     public GameController() 
     {
         CelhelyImg = new Image("/data/resources/drawable/celhely.png");
@@ -83,12 +84,18 @@ public class GameController {
         EventHandler<ActionEvent> AEH = new EventHandler<ActionEvent>() { 
             @Override
             public void handle(ActionEvent event) {
-    	    	disposeGrid();
-    	    	
-    	    	setGrid();
-    	    	
-    	    	fillGrid();
-    	    	fillPontGrid();
+            	TimerTick++;
+            	System.out.println(Data.jatek.isAlive() + " " + (TimerTick));
+            	
+    	    	if (Data.jatek.isAlive() && Data.PalyaX!=0 && Data.PalyaY!=0 && Data.jatek.getData()!=null && Data.jatek.getData().pontok!=null) 
+    	    	{
+	    	    	disposeGrid();
+	    	    	
+	    	    	setGrid();
+	    	    	
+	    	    	fillGrid();
+	    	    	fillPontGrid();
+    	    	}
     	    	
     	    	if (!Data.jatek.isAlive()) 
     	    	{
@@ -132,6 +139,7 @@ public class GameController {
                         e.printStackTrace();
                     }
     	    	}
+    	        
             }};
         interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));
         interval.setCycleCount(Timeline.INDEFINITE);
@@ -139,22 +147,39 @@ public class GameController {
     }
     
     public void onKeyPressed(KeyEvent event) 
-    {
-        switch (event.getCode()) {
-            case W: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.FEL, false); else Data.jatek.sendParancs(Irany.FEL);} break;
-            case A: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.BALRA, false); else Data.jatek.sendParancs(Irany.BALRA);} break; 
-            case S: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.LE, false); else Data.jatek.sendParancs(Irany.LE);} break; 
-            case D: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, false); else Data.jatek.sendParancs(Irany.JOBBRA);} break; 
-            case Q: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, false); else Data.jatek.sendParancs(Irany.MEZ);} break; 
-            case E: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, false); else Data.jatek.sendParancs(Irany.OLAJ);} break; 
-            case I: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.FEL, true);} break;
-            case J: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.BALRA, true);} break; 
-            case K: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.LE, true); } break; 
-            case L: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, true); } break; 
-            case U: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, true); } break; 
-            case O: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, true);} break;
-            default: break;
+    {    	
+    	if (Data.szerver) 
+    	{
+	        switch (event.getCode()) 
+	        {
+	            case W: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.FEL, false); else Data.jatek.sendParancs(Irany.FEL);} break;
+	            case A: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.BALRA, false); else Data.jatek.sendParancs(Irany.BALRA);} break; 
+	            case S: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.LE, false); else Data.jatek.sendParancs(Irany.LE);} break; 
+	            case D: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, false); else Data.jatek.sendParancs(Irany.JOBBRA);} break; 
+	            case Q: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, false); else Data.jatek.sendParancs(Irany.MEZ);} break; 
+	            case E: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, false); else Data.jatek.sendParancs(Irany.OLAJ);} break; 
+	            case I: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.FEL, true);} break;
+	            case J: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.BALRA, true);} break; 
+	            case K: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.LE, true); } break; 
+	            case L: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, true); } break; 
+	            case U: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, true); } break; 
+	            case O: { if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, true);} break;
+	            default: break;
+	        }
         }
+    	else 
+    	{
+	        switch (event.getCode()) 
+	        {
+	            case W: { if (Data.szerver) Data.jatek.sendParancs(Irany.FEL); } break;
+	            case A: { if (Data.szerver) Data.jatek.sendParancs(Irany.BALRA); } break; 
+	            case S: { if (Data.szerver) Data.jatek.sendParancs(Irany.LE); } break; 
+	            case D: { if (Data.szerver) Data.jatek.sendParancs(Irany.JOBBRA); } break; 
+	            case Q: { if (Data.szerver) Data.jatek.sendParancs(Irany.MEZ); } break; 
+	            case E: { if (Data.szerver) Data.jatek.sendParancs(Irany.OLAJ);} break;
+	            default: break;
+	        }
+    	}
     }
     
 

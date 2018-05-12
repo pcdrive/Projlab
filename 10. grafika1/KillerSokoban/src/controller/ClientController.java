@@ -60,6 +60,7 @@ public class ClientController {
                         if (success) {
                             Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
                             Navigator.navigate(root, true);
+                            Data.szerver=false;
                         } else {
                             Alert alert = new Alert(Alert.AlertType.INFORMATION);
                             alert.setTitle("Kapcsolodas sikertelen!");

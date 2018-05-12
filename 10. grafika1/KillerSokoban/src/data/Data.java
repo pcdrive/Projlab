@@ -24,5 +24,5 @@ public class Data {
     }};
     public static int resolution = 0;
     public static PalyaAdat PA;
-    public static boolean szerver;
+    public static boolean szerver=false;
 }

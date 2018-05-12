@@ -45,7 +45,7 @@ public class Jatek {
 	private ObjectOutputStream out;
 	private ObjectInputStream in;
 	private int maxConnTime=5000;
-	private boolean fut;
+	private boolean fut=true;
 	private KliensAdat KA;
 
     /**
@@ -79,6 +79,8 @@ public class Jatek {
      * @param kliensAdat	A jatekadatok, amiket ki kell irni.
      */
     public void Print(KliensAdat kliensAdat) {
+    	if (kliensAdat!=null && kliensAdat.palya!=null) {
+    	fut=true;
     	
     	KA=kliensAdat;
     	
@@ -93,7 +95,7 @@ public class Jatek {
         	Pont pont = kliensAdat.pontok.getPont(i);
         	System.out.print(pont.getNev() + ": " + pont.getPont() + "\t");
 		}
-		System.out.println();
+		System.out.println();}
     }
     
     /**

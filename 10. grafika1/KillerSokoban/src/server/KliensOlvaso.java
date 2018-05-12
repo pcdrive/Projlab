@@ -56,15 +56,18 @@ public class KliensOlvaso extends Thread {
 		while(fut) {
 			try {
 				Object n = in.readObject();		
-				if (n!=null) 
+				if (n!=null && (KliensAdat)n != null) 
 				{
-					if (((KliensAdat)n).x!=0 && ((KliensAdat)n).y!=0)
-					Data.PalyaX = ((KliensAdat)n).x;
-					Data.PalyaY = ((KliensAdat)n).y;
-					j.Print((KliensAdat)n);
+					if (((KliensAdat)n).x!=0 && ((KliensAdat)n).y!=0) 
+					{
+						Data.PalyaX = ((KliensAdat)n).x;
+						Data.PalyaY = ((KliensAdat)n).y;
+						j.Print((KliensAdat)n);
+					}
 				} 
 	
 			} catch (Exception e) {
+				e.printStackTrace();
 				j.KliensDC();
 				fut=false;
 			}		

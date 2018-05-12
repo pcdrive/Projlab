@@ -96,6 +96,7 @@ public class ServerController {
                 try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/LobbyView.fxml"));
                 Navigator.navigate(root, false);
+                Data.szerver=true;
                 } catch (Exception e) {}
             }
         } else if (actionEvent.getSource() == button_megse) {
