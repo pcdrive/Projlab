@@ -32,14 +32,13 @@ public class PalyaGenerator {
 
     public static void main(String[] args) {
         try {
-            int x = 10;
-            int y = 10;
+            int x = 5;
+            int y = 5;
             int csapdaajtok[] = new int[2];
-          //  FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\Dragon\\Documents\\GitHub\\Projlab\\JARs\\palya.mocsi");
-            FileOutputStream fileOutputStream = new FileOutputStream("ujpalya.mocsi");
+            FileOutputStream fileOutputStream = new FileOutputStream("C:\\Users\\Dragon\\Documents\\GitHub\\Projlab\\JARs\\palya.mocsi");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             int[] palya = new int[x * y];
-            
+
             for (int i = 0; i < x; i++) {
                 palya[i] = fal.getID();
                 palya[y * x - 1 - i] = fal.getID();
@@ -56,10 +55,10 @@ public class PalyaGenerator {
             }
 
             uresMezo.Fogad(0, null, new Jatekos(null, null, null), null);
-            palya[13] = palya[15] = palya[18] = uresMezo.getID();
+            palya[11] = palya[13] = uresMezo.getID();
             uresMezo.Enged();
             uresMezo.Fogad(0, null, new Doboz(null,null), null);
-            palya[14] = uresMezo.getID();
+            palya[12] = uresMezo.getID();
 
 //
 //            for (int i = 0; i < palya.length; i++) {
@@ -149,7 +148,7 @@ public class PalyaGenerator {
 //                }
 //            }
 
-            PalyaAdat palyaAdat = new PalyaAdat(3, palya, csapdaajtok, x, y);
+            PalyaAdat palyaAdat = new PalyaAdat(2, palya, csapdaajtok, x, y);
             objectOutputStream.writeObject(palyaAdat);
 
             objectOutputStream.close();
