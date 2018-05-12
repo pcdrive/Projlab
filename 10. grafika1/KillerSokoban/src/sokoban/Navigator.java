@@ -22,6 +22,7 @@ public class Navigator {
 
     public static void setMainStage(Stage stage) {
         mainStage = stage;
+        mainStage.setResizable(false);
     }
 
     public static void navigate(Parent root, boolean enforceResolution) {
