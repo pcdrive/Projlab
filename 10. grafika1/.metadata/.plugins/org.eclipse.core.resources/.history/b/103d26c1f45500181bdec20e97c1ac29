@@ -26,7 +26,6 @@ import sokoban.Pontok;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -111,10 +110,7 @@ public class GameController {
     	        	
     	        	for (Pont pont : pontlist) 
     	        	{
-    	        		char[] chars = new char[30-pont.getNev().length()];
-    	        		Arrays.fill(chars, ' ');
-    	        		String s = new String(chars);
-    	        		res += pont.getNev() + s + "\t" + pont.getPont()+"\n";
+    	        		res += pont.getNev() + "\t" + pont.getPont()+"\n";
     	        	}
     	        	
     	        	Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -122,15 +118,6 @@ public class GameController {
                     alert.setHeaderText(null);
                     alert.setContentText("A végső pontszámok:\n\n" + res);
                     alert.show();
-                    
-                    try {
-                    	
-                    	interval.stop();
-                        Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-                        Navigator.navigate(root, false);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
     	    	}
             }};
         interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));

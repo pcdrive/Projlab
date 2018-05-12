@@ -26,7 +26,6 @@ import sokoban.Pontok;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -100,37 +99,17 @@ public class GameController {
     	        	
     	        	pontlist.add(ptk.getPont(0));
     	        	
-    	        	for(int i=1;i<ptk.getHossz();i++) 
+    	        	for(int i=0;i<ptk.getHossz();i++) 
     	        	{
     	        		int l=0;
     	        		while (pontlist.get(l).getPont() < ptk.getPont(i).getPont() && l<pontlist.size()) {}
-    	        		pontlist.add(l, ptk.getPont(i));
-    	        	}
-    	        	
-    	        	String res = "";
-    	        	
-    	        	for (Pont pont : pontlist) 
-    	        	{
-    	        		char[] chars = new char[30-pont.getNev().length()];
-    	        		Arrays.fill(chars, ' ');
-    	        		String s = new String(chars);
-    	        		res += pont.getNev() + s + "\t" + pont.getPont()+"\n";
     	        	}
     	        	
     	        	Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     alert.setTitle("A játék véget ért!");
                     alert.setHeaderText(null);
-                    alert.setContentText("A végső pontszámok:\n\n" + res);
+                    alert.setContentText("A végső pontszámok:");
                     alert.show();
-                    
-                    try {
-                    	
-                    	interval.stop();
-                        Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-                        Navigator.navigate(root, false);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
     	    	}
             }};
         interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));

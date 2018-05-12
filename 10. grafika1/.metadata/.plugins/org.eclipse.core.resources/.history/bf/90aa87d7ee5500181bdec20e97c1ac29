@@ -471,6 +471,7 @@ public class Jatek {
      */
     public void FutSzerver(String nev1, String nev2, String port, String FILE) 
     {
+    	fut = true;
     	name=nev1;
     	name2=nev2;
     	szerver = new Szerver(this, port);
@@ -482,7 +483,6 @@ public class Jatek {
      */
     public void StartSzerver() 
     {
-    	fut = true;
     	szerver.Start(name, name2);
     }
 

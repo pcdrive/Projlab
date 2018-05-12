@@ -482,7 +482,6 @@ public class Jatek {
      */
     public void StartSzerver() 
     {
-    	fut = true;
     	szerver.Start(name, name2);
     }
 

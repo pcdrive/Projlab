@@ -482,7 +482,6 @@ public class Jatek {
      */
     public void StartSzerver() 
     {
-    	fut = true;
     	szerver.Start(name, name2);
     }
 
@@ -608,11 +607,4 @@ public class Jatek {
     {
     	return KA;
     }
-    
-    /**
-     * Lekerdezi fut-e meg a jatek.
-     * 
-     * @return Fut boolean.
-     */
-    public boolean isAlive() {return fut;}
 }
