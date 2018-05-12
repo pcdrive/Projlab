@@ -119,6 +119,7 @@ public class GameController {
         	
         	interval.stop();
         	
+        	Data.jatek.exit();
             Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
             Navigator.navigate(root, false);
         } catch (IOException e) {
