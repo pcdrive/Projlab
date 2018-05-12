@@ -46,7 +46,7 @@ public class GrafMain extends Application {
     public void start(Stage primaryStage) throws Exception {
         Navigator.setMainStage(primaryStage);
         Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-        Navigator.navigate(root);
+        Navigator.navigate(root, false);
     }
 
     @Override

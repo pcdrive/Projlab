@@ -1,21 +1,15 @@
 package controller;
 
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
-
 import data.Data;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
 import sokoban.Navigator;
+
+import java.io.IOException;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -44,14 +38,14 @@ public class LobbyController {
 	    	Data.jatek.StartSzerver();
 	        try {
 	            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
-	            Navigator.navigate(root);
+	            Navigator.navigate(root, true);
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }
 	    } else if (actionEvent.getSource() == button_megse) {
 	        try {
 	            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-	            Navigator.navigate(root);
+	            Navigator.navigate(root, false);
 	        } catch (IOException e) {
 	            e.printStackTrace();
 	        }

@@ -16,13 +16,9 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
-import server.PalyaAdat;
 import sokoban.Navigator;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -99,13 +95,13 @@ public class ServerController {
                 Data.jatek.FutSzerver(textfield_jatekos1nev.getText(), textfield_jatekos2nev.getText(), textfield_port.getText(), combobox_palyavalaszto.getValue());
                 try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/LobbyView.fxml"));
-                Navigator.navigate(root);
+                Navigator.navigate(root, false);
                 } catch (Exception e) {}
             }
         } else if (actionEvent.getSource() == button_megse) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-                Navigator.navigate(root);
+                Navigator.navigate(root, false);
             } catch (IOException e) {
                 e.printStackTrace();
             }

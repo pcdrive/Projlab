@@ -59,7 +59,7 @@ public class ClientController {
                         boolean success = Data.jatek.Kapcsol(textfield_jatekosnev.getText(), textfield_host.getText(), port);
                         if (success) {
                             Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/GameView.fxml"));
-                            Navigator.navigate(root);
+                            Navigator.navigate(root, true);
                         } else {
                             Alert alert = new Alert(Alert.AlertType.INFORMATION);
                             alert.setTitle("Kapcsolodas sikertelen!");
@@ -75,7 +75,7 @@ public class ClientController {
         } else if (actionEvent.getSource() == button_megse) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-                Navigator.navigate(root);
+                Navigator.navigate(root, false);
             } catch (IOException e) {
                 //Nem kell semmit sem tenni
             }

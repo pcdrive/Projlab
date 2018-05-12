@@ -48,7 +48,7 @@ public class MenuController {
                 Data.jatek = new Jatek();
                 
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ServerView.fxml"));
-                Navigator.navigate(root);
+                Navigator.navigate(root, false);
                 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -59,7 +59,7 @@ public class MenuController {
                 Data.jatek = new Jatek();
                 
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/ClientView.fxml"));
-                Navigator.navigate(root);
+                Navigator.navigate(root, false);
                 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -67,7 +67,7 @@ public class MenuController {
         } else if (actionEvent.getSource() == button_options) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/OptionsView.fxml"));
-                Navigator.navigate(root);
+                Navigator.navigate(root, false);
             } catch (IOException e) {
                 e.printStackTrace();
             }

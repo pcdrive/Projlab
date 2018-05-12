@@ -48,7 +48,7 @@ public class OptionsController {
         }
         try {
             Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-            Navigator.navigate(root);
+            Navigator.navigate(root, false);
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,15 +1,10 @@
 package controller;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Random;
-
 import data.Data;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.util.Duration;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -21,11 +16,16 @@ import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.RowConstraints;
 import javafx.scene.text.Text;
+import javafx.util.Duration;
 import javafx.util.Pair;
 import sokoban.Irany;
 import sokoban.Navigator;
 import sokoban.Pont;
 import sokoban.Pontok;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -120,7 +120,7 @@ public class GameController {
         	interval.stop();
         	
             Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-            Navigator.navigate(root);
+            Navigator.navigate(root, false);
         } catch (IOException e) {
             e.printStackTrace();
         }

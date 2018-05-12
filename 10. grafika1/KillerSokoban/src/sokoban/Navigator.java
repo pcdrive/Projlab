@@ -1,5 +1,6 @@
 package sokoban;
 
+import data.Data;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -18,19 +19,23 @@ import javafx.stage.Stage;
  */
 public class Navigator {
     private static Stage mainStage;
-    private static Parent prevView;
 
     public static void setMainStage(Stage stage) {
         mainStage = stage;
     }
 
-    public static void navigate(Parent root) {
-        prevView = root;
-        mainStage.setScene(new Scene(root));
-        mainStage.show();
-    }
+    public static void navigate(Parent root, boolean enforceResolution) {
+        Scene scene;
+        if (enforceResolution) {
+            int x = Data.resolutions.get(Data.resolution).getKey();
+            int y = Data.resolutions.get(Data.resolution).getValue();
+            scene = new Scene(root, x, y);
+        } else {
+            scene = new Scene(root);
+        }
 
-    public static void moveBack(){
-        navigate(prevView);
+        mainStage.setScene(scene);
+        mainStage.show();
+        mainStage.setFullScreen(enforceResolution && Data.fullScreen);
     }
 }
