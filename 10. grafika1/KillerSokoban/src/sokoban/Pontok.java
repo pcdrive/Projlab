@@ -109,14 +109,14 @@ public class Pontok implements Serializable {
     }
 
     public String getResult() {
-        String res = "";
+        StringBuilder res = new StringBuilder();
 
         for (Pont pont : pontok) {
             char[] chars = new char[30 - pont.getNev().length()];
             Arrays.fill(chars, ' ');
             String s = new String(chars);
-            res += pont.getNev() + s + "\t" + pont.getPont() + "\n";
+            res.append(pont.getNev()).append(s).append("\t").append(pont.getPont()).append("\n");
         }
-        return res;
+        return res.toString();
     }
 }
