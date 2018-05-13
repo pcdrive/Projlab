@@ -80,17 +80,30 @@ public class PalyaGenerator {
             int i = 0;
             csapdaajtok[i++] = palya[64] = kapcsolo.getID();
             palya[77] = palya[90] = palya[148] = palya[231] = palya[262] = palya[336] = csapdaajto.getID();
-            for(;i<7;)
-                csapdaajtok[i++] = csapdaajto.getID();
+
+                csapdaajtok[i++] = 77;
+            csapdaajtok[i++] = 90;
+
+            csapdaajtok[i++] =148;
+            csapdaajtok[i++] =231;
+            csapdaajtok[i++] =262;
+            csapdaajtok[i++] =336;
 
             csapdaajtok[i++] = palya[153] = kapcsolo.getID();
             palya[45] = palya[93] = palya[157] = palya[215] = palya[233] = palya[268] = palya[293] = csapdaajto.getID();
 
-            for(;i<15;)
-                csapdaajtok[i++] = csapdaajto.getID();
+
+            csapdaajtok[i++] =45;
+            csapdaajtok[i++] =93;
+            csapdaajtok[i++] =157;
+            csapdaajtok[i++] =215;
+            csapdaajtok[i++] =233;
+            csapdaajtok[i++] =268;
+            csapdaajtok[i++] =293;
+
             //END_OF_CREATION
 
-            PalyaAdat palyaAdat = new PalyaAdat(3, palya, csapdaajtok, x, y);
+            PalyaAdat palyaAdat = new PalyaAdat(2, palya, csapdaajtok, x, y);
             objectOutputStream.writeObject(palyaAdat);
 
             objectOutputStream.close();
