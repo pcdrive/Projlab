@@ -84,7 +84,7 @@ public class ServerController {
     
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
-            if (textfield_jatekos1nev.getText().isEmpty() || textfield_jatekos2nev.getText().isEmpty() || textfield_port.getText().isEmpty() || combobox_palyavalaszto.getValue().isEmpty()) {
+            if (textfield_jatekos1nev.getText().isEmpty() || textfield_jatekos2nev.getText().isEmpty() || textfield_port.getText().isEmpty() || combobox_palyavalaszto.getValue() == null) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Hiányos adatok!");
                 alert.setHeaderText(null);
@@ -103,9 +103,7 @@ public class ServerController {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
                 Navigator.navigate(root, false);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            } catch (IOException e) {}
         }
     }
 
