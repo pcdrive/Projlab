@@ -18,7 +18,6 @@ import tools.Printer;
 
 import java.io.Serializable;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedList;
 
 @SuppressWarnings("serial")
@@ -101,7 +100,7 @@ public class Pontok implements Serializable {
     }
 
     public void order() {
-        Collections.sort(pontok, (o1, o2) -> {
+        pontok.sort((o1, o2) -> {
             if (o1.getPont() == o2.getPont())
                 return 0;
             return o1.getPont() > o2.getPont() ? 1 : 0;
