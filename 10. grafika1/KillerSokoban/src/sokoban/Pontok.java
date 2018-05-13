@@ -17,10 +17,12 @@ package sokoban;
 import tools.Printer;
 
 import java.io.Serializable;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.LinkedList;
 
 @SuppressWarnings("serial")
-public class Pontok implements Serializable{
+public class Pontok implements Serializable {
 
     private LinkedList<Pont> pontok;
 
@@ -51,7 +53,6 @@ public class Pontok implements Serializable{
      * A jatekos pontjait kerdezi le.
      *
      * @param nev A jatekos neve.
-     * 
      * @return int A pontok szama.
      */
     public int getPont(String nev) {
@@ -70,7 +71,6 @@ public class Pontok implements Serializable{
      * A jatekos pontjait kerdezi le.
      *
      * @param idx A jatekos sorszama a listaban.
-     * 
      * @return Pont A pont.
      */
     public Pont getPont(int idx) {
@@ -100,4 +100,23 @@ public class Pontok implements Serializable{
         Printer.PrintTabIn("Pontok" + '\t' + "AddJatekos(String)");
     }
 
+    public void order() {
+        Collections.sort(pontok, (o1, o2) -> {
+            if (o1.getPont() == o2.getPont())
+                return 0;
+            return o1.getPont() > o2.getPont() ? 1 : 0;
+        });
+    }
+
+    public String getResult() {
+        String res = "";
+
+        for (Pont pont : pontok) {
+            char[] chars = new char[30 - pont.getNev().length()];
+            Arrays.fill(chars, ' ');
+            String s = new String(chars);
+            res += pont.getNev() + s + "\t" + pont.getPont() + "\n";
+        }
+        return res;
+    }
 }
