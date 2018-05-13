@@ -17,11 +17,7 @@ package sokoban;
 import data.Data;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import server.KliensAdat;
-import server.KliensOlvaso;
-import server.PalyaAdat;
-import server.ParancsAdat;
-import server.Szerver;
+import server.*;
 import tools.Printer;
 
 import java.io.*;
@@ -33,20 +29,20 @@ import java.net.Socket;
 // import sokoban.*;
 
 public class Jatek {
-	
-	//szervermod atts
-	private Szerver szerver;
-	private KliensOlvaso kOlvaso;
-	
-	//kliensmod atts
-	private String name="";
-	private String name2="";
-	private Socket socket;
-	private ObjectOutputStream out;
-	private ObjectInputStream in;
-	private int maxConnTime=5000;
-	private boolean fut=true;
-	private KliensAdat KA;
+
+    //szervermod atts
+    private Szerver szerver;
+    private KliensOlvaso kOlvaso;
+
+    //kliensmod atts
+    private String name = "";
+    private String name2 = "";
+    private Socket socket;
+    private ObjectOutputStream out;
+    private ObjectInputStream in;
+    private int maxConnTime = 5000;
+    private boolean fut = true;
+    private KliensAdat KA;
 
     /**
      * Az osztaly konstruktora.
@@ -68,330 +64,372 @@ public class Jatek {
     public void EndGame() {
         Printer.PrintTabIn("Jatek" + '\t' + "EndGame()");
         Printer.PrintTabOut("Return");
-        fut=false;
+        fut = false;
         szerver = null;
         kOlvaso = null;
     }
 
     /**
      * A kimenetre irja a jatekadatokat.
-     * 
-     * @param kliensAdat	A jatekadatok, amiket ki kell irni.
+     *
+     * @param kliensAdat A jatekadatok, amiket ki kell irni.
      */
     public void Print(KliensAdat kliensAdat) {
-    	if (kliensAdat!=null && kliensAdat.palya!=null) {
-    	fut=true;
-    	
-    	KA=kliensAdat;
-    	
-        for (int i = 0; i < Data.PalyaY; i++) {
-            for (int j = 0; j < Data.PalyaX; j++) {
-                System.out.print(" " + String.format("%08d",kliensAdat.palya[i * Data.PalyaX + j]));
+        if (kliensAdat != null && kliensAdat.palya != null) {
+            fut = true;
+
+            KA = kliensAdat;
+
+            for (int i = 0; i < Data.PalyaY; i++) {
+                for (int j = 0; j < Data.PalyaX; j++) {
+                    System.out.print(" " + String.format("%08d", kliensAdat.palya[i * Data.PalyaX + j]));
+                }
+                System.out.println();
+            }
+            System.out.println();
+            for (int i = 0; i < kliensAdat.pontok.getHossz(); i++) {
+                Pont pont = kliensAdat.pontok.getPont(i);
+                System.out.print(pont.getNev() + ": " + pont.getPont() + "\t");
             }
             System.out.println();
         }
-		System.out.println();
-        for(int i = 0; i<kliensAdat.pontok.getHossz(); i++){
-        	Pont pont = kliensAdat.pontok.getPont(i);
-        	System.out.print(pont.getNev() + ": " + pont.getPont() + "\t");
-		}
-		System.out.println();}
     }
-    
+
     /**
      * A jatekot szervermodba teszi. Azaz elinditja a jatekot
-     * szerverkent. Letrehozza a lobbit, felkeszul a csatlakozo 
+     * szerverkent. Letrehozza a lobbit, felkeszul a csatlakozo
      * kliensekre.
-     * 
+     * <p>
      * Ellenorzi a port alkalmassagat, a palya fajl letezeset.
      */
-    public void SzerverMod() 
-    {
+    public void SzerverMod() {
 
-    	fut = true;
-    	
-    	String port = "";
+        fut = true;
+
+        String port = "";
         String line1 = "";
-    	
-    	try {
-	        System.out.print("[SZERVER]: \n[SZERVER]:  SZERVER MOD\n");
-	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	
-	        System.out.print("[SZERVER]: \n[SZERVER]: Jatekos1 neve: ");
-	        name = br.readLine();
-	
-	        System.out.print("[SZERVER]: \n[SZERVER]: Jatekos2 neve: ");
-	        name2 = br.readLine();
-	        
-	
-	    	// annak az ellenorzese hogy a port biztosan szam-e es hogy a port elerheto-e;
-	    	boolean b=false;
-	        do {
-		        System.out.print("[SZERVER]: \n[SZERVER]: Port: ");
-			    port = br.readLine();
-	        	try {
-	        		int i = Integer.parseInt(port);
-	        		if (CheckPortAvailability(i,"SZERVER"))
-	        			b=false;
-	        		else
-	            		b=true;
-	        	}catch(Exception e) 
-	        	{
-	    	        System.out.println("[SERVER]: Nem megfelelo port!");
-	        		b=true;
-	        		if (port.toLowerCase().equals("q"))
-	        			b=false;
-	        	}
-	        } while (b);
-	        
-	        //Kilepes port megadasakor.
-	        if ((port.toLowerCase().equals("q")))
-	        	return;
-	
-	    	// annak az ellenorzese hogy a megadott .mocsi fajl elerheto-e;
-	        b=true;
-	        do {
-	        	if (b==true)
-	        		System.out.print("[SZERVER]: \n[SZERVER]: File eleresi utja: ");
-	        	else
-	        		System.out.print("[SZERVER]: File nem letezik. Adj meg letezo fajlt!  \n[SZERVER]: \n[SZERVER]: File eleresi utja: ");
-		        line1 = br.readLine() + ".mocsi";
-		        b = VanFile(line1);
-		        if (line1.toLowerCase().equals("q.mocsi"))
-		        	b=true;
-	        } while (!b);
-	        
-	        //Kilepes palyavalasztaskor.
-	        if (line1.toLowerCase().equals("q.mocsi"))
-	        	return;   	
-    	
-	    	szerver = new Szerver(this, port);
-	    	szerver.Fut(line1);
-	
-			do {
-				System.out.print("[SZERVER]: \n[SZERVER]: A jatek inditasahoz ird be, hogy \"start\".");
-			}while(!br.readLine().toLowerCase().equals("start"));
 
-	        szerver.Start(name, name2);
-		
-			while (fut) 
-			{
-				try {
-					String com = br.readLine();
-					switch (com.toLowerCase()) 
-					{
-						case "w" : { szerver.Leptet(Irany.FEL, name);} break;
-						case "a" : { szerver.Leptet(Irany.BALRA, name); }  break;
-						case "s" : { szerver.Leptet(Irany.LE, name); }  break;
-						case "d" : { szerver.Leptet(Irany.JOBBRA, name); }  break;
-						case "q" : { szerver.Leptet(Irany.MEZ, name); }  break;
-						case "e" : { szerver.Leptet(Irany.OLAJ, name); }  break;
-						case "exit" : {szerver.End();} break;
-						case "i" : { szerver.Leptet(Irany.FEL, name2);} break;
-						case "j" : { szerver.Leptet(Irany.BALRA, name2); }  break;
-						case "k" : { szerver.Leptet(Irany.LE, name2); }  break;
-						case "l" : { szerver.Leptet(Irany.JOBBRA, name2); }  break;
-						case "u" : { szerver.Leptet(Irany.MEZ, name2); }  break;
-						case "o" : { szerver.Leptet(Irany.OLAJ, name2); }  break;
-					}
-				} catch (Exception e) {}
-			}
+        try {
+            System.out.print("[SZERVER]: \n[SZERVER]:  SZERVER MOD\n");
+            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    	} catch (IOException e) 
-    	{
-    		System.out.println("[SZERVER]: Hiba a bemeneten!");
-    		return;
-    	}	
-	
+            System.out.print("[SZERVER]: \n[SZERVER]: Jatekos1 neve: ");
+            name = br.readLine();
+
+            System.out.print("[SZERVER]: \n[SZERVER]: Jatekos2 neve: ");
+            name2 = br.readLine();
+
+
+            // annak az ellenorzese hogy a port biztosan szam-e es hogy a port elerheto-e;
+            boolean b = false;
+            do {
+                System.out.print("[SZERVER]: \n[SZERVER]: Port: ");
+                port = br.readLine();
+                try {
+                    int i = Integer.parseInt(port);
+                    if (CheckPortAvailability(i, "SZERVER"))
+                        b = false;
+                    else
+                        b = true;
+                } catch (Exception e) {
+                    System.out.println("[SERVER]: Nem megfelelo port!");
+                    b = true;
+                    if (port.toLowerCase().equals("q"))
+                        b = false;
+                }
+            } while (b);
+
+            //Kilepes port megadasakor.
+            if ((port.toLowerCase().equals("q")))
+                return;
+
+            // annak az ellenorzese hogy a megadott .mocsi fajl elerheto-e;
+            b = true;
+            do {
+                if (b == true)
+                    System.out.print("[SZERVER]: \n[SZERVER]: File eleresi utja: ");
+                else
+                    System.out.print("[SZERVER]: File nem letezik. Adj meg letezo fajlt!  \n[SZERVER]: \n[SZERVER]: File eleresi utja: ");
+                line1 = br.readLine() + ".mocsi";
+                b = VanFile(line1);
+                if (line1.toLowerCase().equals("q.mocsi"))
+                    b = true;
+            } while (!b);
+
+            //Kilepes palyavalasztaskor.
+            if (line1.toLowerCase().equals("q.mocsi"))
+                return;
+
+            szerver = new Szerver(this, port);
+            szerver.Fut(line1);
+
+            do {
+                System.out.print("[SZERVER]: \n[SZERVER]: A jatek inditasahoz ird be, hogy \"start\".");
+            } while (!br.readLine().toLowerCase().equals("start"));
+
+            szerver.Start(name, name2);
+
+            while (fut) {
+                try {
+                    String com = br.readLine();
+                    switch (com.toLowerCase()) {
+                        case "w": {
+                            szerver.Leptet(Irany.FEL, name);
+                        }
+                        break;
+                        case "a": {
+                            szerver.Leptet(Irany.BALRA, name);
+                        }
+                        break;
+                        case "s": {
+                            szerver.Leptet(Irany.LE, name);
+                        }
+                        break;
+                        case "d": {
+                            szerver.Leptet(Irany.JOBBRA, name);
+                        }
+                        break;
+                        case "q": {
+                            szerver.Leptet(Irany.MEZ, name);
+                        }
+                        break;
+                        case "e": {
+                            szerver.Leptet(Irany.OLAJ, name);
+                        }
+                        break;
+                        case "exit": {
+                            szerver.End();
+                        }
+                        break;
+                        case "i": {
+                            szerver.Leptet(Irany.FEL, name2);
+                        }
+                        break;
+                        case "j": {
+                            szerver.Leptet(Irany.BALRA, name2);
+                        }
+                        break;
+                        case "k": {
+                            szerver.Leptet(Irany.LE, name2);
+                        }
+                        break;
+                        case "l": {
+                            szerver.Leptet(Irany.JOBBRA, name2);
+                        }
+                        break;
+                        case "u": {
+                            szerver.Leptet(Irany.MEZ, name2);
+                        }
+                        break;
+                        case "o": {
+                            szerver.Leptet(Irany.OLAJ, name2);
+                        }
+                        break;
+                    }
+                } catch (Exception e) {
+                }
+            }
+
+        } catch (IOException e) {
+            System.out.println("[SZERVER]: Hiba a bemeneten!");
+            return;
+        }
+
     }
 
-	/**
+    /**
      * A jatekot kliensmodba teszi. Felkeszul, es csatlakozik a szerverre.
-     * 
+     * <p>
      * Ellenorzi az ip es a port alkalmassagat, a palya fajl letezeset.
      */
-    public void KliensMod() 
-    {        
-		fut = true;
-		
+    public void KliensMod() {
+        fut = true;
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
-        String line1="";
-        String line2="";
-        
+
+        String line1 = "";
+        String line2 = "";
+
         try {
-	        System.out.print("[Kliens]: \n[Kliens]:  KLIENS MOD ");
-	        System.out.print("[Kliens]: \n[Kliens]: Jatekos neve: ");
-	        name = br.readLine();
-	        
+            System.out.print("[Kliens]: \n[Kliens]:  KLIENS MOD ");
+            System.out.print("[Kliens]: \n[Kliens]: Jatekos neve: ");
+            name = br.readLine();
 
-	    	// annak az ellenorzese hogy az IP szabalyos-e;	    
-	        boolean b =false;
-	        do {
-		        System.out.print("[Kliens]: \n[Kliens]: Host IP: ");
-		        line1 = br.readLine();
-        		if (CheckIPAvailability(line1,"Kliens"))
-        			b=false;
-        		else
-            		b=true;
-        		if (line1.toLowerCase().equals("q"))
-        			b=false;        		
-	        } while (b);
-	        
-	        //Kilepes IP megadasakor.
-	        if ((line1.toLowerCase().equals("q")))
-	        	return;
 
-	    	// annak az ellenorzese hogy a port biztosan szam-e es hogy a port elerheto-e;	    	       
-	        b=false;
-	        do {
-		        System.out.print("[Kliens]: \n[Kliens]: Port: ");
-	        	line2 = br.readLine();
-	        	try {
-	        		int i = Integer.parseInt(line2);
-	        		if (CheckPortAvailability(i,"Kliens"))
-	        			b=false;
-	        		else
-	            		b=true;
-	        	}catch(Exception e) 
-	        	{
-	    	        System.out.println("[Kliens]: Nem megfelelo port!");
-	        		b=true;
-	        		if (line2.toLowerCase().equals("q"))
-	        			b=false;
-	        	}
-	        } while (b);
-	        
-	        //Kilepes port megadasakor.
-	        if ((line2.toLowerCase().equals("q")))
-	        	return;
-	        
-        } catch (Exception e) 
-        {
-    		System.out.println("[Kliens]: Hiba az adatok bekeresekor!");
-    		return;
+            // annak az ellenorzese hogy az IP szabalyos-e;
+            boolean b = false;
+            do {
+                System.out.print("[Kliens]: \n[Kliens]: Host IP: ");
+                line1 = br.readLine();
+                if (CheckIPAvailability(line1, "Kliens"))
+                    b = false;
+                else
+                    b = true;
+                if (line1.toLowerCase().equals("q"))
+                    b = false;
+            } while (b);
+
+            //Kilepes IP megadasakor.
+            if ((line1.toLowerCase().equals("q")))
+                return;
+
+            // annak az ellenorzese hogy a port biztosan szam-e es hogy a port elerheto-e;
+            b = false;
+            do {
+                System.out.print("[Kliens]: \n[Kliens]: Port: ");
+                line2 = br.readLine();
+                try {
+                    int i = Integer.parseInt(line2);
+                    if (CheckPortAvailability(i, "Kliens"))
+                        b = false;
+                    else
+                        b = true;
+                } catch (Exception e) {
+                    System.out.println("[Kliens]: Nem megfelelo port!");
+                    b = true;
+                    if (line2.toLowerCase().equals("q"))
+                        b = false;
+                }
+            } while (b);
+
+            //Kilepes port megadasakor.
+            if ((line2.toLowerCase().equals("q")))
+                return;
+
+        } catch (Exception e) {
+            System.out.println("[Kliens]: Hiba az adatok bekeresekor!");
+            return;
         }
-		
-		String ip = line1;
-		
-		int port=8000;
-		try
-		{
-			port = Integer.parseInt(line2);
-		} catch (Exception e) {e.printStackTrace(); return;}
-		
 
-		try {
-			socket = new Socket();
-			socket.connect(new InetSocketAddress(ip,port),maxConnTime);
-			
-			System.out.println("[Kliens]: Kapcsolodas a szerverhez...");
-			out = new ObjectOutputStream(socket.getOutputStream());
-			in = new ObjectInputStream(socket.getInputStream());
-			System.out.println("[Kliens]: Kapcsolodva!");
+        String ip = line1;
 
-			kOlvaso = new KliensOlvaso(in, this);
-			kOlvaso.start();
-		} catch (IOException e) {
-			//e.printStackTrace();
-			return;
-		}
-		
-		while (fut) 
-		{
-			try {
-				String com = br.readLine();
-				
-				switch (com.toLowerCase()) 
-				{
-					case "w" : { sendParancs(Irany.FEL);}  break;
-					case "a" : { sendParancs(Irany.BALRA);} break;
-					case "s" : { sendParancs(Irany.LE);} break;
-					case "d" : { sendParancs(Irany.JOBBRA);} break;
-					case "m" : { sendParancs(Irany.MEZ);} break;
-					case "o" : { sendParancs(Irany.OLAJ);} break;
-					case "exit" : {
-						kOlvaso.Kill();
-						fut=false; EndGame();
-			    		try {
-			    			in.close();
-			    			out.close();
-			    		} catch (IOException e) {
-			    		} 
-			    	} break;
-				}
-			} catch (Exception e) 
-			{
-	    		System.out.println("Hiba a parancs olvasasakor!");				
-			}
-		}
+        int port = 8000;
+        try {
+            port = Integer.parseInt(line2);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return;
+        }
+
+
+        try {
+            socket = new Socket();
+            socket.connect(new InetSocketAddress(ip, port), maxConnTime);
+
+            System.out.println("[Kliens]: Kapcsolodas a szerverhez...");
+            out = new ObjectOutputStream(socket.getOutputStream());
+            in = new ObjectInputStream(socket.getInputStream());
+            System.out.println("[Kliens]: Kapcsolodva!");
+
+            kOlvaso = new KliensOlvaso(in, this);
+            kOlvaso.start();
+        } catch (IOException e) {
+            //e.printStackTrace();
+            return;
+        }
+
+        while (fut) {
+            try {
+                String com = br.readLine();
+
+                switch (com.toLowerCase()) {
+                    case "w": {
+                        sendParancs(Irany.FEL);
+                    }
+                    break;
+                    case "a": {
+                        sendParancs(Irany.BALRA);
+                    }
+                    break;
+                    case "s": {
+                        sendParancs(Irany.LE);
+                    }
+                    break;
+                    case "d": {
+                        sendParancs(Irany.JOBBRA);
+                    }
+                    break;
+                    case "m": {
+                        sendParancs(Irany.MEZ);
+                    }
+                    break;
+                    case "o": {
+                        sendParancs(Irany.OLAJ);
+                    }
+                    break;
+                    case "exit": {
+                        kOlvaso.Kill();
+                        fut = false;
+                        EndGame();
+                        try {
+                            in.close();
+                            out.close();
+                        } catch (IOException e) {
+                        }
+                    }
+                    break;
+                }
+            } catch (Exception e) {
+                System.out.println("Hiba a parancs olvasasakor!");
+            }
+        }
     }
 
-	/**
+    /**
      * Ellenorzi, hogy a megadott IP szabalyos-e;
-     * 
-     * @param IP	Az IP amit ellenorizni szeretnenk.
-     * 
-     * @return boolean	Az IP hasznalhato-e.
+     *
+     * @param IP Az IP amit ellenorizni szeretnenk.
+     * @return boolean    Az IP hasznalhato-e.
      */
     public boolean CheckIPAvailability(String IP, String str) {
         if (IP.equals("localhost")) {
             return true;
         }
-        
+
         String[] parts = IP.split("\\.");
-        
-        if (parts.length==4)
-        {
-        	for (int i=0;i<4;i++)
-        	{
-        		try 
-        		{
-        			if (Integer.parseInt(parts[i])>255 || Integer.parseInt(parts[i])<0) 
-        			{
-        				System.out.println("[" + str + "]: Nem megfelelo IP.");
-        				return false;
-        			}
-        		} catch (Exception e) 
-        		{
-        			System.out.println("[" + str + "]: Azonosithatatlan IP.");
-        			return false;
-        		}
-        	}
-        	return true;
+
+        if (parts.length == 4) {
+            for (int i = 0; i < 4; i++) {
+                try {
+                    if (Integer.parseInt(parts[i]) > 255 || Integer.parseInt(parts[i]) < 0) {
+                        System.out.println("[" + str + "]: Nem megfelelo IP.");
+                        return false;
+                    }
+                } catch (Exception e) {
+                    System.out.println("[" + str + "]: Azonosithatatlan IP.");
+                    return false;
+                }
+            }
+            return true;
         }
         System.out.println("[" + str + "]: Nem megfelelo IP formatum.");
-		return false;
-	}
+        return false;
+    }
 
-	/**
+    /**
      * Ellenorzi, hogy a megadott port szabalyos, es foglalt-e;
-     * 
-     * @param port	A port amit ellenorizni szeretnenk.
-     * 
-     * @return boolean	A port hasznalhato-e.
+     *
+     * @param port A port amit ellenorizni szeretnenk.
+     * @return boolean    A port hasznalhato-e.
      */
     public boolean CheckPortAvailability(int port, String str) {
         if (port < 0 || port > 65535) {
-			System.out.println("[" + str + "]: Nem megfelelo portszam.");
+            System.out.println("[" + str + "]: Nem megfelelo portszam.");
             return false;
         }
 
         ServerSocket ss = null;
         DatagramSocket ds = null;
         try {
-        	if (str.equals("SZERVER")) 
-        	{
-	            ss = new ServerSocket(port);
-	            ss.setReuseAddress(true);
-	            ds = new DatagramSocket(port);
-	            ds.setReuseAddress(true);
+            if (str.equals("SZERVER")) {
+                ss = new ServerSocket(port);
+                ss.setReuseAddress(true);
+                ds = new DatagramSocket(port);
+                ds.setReuseAddress(true);
             }
             return true;
-        }
-        catch (IOException e) 
-        {
-			System.out.println("[" + str + "]: A port foglalt, vagy nem megfelelo.");
+        } catch (IOException e) {
+            System.out.println("[" + str + "]: A port foglalt, vagy nem megfelelo.");
         } finally {
             if (ds != null) {
                 ds.close();
@@ -405,216 +443,207 @@ public class Jatek {
                 }
             }
         }
-		return false;
-	}
-    
+        return false;
+    }
+
     /**
      * Ha megszakad a kapcsolat a szerverrel a kliens megallitja a jatekmenetet.
      */
-    public void KliensDC() {fut=false;}
-    
+    public void KliensDC() {
+        fut = false;
+    }
+
     /**
      * Elkuldi a parancsokat a szervernek.
-     * 
-     * @param i	Irany amerre lepni akarunk.
+     *
+     * @param i Irany amerre lepni akarunk.
      */
-    public void sendParancs(Irany i) 
-    {
-    	try {
-    		out.writeObject(new ParancsAdat(i, name));
-    	} catch (Exception e) 
-    	{
-    		System.out.println("A kapcsolatot a szerver bezarta, vagy megszakadt!");
-    		kOlvaso.Kill();
-    		try {
-    			in.close();
-    			out.close();
-    		} catch (IOException e1) {
-    		} 
-    	}
-    }    
-    
+    public void sendParancs(Irany i) {
+        try {
+            out.writeObject(new ParancsAdat(i, name));
+        } catch (Exception e) {
+            System.out.println("A kapcsolatot a szerver bezarta, vagy megszakadt!");
+            kOlvaso.Kill();
+            try {
+                in.close();
+                out.close();
+            } catch (IOException e1) {
+            }
+        }
+    }
+
     /**
      * A kliens csatlakozik a szerverre.
-     * 
-     * @param nev	A jatekos neve.
-     * @param ip	IP amire csatlakozunk.
-     * @param port	Port amire csatlakozunk a megadott ip cimen.
-     * 
+     *
+     * @param nev  A jatekos neve.
+     * @param ip   IP amire csatlakozunk.
+     * @param port Port amire csatlakozunk a megadott ip cimen.
      * @return boolean A kapcsolat kiepitesenek sikeressege.
      */
-    public boolean Kapcsol(String nev, String ip, int port) 
-    {
-    	name=nev;
-    	
-		try {
-			socket = new Socket();
-			socket.connect(new InetSocketAddress(ip,port),maxConnTime);
-			
-			System.out.println("[Kliens]: Kapcsolodas a szerverhez...");
-			out = new ObjectOutputStream(socket.getOutputStream());
-			in = new ObjectInputStream(socket.getInputStream());
-			System.out.println("[Kliens]: Kapcsolodva!");
+    public boolean Kapcsol(String nev, String ip, int port) {
+        name = nev;
 
-			kOlvaso = new KliensOlvaso(in, this);
-			kOlvaso.start();
-			return true;
-		} catch (IOException e) {
-			//e.printStackTrace();
-			return false;
-		}
+        try {
+            socket = new Socket();
+            socket.connect(new InetSocketAddress(ip, port), maxConnTime);
+
+            System.out.println("[Kliens]: Kapcsolodas a szerverhez...");
+            out = new ObjectOutputStream(socket.getOutputStream());
+            in = new ObjectInputStream(socket.getInputStream());
+            System.out.println("[Kliens]: Kapcsolodva!");
+
+            kOlvaso = new KliensOlvaso(in, this);
+            kOlvaso.start();
+            return true;
+        } catch (IOException e) {
+            //e.printStackTrace();
+            return false;
+        }
     }
 
     /**
      * Elind�tja a szerver lobbijat.
-     * 
-     * @param port	Port amire csatlakozokat varjuk.
-     * @param FILE	A  palya fajl, amin jatszani szeretnenk.
+     *
+     * @param port Port amire csatlakozokat varjuk.
+     * @param FILE A  palya fajl, amin jatszani szeretnenk.
      */
-    public void FutSzerver(String nev1, String nev2, String port, String FILE) 
-    {
-    	name=nev1;
-    	name2=nev2;
-    	szerver = new Szerver(this, port);
-    	szerver.Fut(FILE);
+    public void FutSzerver(String nev1, String nev2, String port, String FILE) {
+        name = nev1;
+        name2 = nev2;
+        szerver = new Szerver(this, port);
+        szerver.Fut(FILE);
     }
 
     /**
      * Elind�tja a szerver jatek modjat.
      */
-    public void StartSzerver() 
-    {
-    	fut = true;
-    	szerver.Start(name, name2);
+    public void StartSzerver() {
+        fut = true;
+        szerver.Start(name, name2);
     }
 
     /**
      * Parancs a szerver fele.
-     * 
-     * @param i	Parancs.
-     * @param nev	A jatekos azonositoja.
+     *
+     * @param i   Parancs.
+     * @param nev A jatekos azonositoja.
      */
-    public void SzerverSendParancs(Irany i, boolean b) 
-    {
-    	if (!b)
-    		szerver.Leptet(i, name);
-    	else
-        	szerver.Leptet(i, name2);
+    public void SzerverSendParancs(Irany i, boolean b) {
+        if (!b)
+            szerver.Leptet(i, name);
+        else
+            szerver.Leptet(i, name2);
     }
 
 
     /**
      * Kilep a jatekbol.
      */
-    public void exit() 
-    {
-    	if (szerver!=null)
-    		szerver.End();
-    	else {
-			kOlvaso.Kill();
-			fut=false; 
-			EndGame();
-			try {
-				in.close();
-				out.close();
-			} catch (Exception e) {}
-    	}
-	}
+    public void exit() {
+        if (szerver != null)
+            szerver.End();
+        else {
+            if (kOlvaso != null)
+                kOlvaso.Kill();
+            fut = false;
+            EndGame();
+            try {
+                in.close();
+                out.close();
+            } catch (Exception e) {
+            }
+        }
+    }
 
     /**
      * Lekerdezi a szerver jatekosainak szamat.
-     * 
+     *
      * @return int A jatekosok szama.
      */
-    public int jatekossz() {if (name2.equals("")) return 1; return 2;}
+    public int jatekossz() {
+        if (name2.equals("")) return 1;
+        return 2;
+    }
 
     /**
      * Ellenorzi letezik-e a megadott file.
-     * 
+     *
      * @param str A fajl helye.
-     * 
      * @return boolean Letezik-e.
      */
-    public boolean VanFile(String str) 
-    {
+    public boolean VanFile(String str) {
         File f = new File(str);
         return f.exists();
     }
 
     /**
      * Ellenorzi letezik-e a megadott file.
-     * 
+     *
      * @return ArrayList<String> Fajlok listaja.
      */
-    public ObservableList<String> getPalyaLista()
-    {
-    	ObservableList<String> list = FXCollections.observableArrayList();
+    public ObservableList<String> getPalyaLista() {
+        ObservableList<String> list = FXCollections.observableArrayList();
 
-        File root = new File( System.getProperty("user.dir") );
-        
-        try 
-        {
-        	File[] files = root.listFiles();
-        	for (File file : files) 
-        	{
-        		if (file.getName().contains(".mocsi"))
-        			list.add(file.getName());
-        	}
-        } catch (Exception e) {}
-        
+        File root = new File(System.getProperty("user.dir"));
+
+        try {
+            File[] files = root.listFiles();
+            for (File file : files) {
+                if (file.getName().contains(".mocsi"))
+                    list.add(file.getName());
+            }
+        } catch (Exception e) {
+        }
+
         return list;
     }
 
     /**
      * Visszaadja a betoltott, mar a Data-ban levo palya mezoit.
      * Ha parameterkent egy file eleresi utjat kapja, akkor azt tolti be a Databa.
-     * 
+     *
      * @param file Opcionalis. Uj terkep esetere,
-     * 
      * @return int[] A betoltott palya mezoi.
      */
-    public int[] getIDLista(String file)
-    {
-    	
-    	if (file!=null)
-    	{
-    		try 
-    		{
-				FileInputStream fileInputStream = null;
-				
-				fileInputStream = new FileInputStream(file);
-				ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-	
-				Data.PA = (PalyaAdat) objectInputStream.readObject();
-	
-				objectInputStream.close();
-				fileInputStream.close();
-				
-				Data.PalyaX = Data.PA.x;
-				Data.PalyaY = Data.PA.y;
-    		} catch (Exception e)
-    		{
-    			
-    		}
-    	}
-    	
-    	return Data.PA.palya;
+    public int[] getIDLista(String file) {
+
+        if (file != null) {
+            try {
+                FileInputStream fileInputStream = null;
+
+                fileInputStream = new FileInputStream(file);
+                ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+
+                Data.PA = (PalyaAdat) objectInputStream.readObject();
+
+                objectInputStream.close();
+                fileInputStream.close();
+
+                Data.PalyaX = Data.PA.x;
+                Data.PalyaY = Data.PA.y;
+            } catch (Exception e) {
+
+            }
+        }
+
+        return Data.PA.palya;
     }
 
     /**
      * Visszaadja az utoljara kapott jatekadatokat.
-     * 
+     *
      * @return KliensAdat A jatekadatok.
      */
-    public KliensAdat getData() 
-    {
-    	return KA;
+    public KliensAdat getData() {
+        return KA;
     }
-    
+
     /**
      * Lekerdezi fut-e meg a jatek.
-     * 
+     *
      * @return Fut boolean.
      */
-    public boolean isAlive() {return fut;}
+    public boolean isAlive() {
+        return fut;
+    }
 }
