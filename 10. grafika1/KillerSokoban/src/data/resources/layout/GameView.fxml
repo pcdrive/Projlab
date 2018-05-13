@@ -1,23 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GameController">
-   <children>
-      <GridPane fx:id="lowergridpane_preview" layoutX="14.0" layoutY="14.0" prefHeight="296.0" prefWidth="372.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="15.0">
-      </GridPane>
-      <GridPane fx:id="uppergridpane_preview" layoutX="25.0" layoutY="25.0" prefHeight="296.0" prefWidth="569.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="15.0">
-      </GridPane>
-      <Button fx:id="button_menu" layoutX="466.0" layoutY="361.0" mnemonicParsing="false" onAction="#onVisszaButtonDownAction" text="Kilépés a menübe" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="74.0" />
-      <GridPane fx:id="gridpane_pontok" alignment="CENTER" gridLinesVisible="true" layoutX="433.0" layoutY="35.0" prefHeight="296.0" prefWidth="141.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
-         <columnConstraints>
-            <ColumnConstraints minWidth="100.0" percentWidth="70.0" />
-            <ColumnConstraints minWidth="30.0" percentWidth="30.0" />
-         </columnConstraints>
-         </GridPane>
-   </children>
+<?import javafx.scene.layout.*?>
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#onKeyPressed" prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.GameController">
+    <children>
+        <GridPane fx:id="gridpane_gameview_board_lower" layoutX="14.0" layoutY="14.0" prefHeight="296.0" prefWidth="372.0"
+                  AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="175.0"
+                  AnchorPane.topAnchor="15.0">
+        </GridPane>
+        <GridPane fx:id="gridpane_gameview_board_center" layoutX="14.0" layoutY="14.0" prefHeight="296.0" prefWidth="372.0"
+                  AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="175.0"
+                  AnchorPane.topAnchor="15.0">
+        </GridPane>
+        <GridPane fx:id="gridpane_gameview_board_upper" layoutX="25.0" layoutY="25.0" prefHeight="296.0" prefWidth="569.0"
+                  AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="175.0"
+                  AnchorPane.topAnchor="15.0">
+        </GridPane>
+        <Button fx:id="button_gameview_vissza" layoutX="466.0" layoutY="361.0" mnemonicParsing="false"
+                onAction="#onVisszaButtonDownAction" text="Kilépés a menübe" AnchorPane.bottomAnchor="14.0"
+                AnchorPane.rightAnchor="74.0"/>
+        <GridPane fx:id="gridpane_gameview_pontok" alignment="CENTER" gridLinesVisible="true" layoutX="433.0" layoutY="35.0"
+                  prefHeight="296.0" prefWidth="141.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+            <columnConstraints>
+                <ColumnConstraints minWidth="100.0" percentWidth="70.0"/>
+                <ColumnConstraints minWidth="30.0" percentWidth="30.0"/>
+            </columnConstraints>
+        </GridPane>
+    </children>
 </AnchorPane>
