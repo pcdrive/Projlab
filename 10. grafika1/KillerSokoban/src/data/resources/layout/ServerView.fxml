@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="399.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ServerController">
     <children>
         <TextField fx:id="textfield_jatekos1nev" layoutX="179.0" layoutY="27.0" prefHeight="0.0" prefWidth="149.0" AnchorPane.leftAnchor="179.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="27.0" />
         <TextField fx:id="textfield_jatekos2nev" layoutX="179.0" layoutY="65.0" prefHeight="0.0" prefWidth="149.0" AnchorPane.leftAnchor="179.0" AnchorPane.rightAnchor="71.0" AnchorPane.topAnchor="65.0" />

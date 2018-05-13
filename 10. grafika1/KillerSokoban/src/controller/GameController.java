@@ -22,11 +22,11 @@ import javafx.util.Duration;
 import javafx.util.Pair;
 import sokoban.Irany;
 import sokoban.Navigator;
-import sokoban.Pont;
 import sokoban.Pontok;
 
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
@@ -361,9 +361,19 @@ public class GameController {
             gridpane_gameview_pontok.setMinHeight(ptk.getHossz() * 20);
             gridpane_gameview_pontok.setMaxHeight(ptk.getHossz() * 20);
 
-            gridpane_gameview_pontok.getColumnConstraints().add(new ColumnConstraints());
-            gridpane_gameview_pontok.getColumnConstraints().add(new ColumnConstraints());
-            gridpane_gameview_pontok.getColumnConstraints().add(new ColumnConstraints());
+            ColumnConstraints columnConstraints = new ColumnConstraints();
+            columnConstraints.setPercentWidth(25);
+            gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
+
+            columnConstraints = new ColumnConstraints();
+            columnConstraints.setPercentWidth(50);
+            gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
+
+            columnConstraints = new ColumnConstraints();
+            columnConstraints.setPercentWidth(25);
+            gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
+
+            gridpane_gameview_pontok.getColumnConstraints().get(2).setMinWidth(20);
 
             for (int i = 0; i < ptk.getHossz(); i++) {
                 ImageView imageView = new ImageView(PlayerImgs.get(getRandomPlayerImg(i * 100000)));
@@ -374,7 +384,7 @@ public class GameController {
                 RowConstraints row = new RowConstraints();
                 gridpane_gameview_pontok.getRowConstraints().add(row);
                 gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getNev()), 1, i);
-                gridpane_gameview_pontok.add(new Label(), 2, i);
+                gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getPont()+""), 2, i);
             }
         }
     }
@@ -383,8 +393,7 @@ public class GameController {
         Pontok ptk = Data.jatek.getData().pontok;
 
         for (int i = 0; i < ptk.getHossz(); i++) {
-            Pont pont = ptk.getPont(i);
-            ((Label) gridpane_gameview_pontok.getChildren().get(3 * i + 2)).setText(pont.getNev());
+            ((Label) gridpane_gameview_pontok.getChildren().get(3 * i + 3)).setText(ptk.getPont(i).getPont()+"");
         }
     }
 

@@ -4,10 +4,10 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="399.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LobbyController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="399.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.LobbyController">
     <children>
         <Button fx:id="button_start" layoutX="179.0" layoutY="136.0" mnemonicParsing="false" onAction="#onButtonDownAction" text="Start" AnchorPane.leftAnchor="179.0" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="136.0" />
-        <Button fx:id="button_megse" layoutX="171.0" layoutY="174.0" mnemonicParsing="false" onAction="#onButtonDownAction" text="M�gse" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="174.0" />
+        <Button fx:id="button_megse" layoutX="171.0" layoutY="174.0" mnemonicParsing="false" onAction="#onButtonDownAction" text="Mégse" AnchorPane.leftAnchor="171.0" AnchorPane.rightAnchor="171.0" AnchorPane.topAnchor="174.0" />
       <Label layoutX="104.0" layoutY="102.0" text="Nyomj Startot a szerver indításához!" AnchorPane.leftAnchor="104.0" AnchorPane.rightAnchor="103.0" AnchorPane.topAnchor="102.0" />
     </children>
 </AnchorPane>
