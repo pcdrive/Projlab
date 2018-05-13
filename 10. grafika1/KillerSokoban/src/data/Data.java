@@ -11,7 +11,7 @@ public class Data {
     public static int PalyaX = 5;
     public static int PalyaY = 5;
     public static Jatek jatek;
-    public static boolean fullScreen = false;
+    public static boolean fullScreen = true;
     @SuppressWarnings("serial")
 	public static final ArrayList<Pair<Integer, Integer>> resolutions = new ArrayList<Pair<Integer, Integer>>() {{
         add(new Pair<>(1920, 1080));
