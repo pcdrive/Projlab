@@ -63,7 +63,7 @@ public class PalyaGenerator {
 
 
             uresMezo.Fogad(0, null, new Jatekos(null, null, null), null);
-            palya[13] = palya[15] = uresMezo.getID();
+            palya[33] = palya[35] = uresMezo.getID();
             uresMezo.Enged();
             uresMezo.Fogad(0, null, new Doboz(null, null), null);
             palya[45] = palya[50] = palya[62] = palya[71] = palya[129] = palya[135] = palya[146] = palya[172] = palya[184] = palya[187] = palya[216] = palya[290] = palya[323] = palya[354] = uresMezo.getID();
