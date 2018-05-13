@@ -303,42 +303,35 @@ public class GameController {
                     int ColumnHeight = gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY;
 
                     switch ((int) (IDs[x + y * Data.PalyaX] % 10000 / 1000)) {
-                        case 0: {
+                        case 0:
                             New = new ImageView(UresMezoImg);
-                        }
-                        break;
-                        case 1: {
+                            break;
+                        case 1:
                             New = new ImageView(FalImg);
-                        }
-                        break;
-                        case 2: {
+                            break;
+                        case 2:
                             New = new ImageView(LyukImg);
-                        }
-                        break;
-                        case 3: {
-                            if ((int) (IDs[x + y * 10] % 100000 / 100) == 0) {
+                            break;
+                        case 3:
+                            if ((int) (IDs[x + y * 10] / 100) % 10 == 1) {
                                 New = new ImageView(CelhelyImg);
                             } else {
                                 New = new ImageView(UresMezoImg);
                             }
-                        }
-                        break;
-                        case 4: {
+                            break;
+                        case 4:
                             if ((int) (IDs[x + y * 10] % 100000 / 100) == 0) {
                                 New = new ImageView(LyukImg);
                             } else {
                                 New = new ImageView(UresMezoImg);
                             }
-                        }
-                        break;
-                        case 5: {
+                            break;
+                        case 5:
                             New = new ImageView(KapcsoloImg);
-                        }
-                        break;
-                        default: {
+                            break;
+                        default:
                             New = new ImageView(UresMezoImg);
-                        }
-                        break;
+                            break;
                     }
                     New.setFitWidth(CellWidth);
                     New.setFitHeight(ColumnHeight);
@@ -371,9 +364,9 @@ public class GameController {
                         if (((int) (IDs[x + y * Data.PalyaX] / 10)) % 10 > 0)
                             New.setImage(MezOlajImg);
                         else
-                            New.setImage(MezImg);
+                            New.setImage(OlajImg);
                     } else if (((int) (IDs[x + y * Data.PalyaX] / 10)) % 10 > 0) {
-                        New.setImage(OlajImg);
+                        New.setImage(MezImg);
                     }
                     New.setFitWidth(CellWidth);
                     New.setFitHeight(ColumnHeight);
