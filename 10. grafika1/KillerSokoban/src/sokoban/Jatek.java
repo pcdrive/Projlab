@@ -76,7 +76,8 @@ public class Jatek {
      */
     public void Print(KliensAdat kliensAdat) {
         if (kliensAdat != null && kliensAdat.palya != null) {
-            fut = true;
+
+            fut = !Data.szerver || fut;
 
             KA = kliensAdat;
 
@@ -526,7 +527,7 @@ public class Jatek {
      * Parancs a szerver fele.
      *
      * @param i   Parancs.
-     * @param nev A jatekos azonositoja.
+     * @param b A jatekos azonositoja.
      */
     public void SzerverSendParancs(Irany i, boolean b) {
         if (!b)
