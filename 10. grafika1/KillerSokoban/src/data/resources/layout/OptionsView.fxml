@@ -6,7 +6,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OptionsController">
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="392.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="controller.OptionsController">
     <children>
         <ComboBox fx:id="combobox_resolutionselector" layoutX="121.0" layoutY="45.0" prefWidth="150.0" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="45.0" />
         <CheckBox fx:id="checkbox_fullscreenselector" layoutX="196.0" layoutY="86.0" mnemonicParsing="false" AnchorPane.leftAnchor="196.0" AnchorPane.rightAnchor="175.0" AnchorPane.topAnchor="86.0" />
