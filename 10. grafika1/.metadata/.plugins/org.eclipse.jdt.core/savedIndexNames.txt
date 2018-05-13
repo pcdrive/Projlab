@@ -5,15 +5,15 @@ INDEX VERSION 1.130+C:\Users\Nova\Desktop\Projlab\Projlab\10. grafika1\.metadata
 2872033403.index
 3314990838.index
 710797068.index
-2716405690.index
 2043626465.index
+2716405690.index
 4121661813.index
 1204375214.index
 916900781.index
 1942721061.index
 100574398.index
-3273689814.index
 823384711.index
+3273689814.index
 3363692690.index
 2569137926.index
 1177904427.index

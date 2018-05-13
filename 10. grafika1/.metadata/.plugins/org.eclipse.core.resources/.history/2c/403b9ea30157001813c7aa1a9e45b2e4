@@ -208,7 +208,7 @@ public class Palya {
 
         for (Doboz d : dobozok) {
         	if (d.getTipus()==3) {
-        		if (d.getStatus()==1) {
+        		if (d.getStatus()==0) {
 		        	boolean[] iranyok = new boolean[4];
 		            iranyok[0] = true;
 		            iranyok[1] = true;
