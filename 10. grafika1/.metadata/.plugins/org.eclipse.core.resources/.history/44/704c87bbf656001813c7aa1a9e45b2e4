@@ -230,8 +230,8 @@ public class GameController {
             gridPane.getColumnConstraints().add(new ColumnConstraints());
         }
 
-        for (int i = 0; i < Data.PalyaY; i++) {
-            for (int j = 0; j < Data.PalyaX; j++) {
+        for (int i = 0; i < Data.PalyaX; i++) {
+            for (int j = 0; j < Data.PalyaY; j++) {
                 ImageView imageView = new ImageView();
                 imageView.setFitWidth(gridpane_gameview_board_lower.widthProperty().intValue() / Data.PalyaX);
                 imageView.setFitHeight(gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY);
