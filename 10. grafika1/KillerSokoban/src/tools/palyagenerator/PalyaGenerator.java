@@ -3,6 +3,7 @@ package tools.palyagenerator;
 import server.PalyaAdat;
 import sokoban.leptethetok.Doboz;
 import sokoban.leptethetok.Jatekos;
+import sokoban.leptethetok.JeloltDoboz;
 import sokoban.mezok.*;
 import tools.Printer;
 
@@ -34,13 +35,13 @@ public class PalyaGenerator {
     public static void main(String[] args) {
         try {
             Printer.DisablePrint();
-            int x = 10;
-            int y = 10;
-            int csapdaajtok[] = new int[2];
-            FileOutputStream fileOutputStream = new FileOutputStream("ujpalya.mocsi");
+            int x = 20;
+            int y = 19;
+            int csapdaajtok[] = new int[15];
+            FileOutputStream fileOutputStream = new FileOutputStream("demopalya.mocsi");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             int[] palya = new int[x * y];
-            
+
             for (int i = 0; i < x; i++) {
                 palya[i] = fal.getID();
                 palya[y * x - 1 - i] = fal.getID();
@@ -62,13 +63,31 @@ public class PalyaGenerator {
 
 
             uresMezo.Fogad(0, null, new Jatekos(null, null, null), null);
-            palya[13] = palya[15] = palya[18] = uresMezo.getID();
+            palya[13] = palya[15] = uresMezo.getID();
             uresMezo.Enged();
-            uresMezo.Fogad(0, null, new Doboz(null,null), null);
-            palya[55] = uresMezo.getID();
-            palya[85] = celhely.getID();
+            uresMezo.Fogad(0, null, new Doboz(null, null), null);
+            palya[45] = palya[50] = palya[62] = palya[71] = palya[129] = palya[135] = palya[146] = palya[172] = palya[184] = palya[187] = palya[216] = palya[290] = palya[323] = palya[354] = uresMezo.getID();
+            uresMezo.Enged();
+            uresMezo.Fogad(0, null, new JeloltDoboz(null, null), null);
+            palya[61] = palya[69] = palya[114] = palya[186] = palya[205] = palya[297] = uresMezo.getID();
 
+            palya[52] = palya[67] = palya[96] = palya[105] = palya[106] = palya[116] = palya[136] = palya[156] = palya[125] = palya[145] = palya[150] = palya[171] = palya[182] = palya[183] = palya[188] = palya[208] = palya[209] = palya[213] = palya[237] = palya[255] = palya[246] = palya[284] = palya[285] = palya[309] = palya[310] = palya[330] = palya[355] = palya[356] = palya[357] = fal.getID();
 
+            palya[43] = palya[76] = palya[123] = palya[141] = palya[170] = palya[189] = palya[218] = palya[264] = palya[307] = palya[329] = palya[332] = lyuk.getID();
+
+            palya[68] = palya[92] = palya[107] = palya[249] = palya[282] = palya[271] = celhely.getID();
+
+            int i = 0;
+            csapdaajtok[i++] = palya[64] = kapcsolo.getID();
+            palya[77] = palya[90] = palya[148] = palya[231] = palya[262] = palya[336] = csapdaajto.getID();
+            for(;i<7;)
+                csapdaajtok[i++] = csapdaajto.getID();
+
+            csapdaajtok[i++] = palya[153] = kapcsolo.getID();
+            palya[45] = palya[93] = palya[157] = palya[215] = palya[233] = palya[268] = palya[293] = csapdaajto.getID();
+
+            for(;i<15;)
+                csapdaajtok[i++] = csapdaajto.getID();
             //END_OF_CREATION
 
             PalyaAdat palyaAdat = new PalyaAdat(3, palya, csapdaajtok, x, y);
