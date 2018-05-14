@@ -67,7 +67,6 @@ public class KliensOlvaso extends Thread {
 				} 
 	
 			} catch (Exception e) {
-				e.printStackTrace();
 				j.KliensDC();
 				fut=false;
 			}		

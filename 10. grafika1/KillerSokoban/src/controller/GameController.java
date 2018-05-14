@@ -218,7 +218,7 @@ public class GameController {
     }
 
     private void setGridIfNeeded(GridPane gridPane) {
-
+    	
         if (gridPane.getRowConstraints().size() > 0)
             return;
 
@@ -350,12 +350,12 @@ public class GameController {
 
             for (int i = 0; i < ptk.getHossz(); i++) {
                 ImageView imageView = new ImageView(PlayerImgs.get(getRandomPlayerImg(i * 100000)));
-                imageView.setFitHeight(gridpane_gameview_pontok.getMinHeight());
-                imageView.setFitWidth(gridpane_gameview_pontok.getMinHeight());
-                gridpane_gameview_pontok.add(imageView, 0, i);
+                imageView.setFitHeight(40);
+                imageView.setFitWidth(40);
 
                 RowConstraints row = new RowConstraints();
                 gridpane_gameview_pontok.getRowConstraints().add(row);
+                gridpane_gameview_pontok.add(imageView, 0, i);
                 gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getNev()), 1, i);
                 gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getPont()+""), 2, i);
             }

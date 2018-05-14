@@ -140,7 +140,7 @@ public class Szerver {
 		if (lobby != null)
 			lobby.interrupt();
 		try {
-			connection.close();
+		//	connection.close();
 		} catch (Exception e) {}
 
 		lobby = new Thread() {

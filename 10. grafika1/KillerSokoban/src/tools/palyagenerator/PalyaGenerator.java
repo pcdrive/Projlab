@@ -59,11 +59,11 @@ public class PalyaGenerator {
 
 
             //START_OF_CREATION
-            //INSERT YOUR COSTUM PÁLYÁZ KÓD HÍR
+            //INSERT YOUR COSTUM PÃ�LYÃ�Z KÃ“D HÃ�R
 
 
             uresMezo.Fogad(0, null, new Jatekos(null, null, null), null);
-            palya[33] = palya[35] = uresMezo.getID();
+            palya [31] = palya[33] = palya[35] = uresMezo.getID();
             uresMezo.Enged();
             uresMezo.Fogad(0, null, new Doboz(null, null), null);
             palya[45] = palya[50] = palya[62] = palya[71] = palya[129] = palya[135] = palya[146] = palya[172] = palya[184] = palya[187] = palya[216] = palya[290] = palya[323] = palya[354] = uresMezo.getID();
@@ -105,7 +105,7 @@ public class PalyaGenerator {
 
             //END_OF_CREATION
 
-            PalyaAdat palyaAdat = new PalyaAdat(2, palya, csapdaajtok, x, y);
+            PalyaAdat palyaAdat = new PalyaAdat(3, palya, csapdaajtok, x, y);
             objectOutputStream.writeObject(palyaAdat);
 
             objectOutputStream.close();

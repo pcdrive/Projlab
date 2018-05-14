@@ -124,7 +124,8 @@ public class ServerController {
             	usedplayers.clear();
             	disposeGrid();
             	
-            	int[] IDs = Data.jatek.getIDLista(newValue);
+            	@SuppressWarnings("unused")
+				int[] IDs = Data.jatek.getIDLista(newValue);
             	
             	setGrid();
             	

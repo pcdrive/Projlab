@@ -452,6 +452,10 @@ public class Jatek {
      */
     public void KliensDC() {
         fut = false;
+        try {
+        in.close();
+        out.close();
+        } catch (Exception e) {}
     }
 
     /**
@@ -465,11 +469,7 @@ public class Jatek {
         } catch (Exception e) {
             System.out.println("A kapcsolatot a szerver bezarta, vagy megszakadt!");
             kOlvaso.Kill();
-            try {
-                in.close();
-                out.close();
-            } catch (IOException e1) {
-            }
+            KliensDC();
         }
     }
 
