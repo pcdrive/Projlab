@@ -23,7 +23,6 @@ import javafx.util.Pair;
 import sokoban.Irany;
 import sokoban.Navigator;
 import sokoban.Pontok;
-import tools.Printer;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -343,8 +342,6 @@ public class GameController {
 	}
 
 	private void setPontokGridIfNeeded() {
-		Printer.DisablePrint();
-		
 		if (gridpane_gameview_pontok.getRowConstraints().size() > 0)
 			return;
 
@@ -367,7 +364,7 @@ public class GameController {
 			gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
 
 			gridpane_gameview_pontok.getColumnConstraints().get(2).setMinWidth(20);
-			
+
 			for (int i = 0; i < ptk.getHossz(); i++) {
 				ImageView imageView = new ImageView(PlayerImgs.get(getRandomPlayerImg(i * 100000)));
 				imageView.setFitHeight(40);
@@ -379,9 +376,7 @@ public class GameController {
 				gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getNev()), 1, i);
 				gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getPont() + ""), 2, i);
 			}
-
 		}
-		Printer.EnablePrint();
 	}
 
 	private void fillPontGrid() {

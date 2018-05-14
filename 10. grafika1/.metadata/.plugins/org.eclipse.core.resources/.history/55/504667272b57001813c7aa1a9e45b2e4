@@ -381,7 +381,6 @@ public class GameController {
 			}
 
 		}
-		Printer.EnablePrint();
 	}
 
 	private void fillPontGrid() {

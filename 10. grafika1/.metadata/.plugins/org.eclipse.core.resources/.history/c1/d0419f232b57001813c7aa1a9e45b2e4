@@ -343,8 +343,6 @@ public class GameController {
 	}
 
 	private void setPontokGridIfNeeded() {
-		Printer.DisablePrint();
-		
 		if (gridpane_gameview_pontok.getRowConstraints().size() > 0)
 			return;
 
@@ -381,7 +379,6 @@ public class GameController {
 			}
 
 		}
-		Printer.EnablePrint();
 	}
 
 	private void fillPontGrid() {
