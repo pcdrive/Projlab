@@ -98,7 +98,7 @@ public class ServerController {
                 Navigator.navigate(root, false);
                 Data.szerver=true;
                 } catch (Exception e) {}
-            }        
+            }
         } else if (actionEvent.getSource() == button_megse) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));

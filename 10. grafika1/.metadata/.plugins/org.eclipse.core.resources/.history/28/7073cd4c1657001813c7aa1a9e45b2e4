@@ -26,6 +26,8 @@ import sokoban.mezok.*;
 
 import java.util.LinkedList;
 
+@SuppressWarnings("unused")
+
 public class Palya {
 	
     private Szerver szerver;
