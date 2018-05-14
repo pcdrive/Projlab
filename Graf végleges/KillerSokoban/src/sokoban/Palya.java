@@ -26,8 +26,6 @@ import sokoban.mezok.*;
 
 import java.util.LinkedList;
 
-@SuppressWarnings("unused")
-
 public class Palya {
 	
     private Szerver szerver;
@@ -206,22 +204,33 @@ public class Palya {
     public void Vegellenorzes() {
         Printer.PrintTabIn("Palya" + '\t' + "Vegellenorzes()");
 
-        for (Doboz d : dobozok) {
-        	boolean[] iranyok = new boolean[4];
-            iranyok[0] = true;
-            iranyok[1] = true;
-            iranyok[2] = true;
-            iranyok[3] = true;
-            iranyok[0] = d.Vege(Irany.FEL);
-            iranyok[1] = d.Vege(Irany.JOBBRA);
-            iranyok[2] = d.Vege(Irany.LE);
-            iranyok[3] = d.Vege(Irany.BALRA);
-            if (!((iranyok[0]==false && iranyok[1]==false) || (iranyok[1]==false && iranyok[2]==false) || (iranyok[2]==false && iranyok[3]==false) || (iranyok[3]==false && iranyok[0]==false)) ) {
-                Printer.PrintTabOut("Return true");
-                return;
-            }
+        if (jatekosok.size()==0) 
+        {
+        	szerver.End();
+            Printer.PrintTabOut("Return true");
         }
+        
+        for (Doboz d : dobozok) {
+        	if (d.getTipus()==3) {
+        		if (d.getStatus()==1) {
+		        	boolean[] iranyok = new boolean[4];
+		            iranyok[0] = true;
+		            iranyok[1] = true;
+		            iranyok[2] = true;
+		            iranyok[3] = true;
+		            iranyok[0] = d.Vege(Irany.FEL);
+		            iranyok[1] = d.Vege(Irany.JOBBRA);
+		            iranyok[2] = d.Vege(Irany.LE);
+		            iranyok[3] = d.Vege(Irany.BALRA);
+		            if (!((iranyok[0]==false && iranyok[1]==false) || (iranyok[1]==false && iranyok[2]==false) || (iranyok[2]==false && iranyok[3]==false) || (iranyok[3]==false && iranyok[0]==false)) ) {
 
+		                Printer.PrintTabOut("Return false");
+		                return;
+		            }
+        		}
+        	}
+        }
+        Printer.PrintTabOut("Return true");
         szerver.End();
         Printer.PrintTabOut("Return false");
         return;

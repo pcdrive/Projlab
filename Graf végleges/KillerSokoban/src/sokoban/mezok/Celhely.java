@@ -57,6 +57,7 @@ public class Celhely extends UresMezo {
         if (success) {
             jd.JeletTorol();
             j.PontotKap();
+            jel = false;
         }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;

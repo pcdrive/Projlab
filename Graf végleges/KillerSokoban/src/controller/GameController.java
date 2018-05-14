@@ -23,14 +23,15 @@ import javafx.util.Pair;
 import sokoban.Irany;
 import sokoban.Navigator;
 import sokoban.Pontok;
+import tools.Printer;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
 /**
- * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit.
- * A cel, hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
+ * A KillerSokoban egy jatek, ahol a jatekos egy raktari munkast alakit. A cel,
+ * hogy minden mas jatekosnal tobb megjelolt ladat tolj a helyere.
  *
  * @author Horvath Gergo
  * @author Mocsari Andras
@@ -42,345 +43,370 @@ import java.util.Random;
  */
 public class GameController {
 
-    @FXML
-    public GridPane gridpane_gameview_board_lower;
-    @FXML
-    public GridPane gridpane_gameview_board_center;
-    @FXML
-    public GridPane gridpane_gameview_board_upper;
-    @FXML
-    public Button button_gameview_vissza;
-    @FXML
-    public GridPane gridpane_gameview_pontok;
+	@FXML
+	public GridPane gridpane_gameview_board_lower;
+	@FXML
+	public GridPane gridpane_gameview_board_center;
+	@FXML
+	public GridPane gridpane_gameview_board_upper;
+	@FXML
+	public Button button_gameview_vissza;
+	@FXML
+	public GridPane gridpane_gameview_pontok;
 
-    private Image CelhelyImg;
-    private Image DobozImg;
-    private Image FalImg;
-    private Image JeloltDImg;
-    private Image KapcsoloImg;
-    private Image LyukImg;
-    private Image MezImg;
-    private Image OlajImg;
-    private Image MezOlajImg;
-    private Image UresMezoImg;
-    private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
-    private ArrayList<Pair<Integer, Integer>> usedplayers = new ArrayList<Pair<Integer, Integer>>();
-    private Timeline interval;
+	private Image CelhelyImg;
+	private Image DobozImg;
+	private Image FalImg;
+	private Image JeloltDImg;
+	private Image KapcsoloImg;
+	private Image LyukImg;
+	private Image MezImg;
+	private Image OlajImg;
+	private Image MezOlajImg;
+	private Image UresMezoImg;
+	private ArrayList<Image> PlayerImgs = new ArrayList<Image>();
+	private ArrayList<Pair<Integer, Integer>> usedplayers = new ArrayList<Pair<Integer, Integer>>();
+	private Timeline interval;
 
-    int TimerTick = 0;
+	int TimerTick = 0;
 
-    public GameController() {
-        CelhelyImg = new Image("/data/resources/drawable/celhely.png");
-        DobozImg = new Image("/data/resources/drawable/doboz.png");
-        FalImg = new Image("/data/resources/drawable/fal.png");
-        JeloltDImg = new Image("/data/resources/drawable/jeloltdoboz.png");
-        KapcsoloImg = new Image("/data/resources/drawable/kapcsolo.png");
-        LyukImg = new Image("/data/resources/drawable/lyuk.png");
-        MezImg = new Image("/data/resources/drawable/mez.png");
-        MezOlajImg = new Image("/data/resources/drawable/mezolaj.png");
-        OlajImg = new Image("/data/resources/drawable/olaj.png");
-        UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
-        fillPlayerImages();
+	public GameController() {
+		CelhelyImg = new Image("/data/resources/drawable/celhely.png");
+		DobozImg = new Image("/data/resources/drawable/doboz.png");
+		FalImg = new Image("/data/resources/drawable/fal.png");
+		JeloltDImg = new Image("/data/resources/drawable/jeloltdoboz.png");
+		KapcsoloImg = new Image("/data/resources/drawable/kapcsolo.png");
+		LyukImg = new Image("/data/resources/drawable/lyuk.png");
+		MezImg = new Image("/data/resources/drawable/mez.png");
+		MezOlajImg = new Image("/data/resources/drawable/mezolaj.png");
+		OlajImg = new Image("/data/resources/drawable/olaj.png");
+		UresMezoImg = new Image("/data/resources/drawable/uresmezo.png");
+		fillPlayerImages();
 
+		EventHandler<ActionEvent> AEH = new EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent event) {
+				TimerTick++;
 
-        EventHandler<ActionEvent> AEH = new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                TimerTick++;
-                System.out.println(Data.jatek.isAlive() + " " + (TimerTick));
+				if (Data.jatek.isAlive() && Data.PalyaX != 0 && Data.PalyaY != 0 && Data.jatek.getData() != null
+						&& Data.jatek.getData().pontok != null) {
 
-                if (Data.jatek.isAlive() && Data.PalyaX != 0 && Data.PalyaY != 0 && Data.jatek.getData() != null && Data.jatek.getData().pontok != null) {
+					setGridIfNeeded(gridpane_gameview_board_lower);
+					setGridIfNeeded(gridpane_gameview_board_center);
+					setGridIfNeeded(gridpane_gameview_board_upper);
+					setPontokGridIfNeeded();
 
-                    setGridIfNeeded(gridpane_gameview_board_lower);
-                    setGridIfNeeded(gridpane_gameview_board_center);
-                    setGridIfNeeded(gridpane_gameview_board_upper);
-                    setPontokGridIfNeeded();
+					fillGrid();
+					fillPontGrid();
+				}
 
-                    fillGrid();
-                    fillPontGrid();
-                }
+				if (!Data.jatek.isAlive()) {
+					interval.stop();
 
-                if (!Data.jatek.isAlive()) {
-                    interval.stop();
+					Pontok ptk = Data.jatek.getData().pontok;
 
-                    Pontok ptk = Data.jatek.getData().pontok;
+					Data.jatek.getData().pontok.order();
 
-                    Data.jatek.getData().pontok.order();
+					String res = Data.jatek.getData().pontok.getResult();
 
-                    String res = Data.jatek.getData().pontok.getResult();
+					Alert alert = new Alert(Alert.AlertType.INFORMATION);
+					alert.setTitle("A játék véget ért!");
+					alert.setHeaderText(null);
+					alert.setContentText("A végső pontszámok:\n\n" + res);
+					alert.show();
 
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("A játék véget ért!");
-                    alert.setHeaderText(null);
-                    alert.setContentText("A végső pontszámok:\n\n" + res);
-                    alert.show();
+					try {
 
-                    try {
+						interval.stop();
+						Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
+						Navigator.navigate(root, false);
+					} catch (IOException e) {
+						e.printStackTrace();
+					}
+				}
 
-                        interval.stop();
-                        Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-                        Navigator.navigate(root, false);
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                }
+			}
+		};
+		interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));
+		interval.setCycleCount(Timeline.INDEFINITE);
+		interval.play();
+	}
 
-            }
-        };
-        interval = new Timeline(new KeyFrame(Duration.millis(100), AEH));
-        interval.setCycleCount(Timeline.INDEFINITE);
-        interval.play();
-    }
+	public void onKeyPressed(KeyEvent event) {
+		switch (event.getCode()) {
+		case W: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.FEL, false);
+			else
+				Data.jatek.sendParancs(Irany.FEL);
+		}
+			break;
+		case A: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.BALRA, false);
+			else
+				Data.jatek.sendParancs(Irany.BALRA);
+		}
+			break;
+		case S: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.LE, false);
+			else
+				Data.jatek.sendParancs(Irany.LE);
+		}
+			break;
+		case D: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.JOBBRA, false);
+			else
+				Data.jatek.sendParancs(Irany.JOBBRA);
+		}
+			break;
+		case Q: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.MEZ, false);
+			else
+				Data.jatek.sendParancs(Irany.MEZ);
+		}
+			break;
+		case E: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.OLAJ, false);
+			else
+				Data.jatek.sendParancs(Irany.OLAJ);
+		}
+			break;
+		case I: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.FEL, true);
+		}
+			break;
+		case J: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.BALRA, true);
+		}
+			break;
+		case K: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.LE, true);
+		}
+			break;
+		case L: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.JOBBRA, true);
+		}
+			break;
+		case U: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.MEZ, true);
+		}
+			break;
+		case O: {
+			if (Data.szerver)
+				Data.jatek.SzerverSendParancs(Irany.OLAJ, true);
+		}
+			break;
+		default:
+			break;
+		}
+	}
 
-    public void onKeyPressed(KeyEvent event) {
-        switch (event.getCode()) {
-            case W: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.FEL, false);
-                else Data.jatek.sendParancs(Irany.FEL);
-            }
-            break;
-            case A: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.BALRA, false);
-                else Data.jatek.sendParancs(Irany.BALRA);
-            }
-            break;
-            case S: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.LE, false);
-                else Data.jatek.sendParancs(Irany.LE);
-            }
-            break;
-            case D: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, false);
-                else Data.jatek.sendParancs(Irany.JOBBRA);
-            }
-            break;
-            case Q: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, false);
-                else Data.jatek.sendParancs(Irany.MEZ);
-            }
-            break;
-            case E: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, false);
-                else Data.jatek.sendParancs(Irany.OLAJ);
-            }
-            break;
-            case I: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.FEL, true);
-            }
-            break;
-            case J: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.BALRA, true);
-            }
-            break;
-            case K: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.LE, true);
-            }
-            break;
-            case L: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.JOBBRA, true);
-            }
-            break;
-            case U: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.MEZ, true);
-            }
-            break;
-            case O: {
-                if (Data.szerver) Data.jatek.SzerverSendParancs(Irany.OLAJ, true);
-            }
-            break;
-            default:
-                break;
-        }
-    }
+	public void onVisszaButtonDownAction() {
+		try {
 
+			interval.stop();
 
-    public void onVisszaButtonDownAction() {
-        try {
+			Data.jatek.exit();
+			Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
+			Navigator.navigate(root, false);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
-            interval.stop();
+	private void fillPlayerImages() {
+		if (PlayerImgs == null) {
+			PlayerImgs = new ArrayList<Image>();
+		}
 
-            Data.jatek.exit();
-            Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
-            Navigator.navigate(root, false);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+		for (int i = 0; i < 21; i++) {
+			PlayerImgs.add(new Image("/data/resources/drawable/jatekosok/jo" + i + ".png"));
+		}
+	}
 
-    private void fillPlayerImages() {
-        if (PlayerImgs == null) {
-            PlayerImgs = new ArrayList<Image>();
-        }
+	private void setGridIfNeeded(GridPane gridPane) {
 
-        for (int i = 0; i < 21; i++) {
-            PlayerImgs.add(new Image("/data/resources/drawable/jatekosok/jo" + i + ".png"));
-        }
-    }
+		if (gridPane.getRowConstraints().size() > 0)
+			return;
 
-    private void setGridIfNeeded(GridPane gridPane) {
+		for (int i = 0; i < Data.PalyaY; i++) {
+			gridPane.getRowConstraints().add(new RowConstraints());
+		}
 
-        if (gridPane.getRowConstraints().size() > 0)
-            return;
+		for (int i = 0; i < Data.PalyaX; i++) {
+			gridPane.getColumnConstraints().add(new ColumnConstraints());
+		}
 
-        for (int i = 0; i < Data.PalyaY; i++) {
-            gridPane.getRowConstraints().add(new RowConstraints());
-        }
+		for (int i = 0; i < Data.PalyaY; i++) {
+			for (int j = 0; j < Data.PalyaX; j++) {
+				ImageView imageView = new ImageView();
+				imageView.setFitWidth(gridpane_gameview_board_lower.widthProperty().intValue() / Data.PalyaX);
+				imageView.setFitHeight(gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY);
+				gridPane.add(imageView, j, i);
+			}
+		}
 
-        for (int i = 0; i < Data.PalyaX; i++) {
-            gridPane.getColumnConstraints().add(new ColumnConstraints());
-        }
+		for (Node node : gridpane_gameview_board_center.getChildren()) {
+			int CellWidth = gridpane_gameview_board_lower.widthProperty().intValue() / Data.PalyaX;
+			int ColumnHeight = gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY;
+			ImageView imageView = new ImageView();
+			imageView.setFitWidth(CellWidth);
+			imageView.setFitHeight(ColumnHeight);
+			node = imageView;
+		}
+		for (Node node : gridpane_gameview_board_upper.getChildren()) {
+			int CellWidth = gridpane_gameview_board_lower.widthProperty().intValue() / Data.PalyaX;
+			int ColumnHeight = gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY;
+			ImageView imageView = new ImageView();
+			imageView.setFitWidth(CellWidth);
+			imageView.setFitHeight(ColumnHeight);
+			node = imageView;
+		}
+	}
 
-        for (int i = 0; i < Data.PalyaY; i++) {
-            for (int j = 0; j < Data.PalyaX; j++) {
-                ImageView imageView = new ImageView();
-                imageView.setFitWidth(gridpane_gameview_board_lower.widthProperty().intValue() / Data.PalyaX);
-                imageView.setFitHeight(gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY);
-                gridPane.add(imageView, j, i);
-            }
-        }
+	private void fillGrid() {
+		int[] IDs = Data.jatek.getData().palya;
+		if (IDs == null)
+			return;
+		for (int i = 0; i < IDs.length; i++) {
+			switch ((int) (IDs[i] % 10000 / 1000)) {
+			case 0:
+				((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
+				break;
+			case 1:
+				((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(FalImg);
+				break;
+			case 2:
+				((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(LyukImg);
+				break;
+			case 3:
+				if ((int) (IDs[i] / 100) % 10 == 1) {
+					((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(CelhelyImg);
+				} else {
+					((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
+				}
+				break;
+			case 4:
+				if ((int) (IDs[i] % 1000 / 100) == 1) {
+					((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(LyukImg);
+				} else {
+					((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
+				}
+				break;
+			case 5:
+				((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(KapcsoloImg);
+				break;
+			default:
+				((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
+				break;
+			}
 
-        for (Node node : gridpane_gameview_board_center.getChildren()) {
-            int CellWidth = gridpane_gameview_board_lower.widthProperty().intValue() / Data.PalyaX;
-            int ColumnHeight = gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY;
-            ImageView imageView = new ImageView();
-            imageView.setFitWidth(CellWidth);
-            imageView.setFitHeight(ColumnHeight);
-            node = imageView;
-        }
-        for (Node node : gridpane_gameview_board_upper.getChildren()) {
-            int CellWidth = gridpane_gameview_board_lower.widthProperty().intValue() / Data.PalyaX;
-            int ColumnHeight = gridpane_gameview_board_lower.heightProperty().intValue() / Data.PalyaY;
-            ImageView imageView = new ImageView();
-            imageView.setFitWidth(CellWidth);
-            imageView.setFitHeight(ColumnHeight);
-            node = imageView;
-        }
-    }
+			switch ((int) (IDs[i] / 10000000)) {
+			case 0:
+				((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(null);
+				break;
+			case 1:
+				((ImageView) gridpane_gameview_board_upper.getChildren().get(i))
+						.setImage(PlayerImgs.get(getRandomPlayerImg(IDs[i])));
+				break;
+			case 2:
+				((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(DobozImg);
+				break;
+			case 3:
+				if ((int) (IDs[i] / 100000 % 10) == 1) {
+					((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(JeloltDImg);
+				} else {
+					((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(DobozImg);
+				}
+				break;
+			}
 
-    private void fillGrid() {
-        int[] IDs = Data.jatek.getData().palya;
-        if (IDs == null)
-            return;
-        for (int i = 0; i < IDs.length; i++) {
-            switch ((int) (IDs[i] % 10000 / 1000)) {
-                case 0:
-                    ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
-                    break;
-                case 1:
-                    ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(FalImg);
-                    break;
-                case 2:
-                    ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(LyukImg);
-                    break;
-                case 3:
-                    if ((int) (IDs[i] / 100) % 10 == 1) {
-                        ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(CelhelyImg);
-                    } else {
-                        ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
-                    }
-                    break;
-                case 4:
-                    if ((int) (IDs[i] % 100000 / 100) == 0) {
-                        ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(LyukImg);
-                    } else {
-                        ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
-                    }
-                    break;
-                case 5:
-                    ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(KapcsoloImg);
-                    break;
-                default:
-                    ((ImageView) gridpane_gameview_board_lower.getChildren().get(i)).setImage(UresMezoImg);
-                    break;
-            }
+			if ((IDs[i] % 10) > 0) {
+				if (((int) (IDs[i] / 10)) % 10 > 0)
+					((ImageView) gridpane_gameview_board_center.getChildren().get(i)).setImage(MezOlajImg);
+				else
+					((ImageView) gridpane_gameview_board_center.getChildren().get(i)).setImage(OlajImg);
+			} else if (((int) (IDs[i] / 10)) % 10 > 0) {
+				((ImageView) gridpane_gameview_board_center.getChildren().get(i)).setImage(MezImg);
+			}
+		}
+	}
 
-            switch ((int) (IDs[i] / 10000000)) {
-                case 0:
-                    ((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(null);
-                    break;
-                case 1:
-                    ((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(PlayerImgs.get(getRandomPlayerImg(IDs[i])));
-                    break;
-                case 2:
-                    ((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(DobozImg);
-                    break;
-                case 3:
-                    ((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(JeloltDImg);
-                    break;
-            }
+	private void setPontokGridIfNeeded() {
+		Printer.DisablePrint();
+		
+		if (gridpane_gameview_pontok.getRowConstraints().size() > 0)
+			return;
 
-            if ((IDs[i] % 10) > 0) {
-                if (((int) (IDs[i] / 10)) % 10 > 0)
-                    ((ImageView) gridpane_gameview_board_center.getChildren().get(i)).setImage(MezOlajImg);
-                else
-                    ((ImageView) gridpane_gameview_board_center.getChildren().get(i)).setImage(OlajImg);
-            } else if (((int) (IDs[i] / 10)) % 10 > 0) {
-                ((ImageView) gridpane_gameview_board_center.getChildren().get(i)).setImage(MezImg);
-            }
-        }
-    }
+		if (Data.jatek.getData() != null) {
+			Pontok ptk = Data.jatek.getData().pontok;
 
-    private void setPontokGridIfNeeded() {
-        if (gridpane_gameview_pontok.getRowConstraints().size() > 0)
-            return;
+			gridpane_gameview_pontok.setMinHeight(ptk.getHossz() * 20);
+			gridpane_gameview_pontok.setMaxHeight(ptk.getHossz() * 20);
 
-        if (Data.jatek.getData() != null) {
-            Pontok ptk = Data.jatek.getData().pontok;
+			ColumnConstraints columnConstraints = new ColumnConstraints();
+			columnConstraints.setPercentWidth(25);
+			gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
 
-            gridpane_gameview_pontok.setMinHeight(ptk.getHossz() * 20);
-            gridpane_gameview_pontok.setMaxHeight(ptk.getHossz() * 20);
+			columnConstraints = new ColumnConstraints();
+			columnConstraints.setPercentWidth(50);
+			gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
 
-            ColumnConstraints columnConstraints = new ColumnConstraints();
-            columnConstraints.setPercentWidth(25);
-            gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
+			columnConstraints = new ColumnConstraints();
+			columnConstraints.setPercentWidth(25);
+			gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
 
-            columnConstraints = new ColumnConstraints();
-            columnConstraints.setPercentWidth(50);
-            gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
+			gridpane_gameview_pontok.getColumnConstraints().get(2).setMinWidth(20);
+			
+			for (int i = 0; i < ptk.getHossz(); i++) {
+				ImageView imageView = new ImageView(PlayerImgs.get(getRandomPlayerImg(i * 100000)));
+				imageView.setFitHeight(40);
+				imageView.setFitWidth(40);
 
-            columnConstraints = new ColumnConstraints();
-            columnConstraints.setPercentWidth(25);
-            gridpane_gameview_pontok.getColumnConstraints().add(columnConstraints);
+				RowConstraints row = new RowConstraints();
+				gridpane_gameview_pontok.getRowConstraints().add(row);
+				gridpane_gameview_pontok.add(imageView, 0, i);
+				gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getNev()), 1, i);
+				gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getPont() + ""), 2, i);
+			}
 
-            gridpane_gameview_pontok.getColumnConstraints().get(2).setMinWidth(20);
+		}
+		Printer.EnablePrint();
+	}
 
-            for (int i = 0; i < ptk.getHossz(); i++) {
-                ImageView imageView = new ImageView(PlayerImgs.get(getRandomPlayerImg(i * 100000)));
-                imageView.setFitHeight(gridpane_gameview_pontok.getMinHeight());
-                imageView.setFitWidth(gridpane_gameview_pontok.getMinHeight());
-                gridpane_gameview_pontok.add(imageView, 0, i);
+	private void fillPontGrid() {
+		Pontok ptk = Data.jatek.getData().pontok;
 
-                RowConstraints row = new RowConstraints();
-                gridpane_gameview_pontok.getRowConstraints().add(row);
-                gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getNev()), 1, i);
-                gridpane_gameview_pontok.add(new Label(ptk.getPont(i).getPont()+""), 2, i);
-            }
-        }
-    }
+		for (int i = 0; i < ptk.getHossz(); i++) {
+			((Label) gridpane_gameview_pontok.getChildren().get(3 * i + 3)).setText(ptk.getPont(i).getPont() + "");
+		}
+	}
 
-    private void fillPontGrid() {
-        Pontok ptk = Data.jatek.getData().pontok;
+	private int getRandomPlayerImg(int ID) {
+		int PLID = ID % 1000000 / 100000;
 
-        for (int i = 0; i < ptk.getHossz(); i++) {
-            ((Label) gridpane_gameview_pontok.getChildren().get(3 * i + 3)).setText(ptk.getPont(i).getPont()+"");
-        }
-    }
+		for (Pair<Integer, Integer> pair : usedplayers) {
+			if (pair.getKey() == PLID)
+				return pair.getValue();
+		}
 
-    private int getRandomPlayerImg(int ID) {
-        int PLID = ID % 1000000 / 100000;
+		Random rand = new Random();
+		Integer res;
+		do {
+			res = rand.nextInt(21);
+		} while (usedplayers.contains(new Pair<Integer, Integer>(PLID, res)));
 
-        for (Pair<Integer, Integer> pair : usedplayers) {
-            if (pair.getKey() == PLID)
-                return pair.getValue();
-        }
-
-        Random rand = new Random();
-        Integer res;
-        do {
-            res = rand.nextInt(21);
-        } while (usedplayers.contains(new Pair<Integer, Integer>(PLID, res)));
-
-        usedplayers.add(new Pair<Integer, Integer>(PLID, res));
-        return res;
-    }
+		usedplayers.add(new Pair<Integer, Integer>(PLID, res));
+		return res;
+	}
 }

@@ -40,8 +40,10 @@ public class Csapdaajto extends UresMezo {
     public void Nyit() {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Nyit()");
         nyitva = true;
-        leptetheto.Halal();
-        Enged();
+        if (leptetheto!=null) {
+        	leptetheto.Halal();
+        	Enged();
+        }
         Printer.PrintTabOut("Return");
     }
 
@@ -50,6 +52,7 @@ public class Csapdaajto extends UresMezo {
      */
     public void Csuk() {
         Printer.PrintTabIn("Csapdaajto" + '\t' + "Csuk()");
+        nyitva = false;
         Printer.PrintTabOut("Return");
     }
 

@@ -84,11 +84,19 @@ public class ServerController {
     
     public void onButtonDownAction(ActionEvent actionEvent) {
         if (actionEvent.getSource() == button_start) {
-            if (textfield_jatekos1nev.getText().isEmpty() || textfield_jatekos2nev.getText().isEmpty() || textfield_port.getText().isEmpty() || combobox_palyavalaszto.getValue() == null) {
+            if (textfield_jatekos1nev.getText().isEmpty() || textfield_jatekos2nev.getText().isEmpty() || textfield_port.getText().isEmpty() || combobox_palyavalaszto.getValue() == null)
+            {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
                 alert.setTitle("Hiányos adatok!");
                 alert.setHeaderText(null);
                 alert.setContentText("Nem adott meg minden adatot!");
+                alert.show();
+                return;
+            } else if (textfield_jatekos1nev.getText().equals(textfield_jatekos2nev.getText())){
+            	Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Nem megfelelő adatok!");
+                alert.setHeaderText(null);
+                alert.setContentText("A két név megegyezik!");
                 alert.show();
                 return;
             } else {
@@ -98,7 +106,7 @@ public class ServerController {
                 Navigator.navigate(root, false);
                 Data.szerver=true;
                 } catch (Exception e) {}
-            }
+            }        
         } else if (actionEvent.getSource() == button_megse) {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/data/resources/layout/MenuView.fxml"));
@@ -116,7 +124,8 @@ public class ServerController {
             	usedplayers.clear();
             	disposeGrid();
             	
-            	int[] IDs = Data.jatek.getIDLista(newValue);
+            	@SuppressWarnings("unused")
+				int[] IDs = Data.jatek.getIDLista(newValue);
             	
             	setGrid();
             	
