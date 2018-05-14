@@ -108,11 +108,10 @@ public class GameController {
 					Data.jatek.getData().pontok.order();
 
 					String res = Data.jatek.getData().pontok.getResult();
-
 					Alert alert = new Alert(Alert.AlertType.INFORMATION);
-					alert.setTitle("A j√°t√©k v√©get √©rt!");
+					alert.setTitle("A j·tÈk vÈget Èrt!");
 					alert.setHeaderText(null);
-					alert.setContentText("A v√©gs≈ë pontsz√°mok:\n\n" + res);
+					alert.setContentText("A vÈgsı pontsz·mok:\n\n" + res);
 					alert.show();
 
 					try {
