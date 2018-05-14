@@ -305,11 +305,7 @@ public class GameController {
                     ((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(DobozImg);
                     break;
                 case 3:
-                    if ((int) (IDs[i] / 100000 % 10) == 1) {
                     ((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(JeloltDImg);
-                    } else {
-                        ((ImageView) gridpane_gameview_board_upper.getChildren().get(i)).setImage(DobozImg);
-                    }
                     break;
             }
 

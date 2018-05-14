@@ -11,6 +11,7 @@
  * @since 2018-02-09
  */
 
+
 package sokoban.mezok;
 
 import tools.Printer;
@@ -19,17 +20,39 @@ import sokoban.leptethetok.Doboz;
 import sokoban.leptethetok.Jatekos;
 import sokoban.leptethetok.JeloltDoboz;
 
-public class Celhely extends UresMezo {
+public class Csapdaajto extends UresMezo {
 
-    private boolean jel;
+    private boolean nyitva;
 
     /**
-     * Az osztaly konstruktora. Beallitja a jelet.
+     * Az osztaly konstruktora. Beallitja az ajtot.
      */
-    public Celhely() {
+    public Csapdaajto() {
         super();
-        jel = true;
-        mezoTipus = 3;
+        nyitva = false;
+        mezoTipus = 4;
+    }
+
+
+    /**
+     * Kinyitja az ajtot, az erre a celra fentartott boolean erteket valtoztatva
+     */
+    public void Nyit() {
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Nyit()");
+        nyitva = true;
+        if (leptetheto!=null) {
+        	leptetheto.Halal();
+        	Enged();
+        }
+        Printer.PrintTabOut("Return");
+    }
+
+    /**
+     * Becsukja az ajtot, az erre a celra fentartott boolean erteket valtoztatva
+     */
+    public void Csuk() {
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Csuk()");
+        Printer.PrintTabOut("Return");
     }
 
     /**
@@ -47,20 +70,16 @@ public class Celhely extends UresMezo {
      */
     @Override
     public boolean Fogad(float ero, Irany i, JeloltDoboz jd, Jatekos j) {
-        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany,JeloltDoboz,Jatekos)");
-        boolean success = super.Fogad(ero, i, jd, j);
-        if (!jel || !jd.getJel()) {
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Irany, JeloltDoboz, Jatekos)");
+        if (nyitva) {
+            jd.Halal();
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            return true;
+        } else {
+            boolean success = super.Fogad(ero, i, jd, j);
             Printer.PrintTabOut("Return: " + Boolean.toString(success));
             return success;
         }
-
-        if (success) {
-            jd.JeletTorol();
-            j.PontotKap();
-            jel = false;
-        }
-        Printer.PrintTabOut("Return: " + Boolean.toString(success));
-        return success;
     }
 
     /**
@@ -78,8 +97,12 @@ public class Celhely extends UresMezo {
      */
     @Override
     public boolean Fogad(float ero, Irany i, Jatekos aktj, Jatekos j) {
-        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Irany, Jatekos, Jatekos)");
         boolean success = super.Fogad(ero, i, aktj, j);
+        if (nyitva) {
+            aktj.Halal();
+            Enged();
+        }
         Printer.PrintTabOut("Return: " + Boolean.toString(success));
         return success;
     }
@@ -99,19 +122,24 @@ public class Celhely extends UresMezo {
      */
     @Override
     public boolean Fogad(float ero, Irany i, Doboz d, Jatekos j) {
-        Printer.PrintTabIn("Celhely" + '\t' + "Fogad(Irany,Doboz,Jatekos)");
-        boolean success = super.Fogad(ero, i, d, j);
-        Printer.PrintTabOut("Return: " + Boolean.toString(success));
-        return success;
+        Printer.PrintTabIn("Csapdaajto" + '\t' + "Fogad(Irany, Doboz, Jatekos)");
+        if (nyitva) {
+            d.Halal();
+            Printer.PrintTabOut("Return: " + Boolean.toString(true));
+            return true;
+        } else {
+            boolean success = super.Fogad(ero, i, d, j);
+            Printer.PrintTabOut("Return: " + Boolean.toString(success));
+            return success;
+        }
     }
-
+    
     /**
      * Visszaadja a mezo aktualis ID azonositojat.
      * 
      * @return int ID szama.
      */
-    @Override
     public int getID() {
-        return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + (jel ? 1 : 0) * 100 + mez * 10 + olaj;
+        return (leptetheto != null ? leptetheto.getTipus() * 10000000 : 0) + (leptetheto != null ? leptetheto.getStatus() * 100000 : 0) + mezoTipus * 1000 + (nyitva ? 1 : 0) * 100 + mez * 10 + olaj;
     }
 }
